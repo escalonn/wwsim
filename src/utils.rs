@@ -1,6 +1,6 @@
 use std::collections::HashMap;
 use std::fs;
-use std::iter::Iterator;
+
 
 use crate::Country;
 
@@ -19,7 +19,7 @@ pub fn read_closest_data() -> HashMap<u16, Vec<u16>> {
         .iter()
         .map(|line| {
             let spl: Vec<&str> = line.split(";").collect();
-            let id: u16 = spl.get(0).unwrap().parse().unwrap();
+            let id: u16 = spl.first().unwrap().parse().unwrap();
             let ls: Vec<u16> = spl
                 .get(1)
                 .unwrap()
@@ -37,7 +37,7 @@ pub fn read_country_data() -> HashMap<u16, Country> {
         .iter()
         .map(|line| {
             let spl: Vec<&str> = line.split(";").collect();
-            let id: u16 = spl.get(0).unwrap().parse().unwrap();
+            let id: u16 = spl.first().unwrap().parse().unwrap();
             let name: String = spl.get(1).unwrap().to_string();
             (id, Country { name })
         })

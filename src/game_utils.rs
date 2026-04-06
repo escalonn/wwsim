@@ -1,16 +1,15 @@
 use std::collections::{HashMap, HashSet};
 use rand::seq::SliceRandom;
 
-pub fn compute_neighbors<'a, 'b> (
-    owners_data: &'b mut HashMap<u16, u16>,
-    closest_data: &'a HashMap<u16, Vec<u16>>
+pub fn compute_neighbors (
+    owners_data: &HashMap<u16, u16>,
+    closest_data: &HashMap<u16, Vec<u16>>
 ) -> HashMap<u16, HashSet<u16>>
 {
     let mut neighbors = HashMap::new();
 
     for (country_id, owner_id) in owners_data.iter() {
-        let closest_id = closest_data[country_id].iter()
-            .filter(|neigh_id| owners_data[neigh_id] != *owner_id).next().unwrap();
+        let closest_id = closest_data[country_id].iter().find(|neigh_id| owners_data[neigh_id] != *owner_id).unwrap();
         neighbors.entry(*country_id).or_insert(HashSet::new()).insert(*closest_id);
         neighbors.entry(*closest_id).or_insert(HashSet::new()).insert(*country_id);
     }
@@ -18,8 +17,8 @@ pub fn compute_neighbors<'a, 'b> (
     neighbors
 }
 
-pub fn find_conqueror_id<'a, 'b>(
-    owners_data: &'b mut HashMap<u16, u16>,
+pub fn find_conqueror_id(
+    owners_data: &HashMap<u16, u16>,
     neighbors_data: &HashMap<u16, HashSet<u16>>
 ) -> u16 {
 
@@ -31,10 +30,10 @@ pub fn find_conqueror_id<'a, 'b>(
     **candidates.choose(&mut rand::thread_rng()).unwrap()
 }
 
-pub fn find_conquered_id<'a, 'b>(
+pub fn find_conquered_id(
     conqueror_id: u16,
-    owners_data: &'b mut HashMap<u16, u16>,
-    neighbors_data: &'b HashMap<u16, HashSet<u16>>
+    owners_data: &HashMap<u16, u16>,
+    neighbors_data: &HashMap<u16, HashSet<u16>>
 ) -> u16 {
 
     let candidates: Vec<&u16> = neighbors_data[&conqueror_id].iter()

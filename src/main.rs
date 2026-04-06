@@ -71,11 +71,11 @@ fn main() {
 
 ///////////////////////////////////////////////////////////////////////////////
 
-fn independence<'a, 'b>(
+fn independence(
     indep_terr_id: u16,
-    owners_data: &'b mut HashMap<u16, u16>,
-    owns_data: &'b mut HashMap<u16, u16>,
-    remaining: &'b mut HashSet<u16>,
+    owners_data: &mut HashMap<u16, u16>,
+    owns_data: &mut HashMap<u16, u16>,
+    remaining: &mut HashSet<u16>,
 ) {
     let old_owner_id = owners_data[&indep_terr_id];
 
@@ -92,12 +92,12 @@ fn independence<'a, 'b>(
     }
 }
 
-fn conquer<'a, 'b>(
+fn conquer(
     conqueror_terr_id: u16,
     conquered_terr_id: u16,
-    owners_data: &'b mut HashMap<u16, u16>,
-    owns_data: &'b mut HashMap<u16, u16>,
-    remaining: &'b mut HashSet<u16>,
+    owners_data: &mut HashMap<u16, u16>,
+    owns_data: &mut HashMap<u16, u16>,
+    remaining: &mut HashSet<u16>,
 ) {
     let original_conqueror_id = owners_data[&conqueror_terr_id];
     let original_conquered_id = owners_data[&conquered_terr_id];
