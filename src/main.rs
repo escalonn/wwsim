@@ -30,9 +30,10 @@ fn main() {
     let country_data = read_country_data();
     let closest_data = read_closest_data();
 
+    // Load the real game's current state as the starting point for all runs.
     let (owners_data_after_log, owns_data_after_log, remaining_after_log, log_epoch) = read_gamestate();
 
-    // Simulate the runs starting from the last log point
+    // Each run is independent; rayon parallelises across available threads.
     (0..n_runs).into_par_iter().for_each(|_| {
         let mut epoch = log_epoch;
 
@@ -47,6 +48,7 @@ fn main() {
         while remaining_ref.len() > 1 {
             epoch += 1;
 
+            // Independence chance shrinks as the game goes on.
             let independence_chance = 1.0 / (12.0 + (epoch as f64 / 10.0));
             let neighbors = compute_neighbors(owners_ref, &closest_data);
             let conqueror_id = find_conqueror_id(owners_ref, &neighbors);
@@ -71,6 +73,7 @@ fn main() {
 
 ///////////////////////////////////////////////////////////////////////////////
 
+// A territory breaks away from its owner and becomes sovereign again.
 fn independence(
     indep_terr_id: u16,
     owners_data: &mut HashMap<u16, u16>,
@@ -83,6 +86,7 @@ fn independence(
     *owns_data.entry(indep_terr_id).or_insert(0) += 1;
     *owns_data.entry(old_owner_id).or_insert(0) -= 1;
 
+    // The newly independent territory re-enters the game as its own country.
     if owns_data[&indep_terr_id] == 1 {
         remaining.insert(indep_terr_id);
     }
@@ -92,6 +96,7 @@ fn independence(
     }
 }
 
+// The country owning `conqueror_terr_id` absorbs the country owning `conquered_terr_id`.
 fn conquer(
     conqueror_terr_id: u16,
     conquered_terr_id: u16,

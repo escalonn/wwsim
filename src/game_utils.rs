@@ -1,6 +1,8 @@
 use std::collections::{HashMap, HashSet};
 use rand::seq::SliceRandom;
 
+// For each territory, find its nearest neighbor owned by a different power.
+// The result maps every territory to the set of foreign territories it borders.
 pub fn compute_neighbors (
     owners_data: &HashMap<u16, u16>,
     closest_data: &HashMap<u16, Vec<u16>>
@@ -9,6 +11,7 @@ pub fn compute_neighbors (
     let mut neighbors = HashMap::new();
 
     for (country_id, owner_id) in owners_data.iter() {
+        // Walk the proximity list until we find a territory with a different owner.
         let closest_id = closest_data[country_id].iter().find(|neigh_id| owners_data[neigh_id] != *owner_id).unwrap();
         neighbors.entry(*country_id).or_insert(HashSet::new()).insert(*closest_id);
         neighbors.entry(*closest_id).or_insert(HashSet::new()).insert(*country_id);
@@ -17,6 +20,7 @@ pub fn compute_neighbors (
     neighbors
 }
 
+// Pick a random territory that sits on at least one foreign border (eligible to act this turn).
 pub fn find_conqueror_id(
     owners_data: &HashMap<u16, u16>,
     neighbors_data: &HashMap<u16, HashSet<u16>>
@@ -30,6 +34,7 @@ pub fn find_conqueror_id(
     **candidates.choose(&mut rand::thread_rng()).unwrap()
 }
 
+// Pick a random foreign neighbor of the conqueror territory to attack.
 pub fn find_conquered_id(
     conqueror_id: u16,
     owners_data: &HashMap<u16, u16>,

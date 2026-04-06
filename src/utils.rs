@@ -1,7 +1,6 @@
 use std::collections::HashMap;
 use std::fs;
 
-
 use crate::Country;
 
 fn read_lines(path: &str) -> Vec<String> {
@@ -13,6 +12,7 @@ fn read_lines(path: &str) -> Vec<String> {
     lines.collect()
 }
 
+// Format: `id; n1, n2, n3, ...` — neighbors ordered by proximity.
 pub fn read_closest_data() -> HashMap<u16, Vec<u16>> {
     let lines = read_lines("data/closest.csv");
     lines
@@ -31,6 +31,7 @@ pub fn read_closest_data() -> HashMap<u16, Vec<u16>> {
         .collect()
 }
 
+// Format: `id; name; longitude; latitude` — coordinates are unused by the simulator.
 pub fn read_country_data() -> HashMap<u16, Country> {
     let lines = read_lines("data/country_data.csv");
     lines
