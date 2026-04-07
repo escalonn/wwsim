@@ -36,11 +36,13 @@ pub fn read_country_data() -> HashMap<u16, Country> {
     let lines = read_lines("data/country_data.csv");
     lines
         .iter()
-        .map(|line| {
+        .filter_map(|line| {
             let spl: Vec<&str> = line.split(";").collect();
-            let id: u16 = spl.first().unwrap().parse().unwrap();
-            let name: String = spl.get(1).unwrap().to_string();
-            (id, Country { name })
+            let id_str = spl.first()?;
+            if id_str.is_empty() { return None; }
+            let id: u16 = id_str.parse().ok()?;
+            let name: String = spl.get(1)?.to_string();
+            Some((id, Country { name }))
         })
         .collect()
 }

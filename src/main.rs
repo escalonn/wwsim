@@ -11,6 +11,9 @@ use game_utils::{compute_neighbors, find_conquered_id, find_conqueror_id};
 
 mod gamestate_reader;
 use gamestate_reader::read_gamestate;
+
+mod scraper;
+use scraper::update_gamestate;
 ///////////////////////////////////////////////////////////////////////////////
 
 pub struct Country {
@@ -21,11 +24,33 @@ pub struct Country {
 
 fn main() {
     let args: Vec<String> = env::args().collect();
-    let n_runs: usize = args
-        .get(1)
-        .expect("Provide the number of runs")
+    let is_reset = args.iter().any(|arg| arg == "--reset");
+    if is_reset {
+        scraper::reset_gamestate().expect("Failed to reset gamestate");
+        // Don't run simulations on a reset unless runs are also requested?
+        // Actually, let's just allow it to continue if a number was provided, 
+        // but if no number was provided, let's just exit.
+        if !args.iter().any(|a| a.parse::<usize>().is_ok()) {
+            return;
+        }
+    }
+
+    let runs_unparsed = args
+        .iter()
+        .skip(1)
+        .find(|arg| !arg.starts_with("--"))
+        .expect("Provide the number of runs");
+
+    let n_runs: usize = runs_unparsed
         .parse()
         .expect("Not a valid number");
+        
+    let force = args.iter().any(|arg| arg == "--force");
+
+    if let Err(e) = update_gamestate(force) {
+        eprintln!("Scraper encountered a critical error: {}", e);
+        std::process::exit(1);
+    }
 
     let country_data = read_country_data();
     let closest_data = read_closest_data();

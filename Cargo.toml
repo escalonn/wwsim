@@ -1,7 +1,7 @@
 [package]
 name = "wwsim"
-version = "0.1.0"
-authors = ["agubelu <agustinbd3@gmail.com>"]
+version = "0.2.0"
+authors = ["agubelu <agustinbd3@gmail.com>", "escalonn <nicholas.escalona@gmail.com>"]
 edition = "2018"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
@@ -12,3 +12,4 @@ rayon = "1.3.0"
 serde = { version = "1.0.210", features = ["derive"] }
 serde_json = "1.0.128"
 counter = "0.4.3"
+ureq = { version = "=2.9.1", features = ["json"] }
