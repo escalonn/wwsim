@@ -48,13 +48,14 @@ cargo run --release 1000 | sort | uniq -c | sort -rn
 
 Each simulated run proceeds as follows:
 
-1. Load the current game state (territory ownership, epoch) from `data/gamestate.json`.
-2. Each turn:
+1. The program automatically updates the local game state by fetching and parsing new rounds from the WorldWarBot API, bringing `data/gamestate.json` and `data/log.csv` up to speed with the real world.
+2. Load the current game state (territory ownership, epoch) from `data/gamestate.json`.
+3. Each turn:
    - Compute the **neighbor map**: for every territory, find its closest neighbor that is owned by a different power.
    - Pick a random **conqueror** territory from those on a border.
    - With probability `1 / (12 + epoch / 10)`, the conqueror territory instead declares **independence** (breaks away from its owner). This chance shrinks as the game goes on.
    - Otherwise, the conqueror attacks a random adjacent foreign territory.
-3. Repeat until only one country remains. Print its name.
+4. Repeat until only one country remains. Print its name.
 
 ---
 
@@ -63,15 +64,16 @@ Each simulated run proceeds as follows:
 ```
 wwsim/
 ├── src/
-│   ├── main.rs              # Entry point; simulation loop; conquer/independence logic
+│   ├── main.rs              # Entry point; runs scraper then the simulation loop
+│   ├── scraper.rs           # Automates matching IDs, parsing live rounds, and syncing
 │   ├── game_utils.rs        # Turn mechanics: neighbor computation, target selection
 │   ├── gamestate_reader.rs  # Parses gamestate.json into runtime data structures
 │   └── utils.rs             # Reads country_data.csv and closest.csv
 └── data/
     ├── country_data.csv     # Master list of countries/territories
     ├── closest.csv          # Precomputed proximity ordering between territories
-    ├── gamestate.json       # Current real-world game state (updated externally)
-    └── log.csv              # Historical event log (may be updated externally)
+    ├── gamestate.json       # Current real-world game state (updated locally by the scraper)
+    └── log.csv              # Historical event log automatically appended by scraper
 ```
 
 ---
@@ -82,7 +84,7 @@ wwsim/
 
 Semicolon-delimited. Columns: `id; name; longitude; latitude`
 
-Maps each territory's numeric ID to its name and geographic coordinates. The coordinates are not used by the simulator itself — they were likely used to generate `closest.csv` (see below).
+Maps each territory's numeric ID to its name and geographic coordinates. Run with `--reset` when a new game strictly begins so the scraper can dynamically associate and reset IDs based tightly on the server's unique initial mappings natively.
 
 ### `data/closest.csv`
 
@@ -94,28 +96,34 @@ For each territory, a list of all other territory IDs ordered by geographic prox
 
 ```json
 {
-  "epoch": 570,
+  "epoch": 6,
+  "initial_month": 3,
+  "initial_year": 2026,
   "country_data": {
-    "<territory_id>": "<owner_id>",
-    ...
+    "<territory_id>": "<owner_id>"
   }
 }
 ```
 
-Captures the real game's current state: how many turns have elapsed (`epoch`) and who currently owns each territory. This is the starting point for all simulations.
+Captures the real game's current state: how many turns have elapsed (`epoch`), the initial global month index, and who currently owns each territory. This is the starting point for all simulations.
 
-This file needs to be kept up to date with the live bot to produce meaningful results. It is likely generated or updated by an **external scraper** that reads the bot's posts — that tooling does not appear to be part of this repository.
+This file is now automatically kept exactly in sync with the live bot via the built-in scraper logic executed upon process execution.
 
 ### `data/log.csv`
 
-Semicolon-delimited. Format: `event; id1; id2`
+Semicolon-delimited. Format: `event;attackerId;defenderId` (no header)
 
-A historical log of real game events. Currently observed event type:
-- `conquer; conquerorId; conqueredId`
+A historical log of real game events tracking the automated events fetched from the live bot in sequence automatically via scraper synchronization (e.g. `conquer;70;43`).
 
-An `independence` event type may also exist but was not observed in the current log.
+While the automated scraper seamlessly updates this per processed round, the isolated simulation loop strictly begins processing exclusively relying on `gamestate.json` as the canonical starting point.
 
-The log contains roughly 260 entries, while the current epoch is 570 — so it likely does **not** cover the full game history. It is unclear whether the log is a rolling window of recent events, was started partway through the game, or serves some other purpose. The simulator itself does not read this file; `gamestate.json` is the canonical starting point.
+---
+
+## Output / Special Flags
+
+| Flag | Purpose |
+|---|---|
+| `--reset` | Used to seed purely initial states alongside re-associating IDs against a clean country baseline (clears logs and resets `gamestate.json` to 0 seamlessly) |
 
 ---
 
@@ -127,12 +135,13 @@ The log contains roughly 260 entries, while the current epoch is 570 — so it l
 | [`rayon`](https://crates.io/crates/rayon) | Parallel simulation runs |
 | [`serde`](https://crates.io/crates/serde) + [`serde_json`](https://crates.io/crates/serde_json) | Parsing `gamestate.json` |
 | [`counter`](https://crates.io/crates/counter) | Counting territory ownership when loading game state |
+| [`ureq`](https://crates.io/crates/ureq) | Fetching live API states securely |
+| [`chrono`](https://crates.io/crates/chrono) | Calculating true present baselines |
 
 ---
 
 ## Notes & known limitations
 
-- **`gamestate.json` must be manually kept current.** If it drifts from the real bot's state, simulation results will not reflect the actual game's likely outcomes. The tooling to update it is not present in this repository.
 - **Data paths are hardcoded.** The binary must be invoked from the project root directory.
 - **No aggregated output.** The program prints one country name per run to stdout, one line each. Aggregation (e.g. win counts) is left to the caller via shell tools or piping.
 - **Latitude/longitude in `country_data.csv`** is loaded but unused by the simulator. It was likely needed for generating `closest.csv`.

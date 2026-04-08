@@ -82,15 +82,12 @@ fn num_to_month(m: u32) -> &'static str {
 
 fn try_fetch_round(round: usize) -> Result<(SaveFile, PostFile), Box<dyn std::error::Error>> {
     let save_url = format!("https://run5.worldwarbot.com/data/saves/{:06}.json", round);
-    let save_req = ureq::get(&save_url).call()?;
-    let save_str = save_req.into_string()?;
+    let mut save_req = ureq::get(&save_url).call()?;
+    let save: SaveFile = save_req.body_mut().read_json()?;
 
     let post_url = format!("https://run5.worldwarbot.com/data/posts/{:06}.json", round);
-    let post_req = ureq::get(&post_url).call()?;
-    let post_str = post_req.into_string()?;
-
-    let save: SaveFile = serde_json::from_str(&save_str)?;
-    let post: PostFile = serde_json::from_str(&post_str)?;
+    let mut post_req = ureq::get(&post_url).call()?;
+    let post: PostFile = post_req.body_mut().read_json()?;
 
     Ok((save, post))
 }
@@ -233,10 +230,9 @@ struct DataInfo {
     iteration: usize,
 }
 
-pub fn update_gamestate(force: bool) -> Result<(), Box<dyn std::error::Error>> {
-    let data_req = ureq::get("https://run5.worldwarbot.com/data/data.json").call()?;
-    let data_str = data_req.into_string()?;
-    let data_info: DataInfo = serde_json::from_str(&data_str)?;
+pub fn update_gamestate() -> Result<(), Box<dyn std::error::Error>> {
+    let mut data_req = ureq::get("https://run5.worldwarbot.com/data/data.json").call()?;
+    let data_info: DataInfo = data_req.body_mut().read_json()?;
     let max_iter = data_info.iteration;
 
     let gamestate_str = fs::read_to_string("data/gamestate.json")?;
@@ -251,13 +247,8 @@ pub fn update_gamestate(force: bool) -> Result<(), Box<dyn std::error::Error>> {
     for round in (local_round + 1)..=max_iter {
         let fetch_result = try_fetch_round(round);
         if fetch_result.is_err() {
-            if !force {
-                eprintln!("Could not retrieve round {} data", round);
-                break;
-            } else {
-                eprintln!("Skipping error on round {}", round);
-                continue;
-            }
+            eprintln!("Could not retrieve round {} data", round);
+            break;
         }
 
         let (save, post) = fetch_result.unwrap();
@@ -315,15 +306,13 @@ pub fn update_gamestate(force: bool) -> Result<(), Box<dyn std::error::Error>> {
             any_unexpected = true;
         }
 
-        if any_unexpected && !force {
-            let save_str = serde_json::to_string(&save)?;
-            let post_str = serde_json::to_string(&post)?;
+        if any_unexpected {
+            let save_str = serde_json::to_string_pretty(&save)?;
+            let post_str = serde_json::to_string_pretty(&post)?;
             write_unexpected("save", round, &save_str);
             write_unexpected("post", round, &post_str);
             eprintln!("Stopping simulation because validation mismatches were found.");
             std::process::exit(1);
-        } else if any_unexpected && force {
-            eprintln!("Validation issues encountered in Round {}, --force flag bypassed it.", round);
         }
 
         current_state.epoch = round;

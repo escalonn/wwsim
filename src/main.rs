@@ -45,9 +45,7 @@ fn main() {
         .parse()
         .expect("Not a valid number");
         
-    let force = args.iter().any(|arg| arg == "--force");
-
-    if let Err(e) = update_gamestate(force) {
+    if let Err(e) = update_gamestate() {
         eprintln!("Scraper encountered a critical error: {}", e);
         std::process::exit(1);
     }
