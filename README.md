@@ -50,7 +50,7 @@ cargo run --release 1000 | sort | uniq -c | sort -rn
 
 Each simulated run proceeds as follows:
 
-1. By default, the program automatically updates the local game state by fetching and parsing new rounds from the WorldWarBot API, bringing `data/gamestate.json` and `data/log.csv` up to speed with the real world. Run with `--local` to skip this.
+1. By default, the program automatically updates the local game state by fetching and parsing new rounds from the WorldWarBot API, bringing `data/gamestate.json` up to speed with the real world. Run with `--local` to skip this.
 2. Load the current game state (territory ownership, epoch) from `data/gamestate.json`.
 3. Load the geographic topology (the graph mapping each territory to 6 Voronoi-iteration neighbors) from `data/targets.json`.
 4. Each turn:
@@ -74,8 +74,7 @@ wwsim/
 └── data/
     ├── country_data.csv     # Master list of countries/territories
     ├── targets.json         # Graph listing exactly 6 neighbors for each territory ID
-    ├── gamestate.json       # Current real-world game state (updated locally by the scraper)
-    └── log.csv              # Historical event log automatically appended by scraper
+    └── gamestate.json       # Current real-world game state (updated locally by the scraper)
 ```
 
 ---
@@ -110,14 +109,6 @@ A fully interconnected graph representing mapping structures across the globe. E
 Captures the real game's current state: how many turns have elapsed (`epoch`), the initial global month index, and who currently owns each territory. This is the starting point for all simulations.
 
 This file is now automatically kept exactly in sync with the live bot via the built-in scraper logic executed upon process execution.
-
-### `data/log.csv`
-
-Semicolon-delimited. Format: `event;attackerId;defenderId` (no header)
-
-A historical log of real game events tracking the automated events fetched from the live bot in sequence automatically via scraper synchronization (e.g. `conquer;70;43`).
-
-While the automated scraper seamlessly updates this per processed round, the isolated simulation loop strictly begins processing exclusively relying on `gamestate.json` as the canonical starting point.
 
 ---
 

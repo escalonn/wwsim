@@ -2,13 +2,13 @@ use std::collections::{HashMap, HashSet};
 use rand::seq::SliceRandom;
 use rand::random;
 
-// `find_attack_target(attacker_id, owners_data, targets_data) -> u16`
-// Implement the BFS to find the closest foreign territory shell and pick randomly from it.
-pub fn find_attack_target(
+// `find_attack_targets(attacker_id, owners_data, targets_data) -> Vec<u16>`
+// Implement the BFS to find the closest foreign territory shell and return all targets in it.
+pub fn find_attack_targets(
     attacker_id: u16,
     owners_data: &HashMap<u16, u16>,
     targets_data: &HashMap<u16, Vec<u16>>
-) -> u16 {
+) -> Vec<u16> {
     let attacker_owner = owners_data[&attacker_id];
     
     let mut visited = HashSet::new();
@@ -20,8 +20,7 @@ pub fn find_attack_target(
     loop {
         if current_shell.is_empty() {
             // Should not happen unless the whole world is owned by the attacker.
-            // Still, provide fallback so it doesn't crash here.
-            panic!("Cannot find any attack targets!");
+            return Vec::new();
         }
 
         let foreign_targets: Vec<u16> = current_shell.iter()
@@ -30,7 +29,7 @@ pub fn find_attack_target(
             .collect();
             
         if !foreign_targets.is_empty() {
-            return *foreign_targets.choose(&mut rand::thread_rng()).unwrap();
+            return foreign_targets;
         }
         
         // Build next shell

@@ -6,7 +6,7 @@ mod utils;
 use utils::{read_country_data, read_targets_data};
 
 mod game_utils;
-use game_utils::{find_attack_target, perform_conquest, perform_riot};
+use game_utils::{find_attack_targets, perform_conquest, perform_riot};
 
 mod gamestate_reader;
 use gamestate_reader::read_gamestate;
@@ -85,7 +85,11 @@ fn main() {
                 }
             }
 
-            let target_id = find_attack_target(chosen_id, owners_ref, &targets_data);
+            let targets = find_attack_targets(chosen_id, owners_ref, &targets_data);
+            if targets.is_empty() {
+                continue;
+            }
+            let target_id = *targets.choose(&mut rng).unwrap();
             perform_conquest(
                 chosen_id,
                 target_id,

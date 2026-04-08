@@ -1,8 +1,8 @@
-use std::collections::HashMap;
-use std::fs;
+use chrono::Datelike;
 use serde::{Deserialize, Serialize};
 use std::cmp::Ordering;
-use chrono::Datelike;
+use std::collections::{BTreeMap, HashMap};
+use std::fs;
 
 #[derive(Serialize, Deserialize, Debug)]
 #[serde(deny_unknown_fields)]
@@ -52,7 +52,7 @@ struct Gamestate {
     epoch: usize,
     initial_month: u32,
     initial_year: u32,
-    country_data: HashMap<String, String>,
+    country_data: BTreeMap<String, String>,
 }
 
 struct CountryRow {
@@ -64,19 +64,37 @@ struct CountryRow {
 
 fn month_to_num(m: &str) -> Option<u32> {
     match m {
-        "January" => Some(1), "February" => Some(2), "March" => Some(3),
-        "April" => Some(4), "May" => Some(5), "June" => Some(6),
-        "July" => Some(7), "August" => Some(8), "September" => Some(9),
-        "October" => Some(10), "November" => Some(11), "December" => Some(12),
+        "January" => Some(1),
+        "February" => Some(2),
+        "March" => Some(3),
+        "April" => Some(4),
+        "May" => Some(5),
+        "June" => Some(6),
+        "July" => Some(7),
+        "August" => Some(8),
+        "September" => Some(9),
+        "October" => Some(10),
+        "November" => Some(11),
+        "December" => Some(12),
         _ => None,
     }
 }
 
 fn num_to_month(m: u32) -> &'static str {
     match m {
-        1 => "January", 2 => "February", 3 => "March", 4 => "April", 5 => "May",
-        6 => "June", 7 => "July", 8 => "August", 9 => "September", 10 => "October",
-        11 => "November", 12 => "December", _ => "",
+        1 => "January",
+        2 => "February",
+        3 => "March",
+        4 => "April",
+        5 => "May",
+        6 => "June",
+        7 => "July",
+        8 => "August",
+        9 => "September",
+        10 => "October",
+        11 => "November",
+        12 => "December",
+        _ => "",
     }
 }
 
@@ -98,7 +116,9 @@ pub fn reset_gamestate() -> Result<(), Box<dyn std::error::Error>> {
     let mut original_content = String::new();
 
     for line in content.lines() {
-        if line.trim().is_empty() { continue; }
+        if line.trim().is_empty() {
+            continue;
+        }
         original_content.push_str(line.trim());
         original_content.push('\n');
 
@@ -182,7 +202,10 @@ pub fn reset_gamestate() -> Result<(), Box<dyn std::error::Error>> {
 
         let mut new_content = String::new();
         for row in &current_rows {
-            new_content.push_str(&format!("{};{};{};{}\n", row.id, row.name, row.lon, row.lat));
+            new_content.push_str(&format!(
+                "{};{};{};{}\n",
+                row.id, row.name, row.lon, row.lat
+            ));
         }
 
         if new_content != original_content {
@@ -206,11 +229,13 @@ pub fn reset_gamestate() -> Result<(), Box<dyn std::error::Error>> {
         epoch: 0,
         initial_month,
         initial_year,
-        country_data,
+        country_data: country_data.into_iter().collect(),
     };
 
-    fs::write("data/gamestate.json", serde_json::to_string_pretty(&gamestate)?)?;
-    fs::write("data/log.csv", "")?;
+    fs::write(
+        "data/gamestate.json",
+        serde_json::to_string_pretty(&gamestate)?,
+    )?;
 
     let targets_req = ureq::get("https://run5.worldwarbot.com/data/voronoi-neighbors.json").call();
     match targets_req {
@@ -220,12 +245,17 @@ pub fn reset_gamestate() -> Result<(), Box<dyn std::error::Error>> {
             println!("Successfully fetched and updated data/targets.json.");
         }
         Err(e) => {
-            eprintln!("Failed to fetch voronoi-neighbors.json: {}. Retaining existing file if present.", e);
+            eprintln!(
+                "Failed to fetch voronoi-neighbors.json: {}. Retaining existing file if present.",
+                e
+            );
         }
     }
 
     if generated_from_saves {
-        println!("Successfully generated purely synced starting gamestate and cleared logs at epoch 0.");
+        println!(
+            "Successfully generated purely synced starting gamestate and cleared logs at epoch 0."
+        );
     }
 
     Ok(())
@@ -249,6 +279,12 @@ pub fn update_gamestate() -> Result<(), Box<dyn std::error::Error>> {
 
     let gamestate_str = fs::read_to_string("data/gamestate.json")?;
     let mut current_state: Gamestate = serde_json::from_str(&gamestate_str)?;
+    let targets_data = crate::utils::read_targets_data();
+    let country_rows = crate::utils::read_country_data();
+    let name_to_id: HashMap<String, u16> = country_rows
+        .iter()
+        .map(|(&id, c)| (c.name.clone(), id))
+        .collect();
 
     let local_round = current_state.epoch;
 
@@ -266,11 +302,6 @@ pub fn update_gamestate() -> Result<(), Box<dyn std::error::Error>> {
         let (save, post) = fetch_result.unwrap();
         let mut any_unexpected = false;
 
-        if !save.alliances.is_empty() || !post.alliances.is_empty() {
-            eprintln!("Round {}: Alliances strictly expected to be empty.", round);
-            any_unexpected = true;
-        }
-
         if post.action_type != "conquest" {
             eprintln!("Round {}: Expected event_type 'conquest'", round);
             any_unexpected = true;
@@ -282,66 +313,162 @@ pub fn update_gamestate() -> Result<(), Box<dyn std::error::Error>> {
         }
 
         if post.conquest.subjects.len() != 0 {
-            eprintln!("Round {}: Expected conquest.subjects to natively be empty.", round);
+            eprintln!(
+                "Round {}: Expected conquest.subjects to natively be empty.",
+                round
+            );
             any_unexpected = true;
         }
 
-        let territory_id = save.conquests.1.1;
+        let territory_id = save.conquests.1 .1;
+        let conquered_territory_id = territory_id as u16;
+        let id_owners: HashMap<u16, u16> = current_state
+            .country_data
+            .iter()
+            .map(|(k, v)| (k.parse().unwrap(), v.parse().unwrap()))
+            .collect();
 
-        let defender_territories = current_state.country_data.values().filter(|&owner| owner == &post.conquest.defender.to_string()).count();
-        let completely_defeated = defender_territories == 1;
+        let attacker_country_id = name_to_id[&post.attacker];
+        let defender_country_id = name_to_id[&post.defender];
+        let attacking_territory_id = post.conquest.attacker as u16;
 
-        let total_months = current_state.initial_year * 12 + (current_state.initial_month - 1) + (round as u32);
-        let current_round_year = total_months / 12;
-        let current_round_month = (total_months % 12) + 1;
+        // Validations before state change
+        if id_owners[&conquered_territory_id] != defender_country_id {
+            eprintln!("Round {}: Defender mismatch for territory {}. Expected owner (from API name: {}) {}, got {}", round, conquered_territory_id, post.defender, defender_country_id, id_owners[&conquered_territory_id]);
+            any_unexpected = true;
+        }
+        if id_owners[&attacking_territory_id] != attacker_country_id {
+            eprintln!(
+                "Round {}: Attacker {} ({}) does not own the launching territory {} (owned by {}).",
+                round,
+                post.attacker,
+                attacker_country_id,
+                attacking_territory_id,
+                id_owners[&attacking_territory_id]
+            );
+            any_unexpected = true;
+        }
+        if !crate::game_utils::find_attack_targets(
+            attacking_territory_id,
+            &id_owners,
+            &targets_data,
+        )
+        .contains(&conquered_territory_id)
+        {
+            eprintln!("Round {}: Launching territory {} could not have reached territory {} based on graph logic.", round, attacking_territory_id, conquered_territory_id);
+            any_unexpected = true;
+        }
 
-        current_state.country_data.insert(territory_id.to_string(), post.conquest.attacker.to_string());
+        let defender_territories_before = current_state
+            .country_data
+            .values()
+            .filter(|&owner| owner == &defender_country_id.to_string())
+            .count();
+        let completely_defeated = defender_territories_before == 1;
 
-        let remaining_keys: std::collections::HashSet<_> = current_state.country_data.values().collect();
-        let remaining_count = remaining_keys.len();
+        // Apply state change
+        current_state
+            .country_data
+            .insert(territory_id.to_string(), attacker_country_id.to_string());
+        current_state.epoch = round;
+
+        let remaining_count = current_state
+            .country_data
+            .values()
+            .collect::<std::collections::HashSet<_>>()
+            .len();
+        let total_months =
+            current_state.initial_year * 12 + (current_state.initial_month - 1) + (round as u32);
 
         let d_string = if completely_defeated {
-            format!("{} has been completely defeated.\n", post.defender)
+            format!(
+                ".\n{} has been completely defeated.\n{_e} countries remaining.",
+                post.defender,
+                _e = remaining_count
+            )
+        } else if post.conquest.fallen_capital_remnant {
+            format!(
+                ".\nThe government of {} continues in exile, based in its remaining territories.",
+                post.defender
+            )
+        } else if id_owners[&conquered_territory_id] != conquered_territory_id {
+            format!(" previously occupied by {}.", post.defender)
         } else {
-            "".to_string()
+            ".".to_string()
         };
 
-        let expected_caption = format!("{} {}, {} conquered {} territory.\n{}{_e} countries remaining.\nCheck the full map at https://worldwarbot.com", num_to_month(current_round_month), current_round_year, post.attacker, post.territory, d_string, _e = remaining_count);
-
-        if post.caption != expected_caption {
-            eprintln!("Round {}: Caption validation failed! Expected exactly:\n'{}'\nGot:\n'{}'", round, expected_caption, post.caption);
+        if post.caption
+            != format!(
+                "{} {}, {} conquered {} territory{}\nCheck the full map at https://worldwarbot.com",
+                num_to_month((total_months % 12) + 1),
+                total_months / 12,
+                post.attacker,
+                post.territory,
+                d_string
+            )
+        {
+            eprintln!(
+                "Round {}: Caption validation failed! Expected different string.",
+                round
+            );
+            any_unexpected = true;
+        }
+        if post.pic != format!("{:06}.png", round)
+            || post.zoom != format!("{:06}.png", round)
+            || !post.alliances.is_empty()
+        {
+            eprintln!("Round {}: post pic, zoom, or alliances mismatch.", round);
             any_unexpected = true;
         }
 
-        if post.pic != format!("{:06}.png", round) || post.zoom != format!("{:06}.png", round) {
-            eprintln!("Round {}: Picture format strings are not matching round info.", round);
+        // Grouped SaveFile validation
+        if save.iteration != round || save.conquests.0 != round || !save.alliances.is_empty() {
+            eprintln!(
+                "Round {}: save iteration, conquest round, or alliances mismatch.",
+                round,
+            );
+            any_unexpected = true;
+        }
+        let mut groups: HashMap<u16, Vec<usize>> = HashMap::new();
+        for (t_id_s, o_id_s) in &current_state.country_data {
+            groups
+                .entry(o_id_s.parse().unwrap())
+                .or_default()
+                .push(t_id_s.parse().unwrap());
+        }
+        let mut mid_list: Vec<(u16, Vec<usize>)> = groups.into_iter().collect();
+        for (_, t_ids) in &mut mid_list {
+            t_ids.sort();
+        }
+        mid_list.sort_by_key(|(_, t_ids)| t_ids[0]);
+
+        let expected_save_list: Vec<(String, Vec<usize>)> = mid_list
+            .into_iter()
+            .map(|(o_id, t_ids)| (country_rows[&o_id].name.clone(), t_ids))
+            .collect();
+
+        if save.countries != expected_save_list {
+            eprintln!("Round {}: save countries list mismatch.", round);
             any_unexpected = true;
         }
 
         if any_unexpected {
-            let save_str = serde_json::to_string_pretty(&save)?;
-            let post_str = serde_json::to_string_pretty(&post)?;
-            write_unexpected("save", round, &save_str);
-            write_unexpected("post", round, &post_str);
+            write_unexpected("save", round, &serde_json::to_string_pretty(&save)?);
+            write_unexpected("post", round, &serde_json::to_string_pretty(&post)?);
             eprintln!("Stopping simulation because validation mismatches were found.");
             std::process::exit(1);
         }
-
-        current_state.epoch = round;
-        let log_line = format!("{};{};{}\n", post.conquest.action_type, post.conquest.attacker, post.conquest.defender);
 
         let mut lines: Vec<&str> = post.caption.lines().collect();
         if lines.len() >= 2 {
             lines.truncate(lines.len() - 2);
         }
-        let printed_caption = lines.join(" ");
-        println!("Round {}: {}", round, printed_caption);
+        println!("Round {}: {}", round, lines.join(" "));
 
-        fs::write("data/gamestate.json", serde_json::to_string_pretty(&current_state)?)?;
-        if let Ok(mut file) = std::fs::OpenOptions::new().append(true).create(true).open("data/log.csv") {
-            use std::io::Write;
-            let _ = file.write_all(log_line.as_bytes());
-        }
+        fs::write(
+            "data/gamestate.json",
+            serde_json::to_string_pretty(&current_state)?,
+        )?;
     }
 
     Ok(())
