@@ -12,23 +12,10 @@ fn read_lines(path: &str) -> Vec<String> {
     lines.collect()
 }
 
-// Format: `id; n1, n2, n3, ...` — neighbors ordered by proximity.
-pub fn read_closest_data() -> HashMap<u16, Vec<u16>> {
-    let lines = read_lines("data/closest.csv");
-    lines
-        .iter()
-        .map(|line| {
-            let spl: Vec<&str> = line.split(";").collect();
-            let id: u16 = spl.first().unwrap().parse().unwrap();
-            let ls: Vec<u16> = spl
-                .get(1)
-                .unwrap()
-                .split(",")
-                .map(|x| x.parse().unwrap())
-                .collect();
-            (id, ls)
-        })
-        .collect()
+pub fn read_targets_data() -> HashMap<u16, Vec<u16>> {
+    let file_str = fs::read_to_string("data/targets.json").expect("Failed to read data/targets.json");
+    let arrays: Vec<Vec<u16>> = serde_json::from_str(&file_str).expect("Failed to parse data/targets.json");
+    arrays.into_iter().enumerate().map(|(i, arr)| (i as u16, arr)).collect()
 }
 
 // Format: `id; name; longitude; latitude` — coordinates are unused by the simulator.

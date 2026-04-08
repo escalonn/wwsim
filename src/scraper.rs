@@ -212,6 +212,18 @@ pub fn reset_gamestate() -> Result<(), Box<dyn std::error::Error>> {
     fs::write("data/gamestate.json", serde_json::to_string_pretty(&gamestate)?)?;
     fs::write("data/log.csv", "")?;
 
+    let targets_req = ureq::get("https://run5.worldwarbot.com/data/voronoi-neighbors.json").call();
+    match targets_req {
+        Ok(mut res) => {
+            let targets_json: String = res.body_mut().read_to_string()?;
+            fs::write("data/targets.json", targets_json)?;
+            println!("Successfully fetched and updated data/targets.json.");
+        }
+        Err(e) => {
+            eprintln!("Failed to fetch voronoi-neighbors.json: {}. Retaining existing file if present.", e);
+        }
+    }
+
     if generated_from_saves {
         println!("Successfully generated purely synced starting gamestate and cleared logs at epoch 0.");
     }

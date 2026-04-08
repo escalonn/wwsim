@@ -1,13 +1,12 @@
 use rand::random;
 use rayon::prelude::*;
-use std::collections::{HashMap, HashSet};
 use std::env;
 
 mod utils;
-use utils::{read_closest_data, read_country_data};
+use utils::{read_country_data, read_targets_data};
 
 mod game_utils;
-use game_utils::{compute_neighbors, find_conquered_id, find_conqueror_id};
+use game_utils::{find_attack_target, perform_conquest, perform_riot};
 
 mod gamestate_reader;
 use gamestate_reader::read_gamestate;
@@ -25,11 +24,10 @@ pub struct Country {
 fn main() {
     let args: Vec<String> = env::args().collect();
     let is_reset = args.iter().any(|arg| arg == "--reset");
+    let is_local = args.iter().any(|arg| arg == "--local");
     if is_reset {
         scraper::reset_gamestate().expect("Failed to reset gamestate");
-        // Don't run simulations on a reset unless runs are also requested?
-        // Actually, let's just allow it to continue if a number was provided, 
-        // but if no number was provided, let's just exit.
+        // Don't run simulations on a reset unless runs are also requested
         if !args.iter().any(|a| a.parse::<usize>().is_ok()) {
             return;
         }
@@ -44,14 +42,16 @@ fn main() {
     let n_runs: usize = runs_unparsed
         .parse()
         .expect("Not a valid number");
-        
-    if let Err(e) = update_gamestate() {
-        eprintln!("Scraper encountered a critical error: {}", e);
-        std::process::exit(1);
+
+    if !is_local {
+        if let Err(e) = update_gamestate() {
+            eprintln!("Scraper encountered a critical error: {}", e);
+            std::process::exit(1);
+        }
     }
 
     let country_data = read_country_data();
-    let closest_data = read_closest_data();
+    let targets_data = read_targets_data();
 
     // Load the real game's current state as the starting point for all runs.
     let (owners_data_after_log, owns_data_after_log, remaining_after_log, log_epoch) = read_gamestate();
@@ -71,71 +71,31 @@ fn main() {
         while remaining_ref.len() > 1 {
             epoch += 1;
 
-            // Independence chance shrinks as the game goes on.
-            let independence_chance = 1.0 / (12.0 + (epoch as f64 / 10.0));
-            let neighbors = compute_neighbors(owners_ref, &closest_data);
-            let conqueror_id = find_conqueror_id(owners_ref, &neighbors);
+            let active_territories_ids: Vec<u16> = owners_ref.keys().copied().collect();
+            let mut rng = rand::thread_rng();
+            use rand::seq::SliceRandom;
+            let chosen_id: u16 = *active_territories_ids.choose(&mut rng).unwrap();
 
-            if random::<f64>() < independence_chance {
-                independence(conqueror_id, owners_ref, owns_ref, remaining_ref);
-            } else {
-                let conquered_id = find_conquered_id(conqueror_id, owners_ref, &neighbors);
-                conquer(
-                    conqueror_id,
-                    conquered_id,
-                    owners_ref,
-                    owns_ref,
-                    remaining_ref,
-                );
+            let is_eliminated = *owns_ref.get(&chosen_id).unwrap_or(&0) == 0;
+            if is_eliminated {
+                let independence_chance = 1.0 / (12.0 + (epoch as f64 / 10.0));
+                if random::<f64>() < independence_chance {
+                    perform_riot(chosen_id, owners_ref, owns_ref, &targets_data, remaining_ref);
+                    continue;
+                }
             }
+
+            let target_id = find_attack_target(chosen_id, owners_ref, &targets_data);
+            perform_conquest(
+                chosen_id,
+                target_id,
+                owners_ref,
+                owns_ref,
+                &targets_data,
+                remaining_ref,
+            );
         }
 
         println!("{}", country_data[remaining.iter().next().unwrap()].name);
     })
-}
-
-///////////////////////////////////////////////////////////////////////////////
-
-// A territory breaks away from its owner and becomes sovereign again.
-fn independence(
-    indep_terr_id: u16,
-    owners_data: &mut HashMap<u16, u16>,
-    owns_data: &mut HashMap<u16, u16>,
-    remaining: &mut HashSet<u16>,
-) {
-    let old_owner_id = owners_data[&indep_terr_id];
-
-    owners_data.insert(indep_terr_id, indep_terr_id);
-    *owns_data.entry(indep_terr_id).or_insert(0) += 1;
-    *owns_data.entry(old_owner_id).or_insert(0) -= 1;
-
-    // The newly independent territory re-enters the game as its own country.
-    if owns_data[&indep_terr_id] == 1 {
-        remaining.insert(indep_terr_id);
-    }
-
-    if owns_data[&old_owner_id] == 0 {
-        remaining.remove(&old_owner_id);
-    }
-}
-
-// The country owning `conqueror_terr_id` absorbs the country owning `conquered_terr_id`.
-fn conquer(
-    conqueror_terr_id: u16,
-    conquered_terr_id: u16,
-    owners_data: &mut HashMap<u16, u16>,
-    owns_data: &mut HashMap<u16, u16>,
-    remaining: &mut HashSet<u16>,
-) {
-    let original_conqueror_id = owners_data[&conqueror_terr_id];
-    let original_conquered_id = owners_data[&conquered_terr_id];
-
-    *owns_data.entry(original_conqueror_id).or_insert(0) += 1;
-    *owns_data.entry(original_conquered_id).or_insert(0) -= 1;
-
-    owners_data.insert(conquered_terr_id, owners_data[&conqueror_terr_id]);
-
-    if owns_data[&original_conquered_id] == 0 {
-        remaining.remove(&original_conquered_id);
-    }
 }

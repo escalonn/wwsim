@@ -8,9 +8,11 @@ A Rust tool that simulates possible outcomes of the [@WorldWarBot](https://twitt
 
 ## How WorldWarBot works
 
-[@WorldWarBot](https://twitter.com/worldwarbot) is a Twitter/X bot that plays out a simulated world war between countries. Each turn, it either:
-- Has one country **conquer** a neighboring territory, or
-- Has a territory declare **independence** from its current owner (with decreasing probability as the game progresses)
+[@WorldWarBot](https://twitter.com/worldwarbot) is a Twitter/X bot that plays out a simulated world war between countries. Each turn revolves around a random territory acting as the "attacker." It might trigger a normal conquest, a riot, or force a capitulation:
+
+- **Conquest**: A random viable neighboring territory (owned by a different country) is picked. If all immediate neighbors are self-owned, the search widens to a wider concentric shell of neighbors iteratively using a Breadth-First Search (BFS) until a foreign territory is found.
+- **Capitulations**: If a specific country has its initial capital conquered and still owned at least 3 territories, there's a strict 1/3 probability that country immediately capitulates, randomly ceding up to half of its remaining territories seamlessly to the attacker.
+- **Riot**: If the randomly selected territory happens to be a conquered capital belonging to a previously eliminated country, there is a chance (`1 / (12 + epoch / 10)`) that a Riot triggers. A Riot grants independence, creating a sovereign nation, with a 20% cascading chance to cause adjacent subject states to simultaneously rebel and join the new nation.
 
 The game ends when only one country controls all territories.
 
@@ -48,14 +50,14 @@ cargo run --release 1000 | sort | uniq -c | sort -rn
 
 Each simulated run proceeds as follows:
 
-1. The program automatically updates the local game state by fetching and parsing new rounds from the WorldWarBot API, bringing `data/gamestate.json` and `data/log.csv` up to speed with the real world.
+1. By default, the program automatically updates the local game state by fetching and parsing new rounds from the WorldWarBot API, bringing `data/gamestate.json` and `data/log.csv` up to speed with the real world. Run with `--local` to skip this.
 2. Load the current game state (territory ownership, epoch) from `data/gamestate.json`.
-3. Each turn:
-   - Compute the **neighbor map**: for every territory, find its closest neighbor that is owned by a different power.
-   - Pick a random **conqueror** territory from those on a border.
-   - With probability `1 / (12 + epoch / 10)`, the conqueror territory instead declares **independence** (breaks away from its owner). This chance shrinks as the game goes on.
-   - Otherwise, the conqueror attacks a random adjacent foreign territory.
-4. Repeat until only one country remains. Print its name.
+3. Load the geographic topology (the graph mapping each territory to 6 Voronoi-iteration neighbors) from `data/targets.json`.
+4. Each turn:
+   - Pick a randomly active territory to act as the primary node.
+   - Test for Riot probability logic exclusively if it's the capital of a defeated sovereign state.
+   - If a Riot doesn't occur, perform a standard BFS invasion. Seek out nearest geographical hostile elements. Roll a die post-conquest against Capitulation conditions if the defender's capital falls.
+5. Repeat until exactly one sovereign state remains. Print its name natively.
 
 ---
 
@@ -65,13 +67,13 @@ Each simulated run proceeds as follows:
 wwsim/
 ├── src/
 │   ├── main.rs              # Entry point; runs scraper then the simulation loop
-│   ├── scraper.rs           # Automates matching IDs, parsing live rounds, and syncing
-│   ├── game_utils.rs        # Turn mechanics: neighbor computation, target selection
+│   ├── scraper.rs           # Automates mapping IDs, fetching topology, and syncing states
+│   ├── game_utils.rs        # Simulation mechanics: BFS logic, Riots, Capitulations, Conquest
 │   ├── gamestate_reader.rs  # Parses gamestate.json into runtime data structures
-│   └── utils.rs             # Reads country_data.csv and closest.csv
+│   └── utils.rs             # Reads logic data structures (targets.json, country_data.csv)
 └── data/
     ├── country_data.csv     # Master list of countries/territories
-    ├── closest.csv          # Precomputed proximity ordering between territories
+    ├── targets.json         # Graph listing exactly 6 neighbors for each territory ID
     ├── gamestate.json       # Current real-world game state (updated locally by the scraper)
     └── log.csv              # Historical event log automatically appended by scraper
 ```
@@ -86,11 +88,11 @@ Semicolon-delimited. Columns: `id; name; longitude; latitude`
 
 Maps each territory's numeric ID to its name and geographic coordinates. Run with `--reset` when a new game strictly begins so the scraper can dynamically associate and reset IDs based tightly on the server's unique initial mappings natively.
 
-### `data/closest.csv`
+### `data/targets.json`
 
-Semicolon-delimited. Format: `id; n1, n2, n3, ...`
+JSON Array of Arrays (`[[...],...]`)
 
-For each territory, a list of all other territory IDs ordered by geographic proximity. Used each turn to find a territory's nearest foreign neighbor. This file was almost certainly **generated by an external script** (presumably using the coordinates in `country_data.csv`) and is not meant to be edited by hand.
+A fully interconnected graph representing mapping structures across the globe. Each array corresponds to the territory ID index and contains precisely 6 neighboring elements forming a balanced geometric topological distribution avoiding natural location dominance. The automated scraper retrieves and manages this structure directly.
 
 ### `data/gamestate.json`
 
@@ -123,7 +125,8 @@ While the automated scraper seamlessly updates this per processed round, the iso
 
 | Flag | Purpose |
 |---|---|
-| `--reset` | Used to seed purely initial states alongside re-associating IDs against a clean country baseline (clears logs and resets `gamestate.json` to 0 seamlessly) |
+| `--reset` | Reset all game data and state based on the WorldWarBot server. Relies on round 1 data. |
+| `--local` | Skip checking for new rounds from WorldWarBot server. |
 
 ---
 
@@ -131,17 +134,9 @@ While the automated scraper seamlessly updates this per processed round, the iso
 
 | Crate | Purpose |
 |---|---|
-| [`rand`](https://crates.io/crates/rand) | Random selection of conqueror/conquered territories |
-| [`rayon`](https://crates.io/crates/rayon) | Parallel simulation runs |
-| [`serde`](https://crates.io/crates/serde) + [`serde_json`](https://crates.io/crates/serde_json) | Parsing `gamestate.json` |
-| [`counter`](https://crates.io/crates/counter) | Counting territory ownership when loading game state |
-| [`ureq`](https://crates.io/crates/ureq) | Fetching live API states securely |
-| [`chrono`](https://crates.io/crates/chrono) | Calculating true present baselines |
-
----
-
-## Notes & known limitations
-
-- **Data paths are hardcoded.** The binary must be invoked from the project root directory.
-- **No aggregated output.** The program prints one country name per run to stdout, one line each. Aggregation (e.g. win counts) is left to the caller via shell tools or piping.
-- **Latitude/longitude in `country_data.csv`** is loaded but unused by the simulator. It was likely needed for generating `closest.csv`.
+| [`rand`](https://crates.io/crates/rand) | Probability and algorithmic random shuffling of territories |
+| [`rayon`](https://crates.io/crates/rayon) | Parallel simulation runs processing securely |
+| [`serde`](https://crates.io/crates/serde) + [`serde_json`](https://crates.io/crates/serde_json) | JSON decoding standardly |
+| [`counter`](https://crates.io/crates/counter) | Counting and caching algorithms logic efficiently |
+| [`ureq`](https://crates.io/crates/ureq) | Polling endpoints synchronously efficiently |
+| [`chrono`](https://crates.io/crates/chrono) | Syncing precise timeline references successfully |
