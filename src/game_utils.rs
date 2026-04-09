@@ -223,3 +223,74 @@ pub fn perform_conquest(
         remaining.remove(&original_conquered_country_id);
     }
 }
+
+pub fn validate_capitulation(
+    capital_id: u16,
+    ceded_additional_ids: &[u16],
+    owners_before: &HashMap<u16, u16>,
+    targets_data: &HashMap<u16, Vec<u16>>,
+) -> Result<(), String> {
+    let defender_id = owners_before[&capital_id];
+    let n_before = owners_before
+        .values()
+        .filter(|&&o| o == defender_id)
+        .count();
+    let n_ceded_additional = ceded_additional_ids.len();
+
+    // Rule: n_additional <= ceil(N/2) - 1
+    let limit = ((n_before as f64) / 2.0).ceil() as usize - 1;
+    if n_ceded_additional > limit {
+        return Err(format!(
+            "Capitulation ceded too many territories: {} > {}",
+            n_ceded_additional, limit
+        ));
+    }
+
+    // Rule: closest remaining territory must be no closer than any ceded territory.
+    let mut distances = HashMap::new();
+    let mut visited = HashSet::new();
+    let mut queue = std::collections::VecDeque::new();
+
+    distances.insert(capital_id, 0);
+    visited.insert(capital_id);
+    queue.push_back(capital_id);
+
+    while let Some(curr) = queue.pop_front() {
+        let d = distances[&curr];
+        for &neighbor in &targets_data[&curr] {
+            if !visited.contains(&neighbor) {
+                visited.insert(neighbor);
+                distances.insert(neighbor, d + 1);
+                queue.push_back(neighbor);
+            }
+        }
+    }
+
+    let ceded_set: HashSet<u16> = ceded_additional_ids.iter().copied().collect();
+    let mut max_ceded_dist = 0;
+    for &id in &ceded_set {
+        let d = *distances
+            .get(&id)
+            .ok_or_else(|| format!("Ceded territory {} unreachable from capital?", id))?;
+        if d > max_ceded_dist {
+            max_ceded_dist = d;
+        }
+    }
+
+    // Check remaining territories
+    for (&id, &owner) in owners_before {
+        if owner == defender_id && id != capital_id && !ceded_set.contains(&id) {
+            let d = *distances
+                .get(&id)
+                .ok_or_else(|| format!("Remaining territory {} unreachable from capital?", id))?;
+            if d < max_ceded_dist {
+                return Err(format!(
+                    "Remaining territory {} is closer ({}) than some ceded territory (max dist {})",
+                    id, d, max_ceded_dist
+                ));
+            }
+        }
+    }
+
+    Ok(())
+}

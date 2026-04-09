@@ -7,21 +7,15 @@ use std::collections::{HashMap, HashSet};
 #[derive(Serialize, Deserialize)]
 struct Gamestate {
     epoch: usize,
-    // Maps territory ID → owner ID (both stored as strings in JSON).
-    country_data: HashMap<String, String>,
+    country_data: std::collections::BTreeMap<u16, u16>,
 }
 
 // Returns: (owners_data, owns_data, remaining, epoch)
-//   owners_data: territory → current owner
-//   owns_data:   country   → number of territories held
-//   remaining:   set of countries still in the game
 pub fn read_gamestate() -> (HashMap<u16, u16>, HashMap<u16, u16>, HashSet<u16>, usize) {
     let json_str = fs::read_to_string("data/gamestate.json").unwrap();
     let data: Gamestate = serde_json::from_str(&json_str).unwrap();
-    let owners_data: HashMap<u16, u16> = data.country_data.iter()
-        .map(|(k, v)| (k.parse().unwrap(), v.parse().unwrap()))
-        .collect();
-    // A country is "remaining" if it owns at least one territory.
+
+    let owners_data: HashMap<u16, u16> = data.country_data.iter().map(|(&k, &v)| (k, v)).collect();
     let remaining: HashSet<u16> = owners_data.values().cloned().collect();
     let owners_counter = owners_data.values().cloned().collect::<Counter<_>>().into_map();
     let owns_data: HashMap<u16, u16> = owners_data.keys().cloned()

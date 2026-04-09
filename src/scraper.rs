@@ -16,7 +16,7 @@ enum ConquestData {
 struct SaveFile {
     iteration: usize,
     conquests: (usize, ConquestData),
-    countries: Vec<(String, Vec<usize>)>,
+    countries: Vec<(String, Vec<u16>)>,
     alliances: serde_json::Map<String, serde_json::Value>,
 }
 
@@ -39,6 +39,18 @@ struct PostFile {
 
 #[derive(Serialize, Deserialize, Debug)]
 #[serde(deny_unknown_fields)]
+struct CapitulationEvent {
+    round: usize,
+    #[serde(rename = "attackerTerritoriesBefore")]
+    attacker_territories_before: usize,
+    #[serde(rename = "defenderTerritoriesBefore")]
+    defender_territories_before: usize,
+    #[serde(rename = "territoriesCeded")]
+    territories_ceded: usize,
+}
+
+#[derive(Serialize, Deserialize, Debug)]
+#[serde(deny_unknown_fields)]
 struct ConquestSchema {
     attacker: usize,
     defender: usize,
@@ -47,7 +59,7 @@ struct ConquestSchema {
     subjects: Vec<serde_json::Value>,
     capitulation: bool,
     #[serde(rename = "capitulationEvent")]
-    capitulation_event: Option<serde_json::Value>,
+    capitulation_event: Option<CapitulationEvent>,
     #[serde(rename = "fallenCapitalRemnant")]
     fallen_capital_remnant: bool,
     #[serde(rename = "defenderAdminBefore")]
@@ -59,7 +71,7 @@ struct Gamestate {
     epoch: usize,
     initial_month: u32,
     initial_year: u32,
-    country_data: BTreeMap<String, String>,
+    country_data: BTreeMap<u16, u16>,
 }
 
 struct CountryRow {
@@ -322,10 +334,11 @@ pub fn reset_gamestate() -> Result<(), Box<dyn std::error::Error>> {
         println!("Failed to retrieve Round 1 data. Retaining existing IDs directly from country_data.csv.");
     }
 
-    let mut country_data = HashMap::new();
+    let mut country_data = BTreeMap::new();
     for row in &current_rows {
         if !row.id.is_empty() {
-            country_data.insert(row.id.clone(), row.id.clone());
+            let id = row.id.parse().unwrap();
+            country_data.insert(id, id);
         }
     }
 
@@ -467,27 +480,20 @@ pub fn update_gamestate() -> Result<(), Box<dyn std::error::Error>> {
                     eprintln!("Round {}: Save riot ID {} does not match post attacker/defender {}/{}", round, t_id1, post.conquest.attacker, post.conquest.defender);
                     any_unexpected = true;
                 }
+                if post.conquest.subjects.len() != 0 {
+                    eprintln!("Round {}: Expected zero subjects in post for riot, got {}", round, post.conquest.subjects.len());
+                    any_unexpected = true;
+                }
             }
         }
 
-        if post.conquest.subjects.len() != 0 {
-            eprintln!(
-                "Round {}: Expected conquest.subjects to natively be empty.",
-                round
-            );
-            any_unexpected = true;
-        }
 
         let territory_id = match &save.conquests.1 {
             ConquestData::Conquer(_, def_t_id, _) => *def_t_id,
             ConquestData::Riot(t_id, _) => *t_id,
         };
         let conquered_territory_id = territory_id as u16;
-        let id_owners: HashMap<u16, u16> = current_state
-            .country_data
-            .iter()
-            .map(|(k, v)| (k.parse().unwrap(), v.parse().unwrap()))
-            .collect();
+        let id_owners: HashMap<u16, u16> = current_state.country_data.iter().map(|(&k, &v)| (k, v)).collect();
 
         let (attacker_country_id, defender_country_id) = if post.action_type == "conquest" {
             (name_to_id[&post.attacker], name_to_id[&post.defender])
@@ -510,6 +516,48 @@ pub fn update_gamestate() -> Result<(), Box<dyn std::error::Error>> {
         }
 
         if post.action_type == "conquest" {
+            if post.conquest.capitulation {
+                let event = post.conquest.capitulation_event.as_ref().unwrap();
+                let ceded_ids: Vec<u16> = post
+                    .conquest
+                    .subjects
+                    .iter()
+                    .map(|v| {
+                        v.as_u64().map(|id| id as u16).unwrap_or_else(|| {
+                            v.as_str().and_then(|s| s.parse().ok()).unwrap_or_default()
+                        })
+                    })
+                    .collect();
+
+                if ceded_ids.len() != event.territories_ceded {
+                    eprintln!(
+                        "Round {}: Capitulation subjects count {} != ceded count {}",
+                        round,
+                        ceded_ids.len(),
+                        event.territories_ceded
+                    );
+                    any_unexpected = true;
+                }
+
+                if let Err(e) = crate::game_utils::validate_capitulation(
+                    post.conquest.defender as u16,
+                    &ceded_ids,
+                    &id_owners,
+                    &targets_data,
+                ) {
+                    eprintln!("Round {}: Capitulation validation failed: {}", round, e);
+                    any_unexpected = true;
+                }
+            } else {
+                if post.conquest.subjects.len() != 0 {
+                    eprintln!(
+                        "Round {}: Expected zero subjects in post for non-capitulating conquest, got {}",
+                        round,
+                        post.conquest.subjects.len()
+                    );
+                    any_unexpected = true;
+                }
+            }
             if id_owners[&attacking_territory_id] != attacker_country_id {
                 eprintln!(
                     "Round {}: Attacker {} ({}) does not own the launching territory {} (owned by {}).",
@@ -536,14 +584,23 @@ pub fn update_gamestate() -> Result<(), Box<dyn std::error::Error>> {
         let defender_territories_before = current_state
             .country_data
             .values()
-            .filter(|&owner| owner == &defender_country_id.to_string())
+            .filter(|&owner| *owner == defender_country_id)
             .count();
         let completely_defeated = defender_territories_before == 1;
 
         // Apply state change
         current_state
             .country_data
-            .insert(territory_id.to_string(), attacker_country_id.to_string());
+            .insert(conquered_territory_id, attacker_country_id);
+        if post.action_type == "conquest" {
+            for sub_val in &post.conquest.subjects {
+                let sub_id = sub_val.as_u64().map(|v| v as u16).unwrap_or_else(|| {
+                    sub_val.as_str().and_then(|s| s.parse().ok()).unwrap_or(0)
+                });
+                current_state.country_data.insert(sub_id, attacker_country_id);
+            }
+        }
+
         current_state.epoch = round;
 
         let remaining_count = current_state
@@ -554,22 +611,35 @@ pub fn update_gamestate() -> Result<(), Box<dyn std::error::Error>> {
         let total_months =
             current_state.initial_year * 12 + (current_state.initial_month - 1) + (round as u32);
 
-        let d_string = if completely_defeated {
-            format!(
+        let mut d_string = String::new();
+        if id_owners[&conquered_territory_id] != conquered_territory_id {
+            d_string.push_str(&format!(" previously occupied by {}", post.defender));
+        }
+
+        if completely_defeated {
+            d_string.push_str(&format!(
                 ".\n{} has been completely defeated.\n{_e} countries remaining.",
                 post.defender,
                 _e = remaining_count
-            )
+            ));
+        } else if post.conquest.capitulation {
+            let event = post.conquest.capitulation_event.as_ref().unwrap();
+            let ceded = event.territories_ceded;
+            d_string.push_str(&format!(
+                ".\n{} capitulated, ceding {} additional territor{} to {}.",
+                post.defender,
+                ceded,
+                if ceded == 1 { "y" } else { "ies" },
+                post.attacker
+            ));
         } else if post.conquest.fallen_capital_remnant {
-            format!(
+            d_string.push_str(&format!(
                 ".\nThe government of {} continues in exile, based in its remaining territories.",
                 post.defender
-            )
-        } else if id_owners[&conquered_territory_id] != conquered_territory_id {
-            format!(" previously occupied by {}.", post.defender)
+            ));
         } else {
-            ".".to_string()
-        };
+            d_string.push('.');
+        }
 
         let date_prefix = format!(
             "{} {}, ",
@@ -577,15 +647,25 @@ pub fn update_gamestate() -> Result<(), Box<dyn std::error::Error>> {
             total_months / 12
         );
 
+        let country_exists = current_state
+            .country_data
+            .values()
+            .any(|&o| o == attacker_country_id);
+
         let event_text = if post.action_type == "conquest" {
             format!(
                 "{} conquered {} territory{}",
                 post.attacker, post.territory, d_string
             )
         } else {
+            let riot_suffix = if country_exists {
+                "reunited its homeland."
+            } else {
+                "gained independence."
+            };
             format!(
-                "{} rose against {} and gained independence.",
-                post.territory, post.attacker
+                "{} rose against {} and {}",
+                post.territory, post.attacker, riot_suffix
             )
         };
 
@@ -616,20 +696,17 @@ pub fn update_gamestate() -> Result<(), Box<dyn std::error::Error>> {
             );
             any_unexpected = true;
         }
-        let mut groups: HashMap<u16, Vec<usize>> = HashMap::new();
-        for (t_id_s, o_id_s) in &current_state.country_data {
-            groups
-                .entry(o_id_s.parse().unwrap())
-                .or_default()
-                .push(t_id_s.parse().unwrap());
+        let mut groups: HashMap<u16, Vec<u16>> = HashMap::new();
+        for (&t_id, &o_id) in &current_state.country_data {
+            groups.entry(o_id).or_default().push(t_id);
         }
-        let mut mid_list: Vec<(u16, Vec<usize>)> = groups.into_iter().collect();
+        let mut mid_list: Vec<(u16, Vec<u16>)> = groups.into_iter().collect();
         for (_, t_ids) in &mut mid_list {
             t_ids.sort();
         }
         mid_list.sort_by_key(|(_, t_ids)| t_ids[0]);
 
-        let expected_save_list: Vec<(String, Vec<usize>)> = mid_list
+        let expected_save_list: Vec<(String, Vec<u16>)> = mid_list
             .into_iter()
             .map(|(o_id, t_ids)| (country_rows[&o_id].name.clone(), t_ids))
             .collect();
@@ -647,8 +724,8 @@ pub fn update_gamestate() -> Result<(), Box<dyn std::error::Error>> {
         }
 
         let mut lines: Vec<&str> = post.caption.lines().collect();
-        if lines.len() >= 2 {
-            lines.truncate(lines.len() - 2);
+        if lines.len() >= 1 {
+            lines.truncate(lines.len() - 1);
         }
         println!("Round {}: {}", round, lines.join(" "));
 
