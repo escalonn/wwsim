@@ -376,68 +376,70 @@ fn main() {
     let mut sorted: Vec<(u16, u32)> = wins_map.iter().map(|(&id, &n)| (id, n)).collect();
     sorted.sort_by(|a, b| b.1.cmp(&a.1).then(a.0.cmp(&b.0)));
 
-    let n_runs_f = n_runs as f64;
+    if n_runs > 0 {
+        let n_runs_f = n_runs as f64;
 
-    // ── Short format → stdout ─────────────────────────────────────────────
-    println!("Top winners ({} simulations)", n_runs);
-    for (rank, (id, count)) in sorted.iter().take(5).enumerate() {
-        let pct = (*count as f64 / n_runs_f) * 100.0;
-        println!("{}. {} ({} wins, {:.2}%)", rank + 1, &country_data[id].name, count, pct);
-    }
+        // ── Short format → stdout ─────────────────────────────────────────────
+        println!("Top winners ({} simulations)", n_runs);
+        for (rank, (id, count)) in sorted.iter().take(5).enumerate() {
+            let pct = (*count as f64 / n_runs_f) * 100.0;
+            println!("{}. {} ({} wins, {:.2}%)", rank + 1, &country_data[id].name, count, pct);
+        }
 
-    // ── Long format + chart → logs/ ───────────────────────────────────────
-    let ts = turns_sum.lock().unwrap();
-    let tq = turns_sq.lock().unwrap();
-    let avg_turns = *ts / n_runs_f;
-    // 95% CI: ±1.96 * stderr
-    let variance  = (*tq / n_runs_f) - (avg_turns * avg_turns);
-    let ci_half   = 1.96 * (variance / n_runs_f).sqrt();
-    let ci_lo     = (avg_turns - ci_half).round() as i64;
-    let ci_hi     = (avg_turns + ci_half).round() as i64;
+        // ── Long format + chart → logs/ ───────────────────────────────────────
+        let ts = turns_sum.lock().unwrap();
+        let tq = turns_sq.lock().unwrap();
+        let avg_turns = *ts / n_runs_f;
+        // 95% CI: ±1.96 * stderr
+        let variance  = (*tq / n_runs_f) - (avg_turns * avg_turns);
+        let ci_half   = 1.96 * (variance / n_runs_f).sqrt();
+        let ci_lo     = (avg_turns - ci_half).round() as i64;
+        let ci_hi     = (avg_turns + ci_half).round() as i64;
 
-    let current_date       = epoch_to_date(log_epoch, initial_month, initial_year);
-    let gameplay_remaining = turns_to_duration_str(avg_turns);
+        let current_date       = epoch_to_date(log_epoch, initial_month, initial_year);
+        let gameplay_remaining = turns_to_duration_str(avg_turns);
 
-    fs::create_dir_all("logs").expect("Failed to create logs/ directory");
-    let log_path   = format!("logs/log_{:06}.md",   log_epoch);
-    let chart_path = format!("logs/chart_{:06}.png", log_epoch);
+        fs::create_dir_all("logs").expect("Failed to create logs/ directory");
+        let log_path   = format!("logs/log_{:06}.md",   log_epoch);
+        let chart_path = format!("logs/chart_{:06}.png", log_epoch);
 
-    // Generate chart
-    match generate_chart(&sorted, &country_data, n_runs, log_epoch, initial_month, initial_year, &chart_path) {
-        Ok(()) => println!("\nChart saved to {}", chart_path),
-        Err(e) => eprintln!("Warning: chart generation failed: {}", e),
-    }
+        // Generate chart
+        match generate_chart(&sorted, &country_data, n_runs, log_epoch, initial_month, initial_year, &chart_path) {
+            Ok(()) => println!("\nChart saved to {}", chart_path),
+            Err(e) => eprintln!("Warning: chart generation failed: {}", e),
+        }
 
-    // Build all-country list (include zeros so every country appears)
-    let mut all_countries: Vec<(u16, u32)> = country_data
-        .keys()
-        .map(|&id| (id, *wins_map.get(&id).unwrap_or(&0)))
-        .collect();
-    all_countries.sort_by(|a, b| b.1.cmp(&a.1).then(a.0.cmp(&b.0)));
+        // Build all-country list (include zeros so every country appears)
+        let mut all_countries: Vec<(u16, u32)> = country_data
+            .keys()
+            .map(|&id| (id, *wins_map.get(&id).unwrap_or(&0)))
+            .collect();
+        all_countries.sort_by(|a, b| b.1.cmp(&a.1).then(a.0.cmp(&b.0)));
 
-    let mut md = String::new();
-    md.push_str(&format!("# Simulation results for {}\n\n", current_date));
-    md.push_str(&format!(
-        "* **Runs simulated:** {} (in {})\n\n",
-        n_runs, format_duration(wall_elapsed)
-    ));
-    md.push_str(&format!(
-        "* **Estimated turns remaining (avg & 95% confidence interval):** {} ({}-{})\n\n",
-        avg_turns.round() as i64, ci_lo, ci_hi
-    ));
-    md.push_str(&format!(
-        "* **Estimated gameplay time remaining (avg turns, 1h per turn):** {}\n\n",
-        gameplay_remaining
-    ));
-    md.push_str("## Wins by country:\n");
-    for (rank, (id, count)) in all_countries.iter().enumerate() {
-        let pct = (*count as f64 / n_runs_f) * 100.0;
+        let mut md = String::new();
+        md.push_str(&format!("# Simulation results for {}\n\n", current_date));
         md.push_str(&format!(
-            "{}. {} ({}, {:.2}%)\n",
-            rank + 1, &country_data[id].name, count, pct
+            "* **Runs simulated:** {} (in {})\n\n",
+            n_runs, format_duration(wall_elapsed)
         ));
-    }
+        md.push_str(&format!(
+            "* **Estimated turns remaining (avg & 95% confidence interval):** {} ({}-{})\n\n",
+            avg_turns.round() as i64, ci_lo, ci_hi
+        ));
+        md.push_str(&format!(
+            "* **Estimated gameplay time remaining (avg turns, 1h per turn):** {}\n\n",
+            gameplay_remaining
+        ));
+        md.push_str("## Wins by country:\n");
+        for (rank, (id, count)) in all_countries.iter().enumerate() {
+            let pct = (*count as f64 / n_runs_f) * 100.0;
+            md.push_str(&format!(
+                "{}. {} ({}, {:.2}%)\n",
+                rank + 1, &country_data[id].name, count, pct
+            ));
+        }
 
-    fs::write(&log_path, &md).expect("Failed to write log file");
-    println!("Full results written to {}", log_path);
+        fs::write(&log_path, &md).expect("Failed to write log file");
+        println!("Full results written to {}", log_path);
+    }
 }
