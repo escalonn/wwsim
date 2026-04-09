@@ -242,9 +242,10 @@ fn generate_chart(
 
 fn main() {
     let args: Vec<String> = env::args().collect();
-    let is_reset   = args.iter().any(|arg| arg == "--reset");
-    let is_local   = args.iter().any(|arg| arg == "--local");
-    let is_verbose = args.iter().any(|arg| arg == "--verbose");
+    let is_reset      = args.iter().any(|arg| arg == "--reset");
+    let is_local      = args.iter().any(|arg| arg == "--local");
+    let is_verbose    = args.iter().any(|arg| arg == "--verbose");
+    let if_updated    = args.iter().any(|arg| arg == "--if-updated");
 
     if is_reset {
         scraper::reset_gamestate().expect("Failed to reset gamestate");
@@ -264,11 +265,20 @@ fn main() {
         .parse()
         .expect("Not a valid number");
 
+    let mut n_updated = 0;
     if !is_local {
-        if let Err(e) = update_gamestate() {
-            eprintln!("Scraper encountered a critical error: {}", e);
-            std::process::exit(1);
+        match update_gamestate() {
+            Ok(n) => n_updated = n,
+            Err(e) => {
+                eprintln!("Scraper encountered a critical error: {}", e);
+                std::process::exit(1);
+            }
         }
+    }
+
+    if if_updated && n_updated == 0 {
+        println!("Skipping simulation because no new rounds were updated and --if-updated is set.");
+        return;
     }
 
     let country_data = read_country_data();

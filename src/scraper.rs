@@ -389,7 +389,7 @@ struct DataInfo {
     iteration: usize,
 }
 
-pub fn update_gamestate() -> Result<(), Box<dyn std::error::Error>> {
+pub fn update_gamestate() -> Result<usize, Box<dyn std::error::Error>> {
     let mut data_req = ureq::get("https://run5.worldwarbot.com/data/data.json").call()?;
     let data_info: DataInfo = data_req.body_mut().read_json()?;
     let max_iter = data_info.iteration;
@@ -407,7 +407,7 @@ pub fn update_gamestate() -> Result<(), Box<dyn std::error::Error>> {
 
     if local_round >= max_iter {
         println!("Gamestate already up to date at round {}.", max_iter);
-        return Ok(());
+        return Ok(0);
     }
 
     for round in (local_round + 1)..=max_iter {
@@ -747,5 +747,5 @@ pub fn update_gamestate() -> Result<(), Box<dyn std::error::Error>> {
         );
     }
 
-    Ok(())
+    Ok(n_processed)
 }
