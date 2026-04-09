@@ -1,8 +1,8 @@
 # wwsim — WorldWarBot Run Simulator
 
-A Rust tool that simulates possible outcomes of the [@WorldWarBot](https://twitter.com/worldwarbot) game. Given the bot's current real-world game state, it runs the simulation N times in parallel and prints the winning country for each run, allowing you to estimate which countries are most likely to win from the current position.
+A Rust tool that simulates possible outcomes of the [@WorldWarBot](https://twitter.com/worldwarbot) game. Given the bot's current real-world game state, it runs the simulation N times in parallel and outputs statistics, allowing you to estimate which countries are most likely to win from the current position.
 
-> Created by [@agubelu](https://twitter.com/agubelu), with contributions by [@escalonn](https://twitter.com/escalonn).
+> Created by [@escalonn](https://twitter.com/escalonn), forked from the original by [@agubelu](https://twitter.com/agubelu).
 
 ---
 
