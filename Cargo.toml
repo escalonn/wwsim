@@ -14,3 +14,5 @@ serde_json = { version = "1.0.128", features = ["preserve_order"] }
 counter = "0.4.3"
 ureq = { version = "3", features = ["json"] }
 chrono = "0.4.44"
+indicatif = "0.17"
+plotters = "0.3"

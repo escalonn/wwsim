@@ -406,6 +406,7 @@ pub fn update_gamestate() -> Result<(), Box<dyn std::error::Error>> {
     let local_round = current_state.epoch;
 
     if local_round >= max_iter {
+        println!("Gamestate already up to date at round {}.", max_iter);
         return Ok(());
     }
 
@@ -733,6 +734,18 @@ pub fn update_gamestate() -> Result<(), Box<dyn std::error::Error>> {
             "data/gamestate.json",
             serde_json::to_string_pretty(&current_state)?,
         )?;
+    }
+
+    let n_processed = max_iter - local_round;
+    if n_processed == 1 {
+        println!("Processed 1 new round (round {}).", max_iter);
+    } else {
+        println!(
+            "Processed {} new rounds (rounds {} to {}).",
+            n_processed,
+            local_round + 1,
+            max_iter
+        );
     }
 
     Ok(())
