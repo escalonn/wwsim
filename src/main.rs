@@ -8,6 +8,7 @@ use std::time::Instant;
 
 use indicatif::{ProgressBar, ProgressStyle};
 use plotters::prelude::*;
+use plotters::element::PathElement;
 
 mod utils;
 use utils::{read_country_data, read_targets_data};
@@ -66,96 +67,170 @@ fn turns_to_duration_str(avg_turns: f64) -> String {
 }
 
 ///////////////////////////////////////////////////////////////////////////////
-// Chart generation
+// Chart generation — pie chart
+
+/// HSL → RGB (all values in [0, 1] except h which is [0, 360))
+fn hsl_to_rgb(h: f64, s: f64, l: f64) -> RGBColor {
+    let c = (1.0 - (2.0 * l - 1.0).abs()) * s;
+    let hp = h / 60.0;
+    let x = c * (1.0 - (hp % 2.0 - 1.0).abs());
+    let m = l - c / 2.0;
+    let (r, g, b) = match hp as u32 {
+        0 => (c, x, 0.0),
+        1 => (x, c, 0.0),
+        2 => (0.0, c, x),
+        3 => (0.0, x, c),
+        4 => (x, 0.0, c),
+        _ => (c, 0.0, x),
+    };
+    RGBColor(
+        ((r + m) * 255.0).round() as u8,
+        ((g + m) * 255.0).round() as u8,
+        ((b + m) * 255.0).round() as u8,
+    )
+}
+
+/// Deterministic color from country ID — consistent across runs.
+fn country_color(id: u16) -> RGBColor {
+    // Knuth multiplicative hash for good bit distribution
+    let h = (id as u32).wrapping_mul(2_654_435_761);
+    let hue = (h >> 16) as f64 / 65535.0 * 360.0;
+    let sat = 0.58 + ((h & 0x3F) as f64 / 63.0) * 0.32;        // 0.58 – 0.90
+    let lit = 0.40 + (((h >> 6) & 0x3F) as f64 / 63.0) * 0.22; // 0.40 – 0.62
+    hsl_to_rgb(hue, sat, lit)
+}
+
+/// Polygon points for a pie slice: center + arc from a0 to a1 (screen coords, y-down).
+/// a0 / a1 are in radians; positive = counter-clockwise on screen (since y is flipped).
+fn pie_points(cx: i32, cy: i32, r: i32, a0: f64, a1: f64) -> Vec<(i32, i32)> {
+    let steps = ((a1 - a0).abs() * r as f64 / 1.5).ceil() as usize;
+    let steps = steps.max(4);
+    let mut pts = vec![(cx, cy)];
+    for i in 0..=steps {
+        let a = a0 + (a1 - a0) * i as f64 / steps as f64;
+        pts.push((
+            cx + (r as f64 * a.cos()) as i32,
+            cy + (r as f64 * a.sin()) as i32,
+        ));
+    }
+    pts
+}
 
 fn generate_chart(
     sorted: &[(u16, u32)],
     country_data: &HashMap<u16, Country>,
     n_runs: usize,
-    epoch: usize,
+    log_epoch: usize,
+    initial_month: u32,
+    initial_year: i32,
     path: &str,
 ) -> Result<(), Box<dyn std::error::Error>> {
-    // Show only countries that actually won at least once, up to 20.
-    let bars: Vec<(String, f64)> = sorted
-        .iter()
-        .take_while(|(_, c)| *c > 0)
-        .take(20)
-        .map(|(id, count)| {
-            let pct = (*count as f64 / n_runs as f64) * 100.0;
-            let name: String = country_data[id].name.chars().take(32).collect();
-            (name, pct)
-        })
-        .collect();
+    struct Slice { name: String, count: u32, id: Option<u16> }
 
-    if bars.is_empty() {
-        return Ok(());
+    // Top 12 named slices + "Other" bucket for the rest.
+    const MAX_NAMED: usize = 12;
+    let mut slices: Vec<Slice> = Vec::new();
+    let mut other_count: u32 = 0;
+    for (id, count) in sorted.iter() {
+        if *count == 0 { break; }
+        if slices.len() < MAX_NAMED {
+            slices.push(Slice { name: country_data[id].name.clone(), count: *count, id: Some(*id) });
+        } else {
+            other_count += count;
+        }
     }
+    if other_count > 0 {
+        slices.push(Slice { name: "Other".to_string(), count: other_count, id: None });
+    }
+    if slices.is_empty() { return Ok(()); }
 
-    let n = bars.len() as i32;
-    let bar_h      = 36i32;
-    let gap        = 8i32;
-    let margin_top = 62i32;
-    let margin_l   = 230i32; // country names column
-    let margin_r   = 80i32;  // space for pct labels
-    let margin_bot = 20i32;
-    let img_w      = 1040u32;
-    let img_h      = (margin_top + (bar_h + gap) * n + margin_bot) as u32;
-    let bar_area_w = img_w as i32 - margin_l - margin_r;
+    // ── Layout constants ──────────────────────────────────────────────────
+    let img_w: u32 = 1000;
+    let img_h: u32 =  680;
+    let bg = RGBColor(18, 18, 30);
+
+    // Pie is left-of-center; legend on the right.
+    let cx = 300i32;
+    let cy = 390i32;
+    let r  = 260i32;
+
+    let leg_x    = 620i32;  // legend left edge
+    let leg_y0   = 80i32;
+    let item_h   = 40i32;
+    let swatch   = 24i32;
 
     let root = BitMapBackend::new(path, (img_w, img_h)).into_drawing_area();
-    root.fill(&RGBColor(18, 18, 30))?;
+    root.fill(&bg)?;
 
-    let max_pct = bars.iter().map(|(_, p)| *p).fold(1.0f64, f64::max);
-
-    // Title
+    // ── Title ─────────────────────────────────────────────────────────────
+    let date_str = epoch_to_date(log_epoch, initial_month, initial_year);
     root.draw(&Text::new(
-        format!("Round {} — {} simulations", epoch, n_runs),
-        (img_w as i32 / 2 - 140, 18),
-        ("Arial", 20).into_font().color(&RGBColor(230, 230, 240)),
+        format!("{} — {} simulations", date_str, n_runs),
+        (40, 22),
+        ("Arial", 28).into_font().color(&RGBColor(230, 230, 248)),
     ))?;
 
-    for (i, (name, pct)) in bars.iter().enumerate() {
-        let i32i = i as i32;
-        let y = margin_top + (bar_h + gap) * i32i;
-        let bar_px = ((pct / max_pct) * bar_area_w as f64) as i32;
+    // ── Pie slices ────────────────────────────────────────────────────────
+    // Start at the top (angle = −π/2 in screen coords where y points down ==
+    // 3π/2, but we use −π/2 directly since cos/sin handle it correctly).
+    // Clockwise = increasing angle in screen coords.
+    let sep_color = RGBColor(18, 18, 30);
+    let mut angle = -std::f64::consts::FRAC_PI_2;
 
-        // Background track
-        root.draw(&Rectangle::new(
-            [(margin_l, y + 3), (margin_l + bar_area_w, y + bar_h - 3)],
-            RGBColor(32, 32, 48).filled(),
+    for slice in &slices {
+        let sweep = slice.count as f64 / n_runs as f64 * std::f64::consts::TAU;
+        let end_angle = angle + sweep;
+        let color = slice.id.map(country_color).unwrap_or(RGBColor(85, 85, 108));
+
+        // Filled polygon
+        root.draw(&Polygon::new(pie_points(cx, cy, r, angle, end_angle), color.filled()))?;
+
+        // Separator spoke at start of this slice
+        let sx = cx + (r as f64 * angle.cos()) as i32;
+        let sy = cy + (r as f64 * angle.sin()) as i32;
+        root.draw(&PathElement::new(
+            vec![(cx, cy), (sx, sy)],
+            ShapeStyle { color: sep_color.to_rgba(), filled: false, stroke_width: 2 },
         ))?;
 
-        // Colored bar — gradient teal → purple
-        let t = if bars.len() > 1 { i as f64 / (bars.len() - 1) as f64 } else { 0.0 };
-        let color = RGBColor(
-            (78.0  + t * 100.0) as u8,
-            (205.0 - t * 120.0) as u8,
-            (196.0 + t * 20.0)  as u8,
-        );
+        angle = end_angle;
+    }
+    // Final spoke to close the circle
+    let sx = cx + (r as f64 * angle.cos()) as i32;
+    let sy = cy + (r as f64 * angle.sin()) as i32;
+    root.draw(&PathElement::new(
+        vec![(cx, cy), (sx, sy)],
+        ShapeStyle { color: sep_color.to_rgba(), filled: false, stroke_width: 2 },
+    ))?;
+
+    // Thin circle outline to clean up antialiasing at the perimeter
+    root.draw(&Circle::new(
+        (cx, cy), r,
+        ShapeStyle { color: sep_color.to_rgba(), filled: false, stroke_width: 2 },
+    ))?;
+
+    // ── Legend ────────────────────────────────────────────────────────────
+    for (i, slice) in slices.iter().enumerate() {
+        let y = leg_y0 + i as i32 * item_h;
+        let color = slice.id.map(country_color).unwrap_or(RGBColor(85, 85, 108));
+
+        // Color swatch with a subtle dark border
         root.draw(&Rectangle::new(
-            [(margin_l, y + 3), (margin_l + bar_px.max(2), y + bar_h - 3)],
+            [(leg_x, y), (leg_x + swatch, y + swatch)],
             color.filled(),
         ))?;
-
-        // Rank number
-        root.draw(&Text::new(
-            format!("{}.", i + 1),
-            (margin_l - 36, y + 9),
-            ("Arial", 12).into_font().color(&RGBColor(130, 130, 160)),
+        root.draw(&Rectangle::new(
+            [(leg_x, y), (leg_x + swatch, y + swatch)],
+            ShapeStyle { color: RGBColor(50, 50, 70).to_rgba(), filled: false, stroke_width: 1 },
         ))?;
 
-        // Country name
+        // Country name + percentage
+        let pct = slice.count as f64 / n_runs as f64 * 100.0;
+        let name: String = slice.name.chars().take(28).collect();
         root.draw(&Text::new(
-            name.as_str(),
-            (4, y + 9),
-            ("Arial", 13).into_font().color(&RGBColor(215, 215, 230)),
-        ))?;
-
-        // Percentage label
-        root.draw(&Text::new(
-            format!("{:.2}%", pct),
-            (margin_l + bar_px + 6, y + 9),
-            ("Arial", 13).into_font().color(&RGBColor(240, 240, 255)),
+            format!("{} — {:.1}%", name, pct),
+            (leg_x + swatch + 10, y + 4),
+            ("Arial", 18).into_font().color(&RGBColor(215, 215, 232)),
         ))?;
     }
 
@@ -328,7 +403,7 @@ fn main() {
     let chart_path = format!("logs/chart_{:06}.png", log_epoch);
 
     // Generate chart
-    match generate_chart(&sorted, &country_data, n_runs, log_epoch, &chart_path) {
+    match generate_chart(&sorted, &country_data, n_runs, log_epoch, initial_month, initial_year, &chart_path) {
         Ok(()) => println!("\nChart saved to {}", chart_path),
         Err(e) => eprintln!("Warning: chart generation failed: {}", e),
     }

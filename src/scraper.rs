@@ -648,8 +648,7 @@ pub fn update_gamestate() -> Result<(), Box<dyn std::error::Error>> {
             total_months / 12
         );
 
-        let country_exists = current_state
-            .country_data
+        let country_exists = id_owners
             .values()
             .any(|&o| o == attacker_country_id);
 
