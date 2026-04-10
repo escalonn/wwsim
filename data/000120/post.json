@@ -1,0 +1,25 @@
+{
+  "caption": "March 2036, Mali conquered Mauritania territory.\nMauritania has been completely defeated.\n124 countries remaining.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000120.png",
+  "zoom": "000120.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nKosovo: 4\nNicaragua: 4\nBrazil: 4\nEthiopia: 4\nMyanmar: 4\nSingapore: 4\nGermany: 3\nMali: 3\nBulgaria: 3\nEcuador: 3",
+  "tags": [
+    "Mali",
+    "Mauritania"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 115,
+    "defender": 121,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Mauritania"
+  },
+  "territory": "Mauritania",
+  "attacker": "Mali",
+  "defender": "Mauritania"
+}

@@ -222,6 +222,64 @@ fn generate_chart(
 
 ///////////////////////////////////////////////////////////////////////////////
 
+fn parse_results_from_log(
+    round: usize,
+    country_data: &HashMap<u16, Country>,
+) -> Option<(Vec<(u16, u32)>, usize)> {
+    let log_path = format!("logs/log_{:06}.md", round);
+    let content = fs::read_to_string(log_path).ok()?;
+    
+    let mut n_runs = 0;
+    let mut results = Vec::new();
+    let mut in_wins_section = false;
+
+    // Build name-to-id map for efficient lookup
+    let name_to_id: HashMap<String, u16> = country_data.iter()
+        .map(|(&id, c)| (c.name.clone(), id))
+        .collect();
+
+    for line in content.lines() {
+        let trimmed = line.trim();
+        if trimmed.is_empty() { continue; }
+
+        if trimmed.starts_with("* **Runs simulated:**") {
+            // "* **Runs simulated:** 100000 (in 1 minute, 23 seconds)"
+            if let Some(start) = trimmed.find(":** ") {
+                if let Some(end) = trimmed[start + 4..].find(" (") {
+                    let runs_str = &trimmed[start + 4..start + 4 + end];
+                    n_runs = runs_str.parse::<usize>().unwrap_or(0);
+                }
+            }
+        } else if trimmed == "## Wins by country:" {
+            in_wins_section = true;
+        } else if in_wins_section {
+            // "1. Nicaragua (7051, 7.05%)"
+            // Find first dot-space
+            if let Some(dot_pos) = trimmed.find(". ") {
+                if let Some(paren_pos) = trimmed.find(" (") {
+                    let name = &trimmed[dot_pos + 2..paren_pos];
+                    if let Some(&id) = name_to_id.get(name) {
+                        // Find comma after count
+                        if let Some(comma_pos) = trimmed[paren_pos + 2..].find(",") {
+                            let count_str = &trimmed[paren_pos + 2..paren_pos + 2 + comma_pos];
+                            if let Ok(count) = count_str.parse::<u32>() {
+                                results.push((id, count));
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    if n_runs > 0 && !results.is_empty() {
+        results.sort_by(|a, b| b.1.cmp(&a.1).then(a.0.cmp(&b.0)));
+        Some((results, n_runs))
+    } else {
+        None
+    }
+}
+
 fn main() {
     let args: Vec<String> = env::args().collect();
     let is_reset      = args.iter().any(|arg| arg == "--reset");
@@ -375,20 +433,36 @@ fn main() {
     }
 
     let wall_elapsed = wall_start.elapsed().as_secs();
-    let wins_map = wins.lock().unwrap();
+    let mut wins_map = wins.lock().unwrap().clone();
+    let mut total_runs = n_runs;
+    let mut is_regeneration = false;
+
+    if n_runs == 0 && is_save {
+        if let Some((results, parsed_runs)) = parse_results_from_log(log_epoch, &country_data) {
+            println!("Regenerating chart from logs/log_{:06}.md ({} runs found)", log_epoch, parsed_runs);
+            wins_map = results.into_iter().collect();
+            total_runs = parsed_runs;
+            is_regeneration = true;
+        } else {
+            println!("No valid log file found for round {:06} to regenerate chart from.", log_epoch);
+        }
+    }
 
     // Sort by descending wins, then by id for stable ordering of ties
     let mut sorted: Vec<(u16, u32)> = wins_map.iter().map(|(&id, &n)| (id, n)).collect();
     sorted.sort_by(|a, b| b.1.cmp(&a.1).then(a.0.cmp(&b.0)));
 
-    if n_runs > 0 {
-        let n_runs_f = n_runs as f64;
+    if total_runs > 0 {
+        let n_runs_to_display = total_runs;
+        let n_runs_f = total_runs as f64;
 
-        // ── Short format → stdout ─────────────────────────────────────────────
-        println!("Top winners ({} simulations)", n_runs);
-        for (rank, (id, count)) in sorted.iter().take(5).enumerate() {
-            let pct = (*count as f64 / n_runs_f) * 100.0;
-            println!("{}. {} ({} wins, {:.2}%)", rank + 1, &country_data[id].name, count, pct);
+        if !is_regeneration {
+            // ── Short format → stdout ─────────────────────────────────────────────
+            println!("Top winners ({} simulations)", n_runs_to_display);
+            for (rank, (id, count)) in sorted.iter().take(5).enumerate() {
+                let pct = (*count as f64 / n_runs_f) * 100.0;
+                println!("{}. {} ({} wins, {:.2}%)", rank + 1, &country_data[id].name, count, pct);
+            }
         }
 
         // ── Long format + chart → logs/ ───────────────────────────────────────
@@ -410,9 +484,18 @@ fn main() {
             let chart_path = format!("logs/chart_{:06}.png", log_epoch);
 
             // Generate chart
-            match generate_chart(&sorted, &country_data, n_runs, log_epoch, initial_month, initial_year, &chart_path) {
+            match generate_chart(&sorted, &country_data, total_runs, log_epoch, initial_month, initial_year, &chart_path) {
                 Ok(()) => println!("\nChart saved to {}", chart_path),
                 Err(e) => eprintln!("Warning: chart generation failed: {}", e),
+            }
+
+            if is_regeneration {
+                if is_open {
+                    if let Err(e) = opener::open(&chart_path) {
+                        eprintln!("Warning: failed to open chart: {}", e);
+                    }
+                }
+                return;
             }
 
             // Build all-country list (include zeros so every country appears)
