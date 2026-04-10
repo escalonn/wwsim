@@ -81,3 +81,4 @@ wwsim/
 | `--local` | Skip checking for new rounds from WorldWarBot server; run simulations from `data/gamestate.json`. |
 | `--if-updated` | Skip simulation if no new rounds were found during the update phase. |
 | `--verbose` | Print the winner of each individual simulation run to stdout instead of summary statistics. |
+| `--open` | Automatically open the generated chart PNG with the system's default viewer after the run. |

@@ -228,6 +228,7 @@ fn main() {
     let is_local      = args.iter().any(|arg| arg == "--local");
     let is_verbose    = args.iter().any(|arg| arg == "--verbose");
     let if_updated    = args.iter().any(|arg| arg == "--if-updated");
+    let is_open       = args.iter().any(|arg| arg == "--open");
 
     if is_reset {
         scraper::reset_gamestate().expect("Failed to reset gamestate");
@@ -433,5 +434,11 @@ fn main() {
 
         fs::write(&log_path, &md).expect("Failed to write log file");
         println!("Full results written to {}", log_path);
+
+        if is_open {
+            if let Err(e) = opener::open(&chart_path) {
+                eprintln!("Warning: failed to open chart: {}", e);
+            }
+        }
     }
 }

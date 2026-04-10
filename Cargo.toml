@@ -16,3 +16,4 @@ ureq = { version = "3", features = ["json"] }
 chrono = "0.4.44"
 indicatif = "0.17"
 plotters = "0.3"
+opener = "0.8"
