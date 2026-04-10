@@ -1,0 +1,25 @@
+{
+  "caption": "May 2036, Chad conquered Sudan territory previously occupied by Ethiopia.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000122.png",
+  "zoom": "000122.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nKosovo: 4\nNicaragua: 4\nBrazil: 4\nMyanmar: 4\nSingapore: 4\nGermany: 3\nMali: 3\nNepal: 3\nBulgaria: 3\nEcuador: 3",
+  "tags": [
+    "Chad",
+    "Ethiopia"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 169,
+    "defender": 152,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Ethiopia"
+  },
+  "territory": "Sudan",
+  "attacker": "Chad",
+  "defender": "Ethiopia"
+}
