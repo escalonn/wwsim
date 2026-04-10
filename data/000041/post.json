@@ -1,0 +1,25 @@
+{
+  "caption": "August 2029, Andorra conquered Vatican City territory.\nVatican City has been completely defeated.\n169 countries remaining.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000041.png",
+  "zoom": "000041.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nNigeria: 4\nBulgaria: 3\nIsrael: 3\nSerbia: 3\nAndorra: 2\nFrench Southern and Antarctic Territories: 2\nMexico: 2\nBrazil: 2\nBarbados: 2\nNorth Korea: 2",
+  "tags": [
+    "Andorra",
+    "Vatican City"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 3,
+    "defender": 186,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Vatican City"
+  },
+  "territory": "Vatican City",
+  "attacker": "Andorra",
+  "defender": "Vatican City"
+}

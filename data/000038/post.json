@@ -1,0 +1,25 @@
+{
+  "caption": "May 2029, Bulgaria conquered Greece territory.\nThe government of Greece continues in exile, based in its remaining territories.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000038.png",
+  "zoom": "000038.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBulgaria: 3\nNigeria: 3\nIsrael: 3\nSerbia: 3\nFrench Southern and Antarctic Territories: 2\nTogo: 2\nMexico: 2\nBrazil: 2\nBarbados: 2\nNorth Korea: 2",
+  "tags": [
+    "Bulgaria",
+    "Greece"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 17,
+    "defender": 70,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": true,
+    "defenderAdminBefore": "Greece"
+  },
+  "territory": "Greece",
+  "attacker": "Bulgaria",
+  "defender": "Greece"
+}

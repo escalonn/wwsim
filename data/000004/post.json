@@ -1,0 +1,25 @@
+{
+  "caption": "July 2026, Serbia conquered Romania territory.\nRomania has been completely defeated.\n197 countries remaining.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000004.png",
+  "zoom": "000004.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nGreece: 2\nSenegal: 2\nTonga: 2\nSerbia: 2\nAfghanistan: 1\nAngola: 1\nAlbania: 1\nAndorra: 1\nUnited Arab Emirates: 1\nArgentina: 1",
+  "tags": [
+    "Serbia",
+    "Romania"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 160,
+    "defender": 148,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Romania"
+  },
+  "territory": "Romania",
+  "attacker": "Serbia",
+  "defender": "Romania"
+}

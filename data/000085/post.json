@@ -1,0 +1,25 @@
+{
+  "caption": "April 2033, New Zealand rose against Antarctica and reunited its homeland.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000085.png",
+  "zoom": "000085.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nIsrael: 4\nEthiopia: 4\nNorway: 4\nItaly: 3\nBulgaria: 3\nBrazil: 3\nVenezuela: 3\nCzech Republic: 3\nLatvia: 3\nNigeria: 3",
+  "tags": [
+    "Antarctica",
+    "Antarctica"
+  ],
+  "alliances": {},
+  "type": "riot",
+  "conquest": {
+    "attacker": 133,
+    "defender": 133,
+    "type": "riot",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Antarctica"
+  },
+  "territory": "New Zealand",
+  "attacker": "Antarctica",
+  "defender": "Antarctica"
+}

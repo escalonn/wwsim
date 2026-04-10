@@ -1,0 +1,25 @@
+{
+  "caption": "July 2029, Nigeria conquered Togo territory.\nThe government of Togo continues in exile, based in its remaining territories.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000040.png",
+  "zoom": "000040.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nNigeria: 4\nBulgaria: 3\nIsrael: 3\nSerbia: 3\nFrench Southern and Antarctic Territories: 2\nMexico: 2\nBrazil: 2\nBarbados: 2\nNorth Korea: 2\nZambia: 2",
+  "tags": [
+    "Nigeria",
+    "Togo"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 69,
+    "defender": 170,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": true,
+    "defenderAdminBefore": "Togo"
+  },
+  "territory": "Togo",
+  "attacker": "Nigeria",
+  "defender": "Togo"
+}

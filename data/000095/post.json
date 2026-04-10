@@ -1,0 +1,25 @@
+{
+  "caption": "February 2034, Czech Republic conquered Bosnia and Herzegovina territory previously occupied by Croatia.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000095.png",
+  "zoom": "000095.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nCzech Republic: 5\nBrazil: 4\nIsrael: 4\nEthiopia: 4\nKosovo: 3\nItaly: 3\nBulgaria: 3\nEcuador: 3\nLatvia: 3\nNorway: 3",
+  "tags": [
+    "Czech Republic",
+    "Croatia"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 78,
+    "defender": 20,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Croatia"
+  },
+  "territory": "Bosnia and Herzegovina",
+  "attacker": "Czech Republic",
+  "defender": "Croatia"
+}

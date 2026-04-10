@@ -70,7 +70,7 @@ struct ConquestSchema {
 struct Gamestate {
     epoch: usize,
     initial_month: u32,
-    initial_year: u32,
+    initial_year: i32,
     country_data: BTreeMap<u16, u16>,
 }
 
@@ -123,8 +123,6 @@ enum FetchError {
     Io(std::io::Error),
     Deserialization {
         endpoint: &'static str,
-        body: String,
-        other_body: Option<(String, String)>,
         source: serde_json::Error,
     },
 }
@@ -136,7 +134,7 @@ impl std::fmt::Display for FetchError {
             FetchError::Http(e) => write!(f, "HTTP error: {}", e),
             FetchError::Io(e) => write!(f, "IO error: {}", e),
             FetchError::Deserialization {
-                endpoint, source, ..
+                endpoint, source
             } => {
                 write!(f, "Deserialization failure for {}: {}", endpoint, source)
             }
@@ -160,7 +158,29 @@ impl From<std::io::Error> for FetchError {
 
 fn try_fetch_round(
     round: usize,
-) -> Result<(SaveFile, PostFile, String, String), FetchError> {
+    force_fetch: bool,
+) -> Result<(SaveFile, PostFile), FetchError> {
+    let round_dir = format!("data/{:06}", round);
+    let save_path = format!("{}/save.json", round_dir);
+    let post_path = format!("{}/post.json", round_dir);
+
+    if !force_fetch && fs::metadata(&save_path).is_ok() && fs::metadata(&post_path).is_ok() {
+        let save_body = fs::read_to_string(&save_path)?;
+        let post_body = fs::read_to_string(&post_path)?;
+
+        let save: SaveFile = serde_json::from_str(&save_body).map_err(|e| FetchError::Deserialization {
+            endpoint: "save",
+            source: e,
+        })?;
+
+        let post: PostFile = serde_json::from_str(&post_body).map_err(|e| FetchError::Deserialization {
+            endpoint: "post",
+            source: e,
+        })?;
+
+        return Ok((save, post));
+    }
+
     let save_url = format!("https://run5.worldwarbot.com/data/saves/{:06}.json", round);
     let mut save_res = ureq::get(&save_url).call()?;
     let save_body = save_res.body_mut().read_to_string()?;
@@ -192,16 +212,12 @@ fn try_fetch_round(
     if let Some(e) = save_err {
         return Err(FetchError::Deserialization {
             endpoint: "save",
-            body: save_pretty,
-            other_body: Some(("post".to_string(), post_pretty)),
             source: e,
         });
     }
     if let Some(e) = post_err {
         return Err(FetchError::Deserialization {
             endpoint: "post",
-            body: post_pretty,
-            other_body: Some(("save".to_string(), save_pretty)),
             source: e,
         });
     }
@@ -210,20 +226,21 @@ fn try_fetch_round(
     let save: SaveFile =
         serde_json::from_str(&save_pretty).map_err(|e| FetchError::Deserialization {
             endpoint: "save",
-            body: save_pretty.clone(),
-            other_body: Some(("post".to_string(), post_pretty.clone())),
             source: e,
         })?;
 
     let post: PostFile =
         serde_json::from_str(&post_pretty).map_err(|e| FetchError::Deserialization {
             endpoint: "post",
-            body: post_pretty.clone(),
-            other_body: Some(("save".to_string(), save_pretty.clone())),
             source: e,
         })?;
 
-    Ok((save, post, save_pretty, post_pretty))
+    // Success! Store the files.
+    fs::create_dir_all(&round_dir)?;
+    fs::write(&save_path, &save_pretty)?;
+    fs::write(&post_path, &post_pretty)?;
+
+    Ok((save, post))
 }
 
 pub fn reset_gamestate() -> Result<(), Box<dyn std::error::Error>> {
@@ -248,20 +265,20 @@ pub fn reset_gamestate() -> Result<(), Box<dyn std::error::Error>> {
     }
 
     let mut id_map: HashMap<String, String> = HashMap::new();
-    let fetch_result = try_fetch_round(1);
+    let fetch_result = try_fetch_round(1, true);
 
     let mut generated_from_saves = false;
     let mut initial_month = chrono::Utc::now().month();
-    let mut initial_year = chrono::Utc::now().year() as u32;
+    let mut initial_year = chrono::Utc::now().year();
 
-    if let Ok((save, post, _, _)) = fetch_result {
+    if let Ok((save, post)) = fetch_result {
         println!("Successfully fetched Round 1. Updating IDs.");
         generated_from_saves = true;
 
         let parts: Vec<&str> = post.caption.split(' ').collect();
         if parts.len() >= 2 {
             if let Some(m) = month_to_num(parts[0]) {
-                let y: u32 = parts[1].trim_end_matches(',').parse().unwrap_or(2026);
+                let y: i32 = parts[1].trim_end_matches(',').parse().unwrap_or(initial_year);
                 if m == 1 {
                     initial_month = 12;
                     initial_year = y - 1;
@@ -349,8 +366,9 @@ pub fn reset_gamestate() -> Result<(), Box<dyn std::error::Error>> {
         country_data: country_data.into_iter().collect(),
     };
 
+    fs::create_dir_all("data/000000")?;
     fs::write(
-        "data/gamestate.json",
+        "data/000000/gamestate.json",
         serde_json::to_string_pretty(&gamestate)?,
     )?;
 
@@ -393,10 +411,24 @@ pub fn reset_gamestate() -> Result<(), Box<dyn std::error::Error>> {
     Ok(())
 }
 
-fn write_unexpected(endpoint: &str, round: usize, data: &str) {
-    let filename = format!("data/unexpected_{}_{:06}.json", endpoint, round);
-    fs::write(&filename, data).unwrap_or_default();
-    eprintln!("Dumped unexpected data to {}", filename);
+fn get_latest_local_round() -> Option<usize> {
+    let entries = fs::read_dir("data").ok()?;
+    let mut max_round = None;
+
+    for entry in entries.flatten() {
+        if let Ok(file_type) = entry.file_type() {
+            if file_type.is_dir() {
+                if let Some(name) = entry.file_name().to_str() {
+                    if let Ok(round) = name.parse::<usize>() {
+                        if fs::metadata(format!("data/{:06}/gamestate.json", round)).is_ok() {
+                            max_round = Some(max_round.map_or(round, |m| std::cmp::max(m, round)));
+                        }
+                    }
+                }
+            }
+        }
+    }
+    max_round
 }
 
 #[derive(Deserialize, Debug)]
@@ -404,12 +436,14 @@ struct DataInfo {
     iteration: usize,
 }
 
-pub fn update_gamestate() -> Result<usize, Box<dyn std::error::Error>> {
+pub fn update_gamestate(force_fetch: bool) -> Result<usize, Box<dyn std::error::Error>> {
     let mut data_req = ureq::get("https://run5.worldwarbot.com/data/data.json").call()?;
     let data_info: DataInfo = data_req.body_mut().read_json()?;
     let max_iter = data_info.iteration;
 
-    let gamestate_str = fs::read_to_string("data/gamestate.json")?;
+    let local_round = get_latest_local_round().unwrap_or(0);
+    let gamestate_path = format!("data/{:06}/gamestate.json", local_round);
+    let gamestate_str = fs::read_to_string(gamestate_path)?;
     let mut current_state: Gamestate = serde_json::from_str(&gamestate_str)?;
     let targets_data = crate::utils::read_targets_data();
     let country_rows = crate::utils::read_country_data();
@@ -426,24 +460,19 @@ pub fn update_gamestate() -> Result<usize, Box<dyn std::error::Error>> {
     }
 
     for round in (local_round + 1)..=max_iter {
-        let (save, post, save_pretty, post_pretty) = match try_fetch_round(round) {
+        let (save, post) = match try_fetch_round(round, force_fetch) {
             Ok(data) => data,
             Err(e) => {
                 match e {
                     FetchError::Deserialization {
                         endpoint,
-                        body,
-                        other_body,
                         source,
+                        ..
                     } => {
                         eprintln!(
                             "Round {}: Deserialization failure for {}: {}",
                             round, endpoint, source
                         );
-                        write_unexpected(endpoint, round, &body);
-                        if let Some((other_name, other_data)) = other_body {
-                            write_unexpected(&other_name, round, &other_data);
-                        }
                     }
 
                     _ => {
@@ -624,8 +653,9 @@ pub fn update_gamestate() -> Result<usize, Box<dyn std::error::Error>> {
             .values()
             .collect::<std::collections::HashSet<_>>()
             .len();
-        let total_months =
-            current_state.initial_year * 12 + (current_state.initial_month - 1) + (round as u32);
+        let total_months = (current_state.initial_year as i64) * 12
+            + (current_state.initial_month as i64 - 1)
+            + (round as i64);
 
         let mut d_string = String::new();
         if id_owners[&conquered_territory_id] != conquered_territory_id {
@@ -659,7 +689,7 @@ pub fn update_gamestate() -> Result<usize, Box<dyn std::error::Error>> {
 
         let date_prefix = format!(
             "{} {}, ",
-            num_to_month((total_months % 12) + 1),
+            num_to_month(((total_months % 12) + 1) as u32),
             total_months / 12
         );
 
@@ -732,8 +762,6 @@ pub fn update_gamestate() -> Result<usize, Box<dyn std::error::Error>> {
         }
 
         if any_unexpected {
-            write_unexpected("save", round, &save_pretty);
-            write_unexpected("post", round, &post_pretty);
             eprintln!("Stopping simulation because validation mismatches were found.");
             std::process::exit(1);
         }
@@ -742,12 +770,22 @@ pub fn update_gamestate() -> Result<usize, Box<dyn std::error::Error>> {
         if lines.len() >= 1 {
             lines.truncate(lines.len() - 1);
         }
-        println!("Round {}: {}", round, lines.join(" "));
+        let summary = format!("Round {}: {}", round, lines.join(" "));
+        println!("{}", summary);
 
+        fs::create_dir_all(format!("data/{:06}", round))?;
         fs::write(
-            "data/gamestate.json",
+            format!("data/{:06}/gamestate.json", round),
             serde_json::to_string_pretty(&current_state)?,
         )?;
+
+        fs::create_dir_all("logs")?;
+        let mut log_file = std::fs::OpenOptions::new()
+            .create(true)
+            .append(true)
+            .open("logs/log.txt")?;
+        use std::io::Write;
+        writeln!(log_file, "{}", summary)?;
     }
 
     let n_processed = max_iter - local_round;

@@ -1,0 +1,25 @@
+{
+  "caption": "September 2031, Ethiopia conquered Sudan territory.\nSudan has been completely defeated.\n152 countries remaining.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000066.png",
+  "zoom": "000066.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nIsrael: 4\nNigeria: 4\nAntarctica: 3\nBulgaria: 3\nCape Verde: 3\nEthiopia: 3\nSerbia: 3\nOman: 3\nKosovo: 2\nAndorra: 2",
+  "tags": [
+    "Ethiopia",
+    "Sudan"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 56,
+    "defender": 152,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Sudan"
+  },
+  "territory": "Sudan",
+  "attacker": "Ethiopia",
+  "defender": "Sudan"
+}

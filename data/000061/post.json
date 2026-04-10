@@ -1,0 +1,25 @@
+{
+  "caption": "April 2031, Australia conquered Timor-Leste territory.\nThe government of Timor-Leste continues in exile, based in its remaining territories.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000061.png",
+  "zoom": "000061.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nIsrael: 4\nNigeria: 4\nBulgaria: 3\nCape Verde: 3\nSerbia: 3\nKosovo: 2\nAndorra: 2\nArmenia: 2\nAntarctica: 2\nFrench Southern and Antarctic Territories: 2",
+  "tags": [
+    "Australia",
+    "Timor-Leste"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 9,
+    "defender": 174,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": true,
+    "defenderAdminBefore": "Timor-Leste"
+  },
+  "territory": "Timor-Leste",
+  "attacker": "Australia",
+  "defender": "Timor-Leste"
+}

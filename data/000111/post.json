@@ -1,0 +1,25 @@
+{
+  "caption": "June 2035, Kosovo conquered Greece territory previously occupied by Bulgaria.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000111.png",
+  "zoom": "000111.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nKosovo: 4\nNicaragua: 4\nBrazil: 4\nIsrael: 4\nEthiopia: 4\nGermany: 3\nEcuador: 3\nSweden: 3\nNorway: 3\nNigeria: 3",
+  "tags": [
+    "Kosovo",
+    "Bulgaria"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 43,
+    "defender": 70,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Bulgaria"
+  },
+  "territory": "Greece",
+  "attacker": "Kosovo",
+  "defender": "Bulgaria"
+}

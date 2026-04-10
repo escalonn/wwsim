@@ -1,0 +1,25 @@
+{
+  "caption": "August 2034, Liechtenstein conquered Slovenia territory previously occupied by Czech Republic.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000101.png",
+  "zoom": "000101.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nNicaragua: 4\nBrazil: 4\nIsrael: 4\nEthiopia: 4\nKosovo: 3\nItaly: 3\nGermany: 3\nBulgaria: 3\nEcuador: 3\nNorway: 3",
+  "tags": [
+    "Liechtenstein",
+    "Czech Republic"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 102,
+    "defender": 164,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Czech Republic"
+  },
+  "territory": "Slovenia",
+  "attacker": "Liechtenstein",
+  "defender": "Czech Republic"
+}

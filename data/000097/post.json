@@ -1,0 +1,32 @@
+{
+  "caption": "April 2034, Germany conquered Czech Republic territory.\nCzech Republic capitulated, ceding 1 additional territory to Germany.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000097.png",
+  "zoom": "000097.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 4\nIsrael: 4\nEthiopia: 4\nKosovo: 3\nItaly: 3\nGermany: 3\nBulgaria: 3\nCzech Republic: 3\nEcuador: 3\nNorway: 3",
+  "tags": [
+    "Germany",
+    "Czech Republic"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 45,
+    "defender": 44,
+    "type": "conquer",
+    "subjects": [
+      10
+    ],
+    "capitulation": true,
+    "capitulationEvent": {
+      "round": 97,
+      "attackerTerritoriesBefore": 1,
+      "defenderTerritoriesBefore": 5,
+      "territoriesCeded": 1
+    },
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Czech Republic"
+  },
+  "territory": "Czech Republic",
+  "attacker": "Germany",
+  "defender": "Czech Republic"
+}

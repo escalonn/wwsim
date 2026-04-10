@@ -1,0 +1,25 @@
+{
+  "caption": "September 2035, Syria conquered Armenia territory.\nThe government of Armenia continues in exile, based in its remaining territories.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000114.png",
+  "zoom": "000114.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nKosovo: 4\nNicaragua: 4\nBrazil: 4\nIsrael: 4\nEthiopia: 4\nSingapore: 4\nGermany: 3\nEcuador: 3\nSweden: 3\nNorway: 3",
+  "tags": [
+    "Syria",
+    "Armenia"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 168,
+    "defender": 6,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": true,
+    "defenderAdminBefore": "Armenia"
+  },
+  "territory": "Armenia",
+  "attacker": "Syria",
+  "defender": "Armenia"
+}

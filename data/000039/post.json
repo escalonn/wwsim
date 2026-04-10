@@ -1,0 +1,25 @@
+{
+  "caption": "June 2029, Lesotho conquered eSwatini territory previously occupied by South Africa.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000039.png",
+  "zoom": "000039.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBulgaria: 3\nNigeria: 3\nIsrael: 3\nSerbia: 3\nFrench Southern and Antarctic Territories: 2\nTogo: 2\nMexico: 2\nBrazil: 2\nBarbados: 2\nNorth Korea: 2",
+  "tags": [
+    "Lesotho",
+    "South Africa"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 104,
+    "defender": 166,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "South Africa"
+  },
+  "territory": "eSwatini",
+  "attacker": "Lesotho",
+  "defender": "South Africa"
+}

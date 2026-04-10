@@ -1,0 +1,25 @@
+{
+  "caption": "October 2034, Malta conquered Libya territory.\nLibya has been completely defeated.\n131 countries remaining.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000103.png",
+  "zoom": "000103.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nNicaragua: 4\nBrazil: 4\nIsrael: 4\nEthiopia: 4\nKosovo: 3\nItaly: 3\nGermany: 3\nBulgaria: 3\nEcuador: 3\nNorway: 3",
+  "tags": [
+    "Malta",
+    "Libya"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 116,
+    "defender": 101,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Libya"
+  },
+  "territory": "Libya",
+  "attacker": "Malta",
+  "defender": "Libya"
+}

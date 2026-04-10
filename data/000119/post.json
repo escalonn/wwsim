@@ -1,0 +1,25 @@
+{
+  "caption": "February 2036, Bulgaria conquered Kosovo territory previously occupied by Serbia.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000119.png",
+  "zoom": "000119.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nKosovo: 4\nNicaragua: 4\nBrazil: 4\nEthiopia: 4\nMyanmar: 4\nSingapore: 4\nGermany: 3\nBulgaria: 3\nEcuador: 3\nPalestine: 3",
+  "tags": [
+    "Bulgaria",
+    "Serbia"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 148,
+    "defender": 191,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Serbia"
+  },
+  "territory": "Kosovo",
+  "attacker": "Bulgaria",
+  "defender": "Serbia"
+}

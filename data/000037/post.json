@@ -1,0 +1,25 @@
+{
+  "caption": "April 2029, French Southern and Antarctic Territories conquered Madagascar territory.\nMadagascar has been completely defeated.\n170 countries remaining.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000037.png",
+  "zoom": "000037.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nNigeria: 3\nIsrael: 3\nSerbia: 3\nFrench Southern and Antarctic Territories: 2\nTogo: 2\nBulgaria: 2\nMexico: 2\nBrazil: 2\nBarbados: 2\nNorth Korea: 2",
+  "tags": [
+    "French Southern and Antarctic Territories",
+    "Madagascar"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 8,
+    "defender": 111,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Madagascar"
+  },
+  "territory": "Madagascar",
+  "attacker": "French Southern and Antarctic Territories",
+  "defender": "Madagascar"
+}

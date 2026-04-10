@@ -1,0 +1,25 @@
+{
+  "caption": "January 2032, Japan conquered North Korea territory.\nNorth Korea has been completely defeated.\n150 countries remaining.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000070.png",
+  "zoom": "000070.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nIsrael: 4\nNigeria: 4\nAntarctica: 3\nBulgaria: 3\nBrazil: 3\nVenezuela: 3\nLatvia: 3\nEthiopia: 3\nSerbia: 3\nOman: 3",
+  "tags": [
+    "Japan",
+    "North Korea"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 90,
+    "defender": 143,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "North Korea"
+  },
+  "territory": "North Korea",
+  "attacker": "Japan",
+  "defender": "North Korea"
+}

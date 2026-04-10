@@ -1,0 +1,25 @@
+{
+  "caption": "June 2027, Myanmar conquered Cambodia territory.\nCambodia has been completely defeated.\n187 countries remaining.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000015.png",
+  "zoom": "000015.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nKosovo: 3\nBurkina Faso: 2\nMexico: 2\nHonduras: 2\nGreece: 2\nSenegal: 2\nNorway: 2\nMyanmar: 2\nSerbia: 2\nTonga: 2",
+  "tags": [
+    "Myanmar",
+    "Cambodia"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 117,
+    "defender": 94,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Cambodia"
+  },
+  "territory": "Cambodia",
+  "attacker": "Myanmar",
+  "defender": "Cambodia"
+}

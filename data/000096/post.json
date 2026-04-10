@@ -1,0 +1,25 @@
+{
+  "caption": "March 2034, Sweden conquered Estonia territory previously occupied by Latvia.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000096.png",
+  "zoom": "000096.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nCzech Republic: 5\nBrazil: 4\nIsrael: 4\nEthiopia: 4\nKosovo: 3\nItaly: 3\nBulgaria: 3\nEcuador: 3\nNorway: 3\nNigeria: 3",
+  "tags": [
+    "Sweden",
+    "Latvia"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 165,
+    "defender": 55,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Latvia"
+  },
+  "territory": "Estonia",
+  "attacker": "Sweden",
+  "defender": "Latvia"
+}

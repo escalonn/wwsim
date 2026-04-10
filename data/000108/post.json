@@ -1,0 +1,25 @@
+{
+  "caption": "March 2035, Gabon conquered Republic of Congo territory.\nThe government of Republic of Congo continues in exile, based in its remaining territories.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000108.png",
+  "zoom": "000108.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nNicaragua: 4\nBrazil: 4\nIsrael: 4\nEthiopia: 4\nKosovo: 3\nGermany: 3\nBulgaria: 3\nEcuador: 3\nSweden: 3\nNorway: 3",
+  "tags": [
+    "Gabon",
+    "Republic of Congo"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 63,
+    "defender": 38,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": true,
+    "defenderAdminBefore": "Republic of Congo"
+  },
+  "territory": "Republic of Congo",
+  "attacker": "Gabon",
+  "defender": "Republic of Congo"
+}

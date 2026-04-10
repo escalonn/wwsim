@@ -1,0 +1,25 @@
+{
+  "caption": "January 2030, Northern Ireland conquered Iceland territory.\nIceland has been completely defeated.\n164 countries remaining.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000046.png",
+  "zoom": "000046.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nIsrael: 4\nNigeria: 4\nBulgaria: 3\nSerbia: 3\nAndorra: 2\nFrench Southern and Antarctic Territories: 2\nNepal: 2\nMexico: 2\nBolivia: 2\nBrazil: 2",
+  "tags": [
+    "Northern Ireland",
+    "Iceland"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 200,
+    "defender": 85,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Iceland"
+  },
+  "territory": "Iceland",
+  "attacker": "Northern Ireland",
+  "defender": "Iceland"
+}

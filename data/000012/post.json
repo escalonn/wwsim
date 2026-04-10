@@ -1,0 +1,25 @@
+{
+  "caption": "March 2027, Slovenia conquered San Marino territory.\nSan Marino has been completely defeated.\n190 countries remaining.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000012.png",
+  "zoom": "000012.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nKosovo: 3\nMexico: 2\nHonduras: 2\nGreece: 2\nSenegal: 2\nNorway: 2\nTonga: 2\nSlovenia: 2\nSouth Africa: 2\nVenezuela: 2",
+  "tags": [
+    "Slovenia",
+    "San Marino"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 164,
+    "defender": 158,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "San Marino"
+  },
+  "territory": "San Marino",
+  "attacker": "Slovenia",
+  "defender": "San Marino"
+}

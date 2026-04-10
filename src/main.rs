@@ -229,6 +229,13 @@ fn main() {
     let is_verbose    = args.iter().any(|arg| arg == "--verbose");
     let if_updated    = args.iter().any(|arg| arg == "--if-updated");
     let is_open       = args.iter().any(|arg| arg == "--open");
+    let is_force_fetch = args.iter().any(|arg| arg == "--force-fetch");
+    let is_save       = args.iter().any(|arg| arg == "--save");
+
+    let requested_round = args.iter()
+        .position(|arg| arg == "--round")
+        .and_then(|pos| args.get(pos + 1))
+        .and_then(|val| val.parse::<usize>().ok());
 
     if is_reset {
         scraper::reset_gamestate().expect("Failed to reset gamestate");
@@ -238,19 +245,24 @@ fn main() {
         }
     }
 
-    let runs_unparsed = args
+    let n_runs: usize = args
         .iter()
+        .enumerate()
         .skip(1)
-        .find(|arg| !arg.starts_with("--"))
-        .expect("Provide the number of runs");
-
-    let n_runs: usize = runs_unparsed
+        .filter(|&(i, arg)| {
+            if arg.starts_with("--") { return false; }
+            if i > 0 && args[i-1] == "--round" { return false; }
+            true
+        })
+        .map(|(_, arg)| arg)
+        .next()
+        .expect("Provide the number of runs")
         .parse()
         .expect("Not a valid number");
 
     let mut n_updated = 0;
     if !is_local {
-        match update_gamestate() {
+        match update_gamestate(is_force_fetch) {
             Ok(n) => n_updated = n,
             Err(e) => {
                 eprintln!("Scraper encountered a critical error: {}", e);
@@ -275,7 +287,7 @@ fn main() {
         epoch: log_epoch,
         initial_month,
         initial_year,
-    } = read_gamestate();
+    } = read_gamestate(requested_round);
 
     // Shared accumulators (not used in --verbose mode but always created cheaply)
     let wins:      Arc<Mutex<HashMap<u16, u32>>> = Arc::new(Mutex::new(HashMap::new()));
@@ -392,52 +404,54 @@ fn main() {
         let current_date       = epoch_to_date(log_epoch, initial_month, initial_year);
         let gameplay_remaining = turns_to_duration_str(avg_turns);
 
-        fs::create_dir_all("logs").expect("Failed to create logs/ directory");
-        let log_path   = format!("logs/log_{:06}.md",   log_epoch);
-        let chart_path = format!("logs/chart_{:06}.png", log_epoch);
+        if is_save {
+            fs::create_dir_all("logs").expect("Failed to create logs/ directory");
+            let log_path   = format!("logs/log_{:06}.md",   log_epoch);
+            let chart_path = format!("logs/chart_{:06}.png", log_epoch);
 
-        // Generate chart
-        match generate_chart(&sorted, &country_data, n_runs, log_epoch, initial_month, initial_year, &chart_path) {
-            Ok(()) => println!("\nChart saved to {}", chart_path),
-            Err(e) => eprintln!("Warning: chart generation failed: {}", e),
-        }
+            // Generate chart
+            match generate_chart(&sorted, &country_data, n_runs, log_epoch, initial_month, initial_year, &chart_path) {
+                Ok(()) => println!("\nChart saved to {}", chart_path),
+                Err(e) => eprintln!("Warning: chart generation failed: {}", e),
+            }
 
-        // Build all-country list (include zeros so every country appears)
-        let mut all_countries: Vec<(u16, u32)> = country_data
-            .keys()
-            .map(|&id| (id, *wins_map.get(&id).unwrap_or(&0)))
-            .collect();
-        all_countries.sort_by(|a, b| b.1.cmp(&a.1).then(a.0.cmp(&b.0)));
+            // Build all-country list (include zeros so every country appears)
+            let mut all_countries: Vec<(u16, u32)> = country_data
+                .keys()
+                .map(|&id| (id, *wins_map.get(&id).unwrap_or(&0)))
+                .collect();
+            all_countries.sort_by(|a, b| b.1.cmp(&a.1).then(a.0.cmp(&b.0)));
 
-        let mut md = String::new();
-        md.push_str(&format!("# Simulation results for {}\n\n", current_date));
-        md.push_str(&format!(
-            "* **Runs simulated:** {} (in {})\n\n",
-            n_runs, format_duration(wall_elapsed)
-        ));
-        md.push_str(&format!(
-            "* **Estimated turns remaining (avg & 95% confidence interval):** {} ({}-{})\n\n",
-            avg_turns.round() as i64, ci_lo, ci_hi
-        ));
-        md.push_str(&format!(
-            "* **Estimated gameplay time remaining (avg turns, 1h per turn):** {}\n\n",
-            gameplay_remaining
-        ));
-        md.push_str("## Wins by country:\n");
-        for (rank, (id, count)) in all_countries.iter().enumerate() {
-            let pct = (*count as f64 / n_runs_f) * 100.0;
+            let mut md = String::new();
+            md.push_str(&format!("# Simulation results for {}\n\n", current_date));
             md.push_str(&format!(
-                "{}. {} ({}, {:.2}%)\n",
-                rank + 1, &country_data[id].name, count, pct
+                "* **Runs simulated:** {} (in {})\n\n",
+                n_runs, format_duration(wall_elapsed)
             ));
-        }
+            md.push_str(&format!(
+                "* **Estimated turns remaining (avg & 95% confidence interval):** {} ({}-{})\n\n",
+                avg_turns.round() as i64, ci_lo, ci_hi
+            ));
+            md.push_str(&format!(
+                "* **Estimated gameplay time remaining (avg turns, 1h per turn):** {}\n\n",
+                gameplay_remaining
+            ));
+            md.push_str("## Wins by country:\n");
+            for (rank, (id, count)) in all_countries.iter().enumerate() {
+                let pct = (*count as f64 / n_runs_f) * 100.0;
+                md.push_str(&format!(
+                    "{}. {} ({}, {:.2}%)\n",
+                    rank + 1, &country_data[id].name, count, pct
+                ));
+            }
 
-        fs::write(&log_path, &md).expect("Failed to write log file");
-        println!("Full results written to {}", log_path);
+            fs::write(&log_path, &md).expect("Failed to write log file");
+            println!("Full results written to {}", log_path);
 
-        if is_open {
-            if let Err(e) = opener::open(&chart_path) {
-                eprintln!("Warning: failed to open chart: {}", e);
+            if is_open {
+                if let Err(e) = opener::open(&chart_path) {
+                    eprintln!("Warning: failed to open chart: {}", e);
+                }
             }
         }
     }

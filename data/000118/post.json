@@ -1,0 +1,25 @@
+{
+  "caption": "January 2036, Myanmar conquered Sri Lanka territory previously occupied by Malaysia.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000118.png",
+  "zoom": "000118.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nKosovo: 4\nNicaragua: 4\nBrazil: 4\nEthiopia: 4\nMyanmar: 4\nSingapore: 4\nGermany: 3\nEcuador: 3\nPalestine: 3\nSweden: 3",
+  "tags": [
+    "Myanmar",
+    "Malaysia"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 171,
+    "defender": 103,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Malaysia"
+  },
+  "territory": "Sri Lanka",
+  "attacker": "Myanmar",
+  "defender": "Malaysia"
+}

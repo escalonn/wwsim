@@ -1,0 +1,25 @@
+{
+  "caption": "December 2033, Brazil conquered Barbados territory previously occupied by Venezuela.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000093.png",
+  "zoom": "000093.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nCzech Republic: 4\nBrazil: 4\nIsrael: 4\nEthiopia: 4\nKosovo: 3\nItaly: 3\nBulgaria: 3\nEcuador: 3\nLatvia: 3\nNorway: 3",
+  "tags": [
+    "Brazil",
+    "Venezuela"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 73,
+    "defender": 26,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Venezuela"
+  },
+  "territory": "Barbados",
+  "attacker": "Brazil",
+  "defender": "Venezuela"
+}

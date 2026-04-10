@@ -1,0 +1,25 @@
+{
+  "caption": "May 2034, Nicaragua conquered Cuba territory previously occupied by Jamaica.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000098.png",
+  "zoom": "000098.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 4\nIsrael: 4\nEthiopia: 4\nKosovo: 3\nItaly: 3\nGermany: 3\nBulgaria: 3\nCzech Republic: 3\nNicaragua: 3\nEcuador: 3",
+  "tags": [
+    "Nicaragua",
+    "Jamaica"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 22,
+    "defender": 42,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Jamaica"
+  },
+  "territory": "Cuba",
+  "attacker": "Nicaragua",
+  "defender": "Jamaica"
+}

@@ -1,0 +1,25 @@
+{
+  "caption": "December 2027, Bulgaria conquered Romania territory previously occupied by Kosovo.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000021.png",
+  "zoom": "000021.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nKosovo: 2\nTogo: 2\nBulgaria: 2\nMexico: 2\nZambia: 2\nCape Verde: 2\nHonduras: 2\nGreece: 2\nSenegal: 2\nNorway: 2",
+  "tags": [
+    "Bulgaria",
+    "Kosovo"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 17,
+    "defender": 148,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Kosovo"
+  },
+  "territory": "Romania",
+  "attacker": "Bulgaria",
+  "defender": "Kosovo"
+}

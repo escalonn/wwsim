@@ -1,0 +1,25 @@
+{
+  "caption": "January 2031, Solomon Islands conquered Vanuatu territory.\nVanuatu has been completely defeated.\n157 countries remaining.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000058.png",
+  "zoom": "000058.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nIsrael: 4\nNigeria: 4\nBulgaria: 3\nCape Verde: 3\nSerbia: 3\nKosovo: 2\nAndorra: 2\nAntarctica: 2\nFrench Southern and Antarctic Territories: 2\nNepal: 2",
+  "tags": [
+    "Solomon Islands",
+    "Vanuatu"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 155,
+    "defender": 189,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Vanuatu"
+  },
+  "territory": "Vanuatu",
+  "attacker": "Solomon Islands",
+  "defender": "Vanuatu"
+}

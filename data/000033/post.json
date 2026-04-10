@@ -1,0 +1,25 @@
+{
+  "caption": "December 2028, Italy conquered Monaco territory.\nThe government of Monaco continues in exile, based in its remaining territories.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000033.png",
+  "zoom": "000033.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nNigeria: 3\nIsrael: 3\nSerbia: 3\nTogo: 2\nBulgaria: 2\nMexico: 2\nBrazil: 2\nBarbados: 2\nNorth Korea: 2\nZambia: 2",
+  "tags": [
+    "Italy",
+    "Monaco"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 87,
+    "defender": 109,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": true,
+    "defenderAdminBefore": "Monaco"
+  },
+  "territory": "Monaco",
+  "attacker": "Italy",
+  "defender": "Monaco"
+}

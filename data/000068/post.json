@@ -1,0 +1,25 @@
+{
+  "caption": "November 2031, Venezuela conquered Barbados territory.\nThe government of Barbados continues in exile, based in its remaining territories.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000068.png",
+  "zoom": "000068.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nIsrael: 4\nNigeria: 4\nAntarctica: 3\nBulgaria: 3\nBrazil: 3\nVenezuela: 3\nEthiopia: 3\nSerbia: 3\nOman: 3\nKosovo: 2",
+  "tags": [
+    "Venezuela",
+    "Barbados"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 176,
+    "defender": 26,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": true,
+    "defenderAdminBefore": "Barbados"
+  },
+  "territory": "Barbados",
+  "attacker": "Venezuela",
+  "defender": "Barbados"
+}

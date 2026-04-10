@@ -1,0 +1,25 @@
+{
+  "caption": "September 2028, Serbia conquered Kosovo territory.\nThe government of Kosovo continues in exile, based in its remaining territories.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000030.png",
+  "zoom": "000030.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nNigeria: 3\nIsrael: 3\nSerbia: 3\nTogo: 2\nBulgaria: 2\nMexico: 2\nBarbados: 2\nNorth Korea: 2\nZambia: 2\nCape Verde: 2",
+  "tags": [
+    "Serbia",
+    "Kosovo"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 118,
+    "defender": 191,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": true,
+    "defenderAdminBefore": "Kosovo"
+  },
+  "territory": "Kosovo",
+  "attacker": "Serbia",
+  "defender": "Kosovo"
+}

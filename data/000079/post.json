@@ -1,0 +1,32 @@
+{
+  "caption": "October 2032, Norway conquered Mongolia territory.\nMongolia capitulated, ceding 1 additional territory to Norway.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000079.png",
+  "zoom": "000079.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nIsrael: 4\nEthiopia: 4\nNorway: 4\nNigeria: 4\nItaly: 3\nAntarctica: 3\nBulgaria: 3\nBrazil: 3\nVenezuela: 3\nLatvia: 3",
+  "tags": [
+    "Norway",
+    "Mongolia"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 57,
+    "defender": 119,
+    "type": "conquer",
+    "subjects": [
+      91
+    ],
+    "capitulation": true,
+    "capitulationEvent": {
+      "round": 79,
+      "attackerTerritoriesBefore": 2,
+      "defenderTerritoriesBefore": 3,
+      "territoriesCeded": 1
+    },
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Mongolia"
+  },
+  "territory": "Mongolia",
+  "attacker": "Norway",
+  "defender": "Mongolia"
+}

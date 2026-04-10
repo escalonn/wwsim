@@ -1,0 +1,25 @@
+{
+  "caption": "January 2034, Mongolia conquered China territory.\nChina has been completely defeated.\n134 countries remaining.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000094.png",
+  "zoom": "000094.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nCzech Republic: 4\nBrazil: 4\nIsrael: 4\nEthiopia: 4\nKosovo: 3\nItaly: 3\nBulgaria: 3\nEcuador: 3\nLatvia: 3\nNorway: 3",
+  "tags": [
+    "Mongolia",
+    "China"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 93,
+    "defender": 34,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "China"
+  },
+  "territory": "China",
+  "attacker": "Mongolia",
+  "defender": "China"
+}

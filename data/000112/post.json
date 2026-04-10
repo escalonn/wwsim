@@ -1,0 +1,25 @@
+{
+  "caption": "July 2035, Malawi conquered Burundi territory.\nBurundi has been completely defeated.\n127 countries remaining.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000112.png",
+  "zoom": "000112.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nKosovo: 4\nNicaragua: 4\nBrazil: 4\nIsrael: 4\nEthiopia: 4\nGermany: 3\nEcuador: 3\nSweden: 3\nNorway: 3\nNigeria: 3",
+  "tags": [
+    "Malawi",
+    "Burundi"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 123,
+    "defender": 12,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Burundi"
+  },
+  "territory": "Burundi",
+  "attacker": "Malawi",
+  "defender": "Burundi"
+}

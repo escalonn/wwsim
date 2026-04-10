@@ -1,0 +1,25 @@
+{
+  "caption": "February 2027, Mexico conquered Belize territory.\nBelize has been completely defeated.\n191 countries remaining.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000011.png",
+  "zoom": "000011.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nKosovo: 3\nMexico: 2\nHonduras: 2\nGreece: 2\nSenegal: 2\nNorway: 2\nTonga: 2\nSouth Africa: 2\nVenezuela: 2\nAfghanistan: 1",
+  "tags": [
+    "Mexico",
+    "Belize"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 113,
+    "defender": 22,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Belize"
+  },
+  "territory": "Belize",
+  "attacker": "Mexico",
+  "defender": "Belize"
+}

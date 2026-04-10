@@ -1,0 +1,25 @@
+{
+  "caption": "April 2026, Greece conquered Cyprus territory.\nCyprus has been completely defeated.\n200 countries remaining.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000001.png",
+  "zoom": "000001.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nGreece: 2\nAfghanistan: 1\nAngola: 1\nAlbania: 1\nAndorra: 1\nUnited Arab Emirates: 1\nArgentina: 1\nArmenia: 1\nAntarctica: 1\nFrench Southern and Antarctic Territories: 1",
+  "tags": [
+    "Greece",
+    "Cyprus"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 70,
+    "defender": 43,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Cyprus"
+  },
+  "territory": "Cyprus",
+  "attacker": "Greece",
+  "defender": "Cyprus"
+}

@@ -1,0 +1,25 @@
+{
+  "caption": "October 2035, Turkey conquered Northern Cyprus territory.\nNorthern Cyprus has been completely defeated.\n126 countries remaining.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000115.png",
+  "zoom": "000115.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nKosovo: 4\nNicaragua: 4\nBrazil: 4\nIsrael: 4\nEthiopia: 4\nSingapore: 4\nGermany: 3\nEcuador: 3\nSweden: 3\nNorway: 3",
+  "tags": [
+    "Turkey",
+    "Northern Cyprus"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 178,
+    "defender": 192,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Northern Cyprus"
+  },
+  "territory": "Northern Cyprus",
+  "attacker": "Turkey",
+  "defender": "Northern Cyprus"
+}

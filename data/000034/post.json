@@ -1,0 +1,25 @@
+{
+  "caption": "January 2029, Mongolia conquered Kyrgyzstan territory.\nKyrgyzstan has been completely defeated.\n173 countries remaining.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000034.png",
+  "zoom": "000034.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nNigeria: 3\nIsrael: 3\nSerbia: 3\nTogo: 2\nBulgaria: 2\nMexico: 2\nBrazil: 2\nBarbados: 2\nNorth Korea: 2\nZambia: 2",
+  "tags": [
+    "Mongolia",
+    "Kyrgyzstan"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 119,
+    "defender": 93,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Kyrgyzstan"
+  },
+  "territory": "Kyrgyzstan",
+  "attacker": "Mongolia",
+  "defender": "Kyrgyzstan"
+}

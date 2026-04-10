@@ -1,0 +1,25 @@
+{
+  "caption": "March 2032, Uganda conquered Kenya territory.\nKenya has been completely defeated.\n148 countries remaining.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000072.png",
+  "zoom": "000072.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nIsrael: 4\nNigeria: 4\nAntarctica: 3\nBulgaria: 3\nBrazil: 3\nVenezuela: 3\nLatvia: 3\nEthiopia: 3\nSerbia: 3\nOman: 3",
+  "tags": [
+    "Uganda",
+    "Kenya"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 181,
+    "defender": 92,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Kenya"
+  },
+  "territory": "Kenya",
+  "attacker": "Uganda",
+  "defender": "Kenya"
+}

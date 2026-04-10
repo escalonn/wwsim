@@ -1,0 +1,32 @@
+{
+  "caption": "August 2035, Singapore conquered Oman territory.\nOman capitulated, ceding 1 additional territory to Singapore.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000113.png",
+  "zoom": "000113.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nKosovo: 4\nNicaragua: 4\nBrazil: 4\nIsrael: 4\nEthiopia: 4\nSingapore: 4\nGermany: 3\nEcuador: 3\nSweden: 3\nNorway: 3",
+  "tags": [
+    "Singapore",
+    "Oman"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 112,
+    "defender": 134,
+    "type": "conquer",
+    "subjects": [
+      193
+    ],
+    "capitulation": true,
+    "capitulationEvent": {
+      "round": 113,
+      "attackerTerritoriesBefore": 2,
+      "defenderTerritoriesBefore": 3,
+      "territoriesCeded": 1
+    },
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Oman"
+  },
+  "territory": "Oman",
+  "attacker": "Singapore",
+  "defender": "Oman"
+}

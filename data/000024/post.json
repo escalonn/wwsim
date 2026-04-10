@@ -1,0 +1,25 @@
+{
+  "caption": "March 2028, Nigeria conquered [REDACTED] territory.\n[REDACTED] has been completely defeated.\n181 countries remaining.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000024.png",
+  "zoom": "000024.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nNigeria: 3\nKosovo: 2\nTogo: 2\nBulgaria: 2\nMexico: 2\nZambia: 2\nCape Verde: 2\nHonduras: 2\nGreece: 2\nSenegal: 2",
+  "tags": [
+    "Nigeria",
+    "[REDACTED]"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 128,
+    "defender": 127,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "[REDACTED]"
+  },
+  "territory": "[REDACTED]",
+  "attacker": "Nigeria",
+  "defender": "[REDACTED]"
+}

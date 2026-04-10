@@ -1,0 +1,25 @@
+{
+  "caption": "September 2026, Honduras conquered Cuba territory.\nCuba has been completely defeated.\n195 countries remaining.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000006.png",
+  "zoom": "000006.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nHonduras: 2\nGreece: 2\nSenegal: 2\nTonga: 2\nSerbia: 2\nSouth Africa: 2\nAfghanistan: 1\nAngola: 1\nAlbania: 1\nAndorra: 1",
+  "tags": [
+    "Honduras",
+    "Cuba"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 75,
+    "defender": 42,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Cuba"
+  },
+  "territory": "Cuba",
+  "attacker": "Honduras",
+  "defender": "Cuba"
+}

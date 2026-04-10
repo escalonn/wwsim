@@ -1,0 +1,25 @@
+{
+  "caption": "February 2029, El Salvador conquered Kiribati territory.\nKiribati has been completely defeated.\n172 countries remaining.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000035.png",
+  "zoom": "000035.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nNigeria: 3\nIsrael: 3\nSerbia: 3\nTogo: 2\nBulgaria: 2\nMexico: 2\nBrazil: 2\nBarbados: 2\nNorth Korea: 2\nZambia: 2",
+  "tags": [
+    "El Salvador",
+    "Kiribati"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 157,
+    "defender": 95,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Kiribati"
+  },
+  "territory": "Kiribati",
+  "attacker": "El Salvador",
+  "defender": "Kiribati"
+}

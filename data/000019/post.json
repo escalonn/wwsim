@@ -1,0 +1,25 @@
+{
+  "caption": "October 2027, Israel conquered Lebanon territory.\nLebanon has been completely defeated.\n184 countries remaining.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000019.png",
+  "zoom": "000019.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nKosovo: 3\nBurkina Faso: 2\nMexico: 2\nZambia: 2\nCape Verde: 2\nHonduras: 2\nGreece: 2\nSenegal: 2\nNorway: 2\nIsrael: 2",
+  "tags": [
+    "Israel",
+    "Lebanon"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 86,
+    "defender": 99,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Lebanon"
+  },
+  "territory": "Lebanon",
+  "attacker": "Israel",
+  "defender": "Lebanon"
+}

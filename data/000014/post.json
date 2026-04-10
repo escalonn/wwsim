@@ -1,0 +1,25 @@
+{
+  "caption": "May 2027, Serbia conquered Montenegro territory.\nMontenegro has been completely defeated.\n188 countries remaining.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000014.png",
+  "zoom": "000014.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nKosovo: 3\nBurkina Faso: 2\nMexico: 2\nHonduras: 2\nGreece: 2\nSenegal: 2\nNorway: 2\nSerbia: 2\nTonga: 2\nSlovenia: 2",
+  "tags": [
+    "Serbia",
+    "Montenegro"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 160,
+    "defender": 118,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Montenegro"
+  },
+  "territory": "Montenegro",
+  "attacker": "Serbia",
+  "defender": "Montenegro"
+}

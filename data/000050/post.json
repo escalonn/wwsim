@@ -1,0 +1,25 @@
+{
+  "caption": "May 2030, Antarctica conquered Falkland Islands territory.\nFalkland Islands has been completely defeated.\n163 countries remaining.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000050.png",
+  "zoom": "000050.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nIsrael: 4\nNigeria: 4\nBulgaria: 3\nSerbia: 3\nKosovo: 2\nAndorra: 2\nAntarctica: 2\nFrench Southern and Antarctic Territories: 2\nNepal: 2\nMexico: 2",
+  "tags": [
+    "Antarctica",
+    "Falkland Islands"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 7,
+    "defender": 59,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Falkland Islands"
+  },
+  "territory": "Falkland Islands",
+  "attacker": "Antarctica",
+  "defender": "Falkland Islands"
+}

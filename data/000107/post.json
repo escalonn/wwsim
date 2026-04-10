@@ -1,0 +1,25 @@
+{
+  "caption": "February 2035, Sweden conquered Kazakhstan territory previously occupied by Georgia.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000107.png",
+  "zoom": "000107.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nNicaragua: 4\nBrazil: 4\nIsrael: 4\nEthiopia: 4\nKosovo: 3\nGermany: 3\nBulgaria: 3\nEcuador: 3\nSweden: 3\nNorway: 3",
+  "tags": [
+    "Sweden",
+    "Georgia"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 55,
+    "defender": 91,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Georgia"
+  },
+  "territory": "Kazakhstan",
+  "attacker": "Sweden",
+  "defender": "Georgia"
+}

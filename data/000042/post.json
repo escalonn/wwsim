@@ -1,0 +1,25 @@
+{
+  "caption": "September 2029, Nepal conquered Bangladesh territory.\nBangladesh has been completely defeated.\n168 countries remaining.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000042.png",
+  "zoom": "000042.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nNigeria: 4\nBulgaria: 3\nIsrael: 3\nSerbia: 3\nAndorra: 2\nFrench Southern and Antarctic Territories: 2\nNepal: 2\nMexico: 2\nBrazil: 2\nBarbados: 2",
+  "tags": [
+    "Nepal",
+    "Bangladesh"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 132,
+    "defender": 16,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Bangladesh"
+  },
+  "territory": "Bangladesh",
+  "attacker": "Nepal",
+  "defender": "Bangladesh"
+}

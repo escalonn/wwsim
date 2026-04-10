@@ -1,0 +1,25 @@
+{
+  "caption": "December 2035, Mali conquered Burkina Faso territory previously occupied by Togo.\nTogo has been completely defeated.\n125 countries remaining.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000117.png",
+  "zoom": "000117.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nKosovo: 4\nNicaragua: 4\nBrazil: 4\nEthiopia: 4\nSingapore: 4\nGermany: 3\nEcuador: 3\nPalestine: 3\nSweden: 3\nNorway: 3",
+  "tags": [
+    "Mali",
+    "Togo"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 115,
+    "defender": 15,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Togo"
+  },
+  "territory": "Burkina Faso",
+  "attacker": "Mali",
+  "defender": "Togo"
+}

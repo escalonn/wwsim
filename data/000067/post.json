@@ -1,0 +1,25 @@
+{
+  "caption": "October 2031, Brazil conquered French Guiana territory previously occupied by Cape Verde.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000067.png",
+  "zoom": "000067.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nIsrael: 4\nNigeria: 4\nAntarctica: 3\nBulgaria: 3\nBrazil: 3\nEthiopia: 3\nSerbia: 3\nOman: 3\nKosovo: 2\nAndorra: 2",
+  "tags": [
+    "Brazil",
+    "Cape Verde"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 25,
+    "defender": 73,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Cape Verde"
+  },
+  "territory": "French Guiana",
+  "attacker": "Brazil",
+  "defender": "Cape Verde"
+}

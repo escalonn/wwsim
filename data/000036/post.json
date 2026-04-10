@@ -1,0 +1,25 @@
+{
+  "caption": "March 2029, Tajikistan conquered Turkmenistan territory.\nTurkmenistan has been completely defeated.\n171 countries remaining.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000036.png",
+  "zoom": "000036.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nNigeria: 3\nIsrael: 3\nSerbia: 3\nTogo: 2\nBulgaria: 2\nMexico: 2\nBrazil: 2\nBarbados: 2\nNorth Korea: 2\nZambia: 2",
+  "tags": [
+    "Tajikistan",
+    "Turkmenistan"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 172,
+    "defender": 173,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Turkmenistan"
+  },
+  "territory": "Turkmenistan",
+  "attacker": "Tajikistan",
+  "defender": "Turkmenistan"
+}

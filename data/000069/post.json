@@ -1,0 +1,25 @@
+{
+  "caption": "December 2031, Latvia conquered Poland territory.\nPoland has been completely defeated.\n151 countries remaining.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000069.png",
+  "zoom": "000069.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nIsrael: 4\nNigeria: 4\nAntarctica: 3\nBulgaria: 3\nBrazil: 3\nVenezuela: 3\nLatvia: 3\nEthiopia: 3\nSerbia: 3\nOman: 3",
+  "tags": [
+    "Latvia",
+    "Poland"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 107,
+    "defender": 141,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Poland"
+  },
+  "territory": "Poland",
+  "attacker": "Latvia",
+  "defender": "Poland"
+}

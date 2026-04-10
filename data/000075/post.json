@@ -1,0 +1,25 @@
+{
+  "caption": "June 2032, Italy conquered Andorra territory.\nThe government of Andorra continues in exile, based in its remaining territories.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000075.png",
+  "zoom": "000075.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nIsrael: 4\nEthiopia: 4\nNigeria: 4\nItaly: 3\nAntarctica: 3\nBulgaria: 3\nBrazil: 3\nVenezuela: 3\nLatvia: 3\nSerbia: 3",
+  "tags": [
+    "Italy",
+    "Andorra"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 109,
+    "defender": 3,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": true,
+    "defenderAdminBefore": "Andorra"
+  },
+  "territory": "Andorra",
+  "attacker": "Italy",
+  "defender": "Andorra"
+}

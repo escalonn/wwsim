@@ -1,0 +1,25 @@
+{
+  "caption": "September 2033, Myanmar conquered Thailand territory.\nThailand has been completely defeated.\n136 countries remaining.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000090.png",
+  "zoom": "000090.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nCzech Republic: 4\nIsrael: 4\nEthiopia: 4\nNorway: 4\nKosovo: 3\nItaly: 3\nBulgaria: 3\nBrazil: 3\nVenezuela: 3\nEcuador: 3",
+  "tags": [
+    "Myanmar",
+    "Thailand"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 94,
+    "defender": 171,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Thailand"
+  },
+  "territory": "Thailand",
+  "attacker": "Myanmar",
+  "defender": "Thailand"
+}

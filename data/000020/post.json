@@ -1,0 +1,25 @@
+{
+  "caption": "November 2027, Togo conquered Burkina Faso territory.\nThe government of Burkina Faso continues in exile, based in its remaining territories.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000020.png",
+  "zoom": "000020.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nKosovo: 3\nTogo: 2\nMexico: 2\nZambia: 2\nCape Verde: 2\nHonduras: 2\nGreece: 2\nSenegal: 2\nNorway: 2\nIsrael: 2",
+  "tags": [
+    "Togo",
+    "Burkina Faso"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 170,
+    "defender": 15,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": true,
+    "defenderAdminBefore": "Burkina Faso"
+  },
+  "territory": "Burkina Faso",
+  "attacker": "Togo",
+  "defender": "Burkina Faso"
+}

@@ -1,0 +1,25 @@
+{
+  "caption": "June 2026, Senegal conquered Western Sahara territory.\nWestern Sahara has been completely defeated.\n198 countries remaining.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000003.png",
+  "zoom": "000003.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nGreece: 2\nSenegal: 2\nTonga: 2\nAfghanistan: 1\nAngola: 1\nAlbania: 1\nAndorra: 1\nUnited Arab Emirates: 1\nArgentina: 1\nArmenia: 1",
+  "tags": [
+    "Senegal",
+    "Western Sahara"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 153,
+    "defender": 53,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Western Sahara"
+  },
+  "territory": "Western Sahara",
+  "attacker": "Senegal",
+  "defender": "Western Sahara"
+}

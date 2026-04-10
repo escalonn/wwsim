@@ -1,0 +1,25 @@
+{
+  "caption": "October 2030, Jamaica conquered Cuba territory previously occupied by Honduras.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000055.png",
+  "zoom": "000055.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nIsrael: 4\nNigeria: 4\nBulgaria: 3\nCape Verde: 3\nSerbia: 3\nKosovo: 2\nAndorra: 2\nAntarctica: 2\nFrench Southern and Antarctic Territories: 2\nNepal: 2",
+  "tags": [
+    "Jamaica",
+    "Honduras"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 88,
+    "defender": 42,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Honduras"
+  },
+  "territory": "Cuba",
+  "attacker": "Jamaica",
+  "defender": "Honduras"
+}

@@ -23,8 +23,27 @@ pub struct GamestateResult {
 }
 
 // Returns all gamestate fields needed by the simulator and reports.
-pub fn read_gamestate() -> GamestateResult {
-    let json_str = fs::read_to_string("data/gamestate.json").unwrap();
+pub fn read_gamestate(requested_round: Option<usize>) -> GamestateResult {
+    let round = requested_round.or_else(|| {
+        let entries = fs::read_dir("data").ok()?;
+        let mut max_round = None;
+        for entry in entries.flatten() {
+            if let Ok(file_type) = entry.file_type() {
+                if file_type.is_dir() {
+                    if let Some(name) = entry.file_name().to_str() {
+                        if let Ok(r) = name.parse::<usize>() {
+                            if fs::metadata(format!("data/{:06}/gamestate.json", r)).is_ok() {
+                                max_round = Some(max_round.map_or(r, |m| std::cmp::max(m, r)));
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        max_round
+    }).expect("No gamestate found. Run with --reset first.");
+
+    let json_str = fs::read_to_string(format!("data/{:06}/gamestate.json", round)).unwrap();
     let data: Gamestate = serde_json::from_str(&json_str).unwrap();
 
     let owners_data: HashMap<u16, u16> = data.country_data.iter().map(|(&k, &v)| (k, v)).collect();

@@ -1,0 +1,25 @@
+{
+  "caption": "November 2028, Brazil conquered Suriname territory.\nSuriname has been completely defeated.\n174 countries remaining.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000032.png",
+  "zoom": "000032.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nNigeria: 3\nIsrael: 3\nSerbia: 3\nTogo: 2\nBulgaria: 2\nMexico: 2\nBrazil: 2\nBarbados: 2\nNorth Korea: 2\nZambia: 2",
+  "tags": [
+    "Brazil",
+    "Suriname"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 25,
+    "defender": 162,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Suriname"
+  },
+  "territory": "Suriname",
+  "attacker": "Brazil",
+  "defender": "Suriname"
+}

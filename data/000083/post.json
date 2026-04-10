@@ -1,0 +1,25 @@
+{
+  "caption": "February 2033, Nicaragua conquered Belize territory previously occupied by Mexico.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000083.png",
+  "zoom": "000083.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nIsrael: 4\nEthiopia: 4\nNorway: 4\nNigeria: 4\nItaly: 3\nAntarctica: 3\nBulgaria: 3\nBrazil: 3\nVenezuela: 3\nCzech Republic: 3",
+  "tags": [
+    "Nicaragua",
+    "Mexico"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 129,
+    "defender": 22,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Mexico"
+  },
+  "territory": "Belize",
+  "attacker": "Nicaragua",
+  "defender": "Mexico"
+}

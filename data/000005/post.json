@@ -1,0 +1,25 @@
+{
+  "caption": "August 2026, South Africa conquered eSwatini territory.\neSwatini has been completely defeated.\n196 countries remaining.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000005.png",
+  "zoom": "000005.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nGreece: 2\nSenegal: 2\nTonga: 2\nSerbia: 2\nSouth Africa: 2\nAfghanistan: 1\nAngola: 1\nAlbania: 1\nAndorra: 1\nUnited Arab Emirates: 1",
+  "tags": [
+    "South Africa",
+    "eSwatini"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 194,
+    "defender": 166,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "eSwatini"
+  },
+  "territory": "eSwatini",
+  "attacker": "South Africa",
+  "defender": "eSwatini"
+}

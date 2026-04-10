@@ -1,0 +1,25 @@
+{
+  "caption": "November 2026, Venezuela conquered Trinidad and Tobago territory.\nTrinidad and Tobago has been completely defeated.\n194 countries remaining.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000008.png",
+  "zoom": "000008.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nHonduras: 2\nGreece: 2\nSenegal: 2\nTonga: 2\nKosovo: 2\nSouth Africa: 2\nVenezuela: 2\nAfghanistan: 1\nAngola: 1\nAlbania: 1",
+  "tags": [
+    "Venezuela",
+    "Trinidad and Tobago"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 187,
+    "defender": 176,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Trinidad and Tobago"
+  },
+  "territory": "Trinidad and Tobago",
+  "attacker": "Venezuela",
+  "defender": "Trinidad and Tobago"
+}
