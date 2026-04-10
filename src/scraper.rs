@@ -369,6 +369,21 @@ pub fn reset_gamestate() -> Result<(), Box<dyn std::error::Error>> {
         }
     }
 
+    let countries_req = ureq::get("https://run5.worldwarbot.com/data/countries.json").call();
+    match countries_req {
+        Ok(mut res) => {
+            let countries_json: String = res.body_mut().read_to_string()?;
+            fs::write("data/countries.json", countries_json)?;
+            println!("Successfully fetched and updated data/countries.json.");
+        }
+        Err(e) => {
+            eprintln!(
+                "Failed to fetch countries.json: {}. Retaining existing file if present.",
+                e
+            );
+        }
+    }
+
     if generated_from_saves {
         println!(
             "Successfully generated purely synced starting gamestate and cleared logs at epoch 0."

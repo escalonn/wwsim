@@ -24,7 +24,8 @@ use scraper::update_gamestate;
 ///////////////////////////////////////////////////////////////////////////////
 
 pub struct Country {
-    name: String,
+    pub name: String,
+    pub color: Option<RGBColor>,
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -68,37 +69,6 @@ fn turns_to_duration_str(avg_turns: f64) -> String {
 
 ///////////////////////////////////////////////////////////////////////////////
 // Chart generation — pie chart
-
-/// HSL → RGB (all values in [0, 1] except h which is [0, 360))
-fn hsl_to_rgb(h: f64, s: f64, l: f64) -> RGBColor {
-    let c = (1.0 - (2.0 * l - 1.0).abs()) * s;
-    let hp = h / 60.0;
-    let x = c * (1.0 - (hp % 2.0 - 1.0).abs());
-    let m = l - c / 2.0;
-    let (r, g, b) = match hp as u32 {
-        0 => (c, x, 0.0),
-        1 => (x, c, 0.0),
-        2 => (0.0, c, x),
-        3 => (0.0, x, c),
-        4 => (x, 0.0, c),
-        _ => (c, 0.0, x),
-    };
-    RGBColor(
-        ((r + m) * 255.0).round() as u8,
-        ((g + m) * 255.0).round() as u8,
-        ((b + m) * 255.0).round() as u8,
-    )
-}
-
-/// Deterministic color from country ID — consistent across runs.
-fn country_color(id: u16) -> RGBColor {
-    // Knuth multiplicative hash for good bit distribution
-    let h = (id as u32).wrapping_mul(2_654_435_761);
-    let hue = (h >> 16) as f64 / 65535.0 * 360.0;
-    let sat = 0.58 + ((h & 0x3F) as f64 / 63.0) * 0.32;        // 0.58 – 0.90
-    let lit = 0.40 + (((h >> 6) & 0x3F) as f64 / 63.0) * 0.22; // 0.40 – 0.62
-    hsl_to_rgb(hue, sat, lit)
-}
 
 /// Polygon points for a pie slice: center + arc from a0 to a1 (screen coords, y-down).
 /// a0 / a1 are in radians; positive = counter-clockwise on screen (since y is flipped).
@@ -180,7 +150,13 @@ fn generate_chart(
     for slice in &slices {
         let sweep = slice.count as f64 / n_runs as f64 * std::f64::consts::TAU;
         let end_angle = angle + sweep;
-        let color = slice.id.map(country_color).unwrap_or(RGBColor(85, 85, 108));
+        let color = if let Some(id) = slice.id {
+            country_data.get(&id)
+                .and_then(|c| c.color)
+                .unwrap_or(RGBColor(136, 136, 136))
+        } else {
+            RGBColor(84, 84, 85)
+        };
 
         // Filled polygon
         root.draw(&Polygon::new(pie_points(cx, cy, r, angle, end_angle), color.filled()))?;
@@ -212,7 +188,13 @@ fn generate_chart(
     // ── Legend ────────────────────────────────────────────────────────────
     for (i, slice) in slices.iter().enumerate() {
         let y = leg_y0 + i as i32 * item_h;
-        let color = slice.id.map(country_color).unwrap_or(RGBColor(85, 85, 108));
+        let color = if let Some(id) = slice.id {
+            country_data.get(&id)
+                .and_then(|c| c.color)
+                .unwrap_or(RGBColor(136, 136, 136))
+        } else {
+            RGBColor(84, 84, 85)
+        };
 
         // Color swatch with a subtle dark border
         root.draw(&Rectangle::new(
