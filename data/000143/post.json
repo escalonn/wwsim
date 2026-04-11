@@ -1,0 +1,25 @@
+{
+  "caption": "February 2038, Bahrain conquered Saudi Arabia territory.\nThe government of Saudi Arabia continues in exile, based in its remaining territories.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000143.png",
+  "zoom": "000143.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nKosovo: 5\nBrazil: 5\nSpain: 4\nNepal: 4\nNicaragua: 4\nEcuador: 4\nNorway: 4\nMyanmar: 4\nUnited Arab Emirates: 3\nFrench Southern and Antarctic Territories: 3",
+  "tags": [
+    "Bahrain",
+    "Saudi Arabia"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 18,
+    "defender": 151,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": true,
+    "defenderAdminBefore": "Saudi Arabia"
+  },
+  "territory": "Saudi Arabia",
+  "attacker": "Bahrain",
+  "defender": "Saudi Arabia"
+}

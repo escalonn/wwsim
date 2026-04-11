@@ -1,0 +1,25 @@
+{
+  "caption": "December 2037, Kosovo reconquered its homeland from Bulgaria.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000141.png",
+  "zoom": "000141.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nKosovo: 5\nBrazil: 5\nSpain: 4\nNepal: 4\nNicaragua: 4\nEcuador: 4\nNorway: 4\nMyanmar: 4\nUnited Arab Emirates: 3\nGermany: 3",
+  "tags": [
+    "Kosovo",
+    "Bulgaria"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 114,
+    "defender": 191,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Bulgaria"
+  },
+  "territory": "Kosovo",
+  "attacker": "Kosovo",
+  "defender": "Bulgaria"
+}

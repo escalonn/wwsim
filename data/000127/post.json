@@ -1,0 +1,25 @@
+{
+  "caption": "October 2036, Slovakia conquered Turkey territory.\nThe government of Turkey continues in exile, based in its remaining territories.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000127.png",
+  "zoom": "000127.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nKosovo: 4\nNicaragua: 4\nBrazil: 4\nEcuador: 4\nMyanmar: 4\nSpain: 3\nUnited Arab Emirates: 3\nGermany: 3\nMali: 3\nNepal: 3",
+  "tags": [
+    "Slovakia",
+    "Turkey"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 110,
+    "defender": 178,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": true,
+    "defenderAdminBefore": "Turkey"
+  },
+  "territory": "Turkey",
+  "attacker": "Slovakia",
+  "defender": "Turkey"
+}

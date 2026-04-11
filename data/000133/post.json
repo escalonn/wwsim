@@ -1,0 +1,25 @@
+{
+  "caption": "April 2037, Northern Ireland conquered Bahamas territory.\nBahamas has been completely defeated.\n119 countries remaining.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000133.png",
+  "zoom": "000133.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nKosovo: 4\nNorthern Ireland: 4\nNicaragua: 4\nBrazil: 4\nEcuador: 4\nMyanmar: 4\nSpain: 3\nUnited Arab Emirates: 3\nGermany: 3\nMali: 3",
+  "tags": [
+    "Northern Ireland",
+    "Bahamas"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 85,
+    "defender": 19,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Bahamas"
+  },
+  "territory": "Bahamas",
+  "attacker": "Northern Ireland",
+  "defender": "Bahamas"
+}

@@ -1,0 +1,25 @@
+{
+  "caption": "July 2036, Republic of Congo conquered Democratic Republic of the Congo territory previously occupied by Zambia.\nZambia has been completely defeated.\n123 countries remaining.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000124.png",
+  "zoom": "000124.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nKosovo: 4\nNicaragua: 4\nBrazil: 4\nEcuador: 4\nMyanmar: 4\nSingapore: 4\nGermany: 3\nMali: 3\nNepal: 3\nBulgaria: 3",
+  "tags": [
+    "Republic of Congo",
+    "Zambia"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 195,
+    "defender": 37,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Zambia"
+  },
+  "territory": "Democratic Republic of the Congo",
+  "attacker": "Republic of Congo",
+  "defender": "Zambia"
+}

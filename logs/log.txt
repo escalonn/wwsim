@@ -120,3 +120,25 @@ Round 119: February 2036, Bulgaria conquered Kosovo territory previously occupie
 Round 120: March 2036, Mali conquered Mauritania territory. Mauritania has been completely defeated. 124 countries remaining.
 Round 121: April 2036, Nepal conquered Tajikistan territory. The government of Tajikistan continues in exile, based in its remaining territories.
 Round 122: May 2036, Chad conquered Sudan territory previously occupied by Ethiopia.
+Round 123: June 2036, Ecuador conquered Peru territory. The government of Peru continues in exile, based in its remaining territories.
+Round 124: July 2036, Republic of Congo conquered Democratic Republic of the Congo territory previously occupied by Zambia. Zambia has been completely defeated. 123 countries remaining.
+Round 125: August 2036, Spain conquered Andorra territory previously occupied by Italy.
+Round 126: September 2036, United Arab Emirates conquered Oman territory previously occupied by Singapore.
+Round 127: October 2036, Slovakia conquered Turkey territory. The government of Turkey continues in exile, based in its remaining territories.
+Round 128: November 2036, Northern Ireland conquered Faroe Islands territory previously occupied by Greenland.
+Round 129: December 2036, England conquered Isle of Man territory. The government of Isle of Man continues in exile, based in its remaining territories.
+Round 130: January 2037, Venezuela conquered Guyana territory. Guyana has been completely defeated. 122 countries remaining.
+Round 131: February 2037, Uruguay conquered Namibia territory. Namibia has been completely defeated. 121 countries remaining.
+Round 132: March 2037, Cape Verde conquered Guinea-Bissau territory. Guinea-Bissau has been completely defeated. 120 countries remaining.
+Round 133: April 2037, Northern Ireland conquered Bahamas territory. Bahamas has been completely defeated. 119 countries remaining.
+Round 134: May 2037, South Korea conquered Taiwan territory previously occupied by Japan.
+Round 135: June 2037, Norway conquered Kazakhstan territory previously occupied by Sweden.
+Round 136: July 2037, Spain conquered Switzerland territory. Switzerland has been completely defeated. 118 countries remaining.
+Round 137: August 2037, Serbia conquered Vatican City territory previously occupied by Andorra. Andorra has been completely defeated. 117 countries remaining.
+Round 138: September 2037, Isle of Man conquered Faroe Islands territory previously occupied by Northern Ireland.
+Round 139: October 2037, Nepal conquered Kyrgyzstan territory previously occupied by Mongolia.
+Round 140: November 2037, Brazil conquered Cape Verde territory. The government of Cape Verde continues in exile, based in its remaining territories.
+Round 141: December 2037, Kosovo reconquered its homeland from Bulgaria.
+Round 142: January 2038, French Southern and Antarctic Territories conquered Seychelles territory previously occupied by Mauritius.
+Round 143: February 2038, Bahrain conquered Saudi Arabia territory. The government of Saudi Arabia continues in exile, based in its remaining territories.
+Round 144: March 2038, Brazil conquered Guinea-Bissau territory previously occupied by Cape Verde.

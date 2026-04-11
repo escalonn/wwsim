@@ -127,15 +127,12 @@ enum FetchError {
     },
 }
 
-
 impl std::fmt::Display for FetchError {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
         match self {
             FetchError::Http(e) => write!(f, "HTTP error: {}", e),
             FetchError::Io(e) => write!(f, "IO error: {}", e),
-            FetchError::Deserialization {
-                endpoint, source
-            } => {
+            FetchError::Deserialization { endpoint, source } => {
                 write!(f, "Deserialization failure for {}: {}", endpoint, source)
             }
         }
@@ -156,10 +153,7 @@ impl From<std::io::Error> for FetchError {
     }
 }
 
-fn try_fetch_round(
-    round: usize,
-    force_fetch: bool,
-) -> Result<(SaveFile, PostFile), FetchError> {
+fn try_fetch_round(round: usize, force_fetch: bool) -> Result<(SaveFile, PostFile), FetchError> {
     let round_dir = format!("data/{:06}", round);
     let save_path = format!("{}/save.json", round_dir);
     let post_path = format!("{}/post.json", round_dir);
@@ -168,15 +162,17 @@ fn try_fetch_round(
         let save_body = fs::read_to_string(&save_path)?;
         let post_body = fs::read_to_string(&post_path)?;
 
-        let save: SaveFile = serde_json::from_str(&save_body).map_err(|e| FetchError::Deserialization {
-            endpoint: "save",
-            source: e,
-        })?;
+        let save: SaveFile =
+            serde_json::from_str(&save_body).map_err(|e| FetchError::Deserialization {
+                endpoint: "save",
+                source: e,
+            })?;
 
-        let post: PostFile = serde_json::from_str(&post_body).map_err(|e| FetchError::Deserialization {
-            endpoint: "post",
-            source: e,
-        })?;
+        let post: PostFile =
+            serde_json::from_str(&post_body).map_err(|e| FetchError::Deserialization {
+                endpoint: "post",
+                source: e,
+            })?;
 
         return Ok((save, post));
     }
@@ -278,7 +274,10 @@ pub fn reset_gamestate() -> Result<(), Box<dyn std::error::Error>> {
         let parts: Vec<&str> = post.caption.split(' ').collect();
         if parts.len() >= 2 {
             if let Some(m) = month_to_num(parts[0]) {
-                let y: i32 = parts[1].trim_end_matches(',').parse().unwrap_or(initial_year);
+                let y: i32 = parts[1]
+                    .trim_end_matches(',')
+                    .parse()
+                    .unwrap_or(initial_year);
                 if m == 1 {
                     initial_month = 12;
                     initial_year = y - 1;
@@ -465,9 +464,7 @@ pub fn update_gamestate(force_fetch: bool) -> Result<usize, Box<dyn std::error::
             Err(e) => {
                 match e {
                     FetchError::Deserialization {
-                        endpoint,
-                        source,
-                        ..
+                        endpoint, source, ..
                     } => {
                         eprintln!(
                             "Round {}: Deserialization failure for {}: {}",
@@ -488,7 +485,10 @@ pub fn update_gamestate(force_fetch: bool) -> Result<usize, Box<dyn std::error::
         match &save.conquests.1 {
             ConquestData::Conquer(att_t_id, def_t_id, subjects) => {
                 if post.action_type != "conquest" {
-                    eprintln!("Round {}: Expected post type 'conquest' for Conquer shape, got '{}'", round, post.action_type);
+                    eprintln!(
+                        "Round {}: Expected post type 'conquest' for Conquer shape, got '{}'",
+                        round, post.action_type
+                    );
                     any_unexpected = true;
                 }
                 if post.conquest.action_type != "conquer" {
@@ -496,49 +496,77 @@ pub fn update_gamestate(force_fetch: bool) -> Result<usize, Box<dyn std::error::
                     any_unexpected = true;
                 }
                 if *att_t_id != post.conquest.attacker {
-                    eprintln!("Round {}: Save attacker territory {} != post attacker territory {}", round, att_t_id, post.conquest.attacker);
+                    eprintln!(
+                        "Round {}: Save attacker territory {} != post attacker territory {}",
+                        round, att_t_id, post.conquest.attacker
+                    );
                     any_unexpected = true;
                 }
                 if *def_t_id != post.conquest.defender {
-                    eprintln!("Round {}: Save defender territory {} != post defender territory {}", round, def_t_id, post.conquest.defender);
+                    eprintln!(
+                        "Round {}: Save defender territory {} != post defender territory {}",
+                        round, def_t_id, post.conquest.defender
+                    );
                     any_unexpected = true;
                 }
                 if subjects.len() != 1 || subjects[0] != *def_t_id {
-                    eprintln!("Round {}: Expected subjects [{}] in save Conquer shape, got {:?}", round, def_t_id, subjects);
+                    eprintln!(
+                        "Round {}: Expected subjects [{}] in save Conquer shape, got {:?}",
+                        round, def_t_id, subjects
+                    );
                     any_unexpected = true;
                 }
             }
             ConquestData::Riot(t_id1, t_id2) => {
                 if post.action_type != "riot" {
-                    eprintln!("Round {}: Expected post type 'riot' for Riot shape, got '{}'", round, post.action_type);
+                    eprintln!(
+                        "Round {}: Expected post type 'riot' for Riot shape, got '{}'",
+                        round, post.action_type
+                    );
                     any_unexpected = true;
                 }
                 if post.conquest.action_type != "riot" {
-                    eprintln!("Round {}: Expected conquest.action_type 'riot' for Riot shape, got '{}'", round, post.conquest.action_type);
+                    eprintln!(
+                        "Round {}: Expected conquest.action_type 'riot' for Riot shape, got '{}'",
+                        round, post.conquest.action_type
+                    );
                     any_unexpected = true;
                 }
                 if t_id1 != t_id2 {
-                    eprintln!("Round {}: Riot shape expects identical IDs in save file, got {} and {}", round, t_id1, t_id2);
+                    eprintln!(
+                        "Round {}: Riot shape expects identical IDs in save file, got {} and {}",
+                        round, t_id1, t_id2
+                    );
                     any_unexpected = true;
                 }
                 if *t_id1 != post.conquest.attacker || *t_id1 != post.conquest.defender {
-                    eprintln!("Round {}: Save riot ID {} does not match post attacker/defender {}/{}", round, t_id1, post.conquest.attacker, post.conquest.defender);
+                    eprintln!(
+                        "Round {}: Save riot ID {} does not match post attacker/defender {}/{}",
+                        round, t_id1, post.conquest.attacker, post.conquest.defender
+                    );
                     any_unexpected = true;
                 }
                 if post.conquest.subjects.len() != 0 {
-                    eprintln!("Round {}: Expected zero subjects in post for riot, got {}", round, post.conquest.subjects.len());
+                    eprintln!(
+                        "Round {}: Expected zero subjects in post for riot, got {}",
+                        round,
+                        post.conquest.subjects.len()
+                    );
                     any_unexpected = true;
                 }
             }
         }
-
 
         let territory_id = match &save.conquests.1 {
             ConquestData::Conquer(_, def_t_id, _) => *def_t_id,
             ConquestData::Riot(t_id, _) => *t_id,
         };
         let conquered_territory_id = territory_id as u16;
-        let id_owners: HashMap<u16, u16> = current_state.country_data.iter().map(|(&k, &v)| (k, v)).collect();
+        let id_owners: HashMap<u16, u16> = current_state
+            .country_data
+            .iter()
+            .map(|(&k, &v)| (k, v))
+            .collect();
 
         let (attacker_country_id, defender_country_id) = if post.action_type == "conquest" {
             (name_to_id[&post.attacker], name_to_id[&post.defender])
@@ -546,7 +574,10 @@ pub fn update_gamestate(force_fetch: bool) -> Result<usize, Box<dyn std::error::
             // Riot case: post.territory is the name of the new independent country.
             // post.attacker is the country it rose against.
             if post.attacker != post.defender {
-                eprintln!("Round {}: Expected attacker == defender for riot post, got {} and {}", round, post.attacker, post.defender);
+                eprintln!(
+                    "Round {}: Expected attacker == defender for riot post, got {} and {}",
+                    round, post.attacker, post.defender
+                );
                 any_unexpected = true;
             }
             (name_to_id[&post.territory], name_to_id[&post.attacker])
@@ -639,10 +670,13 @@ pub fn update_gamestate(force_fetch: bool) -> Result<usize, Box<dyn std::error::
             .insert(conquered_territory_id, attacker_country_id);
         if post.action_type == "conquest" {
             for sub_val in &post.conquest.subjects {
-                let sub_id = sub_val.as_u64().map(|v| v as u16).unwrap_or_else(|| {
-                    sub_val.as_str().and_then(|s| s.parse().ok()).unwrap_or(0)
-                });
-                current_state.country_data.insert(sub_id, attacker_country_id);
+                let sub_id = sub_val
+                    .as_u64()
+                    .map(|v| v as u16)
+                    .unwrap_or_else(|| sub_val.as_str().and_then(|s| s.parse().ok()).unwrap_or(0));
+                current_state
+                    .country_data
+                    .insert(sub_id, attacker_country_id);
             }
         }
 
@@ -658,7 +692,9 @@ pub fn update_gamestate(force_fetch: bool) -> Result<usize, Box<dyn std::error::
             + (round as i64);
 
         let mut d_string = String::new();
-        if id_owners[&conquered_territory_id] != conquered_territory_id {
+        let is_reconquest =
+            post.action_type == "conquest" && conquered_territory_id == attacker_country_id;
+        if !is_reconquest && id_owners[&conquered_territory_id] != conquered_territory_id {
             d_string.push_str(&format!(" previously occupied by {}", post.defender));
         }
 
@@ -693,15 +729,20 @@ pub fn update_gamestate(force_fetch: bool) -> Result<usize, Box<dyn std::error::
             total_months / 12
         );
 
-        let country_exists = id_owners
-            .values()
-            .any(|&o| o == attacker_country_id);
+        let country_exists = id_owners.values().any(|&o| o == attacker_country_id);
 
         let event_text = if post.action_type == "conquest" {
-            format!(
-                "{} conquered {} territory{}",
-                post.attacker, post.territory, d_string
-            )
+            if is_reconquest {
+                format!(
+                    "{} reconquered its homeland from {}{}",
+                    post.attacker, post.defender, d_string
+                )
+            } else {
+                format!(
+                    "{} conquered {} territory{}",
+                    post.attacker, post.territory, d_string
+                )
+            }
         } else {
             let riot_suffix = if country_exists {
                 "reunited its homeland."
@@ -714,9 +755,8 @@ pub fn update_gamestate(force_fetch: bool) -> Result<usize, Box<dyn std::error::
             )
         };
 
-        let expected_caption = format!(
-            "{date_prefix}{event_text}\nCheck the full map at https://worldwarbot.com"
-        );
+        let expected_caption =
+            format!("{date_prefix}{event_text}\nCheck the full map at https://worldwarbot.com");
 
         if post.caption != expected_caption {
             eprintln!(

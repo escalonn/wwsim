@@ -1,0 +1,25 @@
+{
+  "caption": "November 2037, Brazil conquered Cape Verde territory.\nThe government of Cape Verde continues in exile, based in its remaining territories.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000140.png",
+  "zoom": "000140.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 5\nKosovo: 4\nSpain: 4\nNepal: 4\nNicaragua: 4\nEcuador: 4\nNorway: 4\nMyanmar: 4\nUnited Arab Emirates: 3\nGermany: 3",
+  "tags": [
+    "Brazil",
+    "Cape Verde"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 73,
+    "defender": 40,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": true,
+    "defenderAdminBefore": "Cape Verde"
+  },
+  "territory": "Cape Verde",
+  "attacker": "Brazil",
+  "defender": "Cape Verde"
+}

@@ -1,0 +1,25 @@
+{
+  "caption": "December 2036, England conquered Isle of Man territory.\nThe government of Isle of Man continues in exile, based in its remaining territories.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000129.png",
+  "zoom": "000129.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nKosovo: 4\nNicaragua: 4\nBrazil: 4\nEcuador: 4\nMyanmar: 4\nSpain: 3\nUnited Arab Emirates: 3\nGermany: 3\nMali: 3\nNepal: 3",
+  "tags": [
+    "England",
+    "Isle of Man"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 199,
+    "defender": 80,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": true,
+    "defenderAdminBefore": "Isle of Man"
+  },
+  "territory": "Isle of Man",
+  "attacker": "England",
+  "defender": "Isle of Man"
+}

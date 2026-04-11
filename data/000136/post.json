@@ -1,0 +1,25 @@
+{
+  "caption": "July 2037, Spain conquered Switzerland territory.\nSwitzerland has been completely defeated.\n118 countries remaining.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000136.png",
+  "zoom": "000136.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nKosovo: 4\nSpain: 4\nNorthern Ireland: 4\nNicaragua: 4\nBrazil: 4\nEcuador: 4\nNorway: 4\nMyanmar: 4\nUnited Arab Emirates: 3\nGermany: 3",
+  "tags": [
+    "Spain",
+    "Switzerland"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 109,
+    "defender": 32,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Switzerland"
+  },
+  "territory": "Switzerland",
+  "attacker": "Spain",
+  "defender": "Switzerland"
+}

@@ -1,0 +1,25 @@
+{
+  "caption": "February 2037, Uruguay conquered Namibia territory.\nNamibia has been completely defeated.\n121 countries remaining.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000131.png",
+  "zoom": "000131.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nKosovo: 4\nNicaragua: 4\nBrazil: 4\nEcuador: 4\nMyanmar: 4\nSpain: 3\nUnited Arab Emirates: 3\nGermany: 3\nMali: 3\nNepal: 3",
+  "tags": [
+    "Uruguay",
+    "Namibia"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 183,
+    "defender": 125,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Namibia"
+  },
+  "territory": "Namibia",
+  "attacker": "Uruguay",
+  "defender": "Namibia"
+}

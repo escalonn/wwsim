@@ -1,0 +1,25 @@
+{
+  "caption": "August 2036, Spain conquered Andorra territory previously occupied by Italy.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000125.png",
+  "zoom": "000125.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nKosovo: 4\nNicaragua: 4\nBrazil: 4\nEcuador: 4\nMyanmar: 4\nSingapore: 4\nSpain: 3\nGermany: 3\nMali: 3\nNepal: 3",
+  "tags": [
+    "Spain",
+    "Italy"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 109,
+    "defender": 3,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Italy"
+  },
+  "territory": "Andorra",
+  "attacker": "Spain",
+  "defender": "Italy"
+}

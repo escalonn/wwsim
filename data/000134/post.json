@@ -1,0 +1,25 @@
+{
+  "caption": "May 2037, South Korea conquered Taiwan territory previously occupied by Japan.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000134.png",
+  "zoom": "000134.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nKosovo: 4\nNorthern Ireland: 4\nNicaragua: 4\nBrazil: 4\nEcuador: 4\nMyanmar: 4\nSpain: 3\nUnited Arab Emirates: 3\nGermany: 3\nMali: 3",
+  "tags": [
+    "South Korea",
+    "Japan"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 96,
+    "defender": 179,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Japan"
+  },
+  "territory": "Taiwan",
+  "attacker": "South Korea",
+  "defender": "Japan"
+}

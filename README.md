@@ -1,14 +1,14 @@
 # wwsim — WorldWarBot Run Simulator
 
-A Rust tool that simulates possible outcomes of the [@WorldWarBot](https://twitter.com/worldwarbot) game. Given the bot's current real-world game state, it runs the simulation N times in parallel and outputs statistics, allowing you to estimate which countries are most likely to win from the current position.
+A Rust tool that simulates possible outcomes of the [@WorldWarBot](https://x.com/worldwarbot) game. Given the bot's current real-world game state, it runs the simulation N times in parallel and outputs statistics, allowing you to estimate which countries are most likely to win from the current position.
 
-> Created by [@escalonn](https://twitter.com/escalonn), forked from the original by [@agubelu](https://twitter.com/agubelu).
+> Created by [@escalonn](https://github.com/escalonn), forked from the original by [@agubelu](https://github.com/agubelu).
 
 ---
 
 ## How WorldWarBot works
 
-[@WorldWarBot](https://twitter.com/worldwarbot) is a Twitter/X bot that plays out a simulated world war between countries. Each turn revolves around a random territory acting as the "attacker." It might trigger a normal conquest, a riot, or force a capitulation:
+[@WorldWarBot](https://x.com/worldwarbot) is a Twitter/X bot that plays out a simulated world war between countries. Each turn revolves around a random territory acting as the "attacker." It might trigger a normal conquest, a riot, or force a capitulation:
 
 - **Conquest**: A random viable neighboring territory (owned by a different country) is picked. If all immediate neighbors are self-owned, the search widens to a wider concentric shell of neighbors iteratively using a Breadth-First Search (BFS) until a foreign territory is found.
 - **Capitulations**: If a specific country has its initial capital conquered and still owned at least 3 territories, there's a 1/3 probability that country immediately capitulates, randomly ceding up to half of its remaining territories to the attacker.

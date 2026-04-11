@@ -1,0 +1,25 @@
+{
+  "caption": "June 2036, Ecuador conquered Peru territory.\nThe government of Peru continues in exile, based in its remaining territories.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000123.png",
+  "zoom": "000123.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nKosovo: 4\nNicaragua: 4\nBrazil: 4\nEcuador: 4\nMyanmar: 4\nSingapore: 4\nGermany: 3\nMali: 3\nNepal: 3\nBulgaria: 3",
+  "tags": [
+    "Ecuador",
+    "Peru"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 33,
+    "defender": 137,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": true,
+    "defenderAdminBefore": "Peru"
+  },
+  "territory": "Peru",
+  "attacker": "Ecuador",
+  "defender": "Peru"
+}

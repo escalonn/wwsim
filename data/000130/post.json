@@ -1,0 +1,25 @@
+{
+  "caption": "January 2037, Venezuela conquered Guyana territory.\nGuyana has been completely defeated.\n122 countries remaining.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000130.png",
+  "zoom": "000130.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nKosovo: 4\nNicaragua: 4\nBrazil: 4\nEcuador: 4\nMyanmar: 4\nSpain: 3\nUnited Arab Emirates: 3\nGermany: 3\nMali: 3\nNepal: 3",
+  "tags": [
+    "Venezuela",
+    "Guyana"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 187,
+    "defender": 74,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Guyana"
+  },
+  "territory": "Guyana",
+  "attacker": "Venezuela",
+  "defender": "Guyana"
+}
