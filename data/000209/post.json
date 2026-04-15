@@ -1,0 +1,25 @@
+{
+  "caption": "August 2043, New Zealand conquered Fiji territory.\nFiji has been completely defeated.\n91 countries remaining.",
+  "pic": "000209.png",
+  "zoom": "000209.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 10\nKosovo: 8\nSpain: 7\nUnited Arab Emirates: 6\nUganda: 6\nEcuador: 5\nNew Zealand: 5\nSingapore: 5\nNepal: 4\nPalestine: 4",
+  "tags": [
+    "New Zealand",
+    "Fiji"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 133,
+    "defender": 58,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Fiji"
+  },
+  "territory": "Fiji",
+  "attacker": "New Zealand",
+  "defender": "Fiji"
+}

@@ -1,0 +1,25 @@
+{
+  "caption": "September 2039, Ecuador conquered Bolivia territory.\nBolivia has been completely defeated.\n108 countries remaining.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000162.png",
+  "zoom": "000162.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nKosovo: 6\nSpain: 6\nEcuador: 5\nBrazil: 5\nChad: 5\nNepal: 4\nNicaragua: 4\nPalestine: 4\nNorway: 4\nNew Zealand: 4",
+  "tags": [
+    "Ecuador",
+    "Bolivia"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 137,
+    "defender": 24,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Bolivia"
+  },
+  "territory": "Bolivia",
+  "attacker": "Ecuador",
+  "defender": "Bolivia"
+}

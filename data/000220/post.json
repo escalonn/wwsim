@@ -1,0 +1,25 @@
+{
+  "caption": "July 2044, Japan conquered Taiwan territory previously occupied by South Korea.",
+  "pic": "000220.png",
+  "zoom": "000220.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 10\nSpain: 8\nKosovo: 7\nUnited Arab Emirates: 7\nGermany: 6\nUganda: 6\nEcuador: 6\nPalestine: 5\nNew Zealand: 5\nJapan: 4",
+  "tags": [
+    "Japan",
+    "South Korea"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 143,
+    "defender": 179,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "South Korea"
+  },
+  "territory": "Taiwan",
+  "attacker": "Japan",
+  "defender": "South Korea"
+}

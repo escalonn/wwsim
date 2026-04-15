@@ -1,0 +1,25 @@
+{
+  "caption": "October 2041, Singapore conquered Thailand territory previously occupied by Myanmar.",
+  "pic": "000187.png",
+  "zoom": "000187.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nKosovo: 8\nBrazil: 8\nSpain: 6\nEcuador: 6\nEl Salvador: 5\nSingapore: 5\nNepal: 4\nPalestine: 4\nNew Zealand: 4\nIreland: 4",
+  "tags": [
+    "Singapore",
+    "Myanmar"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 124,
+    "defender": 171,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Myanmar"
+  },
+  "territory": "Thailand",
+  "attacker": "Singapore",
+  "defender": "Myanmar"
+}

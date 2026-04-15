@@ -1,0 +1,25 @@
+{
+  "caption": "August 2044, New Zealand conquered Vanuatu territory previously occupied by Solomon Islands.",
+  "pic": "000221.png",
+  "zoom": "000221.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 10\nSpain: 8\nKosovo: 7\nUnited Arab Emirates: 7\nGermany: 6\nUganda: 6\nEcuador: 6\nNew Zealand: 6\nPalestine: 5\nJapan: 4",
+  "tags": [
+    "New Zealand",
+    "Solomon Islands"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 175,
+    "defender": 189,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Solomon Islands"
+  },
+  "territory": "Vanuatu",
+  "attacker": "New Zealand",
+  "defender": "Solomon Islands"
+}

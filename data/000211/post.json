@@ -1,0 +1,25 @@
+{
+  "caption": "October 2043, United Arab Emirates conquered Maldives territory previously occupied by Singapore.",
+  "pic": "000211.png",
+  "zoom": "000211.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 10\nKosovo: 8\nSpain: 7\nUnited Arab Emirates: 7\nUganda: 6\nEcuador: 5\nNew Zealand: 5\nNepal: 4\nPalestine: 4\nUruguay: 4",
+  "tags": [
+    "United Arab Emirates",
+    "Singapore"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 134,
+    "defender": 112,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Singapore"
+  },
+  "territory": "Maldives",
+  "attacker": "United Arab Emirates",
+  "defender": "Singapore"
+}

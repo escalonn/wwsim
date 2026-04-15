@@ -1,0 +1,25 @@
+{
+  "caption": "November 2042, Lesotho conquered Madagascar territory previously occupied by French Southern and Antarctic Territories.",
+  "pic": "000200.png",
+  "zoom": "000200.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nKosovo: 9\nBrazil: 9\nSpain: 7\nUganda: 6\nEcuador: 6\nSingapore: 5\nUnited Arab Emirates: 4\nNepal: 4\nNew Zealand: 4\nUruguay: 4",
+  "tags": [
+    "Lesotho",
+    "French Southern and Antarctic Territories"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 166,
+    "defender": 111,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "French Southern and Antarctic Territories"
+  },
+  "territory": "Madagascar",
+  "attacker": "Lesotho",
+  "defender": "French Southern and Antarctic Territories"
+}

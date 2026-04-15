@@ -1,0 +1,25 @@
+{
+  "caption": "June 2044, Liberia conquered Uruguay territory.\nThe government of Uruguay continues in exile, based in its remaining territories.",
+  "pic": "000219.png",
+  "zoom": "000219.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 10\nSpain: 8\nKosovo: 7\nUnited Arab Emirates: 7\nGermany: 6\nUganda: 6\nEcuador: 6\nPalestine: 5\nNew Zealand: 5\nSingapore: 4",
+  "tags": [
+    "Liberia",
+    "Uruguay"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 100,
+    "defender": 183,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": true,
+    "defenderAdminBefore": "Uruguay"
+  },
+  "territory": "Uruguay",
+  "attacker": "Liberia",
+  "defender": "Uruguay"
+}

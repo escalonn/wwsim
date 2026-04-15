@@ -1,0 +1,32 @@
+{
+  "caption": "May 2042, Samoa conquered El Salvador territory.\nEl Salvador capitulated, ceding 1 additional territory to Samoa.",
+  "pic": "000194.png",
+  "zoom": "000194.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nKosovo: 9\nBrazil: 9\nSpain: 7\nEcuador: 6\nUganda: 5\nSingapore: 5\nUnited Arab Emirates: 4\nNepal: 4\nNew Zealand: 4\nIreland: 4",
+  "tags": [
+    "Samoa",
+    "El Salvador"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 190,
+    "defender": 157,
+    "type": "conquer",
+    "subjects": [
+      113
+    ],
+    "capitulation": true,
+    "capitulationEvent": {
+      "round": 194,
+      "attackerTerritoriesBefore": 1,
+      "defenderTerritoriesBefore": 4,
+      "territoriesCeded": 1
+    },
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "El Salvador"
+  },
+  "territory": "El Salvador",
+  "attacker": "Samoa",
+  "defender": "El Salvador"
+}

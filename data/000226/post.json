@@ -1,0 +1,25 @@
+{
+  "caption": "January 2045, England conquered Isle of Man territory previously occupied by Ireland.",
+  "pic": "000226.png",
+  "zoom": "000226.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 10\nKosovo: 7\nSpain: 7\nUnited Arab Emirates: 7\nGermany: 7\nUganda: 6\nEcuador: 6\nNew Zealand: 6\nPalestine: 5\nLithuania: 4",
+  "tags": [
+    "England",
+    "Ireland"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 199,
+    "defender": 80,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Ireland"
+  },
+  "territory": "Isle of Man",
+  "attacker": "England",
+  "defender": "Ireland"
+}

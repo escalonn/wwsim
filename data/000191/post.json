@@ -1,0 +1,25 @@
+{
+  "caption": "February 2042, United Arab Emirates conquered Bahrain territory previously occupied by Israel.",
+  "pic": "000191.png",
+  "zoom": "000191.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 9\nKosovo: 8\nSpain: 7\nEcuador: 6\nUganda: 5\nEl Salvador: 5\nSingapore: 5\nUnited Arab Emirates: 4\nNepal: 4\nPalestine: 4",
+  "tags": [
+    "United Arab Emirates",
+    "Israel"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 134,
+    "defender": 18,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Israel"
+  },
+  "territory": "Bahrain",
+  "attacker": "United Arab Emirates",
+  "defender": "Israel"
+}

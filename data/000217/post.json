@@ -1,0 +1,25 @@
+{
+  "caption": "April 2044, Spain conquered Morocco territory previously occupied by Algeria.",
+  "pic": "000217.png",
+  "zoom": "000217.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 10\nSpain: 8\nKosovo: 7\nUnited Arab Emirates: 7\nGermany: 6\nUganda: 6\nEcuador: 6\nPalestine: 5\nNew Zealand: 5\nUruguay: 4",
+  "tags": [
+    "Spain",
+    "Algeria"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 3,
+    "defender": 108,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Algeria"
+  },
+  "territory": "Morocco",
+  "attacker": "Spain",
+  "defender": "Algeria"
+}

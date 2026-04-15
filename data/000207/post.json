@@ -1,0 +1,25 @@
+{
+  "caption": "June 2043, Cape Verde conquered Guinea territory.\nGuinea has been completely defeated.\n92 countries remaining.",
+  "pic": "000207.png",
+  "zoom": "000207.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 10\nKosovo: 8\nSpain: 7\nUnited Arab Emirates: 6\nUganda: 6\nEcuador: 6\nSingapore: 5\nNepal: 4\nNew Zealand: 4\nPalestine: 4",
+  "tags": [
+    "Cape Verde",
+    "Guinea"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 67,
+    "defender": 66,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Guinea"
+  },
+  "territory": "Guinea",
+  "attacker": "Cape Verde",
+  "defender": "Guinea"
+}

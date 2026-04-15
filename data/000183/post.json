@@ -1,0 +1,25 @@
+{
+  "caption": "June 2041, Sweden conquered Finland territory previously occupied by Norway.",
+  "pic": "000183.png",
+  "zoom": "000183.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nKosovo: 8\nBrazil: 8\nSpain: 6\nEcuador: 6\nNepal: 4\nNicaragua: 4\nPalestine: 4\nNew Zealand: 4\nEl Salvador: 4\nIreland: 4",
+  "tags": [
+    "Sweden",
+    "Norway"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 55,
+    "defender": 57,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Norway"
+  },
+  "territory": "Finland",
+  "attacker": "Sweden",
+  "defender": "Norway"
+}

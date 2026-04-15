@@ -1,0 +1,25 @@
+{
+  "caption": "February 2043, Central African Republic conquered Rwanda territory.\nRwanda has been completely defeated.\n93 countries remaining.",
+  "pic": "000203.png",
+  "zoom": "000203.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nKosovo: 9\nBrazil: 9\nSpain: 7\nUnited Arab Emirates: 6\nUganda: 6\nEcuador: 6\nSingapore: 5\nNepal: 4\nNew Zealand: 4\nUruguay: 4",
+  "tags": [
+    "Central African Republic",
+    "Rwanda"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 37,
+    "defender": 150,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Rwanda"
+  },
+  "territory": "Rwanda",
+  "attacker": "Central African Republic",
+  "defender": "Rwanda"
+}

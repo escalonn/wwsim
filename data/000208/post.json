@@ -1,0 +1,25 @@
+{
+  "caption": "July 2043, El Salvador conquered Guatemala territory previously occupied by Ecuador.",
+  "pic": "000208.png",
+  "zoom": "000208.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 10\nKosovo: 8\nSpain: 7\nUnited Arab Emirates: 6\nUganda: 6\nEcuador: 5\nSingapore: 5\nNepal: 4\nNew Zealand: 4\nPalestine: 4",
+  "tags": [
+    "El Salvador",
+    "Ecuador"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 22,
+    "defender": 72,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Ecuador"
+  },
+  "territory": "Guatemala",
+  "attacker": "El Salvador",
+  "defender": "Ecuador"
+}

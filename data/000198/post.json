@@ -1,0 +1,25 @@
+{
+  "caption": "September 2042, Lithuania conquered Belarus territory.\nBelarus has been completely defeated.\n95 countries remaining.",
+  "pic": "000198.png",
+  "zoom": "000198.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nKosovo: 9\nBrazil: 9\nSpain: 7\nUganda: 6\nEcuador: 6\nSingapore: 5\nUnited Arab Emirates: 4\nNepal: 4\nNew Zealand: 4\nIreland: 4",
+  "tags": [
+    "Lithuania",
+    "Belarus"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 105,
+    "defender": 21,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Belarus"
+  },
+  "territory": "Belarus",
+  "attacker": "Lithuania",
+  "defender": "Belarus"
+}

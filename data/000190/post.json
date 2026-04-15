@@ -1,0 +1,25 @@
+{
+  "caption": "January 2042, Spain conquered Italy territory.\nItaly has been completely defeated.\n97 countries remaining.",
+  "pic": "000190.png",
+  "zoom": "000190.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 9\nKosovo: 8\nSpain: 7\nEcuador: 6\nUganda: 5\nEl Salvador: 5\nSingapore: 5\nNepal: 4\nPalestine: 4\nNew Zealand: 4",
+  "tags": [
+    "Spain",
+    "Italy"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 109,
+    "defender": 87,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Italy"
+  },
+  "territory": "Italy",
+  "attacker": "Spain",
+  "defender": "Italy"
+}

@@ -1,0 +1,25 @@
+{
+  "caption": "December 2041, Uganda conquered Burundi territory previously occupied by Malawi.",
+  "pic": "000189.png",
+  "zoom": "000189.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 9\nKosovo: 8\nSpain: 6\nEcuador: 6\nUganda: 5\nEl Salvador: 5\nSingapore: 5\nNepal: 4\nPalestine: 4\nNew Zealand: 4",
+  "tags": [
+    "Uganda",
+    "Malawi"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 180,
+    "defender": 12,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Malawi"
+  },
+  "territory": "Burundi",
+  "attacker": "Uganda",
+  "defender": "Malawi"
+}

@@ -1,0 +1,25 @@
+{
+  "caption": "June 2042, Senegal conquered Mali territory.\nThe government of Mali continues in exile, based in its remaining territories.",
+  "pic": "000195.png",
+  "zoom": "000195.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nKosovo: 9\nBrazil: 9\nSpain: 7\nEcuador: 6\nUganda: 5\nSingapore: 5\nUnited Arab Emirates: 4\nNepal: 4\nNew Zealand: 4\nIreland: 4",
+  "tags": [
+    "Senegal",
+    "Mali"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 153,
+    "defender": 115,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": true,
+    "defenderAdminBefore": "Mali"
+  },
+  "territory": "Mali",
+  "attacker": "Senegal",
+  "defender": "Mali"
+}

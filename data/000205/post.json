@@ -1,0 +1,25 @@
+{
+  "caption": "April 2043, Palestine conquered Northern Cyprus territory previously occupied by Kosovo.",
+  "pic": "000205.png",
+  "zoom": "000205.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 9\nKosovo: 8\nSpain: 7\nUnited Arab Emirates: 6\nUganda: 6\nEcuador: 6\nSingapore: 5\nNepal: 4\nNew Zealand: 4\nPalestine: 4",
+  "tags": [
+    "Palestine",
+    "Kosovo"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 99,
+    "defender": 192,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Kosovo"
+  },
+  "territory": "Northern Cyprus",
+  "attacker": "Palestine",
+  "defender": "Kosovo"
+}

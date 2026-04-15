@@ -1,0 +1,25 @@
+{
+  "caption": "August 2041, Lesotho conquered Zimbabwe territory.\nZimbabwe has been completely defeated.\n98 countries remaining.",
+  "pic": "000185.png",
+  "zoom": "000185.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nKosovo: 8\nBrazil: 8\nSpain: 6\nEcuador: 6\nNepal: 4\nNicaragua: 4\nPalestine: 4\nNew Zealand: 4\nEl Salvador: 4\nIreland: 4",
+  "tags": [
+    "Lesotho",
+    "Zimbabwe"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 166,
+    "defender": 196,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Zimbabwe"
+  },
+  "territory": "Zimbabwe",
+  "attacker": "Lesotho",
+  "defender": "Zimbabwe"
+}

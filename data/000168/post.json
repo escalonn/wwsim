@@ -1,0 +1,25 @@
+{
+  "caption": "March 2040, Uruguay conquered Lesotho territory.\nThe government of Lesotho continues in exile, based in its remaining territories.",
+  "pic": "000168.png",
+  "zoom": "000168.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nKosovo: 6\nSpain: 6\nEcuador: 6\nBrazil: 5\nChad: 5\nNepal: 4\nNicaragua: 4\nPalestine: 4\nNorway: 4\nNew Zealand: 4",
+  "tags": [
+    "Uruguay",
+    "Lesotho"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 194,
+    "defender": 104,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": true,
+    "defenderAdminBefore": "Lesotho"
+  },
+  "territory": "Lesotho",
+  "attacker": "Uruguay",
+  "defender": "Lesotho"
+}

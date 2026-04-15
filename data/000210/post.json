@@ -1,0 +1,25 @@
+{
+  "caption": "September 2043, Japan conquered South Korea territory previously occupied by Mongolia.",
+  "pic": "000210.png",
+  "zoom": "000210.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 10\nKosovo: 8\nSpain: 7\nUnited Arab Emirates: 6\nUganda: 6\nEcuador: 5\nNew Zealand: 5\nSingapore: 5\nNepal: 4\nPalestine: 4",
+  "tags": [
+    "Japan",
+    "Mongolia"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 90,
+    "defender": 96,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Mongolia"
+  },
+  "territory": "South Korea",
+  "attacker": "Japan",
+  "defender": "Mongolia"
+}

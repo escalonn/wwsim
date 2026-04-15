@@ -146,3 +146,81 @@ Round 145: April 2038, Singapore conquered Malaysia territory. Malaysia has been
 Round 146: May 2038, Spain conquered France territory previously occupied by Monaco. Monaco has been completely defeated. 115 countries remaining.
 Round 147: June 2038, New Zealand conquered Falkland Islands territory previously occupied by Antarctica.
 Round 148: July 2038, Paraguay conquered Argentina territory. Argentina has been completely defeated. 114 countries remaining.
+Round 149: August 2038, Ireland conquered Isle of Man territory previously occupied by England.
+Round 150: September 2038, New Zealand conquered Tonga territory previously occupied by Samoa.
+Round 151: October 2038, Cape Verde reconquered its homeland from Brazil.
+Round 152: November 2038, Spain conquered Tunisia territory. Tunisia has been completely defeated. 113 countries remaining.
+Round 153: December 2038, Chad conquered Nigeria territory. Nigeria capitulated, ceding 1 additional territory to Chad.
+Round 154: January 2039, Israel conquered Bahrain territory. The government of Bahrain continues in exile, based in its remaining territories.
+Round 155: February 2039, Kosovo conquered Northern Cyprus territory previously occupied by Turkey. Turkey has been completely defeated. 112 countries remaining.
+Round 156: March 2039, Croatia conquered Serbia territory. The government of Serbia continues in exile, based in its remaining territories.
+Round 157: April 2039, Uruguay conquered South Africa territory. South Africa has been completely defeated. 111 countries remaining.
+Round 158: May 2039, El Salvador conquered Honduras territory. Honduras has been completely defeated. 110 countries remaining.
+Round 159: June 2039, Croatia conquered Slovenia territory previously occupied by Liechtenstein.
+Round 160: July 2039, Armenia conquered Georgia territory. Georgia has been completely defeated. 109 countries remaining.
+Round 161: August 2039, Palestine conquered Lebanon territory previously occupied by Israel.
+Round 162: September 2039, Ecuador conquered Bolivia territory. Bolivia has been completely defeated. 108 countries remaining.
+Round 163: October 2039, Solomon Islands conquered Micronesia territory. Micronesia has been completely defeated. 107 countries remaining.
+Round 164: November 2039, Mongolia conquered South Korea territory. The government of South Korea continues in exile, based in its remaining territories.
+Round 165: December 2039, Ecuador conquered Guatemala territory. Guatemala has been completely defeated. 106 countries remaining.
+Round 166: January 2040, India conquered Myanmar territory. The government of Myanmar continues in exile, based in its remaining territories.
+Round 167: February 2040, South Korea conquered Palau territory previously occupied by Timor-Leste. Timor-Leste has been completely defeated. 105 countries remaining.
+Round 168: March 2040, Uruguay conquered Lesotho territory. The government of Lesotho continues in exile, based in its remaining territories.
+Round 169: April 2040, Algeria conquered Morocco territory. Morocco has been completely defeated. 104 countries remaining.
+Round 170: May 2040, Brazil conquered Trinidad and Tobago territory previously occupied by Venezuela.
+Round 171: June 2040, Kosovo conquered Malta territory. The government of Malta continues in exile, based in its remaining territories.
+Round 172: July 2040, Cape Verde conquered Gambia territory. Gambia has been completely defeated. 103 countries remaining.
+Round 173: August 2040, Brazil conquered Puerto Rico territory previously occupied by Barbados. Barbados has been completely defeated. 102 countries remaining.
+Round 174: September 2040, Nicaragua conquered Mexico territory. Mexico has been completely defeated. 101 countries remaining.
+Round 175: October 2040, Iran conquered Qatar territory previously occupied by Saudi Arabia. Saudi Arabia has been completely defeated. 100 countries remaining.
+Round 176: November 2040, Uganda conquered Seychelles territory previously occupied by French Southern and Antarctic Territories.
+Round 177: December 2040, Kosovo conquered Montenegro territory previously occupied by Serbia.
+Round 178: January 2041, Ireland conquered Northern Ireland territory. Northern Ireland capitulated, ceding 1 additional territory to Ireland.
+Round 179: February 2041, Cameroon conquered Togo territory previously occupied by Chad.
+Round 180: March 2041, Brazil conquered Haiti territory. Haiti has been completely defeated. 99 countries remaining.
+Round 181: April 2041, Slovakia conquered Romania territory previously occupied by Bulgaria.
+Round 182: May 2041, El Salvador conquered Mexico territory previously occupied by Nicaragua.
+Round 183: June 2041, Sweden conquered Finland territory previously occupied by Norway.
+Round 184: July 2041, Lithuania conquered Poland territory previously occupied by Latvia.
+Round 185: August 2041, Lesotho conquered Zimbabwe territory. Zimbabwe has been completely defeated. 98 countries remaining.
+Round 186: September 2041, El Salvador conquered Belize territory previously occupied by Nicaragua.
+Round 187: October 2041, Singapore conquered Thailand territory previously occupied by Myanmar.
+Round 188: November 2041, Brazil conquered Sierra Leone territory previously occupied by Cape Verde.
+Round 189: December 2041, Uganda conquered Burundi territory previously occupied by Malawi.
+Round 190: January 2042, Spain conquered Italy territory. Italy has been completely defeated. 97 countries remaining.
+Round 191: February 2042, United Arab Emirates conquered Bahrain territory previously occupied by Israel.
+Round 192: March 2042, United States of America conquered Kiribati territory previously occupied by El Salvador.
+Round 193: April 2042, Kosovo conquered Egypt territory previously occupied by Palestine.
+Round 194: May 2042, Samoa conquered El Salvador territory. El Salvador capitulated, ceding 1 additional territory to Samoa.
+Round 195: June 2042, Senegal conquered Mali territory. The government of Mali continues in exile, based in its remaining territories.
+Round 196: July 2042, Central African Republic conquered Democratic Republic of the Congo territory previously occupied by Republic of Congo.
+Round 197: August 2042, Uganda conquered Somalia territory previously occupied by Oman. Oman has been completely defeated. 96 countries remaining.
+Round 198: September 2042, Lithuania conquered Belarus territory. Belarus has been completely defeated. 95 countries remaining.
+Round 199: October 2042, Northern Ireland conquered Iceland territory previously occupied by Ireland.
+Round 200: November 2042, Lesotho conquered Madagascar territory previously occupied by French Southern and Antarctic Territories.
+Round 201: December 2042, United Arab Emirates conquered Qatar territory previously occupied by Iran.
+Round 202: January 2043, United Arab Emirates conquered Saudi Arabia territory previously occupied by Bahrain. Bahrain has been completely defeated. 94 countries remaining.
+Round 203: February 2043, Central African Republic conquered Rwanda territory. Rwanda has been completely defeated. 93 countries remaining.
+Round 204: March 2043, Cameroon conquered Republic of Congo territory previously occupied by Gabon.
+Round 205: April 2043, Palestine conquered Northern Cyprus territory previously occupied by Kosovo.
+Round 206: May 2043, Brazil conquered Cape Verde territory. The government of Cape Verde continues in exile, based in its remaining territories.
+Round 207: June 2043, Cape Verde conquered Guinea territory. Guinea has been completely defeated. 92 countries remaining.
+Round 208: July 2043, El Salvador conquered Guatemala territory previously occupied by Ecuador.
+Round 209: August 2043, New Zealand conquered Fiji territory. Fiji has been completely defeated. 91 countries remaining.
+Round 210: September 2043, Japan conquered South Korea territory previously occupied by Mongolia.
+Round 211: October 2043, United Arab Emirates conquered Maldives territory previously occupied by Singapore.
+Round 212: November 2043, Australia conquered Brunei territory. Brunei has been completely defeated. 90 countries remaining.
+Round 213: December 2043, Ecuador conquered Colombia territory previously occupied by Peru. Peru has been completely defeated. 89 countries remaining.
+Round 214: January 2044, Bhutan conquered Nepal territory. Nepal capitulated, ceding 1 additional territory to Bhutan.
+Round 215: February 2044, Palestine conquered Egypt territory previously occupied by Kosovo.
+Round 216: March 2044, Germany conquered Slovakia territory. Slovakia capitulated, ceding 2 additional territories to Germany.
+Round 217: April 2044, Spain conquered Morocco territory previously occupied by Algeria.
+Round 218: May 2044, Laos conquered Bhutan territory. Bhutan capitulated, ceding 1 additional territory to Laos.
+Round 219: June 2044, Liberia conquered Uruguay territory. The government of Uruguay continues in exile, based in its remaining territories.
+Round 220: July 2044, Japan conquered Taiwan territory previously occupied by South Korea.
+Round 221: August 2044, New Zealand conquered Vanuatu territory previously occupied by Solomon Islands.
+Round 222: September 2044, Lithuania conquered Estonia territory previously occupied by Sweden.
+Round 223: October 2044, Portugal conquered Morocco territory previously occupied by Spain.
+Round 224: November 2044, Germany conquered Liechtenstein territory. The government of Liechtenstein continues in exile, based in its remaining territories.
+Round 225: December 2044, Nepal reconquered its homeland from Bhutan. Bhutan has been completely defeated. 88 countries remaining.
+Round 226: January 2045, England conquered Isle of Man territory previously occupied by Ireland.

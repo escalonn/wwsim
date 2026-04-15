@@ -1,0 +1,25 @@
+{
+  "caption": "June 2039, Croatia conquered Slovenia territory previously occupied by Liechtenstein.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000159.png",
+  "zoom": "000159.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nKosovo: 6\nSpain: 6\nBrazil: 5\nChad: 5\nNepal: 4\nIsrael: 4\nNicaragua: 4\nEcuador: 4\nNorway: 4\nNew Zealand: 4",
+  "tags": [
+    "Croatia",
+    "Liechtenstein"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 76,
+    "defender": 164,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Liechtenstein"
+  },
+  "territory": "Slovenia",
+  "attacker": "Croatia",
+  "defender": "Liechtenstein"
+}

@@ -1,0 +1,25 @@
+{
+  "caption": "August 2038, Ireland conquered Isle of Man territory previously occupied by England.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000149.png",
+  "zoom": "000149.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 6\nKosovo: 5\nSpain: 5\nNepal: 4\nNicaragua: 4\nEcuador: 4\nNorway: 4\nMyanmar: 4\nSingapore: 4\nUnited Arab Emirates: 3",
+  "tags": [
+    "Ireland",
+    "England"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 82,
+    "defender": 80,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "England"
+  },
+  "territory": "Isle of Man",
+  "attacker": "Ireland",
+  "defender": "England"
+}

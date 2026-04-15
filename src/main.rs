@@ -209,8 +209,13 @@ fn generate_chart(
         // Country name + percentage
         let pct = slice.count as f64 / n_runs as f64 * 100.0;
         let name: String = slice.name.chars().take(28).collect();
+        let label = if n_runs <= 100 {
+            format!("{} — {:.0}%", name, pct)
+        } else {
+            format!("{} — {:.1}%", name, pct)
+        };
         root.draw(&Text::new(
-            format!("{} — {:.1}%", name, pct),
+            label,
             (leg_x + swatch + 10, y + 4),
             ("Arial", 18).into_font().color(&RGBColor(215, 215, 232)),
         ))?;

@@ -1,0 +1,25 @@
+{
+  "caption": "November 2044, Germany conquered Liechtenstein territory.\nThe government of Liechtenstein continues in exile, based in its remaining territories.",
+  "pic": "000224.png",
+  "zoom": "000224.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 10\nKosovo: 7\nSpain: 7\nUnited Arab Emirates: 7\nGermany: 7\nUganda: 6\nEcuador: 6\nNew Zealand: 6\nPalestine: 5\nLithuania: 4",
+  "tags": [
+    "Germany",
+    "Liechtenstein"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 10,
+    "defender": 102,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": true,
+    "defenderAdminBefore": "Liechtenstein"
+  },
+  "territory": "Liechtenstein",
+  "attacker": "Germany",
+  "defender": "Liechtenstein"
+}

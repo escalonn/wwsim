@@ -1,0 +1,25 @@
+{
+  "caption": "January 2040, India conquered Myanmar territory.\nThe government of Myanmar continues in exile, based in its remaining territories.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000166.png",
+  "zoom": "000166.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nKosovo: 6\nSpain: 6\nEcuador: 6\nBrazil: 5\nChad: 5\nNepal: 4\nNicaragua: 4\nPalestine: 4\nNorway: 4\nNew Zealand: 4",
+  "tags": [
+    "India",
+    "Myanmar"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 81,
+    "defender": 117,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": true,
+    "defenderAdminBefore": "Myanmar"
+  },
+  "territory": "Myanmar",
+  "attacker": "India",
+  "defender": "Myanmar"
+}

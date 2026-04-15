@@ -1,0 +1,33 @@
+{
+  "caption": "March 2044, Germany conquered Slovakia territory.\nSlovakia capitulated, ceding 2 additional territories to Germany.",
+  "pic": "000216.png",
+  "zoom": "000216.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 10\nKosovo: 7\nSpain: 7\nUnited Arab Emirates: 7\nGermany: 6\nUganda: 6\nEcuador: 6\nPalestine: 5\nNew Zealand: 5\nUruguay: 4",
+  "tags": [
+    "Germany",
+    "Slovakia"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 44,
+    "defender": 163,
+    "type": "conquer",
+    "subjects": [
+      110,
+      148
+    ],
+    "capitulation": true,
+    "capitulationEvent": {
+      "round": 216,
+      "attackerTerritoriesBefore": 3,
+      "defenderTerritoriesBefore": 4,
+      "territoriesCeded": 2
+    },
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Slovakia"
+  },
+  "territory": "Slovakia",
+  "attacker": "Germany",
+  "defender": "Slovakia"
+}

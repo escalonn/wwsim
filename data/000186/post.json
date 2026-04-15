@@ -1,0 +1,25 @@
+{
+  "caption": "September 2041, El Salvador conquered Belize territory previously occupied by Nicaragua.",
+  "pic": "000186.png",
+  "zoom": "000186.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nKosovo: 8\nBrazil: 8\nSpain: 6\nEcuador: 6\nEl Salvador: 5\nNepal: 4\nPalestine: 4\nNew Zealand: 4\nIreland: 4\nUganda: 4",
+  "tags": [
+    "El Salvador",
+    "Nicaragua"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 113,
+    "defender": 22,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Nicaragua"
+  },
+  "territory": "Belize",
+  "attacker": "El Salvador",
+  "defender": "Nicaragua"
+}

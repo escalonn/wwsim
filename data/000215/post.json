@@ -1,0 +1,25 @@
+{
+  "caption": "February 2044, Palestine conquered Egypt territory previously occupied by Kosovo.",
+  "pic": "000215.png",
+  "zoom": "000215.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 10\nKosovo: 7\nSpain: 7\nUnited Arab Emirates: 7\nUganda: 6\nEcuador: 6\nPalestine: 5\nNew Zealand: 5\nUruguay: 4\nSlovakia: 4",
+  "tags": [
+    "Palestine",
+    "Kosovo"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 89,
+    "defender": 51,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Kosovo"
+  },
+  "territory": "Egypt",
+  "attacker": "Palestine",
+  "defender": "Kosovo"
+}

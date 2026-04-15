@@ -1,0 +1,25 @@
+{
+  "caption": "September 2038, New Zealand conquered Tonga territory previously occupied by Samoa.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000150.png",
+  "zoom": "000150.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 6\nKosovo: 5\nSpain: 5\nNepal: 4\nNicaragua: 4\nEcuador: 4\nNorway: 4\nNew Zealand: 4\nMyanmar: 4\nSingapore: 4",
+  "tags": [
+    "New Zealand",
+    "Samoa"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 126,
+    "defender": 175,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Samoa"
+  },
+  "territory": "Tonga",
+  "attacker": "New Zealand",
+  "defender": "Samoa"
+}

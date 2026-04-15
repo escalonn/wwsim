@@ -1,0 +1,25 @@
+{
+  "caption": "October 2044, Portugal conquered Morocco territory previously occupied by Spain.",
+  "pic": "000223.png",
+  "zoom": "000223.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 10\nKosovo: 7\nSpain: 7\nUnited Arab Emirates: 7\nGermany: 6\nUganda: 6\nEcuador: 6\nNew Zealand: 6\nPalestine: 5\nLithuania: 4",
+  "tags": [
+    "Portugal",
+    "Spain"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 144,
+    "defender": 108,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Spain"
+  },
+  "territory": "Morocco",
+  "attacker": "Portugal",
+  "defender": "Spain"
+}

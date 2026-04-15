@@ -1,0 +1,25 @@
+{
+  "caption": "June 2040, Kosovo conquered Malta territory.\nThe government of Malta continues in exile, based in its remaining territories.",
+  "pic": "000171.png",
+  "zoom": "000171.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nKosovo: 7\nSpain: 6\nEcuador: 6\nBrazil: 6\nChad: 5\nNepal: 4\nNicaragua: 4\nPalestine: 4\nNorway: 4\nNew Zealand: 4",
+  "tags": [
+    "Kosovo",
+    "Malta"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 70,
+    "defender": 116,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": true,
+    "defenderAdminBefore": "Malta"
+  },
+  "territory": "Malta",
+  "attacker": "Kosovo",
+  "defender": "Malta"
+}

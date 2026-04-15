@@ -1,0 +1,25 @@
+{
+  "caption": "April 2041, Slovakia conquered Romania territory previously occupied by Bulgaria.",
+  "pic": "000181.png",
+  "zoom": "000181.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nKosovo: 8\nBrazil: 8\nSpain: 6\nEcuador: 6\nNicaragua: 5\nNepal: 4\nPalestine: 4\nNorway: 4\nNew Zealand: 4\nIreland: 4",
+  "tags": [
+    "Slovakia",
+    "Bulgaria"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 163,
+    "defender": 148,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Bulgaria"
+  },
+  "territory": "Romania",
+  "attacker": "Slovakia",
+  "defender": "Bulgaria"
+}

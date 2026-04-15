@@ -1,0 +1,25 @@
+{
+  "caption": "February 2041, Cameroon conquered Togo territory previously occupied by Chad.",
+  "pic": "000179.png",
+  "zoom": "000179.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nKosovo: 8\nBrazil: 7\nSpain: 6\nEcuador: 6\nNicaragua: 5\nNepal: 4\nPalestine: 4\nNorway: 4\nNew Zealand: 4\nIreland: 4",
+  "tags": [
+    "Cameroon",
+    "Chad"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 36,
+    "defender": 170,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Chad"
+  },
+  "territory": "Togo",
+  "attacker": "Cameroon",
+  "defender": "Chad"
+}

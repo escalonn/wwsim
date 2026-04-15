@@ -1,0 +1,25 @@
+{
+  "caption": "August 2039, Palestine conquered Lebanon territory previously occupied by Israel.\nCheck the full map at https://worldwarbot.com",
+  "pic": "000161.png",
+  "zoom": "000161.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nKosovo: 6\nSpain: 6\nBrazil: 5\nChad: 5\nNepal: 4\nNicaragua: 4\nEcuador: 4\nPalestine: 4\nNorway: 4\nNew Zealand: 4",
+  "tags": [
+    "Palestine",
+    "Israel"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 146,
+    "defender": 99,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Israel"
+  },
+  "territory": "Lebanon",
+  "attacker": "Palestine",
+  "defender": "Israel"
+}

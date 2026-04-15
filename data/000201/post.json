@@ -1,0 +1,25 @@
+{
+  "caption": "December 2042, United Arab Emirates conquered Qatar territory previously occupied by Iran.",
+  "pic": "000201.png",
+  "zoom": "000201.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nKosovo: 9\nBrazil: 9\nSpain: 7\nUganda: 6\nEcuador: 6\nUnited Arab Emirates: 5\nSingapore: 5\nNepal: 4\nNew Zealand: 4\nUruguay: 4",
+  "tags": [
+    "United Arab Emirates",
+    "Iran"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 18,
+    "defender": 147,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Iran"
+  },
+  "territory": "Qatar",
+  "attacker": "United Arab Emirates",
+  "defender": "Iran"
+}

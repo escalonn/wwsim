@@ -1,0 +1,25 @@
+{
+  "caption": "July 2042, Central African Republic conquered Democratic Republic of the Congo territory previously occupied by Republic of Congo.",
+  "pic": "000196.png",
+  "zoom": "000196.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nKosovo: 9\nBrazil: 9\nSpain: 7\nEcuador: 6\nUganda: 5\nSingapore: 5\nUnited Arab Emirates: 4\nNepal: 4\nNew Zealand: 4\nIreland: 4",
+  "tags": [
+    "Central African Republic",
+    "Republic of Congo"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 30,
+    "defender": 37,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Republic of Congo"
+  },
+  "territory": "Democratic Republic of the Congo",
+  "attacker": "Central African Republic",
+  "defender": "Republic of Congo"
+}

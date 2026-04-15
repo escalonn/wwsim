@@ -1,0 +1,25 @@
+{
+  "caption": "March 2042, United States of America conquered Kiribati territory previously occupied by El Salvador.",
+  "pic": "000192.png",
+  "zoom": "000192.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 9\nKosovo: 8\nSpain: 7\nEcuador: 6\nUganda: 5\nSingapore: 5\nUnited Arab Emirates: 4\nNepal: 4\nEl Salvador: 4\nPalestine: 4",
+  "tags": [
+    "United States of America",
+    "El Salvador"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 184,
+    "defender": 95,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "El Salvador"
+  },
+  "territory": "Kiribati",
+  "attacker": "United States of America",
+  "defender": "El Salvador"
+}

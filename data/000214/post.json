@@ -1,0 +1,32 @@
+{
+  "caption": "January 2044, Bhutan conquered Nepal territory.\nNepal capitulated, ceding 1 additional territory to Bhutan.",
+  "pic": "000214.png",
+  "zoom": "000214.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 10\nKosovo: 8\nSpain: 7\nUnited Arab Emirates: 7\nUganda: 6\nEcuador: 6\nNew Zealand: 5\nPalestine: 4\nUruguay: 4\nSlovakia: 4",
+  "tags": [
+    "Bhutan",
+    "Nepal"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 28,
+    "defender": 132,
+    "type": "conquer",
+    "subjects": [
+      16
+    ],
+    "capitulation": true,
+    "capitulationEvent": {
+      "round": 214,
+      "attackerTerritoriesBefore": 1,
+      "defenderTerritoriesBefore": 4,
+      "territoriesCeded": 1
+    },
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Nepal"
+  },
+  "territory": "Nepal",
+  "attacker": "Bhutan",
+  "defender": "Nepal"
+}

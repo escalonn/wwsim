@@ -1,0 +1,25 @@
+{
+  "caption": "September 2040, Nicaragua conquered Mexico territory.\nMexico has been completely defeated.\n101 countries remaining.",
+  "pic": "000174.png",
+  "zoom": "000174.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nKosovo: 7\nBrazil: 7\nSpain: 6\nEcuador: 6\nNicaragua: 5\nChad: 5\nNepal: 4\nPalestine: 4\nNorway: 4\nNew Zealand: 4",
+  "tags": [
+    "Nicaragua",
+    "Mexico"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 22,
+    "defender": 113,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Mexico"
+  },
+  "territory": "Mexico",
+  "attacker": "Nicaragua",
+  "defender": "Mexico"
+}

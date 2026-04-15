@@ -239,8 +239,8 @@ pub fn validate_capitulation(
         .count();
     let n_ceded_additional = ceded_additional_ids.len();
 
-    // Rule: n_additional <= ceil(N/2) - 1
-    let limit = ((n_before as f64) / 2.0).ceil() as usize - 1;
+    // Rule: n_additional <= ceil(N/2)
+    let limit = ((n_before as f64) / 2.0).ceil() as usize;
     if n_ceded_additional > limit {
         return Err(format!(
             "Capitulation ceded too many territories: {} > {}",

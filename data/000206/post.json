@@ -1,0 +1,25 @@
+{
+  "caption": "May 2043, Brazil conquered Cape Verde territory.\nThe government of Cape Verde continues in exile, based in its remaining territories.",
+  "pic": "000206.png",
+  "zoom": "000206.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 10\nKosovo: 8\nSpain: 7\nUnited Arab Emirates: 6\nUganda: 6\nEcuador: 6\nSingapore: 5\nNepal: 4\nNew Zealand: 4\nPalestine: 4",
+  "tags": [
+    "Brazil",
+    "Cape Verde"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 73,
+    "defender": 40,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": true,
+    "defenderAdminBefore": "Cape Verde"
+  },
+  "territory": "Cape Verde",
+  "attacker": "Brazil",
+  "defender": "Cape Verde"
+}

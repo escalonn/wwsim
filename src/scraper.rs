@@ -755,8 +755,11 @@ pub fn update_gamestate(force_fetch: bool) -> Result<usize, Box<dyn std::error::
             )
         };
 
-        let expected_caption =
-            format!("{date_prefix}{event_text}\nCheck the full map at https://worldwarbot.com");
+        let expected_caption = if round < 167 {
+            format!("{date_prefix}{event_text}\nCheck the full map at https://worldwarbot.com")
+        } else {
+            format!("{date_prefix}{event_text}")
+        };
 
         if post.caption != expected_caption {
             eprintln!(
@@ -807,8 +810,10 @@ pub fn update_gamestate(force_fetch: bool) -> Result<usize, Box<dyn std::error::
         }
 
         let mut lines: Vec<&str> = post.caption.lines().collect();
-        if lines.len() >= 1 {
-            lines.truncate(lines.len() - 1);
+        if let Some(last_line) = lines.last() {
+            if last_line.contains("worldwarbot.com") {
+                lines.pop();
+            }
         }
         let summary = format!("Round {}: {}", round, lines.join(" "));
         println!("{}", summary);

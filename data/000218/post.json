@@ -1,0 +1,32 @@
+{
+  "caption": "May 2044, Laos conquered Bhutan territory.\nBhutan capitulated, ceding 1 additional territory to Laos.",
+  "pic": "000218.png",
+  "zoom": "000218.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 10\nSpain: 8\nKosovo: 7\nUnited Arab Emirates: 7\nGermany: 6\nUganda: 6\nEcuador: 6\nPalestine: 5\nNew Zealand: 5\nUruguay: 4",
+  "tags": [
+    "Laos",
+    "Bhutan"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 98,
+    "defender": 28,
+    "type": "conquer",
+    "subjects": [
+      16
+    ],
+    "capitulation": true,
+    "capitulationEvent": {
+      "round": 218,
+      "attackerTerritoriesBefore": 1,
+      "defenderTerritoriesBefore": 3,
+      "territoriesCeded": 1
+    },
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Bhutan"
+  },
+  "territory": "Bhutan",
+  "attacker": "Laos",
+  "defender": "Bhutan"
+}
