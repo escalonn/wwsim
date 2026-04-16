@@ -1,0 +1,31 @@
+{
+  "caption": "June 2045, Indonesia conquered Malaysia territory previously occupied by Singapore.",
+  "pic": "000231.png",
+  "zoom": "000231.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 10\nGermany: 8\nSpain: 7\nUnited Arab Emirates: 7\nKosovo: 6\nUganda: 6\nEcuador: 6\nNew Zealand: 6\nPalestine: 5\nLithuania: 4",
+  "tags": [
+    "Indonesia",
+    "Singapore"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 79,
+    "defender": 124,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Singapore",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 154,
+    "capitalIndexAfter": 154,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 154,
+    "capitalMoved": false
+  },
+  "territory": "Malaysia",
+  "attacker": "Indonesia",
+  "defender": "Singapore"
+}

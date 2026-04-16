@@ -14,7 +14,7 @@ mod utils;
 use utils::{read_country_data, read_targets_data};
 
 mod game_utils;
-use game_utils::{find_attack_targets, perform_conquest, perform_riot};
+use game_utils::{find_attack_targets, perform_conquest, perform_riot, find_new_capital};
 
 mod gamestate_reader;
 use gamestate_reader::{read_gamestate, GamestateResult};
@@ -350,6 +350,7 @@ fn main() {
         epoch: log_epoch,
         initial_month,
         initial_year,
+        capitals: capitals_after_log,
     } = read_gamestate(requested_round);
 
     // Shared accumulators (not used in --verbose mode but always created cheaply)
@@ -381,10 +382,29 @@ fn main() {
         let mut remaining   = remaining_after_log.clone();
         let mut owners_data = owners_data_after_log.clone();
         let mut owns_data   = owns_data_after_log.clone();
+        let mut capitals    = capitals_after_log.clone();
+
+        if epoch >= 229 {
+            for &country_id in &remaining_after_log {
+                let current_capital = *capitals.get(&country_id).unwrap_or(&country_id);
+                let capital_is_owned = owners_data.get(&current_capital) == Some(&country_id);
+                
+                if !capital_is_owned {
+                    let new_cap = find_new_capital(
+                        country_id,
+                        country_id,
+                        &owners_data,
+                        &targets_data,
+                    );
+                    capitals.insert(country_id, new_cap);
+                }
+            }
+        }
 
         let owners_ref    = &mut owners_data;
         let owns_ref      = &mut owns_data;
         let remaining_ref = &mut remaining;
+        let capitals_ref  = &mut capitals;
 
         while remaining_ref.len() > 1 {
             epoch += 1;
@@ -398,7 +418,7 @@ fn main() {
             if is_eliminated {
                 let independence_chance = 1.0 / (12.0 + (epoch as f64 / 10.0));
                 if random::<f64>() < independence_chance {
-                    perform_riot(chosen_id, owners_ref, owns_ref, &targets_data, remaining_ref);
+                    perform_riot(chosen_id, owners_ref, owns_ref, &targets_data, remaining_ref, capitals_ref);
                     continue;
                 }
             }
@@ -415,6 +435,7 @@ fn main() {
                 owns_ref,
                 &targets_data,
                 remaining_ref,
+                capitals_ref,
             );
         }
 

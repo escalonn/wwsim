@@ -1,0 +1,25 @@
+{
+  "caption": "February 2045, Malta reconquered its homeland from Kosovo.",
+  "pic": "000227.png",
+  "zoom": "000227.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 10\nSpain: 7\nUnited Arab Emirates: 7\nGermany: 7\nKosovo: 6\nUganda: 6\nEcuador: 6\nNew Zealand: 6\nPalestine: 5\nLithuania: 4",
+  "tags": [
+    "Malta",
+    "Kosovo"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 101,
+    "defender": 116,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Kosovo"
+  },
+  "territory": "Malta",
+  "attacker": "Malta",
+  "defender": "Kosovo"
+}

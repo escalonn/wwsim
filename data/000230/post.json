@@ -1,0 +1,31 @@
+{
+  "caption": "May 2045, Mauritius conquered French Southern and Antarctic Territories territory.\nFrench Southern and Antarctic Territories has been completely defeated.\n86 countries remaining.",
+  "pic": "000230.png",
+  "zoom": "000230.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 10\nGermany: 8\nSpain: 7\nUnited Arab Emirates: 7\nKosovo: 6\nUganda: 6\nEcuador: 6\nNew Zealand: 6\nPalestine: 5\nLithuania: 4",
+  "tags": [
+    "Mauritius",
+    "French Southern and Antarctic Territories"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 122,
+    "defender": 8,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "French Southern and Antarctic Territories",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 8,
+    "capitalIndexAfter": 8,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 8,
+    "capitalMoved": false
+  },
+  "territory": "French Southern and Antarctic Territories",
+  "attacker": "Mauritius",
+  "defender": "French Southern and Antarctic Territories"
+}

@@ -1,0 +1,27 @@
+{
+  "caption": "April 2045, Czech Republic conquered Croatia territory.\nThe government of Croatia relocated its capital to Slovenia and continues in exile.",
+  "pic": "000229.png",
+  "zoom": "000229.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 10\nGermany: 8\nSpain: 7\nUnited Arab Emirates: 7\nKosovo: 6\nUganda: 6\nEcuador: 6\nNew Zealand: 6\nPalestine: 5\nLithuania: 4",
+  "tags": [
+    "Czech Republic",
+    "Croatia"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 78,
+    "defender": 76,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": true,
+    "defenderAdminBefore": "Croatia",
+    "capitalIndexAfter": 164,
+    "defenderCapitalTerritoryAfter": "Slovenia"
+  },
+  "territory": "Croatia",
+  "attacker": "Czech Republic",
+  "defender": "Croatia"
+}

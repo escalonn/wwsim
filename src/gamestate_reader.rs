@@ -2,14 +2,18 @@ use std::fs;
 
 use counter::Counter;
 use serde::{Deserialize, Serialize};
-use std::collections::{HashMap, HashSet};
+use std::collections::{BTreeMap, HashMap, HashSet};
 
 #[derive(Serialize, Deserialize)]
 struct Gamestate {
     epoch: usize,
     initial_month: u32,
     initial_year: i32,
-    country_data: std::collections::BTreeMap<u16, u16>,
+    country_data: BTreeMap<u16, u16>,
+    /// Capital overrides: only populated for countries whose capital is NOT their original
+    /// (territory ID == country ID). Absent in old gamestate files; defaults to empty.
+    #[serde(default)]
+    capital_overrides: BTreeMap<u16, u16>,
 }
 
 /// All data loaded from gamestate.json.
@@ -20,6 +24,8 @@ pub struct GamestateResult {
     pub epoch: usize,
     pub initial_month: u32,
     pub initial_year: i32,
+    /// country_id -> current capital territory_id (includes random assignments for unknowns)
+    pub capitals: HashMap<u16, u16>,
 }
 
 // Returns all gamestate fields needed by the simulator and reports.
@@ -53,6 +59,15 @@ pub fn read_gamestate(requested_round: Option<usize>) -> GamestateResult {
         .map(|k| (k, *owners_counter.get(&k).unwrap_or(&0) as u16))
         .collect();
 
+    // Build the capitals map from stored overrides.
+    // An absence in this map means the country's capital is its original territory (country_id).
+    // For countries with an unknown capital (alive but not owning their recorded capital),
+    // each simulation run must perform its own random BFS assignment — not done here.
+    let capitals: HashMap<u16, u16> = data.capital_overrides
+        .iter()
+        .map(|(&k, &v)| (k, v))
+        .collect();
+
     GamestateResult {
         owners_data,
         owns_data,
@@ -60,5 +75,6 @@ pub fn read_gamestate(requested_round: Option<usize>) -> GamestateResult {
         epoch: data.epoch,
         initial_month: data.initial_month,
         initial_year: data.initial_year,
+        capitals,
     }
 }

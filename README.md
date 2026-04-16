@@ -11,7 +11,7 @@ A Rust tool that simulates possible outcomes of the [@WorldWarBot](https://x.com
 [@WorldWarBot](https://x.com/worldwarbot) is a Twitter/X bot that plays out a simulated world war between countries. Each turn revolves around a random territory acting as the "attacker." It might trigger a normal conquest, a riot, or force a capitulation:
 
 - **Conquest**: A random viable neighboring territory (owned by a different country) is picked. If all immediate neighbors are self-owned, the search widens to a wider concentric shell of neighbors iteratively using a Breadth-First Search (BFS) until a foreign territory is found.
-- **Capitulations**: If a specific country has its initial capital conquered and still owned at least 3 territories, there's a 1/3 probability that country immediately capitulates, randomly ceding up to half of its remaining territories to the attacker.
+- **Capitulations**: If a specific country has its capital conquered and still owned at least 3 territories, there's a 1/3 probability that country immediately capitulates, randomly ceding up to half of its remaining territories to the attacker.
 - **Riot**: If the randomly selected territory happens to be a conquered capital belonging to a previously eliminated country, there is a chance (`1 / (12 + epoch / 10)`) that a riot triggers. A riot grants independence, recreating a country, with a 20% cascading chance to cause adjacent subject states to simultaneously rebel and join the new country.
 
 The game ends when only one country controls all territories.
@@ -94,6 +94,22 @@ wwsim/
 | `--verbose` | Print the winner of each individual simulation run to stdout instead of summary statistics. |
 | `--open` | Automatically open the generated chart PNG (requires `--save`). |
 
+
+## Behavioral changes by round
+
+The WorldWarBot game has evolved over time. The scraper validates captions and post-schema fields against the rules in effect for each round:
+
+| Round | Change |
+|---|---|
+| **1–84** | Riot caption: `"… rose against … and gained independence."` |
+| **85+** | Riot caption: `"… rose against … and reunited its homeland."` |
+| **1–166** | All captions end with `"\nCheck the full map at https://worldwarbot.com"` |
+| **167+** | That trailing URL line is omitted. |
+| **1–228** | A country's capital is always its original territory (territory ID == country ID). Capitulations only trigger if the *original* capital is conquered by the attacker. |
+| **229** | **Capital relocation**: when a country loses its current capital but still has territories, its capital moves to the nearest available territory via BFS from the original. If a country later reconquers its original capital, the capital reverts. Eliminated countries reset to their original capital (so future riots start from there). Capitulations can trigger on relocated capitals too. The `post.conquest` schema gains two new fields on every conquest: `capitalIndexAfter` (territory ID of the defender's capital after this round) and `defenderCapitalTerritoryAfter` (name of that territory, or `null` if the defender was eliminated or its capital did not move). The fallen-capital exile caption changes to: `"The government of X relocated its capital to Y and continues in exile."` |
+| **230+** | **Schema evolution**: `fallenCapitalRemnant` is renamed to `fallenCapital`. New fields are introduced to `post.conquest` on every conquest: `capitalIndexBefore`, `originalCapitalIndex`, `capitalMoved` (true iff `fallenCapital` is true), and a placeholder `defenderTerritoryRankBefore` (always null). Strict validation ensures these new fields reflect the correct pre- and post-states. |
+
+---
 
 ## Future work
 

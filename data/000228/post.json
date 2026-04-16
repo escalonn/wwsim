@@ -1,0 +1,25 @@
+{
+  "caption": "March 2045, Germany conquered Belgium territory.\nBelgium has been completely defeated.\n87 countries remaining.",
+  "pic": "000228.png",
+  "zoom": "000228.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 10\nGermany: 8\nSpain: 7\nUnited Arab Emirates: 7\nKosovo: 6\nUganda: 6\nEcuador: 6\nNew Zealand: 6\nPalestine: 5\nLithuania: 4",
+  "tags": [
+    "Germany",
+    "Belgium"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 45,
+    "defender": 13,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapitalRemnant": false,
+    "defenderAdminBefore": "Belgium"
+  },
+  "territory": "Belgium",
+  "attacker": "Germany",
+  "defender": "Belgium"
+}
