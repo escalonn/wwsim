@@ -1,0 +1,31 @@
+{
+  "caption": "February 2046, Mali conquered Ghana territory.\nGhana has been completely defeated.\n85 countries remaining.",
+  "pic": "000239.png",
+  "zoom": "000239.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 10\nGermany: 9\nSpain: 7\nUnited Arab Emirates: 7\nKosovo: 6\nUganda: 6\nEcuador: 6\nNew Zealand: 6\nPalestine: 5\nEl Salvador: 4",
+  "tags": [
+    "Mali",
+    "Ghana"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 15,
+    "defender": 65,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Ghana",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 65,
+    "capitalIndexAfter": 65,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 65,
+    "capitalMoved": false
+  },
+  "territory": "Ghana",
+  "attacker": "Mali",
+  "defender": "Ghana"
+}

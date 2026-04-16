@@ -1,0 +1,31 @@
+{
+  "caption": "December 2045, Sweden conquered Estonia territory previously occupied by Lithuania.",
+  "pic": "000237.png",
+  "zoom": "000237.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 10\nGermany: 9\nSpain: 7\nUnited Arab Emirates: 7\nKosovo: 6\nUganda: 6\nEcuador: 6\nNew Zealand: 6\nPalestine: 5\nJapan: 4",
+  "tags": [
+    "Sweden",
+    "Lithuania"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 165,
+    "defender": 55,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Lithuania",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 105,
+    "capitalIndexAfter": 105,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 105,
+    "capitalMoved": false
+  },
+  "territory": "Estonia",
+  "attacker": "Sweden",
+  "defender": "Lithuania"
+}

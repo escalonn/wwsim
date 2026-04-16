@@ -1,0 +1,31 @@
+{
+  "caption": "September 2046, Vietnam conquered Philippines territory.\nPhilippines has been completely defeated.\n83 countries remaining.",
+  "pic": "000246.png",
+  "zoom": "000246.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 11\nGermany: 9\nSpain: 8\nNew Zealand: 7\nKosovo: 6\nUnited Arab Emirates: 6\nUganda: 6\nEcuador: 6\nPalestine: 5\nEl Salvador: 4",
+  "tags": [
+    "Vietnam",
+    "Philippines"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 188,
+    "defender": 138,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Philippines",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 138,
+    "capitalIndexAfter": 138,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 138,
+    "capitalMoved": false
+  },
+  "territory": "Philippines",
+  "attacker": "Vietnam",
+  "defender": "Philippines"
+}

@@ -1,0 +1,31 @@
+{
+  "caption": "April 2046, Brazil conquered Venezuela territory.\nThe government of Venezuela relocated its capital to Guyana and continues in exile.",
+  "pic": "000241.png",
+  "zoom": "000241.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 11\nGermany: 9\nSpain: 8\nUnited Arab Emirates: 7\nKosovo: 6\nUganda: 6\nEcuador: 6\nNew Zealand: 6\nPalestine: 5\nEl Salvador: 4",
+  "tags": [
+    "Brazil",
+    "Venezuela"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 176,
+    "defender": 187,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": true,
+    "defenderAdminBefore": "Venezuela",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 187,
+    "capitalIndexAfter": 74,
+    "defenderCapitalTerritoryAfter": "Guyana",
+    "originalCapitalIndex": 187,
+    "capitalMoved": true
+  },
+  "territory": "Venezuela",
+  "attacker": "Brazil",
+  "defender": "Venezuela"
+}

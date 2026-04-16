@@ -1,0 +1,31 @@
+{
+  "caption": "July 2046, New Zealand conquered Solomon Islands territory.\nThe government of Solomon Islands relocated its capital to Micronesia and continues in exile.",
+  "pic": "000244.png",
+  "zoom": "000244.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 11\nGermany: 9\nSpain: 8\nNew Zealand: 7\nKosovo: 6\nUnited Arab Emirates: 6\nUganda: 6\nEcuador: 6\nPalestine: 5\nEl Salvador: 4",
+  "tags": [
+    "New Zealand",
+    "Solomon Islands"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 126,
+    "defender": 155,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": true,
+    "defenderAdminBefore": "Solomon Islands",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 155,
+    "capitalIndexAfter": 62,
+    "defenderCapitalTerritoryAfter": "Micronesia",
+    "originalCapitalIndex": 155,
+    "capitalMoved": true
+  },
+  "territory": "Solomon Islands",
+  "attacker": "New Zealand",
+  "defender": "Solomon Islands"
+}

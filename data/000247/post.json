@@ -1,0 +1,31 @@
+{
+  "caption": "October 2046, Mozambique conquered Madagascar territory previously occupied by Lesotho.",
+  "pic": "000247.png",
+  "zoom": "000247.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 11\nGermany: 9\nSpain: 8\nNew Zealand: 7\nKosovo: 6\nUnited Arab Emirates: 6\nUganda: 6\nEcuador: 6\nPalestine: 5\nEl Salvador: 4",
+  "tags": [
+    "Mozambique",
+    "Lesotho"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 120,
+    "defender": 111,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Lesotho",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 166,
+    "capitalIndexAfter": 166,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 104,
+    "capitalMoved": false
+  },
+  "territory": "Madagascar",
+  "attacker": "Mozambique",
+  "defender": "Lesotho"
+}

@@ -1,0 +1,31 @@
+{
+  "caption": "June 2046, Central African Republic conquered South Sudan territory previously occupied by Ethiopia.",
+  "pic": "000243.png",
+  "zoom": "000243.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 11\nGermany: 9\nSpain: 8\nKosovo: 6\nUnited Arab Emirates: 6\nUganda: 6\nEcuador: 6\nNew Zealand: 6\nPalestine: 5\nEl Salvador: 4",
+  "tags": [
+    "Central African Republic",
+    "Ethiopia"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 30,
+    "defender": 161,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Ethiopia",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 56,
+    "capitalIndexAfter": 56,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 56,
+    "capitalMoved": false
+  },
+  "territory": "South Sudan",
+  "attacker": "Central African Republic",
+  "defender": "Ethiopia"
+}

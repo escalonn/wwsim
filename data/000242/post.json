@@ -1,0 +1,31 @@
+{
+  "caption": "May 2046, Singapore conquered Oman territory previously occupied by United Arab Emirates.",
+  "pic": "000242.png",
+  "zoom": "000242.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 11\nGermany: 9\nSpain: 8\nKosovo: 6\nUnited Arab Emirates: 6\nUganda: 6\nEcuador: 6\nNew Zealand: 6\nPalestine: 5\nEl Salvador: 4",
+  "tags": [
+    "Singapore",
+    "United Arab Emirates"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 193,
+    "defender": 134,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "United Arab Emirates",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 4,
+    "capitalIndexAfter": 4,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 4,
+    "capitalMoved": false
+  },
+  "territory": "Oman",
+  "attacker": "Singapore",
+  "defender": "United Arab Emirates"
+}

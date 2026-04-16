@@ -1,0 +1,31 @@
+{
+  "caption": "March 2046, Spain conquered Vatican City territory previously occupied by Serbia.\nSerbia has been completely defeated.\n84 countries remaining.",
+  "pic": "000240.png",
+  "zoom": "000240.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 10\nGermany: 9\nSpain: 8\nUnited Arab Emirates: 7\nKosovo: 6\nUganda: 6\nEcuador: 6\nNew Zealand: 6\nPalestine: 5\nEl Salvador: 4",
+  "tags": [
+    "Spain",
+    "Serbia"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 116,
+    "defender": 186,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Serbia",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 186,
+    "capitalIndexAfter": 186,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 160,
+    "capitalMoved": false
+  },
+  "territory": "Vatican City",
+  "attacker": "Spain",
+  "defender": "Serbia"
+}

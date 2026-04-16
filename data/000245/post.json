@@ -1,0 +1,31 @@
+{
+  "caption": "August 2046, Benin conquered Ghana territory previously occupied by Mali.",
+  "pic": "000245.png",
+  "zoom": "000245.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 11\nGermany: 9\nSpain: 8\nNew Zealand: 7\nKosovo: 6\nUnited Arab Emirates: 6\nUganda: 6\nEcuador: 6\nPalestine: 5\nEl Salvador: 4",
+  "tags": [
+    "Benin",
+    "Mali"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 14,
+    "defender": 65,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Mali",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 121,
+    "capitalIndexAfter": 121,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 115,
+    "capitalMoved": false
+  },
+  "territory": "Ghana",
+  "attacker": "Benin",
+  "defender": "Mali"
+}

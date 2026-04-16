@@ -1,0 +1,31 @@
+{
+  "caption": "November 2045, Spain conquered Malta territory.\nThe government of Malta relocated its capital to Libya and continues in exile.",
+  "pic": "000236.png",
+  "zoom": "000236.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 10\nGermany: 9\nSpain: 7\nUnited Arab Emirates: 7\nKosovo: 6\nUganda: 6\nEcuador: 6\nNew Zealand: 6\nPalestine: 5\nLithuania: 4",
+  "tags": [
+    "Spain",
+    "Malta"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 177,
+    "defender": 116,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": true,
+    "defenderAdminBefore": "Malta",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 116,
+    "capitalIndexAfter": 101,
+    "defenderCapitalTerritoryAfter": "Libya",
+    "originalCapitalIndex": 116,
+    "capitalMoved": true
+  },
+  "territory": "Malta",
+  "attacker": "Spain",
+  "defender": "Malta"
+}

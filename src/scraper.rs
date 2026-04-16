@@ -1042,14 +1042,26 @@ pub fn update_gamestate(force_fetch: bool) -> Result<usize, Box<dyn std::error::
                 }
                 Some(cai) => {
                     let cai = cai as u16;
-                    if completely_defeated {
-                        if cai != defender_country_id {
+                    let expected_cap = *capitals
+                        .get(&defender_country_id)
+                        .unwrap_or(&defender_country_id);
+
+                    if cai != expected_cap {
+                        if completely_defeated {
                             eprintln!(
-                                "Round {}: capitalIndexAfter for eliminated defender should be {} (original), got {}",
-                                round, defender_country_id, cai
+                                "Round {}: capitalIndexAfter for eliminated defender {} should be {} (per capitals.json), got {}",
+                                round, defender_country_id, expected_cap, cai
                             );
-                            any_unexpected = true;
+                        } else {
+                            eprintln!(
+                                "Round {}: capitalIndexAfter {} does not match expected capital {} for defender {}",
+                                round, cai, expected_cap, defender_country_id
+                            );
                         }
+                        any_unexpected = true;
+                    }
+
+                    if completely_defeated {
                         if conquest_info.defender_capital_territory_after.is_some() {
                             eprintln!(
                                 "Round {}: defenderCapitalTerritoryAfter must be null for eliminated defender",
@@ -1058,18 +1070,7 @@ pub fn update_gamestate(force_fetch: bool) -> Result<usize, Box<dyn std::error::
                             any_unexpected = true;
                         }
                     } else {
-                        let expected_cap = *capitals
-                            .get(&defender_country_id)
-                            .unwrap_or(&defender_country_id);
-                        if cai != expected_cap {
-                            eprintln!(
-                                "Round {}: capitalIndexAfter {} does not match expected capital {} for defender {}",
-                                round, cai, expected_cap, defender_country_id
-                            );
-                            any_unexpected = true;
-                        }
-
-                        // Validate defenderCapitalTerritoryAfter
+                        // Validate defenderCapitalTerritoryAfter for survivors
                         match &conquest_info.defender_capital_territory_after {
                             None => {
                                 if conquest_info.fallen_capital_remnant {
