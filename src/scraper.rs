@@ -40,6 +40,16 @@ struct PostFile {
 
 #[derive(Serialize, Deserialize, Debug)]
 #[serde(deny_unknown_fields)]
+struct CapitalsFile {
+    iteration: usize,
+    #[serde(rename = "originalCapitalByAdmin")]
+    original_capital_by_admin: HashMap<String, u16>,
+    #[serde(rename = "currentCapitalByAdmin")]
+    current_capital_by_admin: HashMap<String, u16>,
+}
+
+#[derive(Serialize, Deserialize, Debug)]
+#[serde(deny_unknown_fields)]
 struct CapitulationEvent {
     round: usize,
     #[serde(rename = "attackerTerritoriesBefore")]
@@ -88,7 +98,7 @@ struct ConquestSchema229 {
     /// Always present (even for eliminations); equals original capital ID when eliminated.
     #[serde(rename = "capitalIndexAfter")]
     capital_index_after: usize,
-    /// Name of `capital_index_after` territory; null when defender is eliminated.
+    /// Name of `capital_index_after` territory; null when defender is eliminated OR capital did not change.
     #[serde(rename = "defenderCapitalTerritoryAfter")]
     defender_capital_territory_after: Option<String>,
 }
@@ -120,7 +130,7 @@ struct ConquestSchema230 {
     /// Defender's capital territory ID after this conquest (original when eliminated).
     #[serde(rename = "capitalIndexAfter")]
     capital_index_after: usize,
-    /// Name of `capital_index_after`; null when defender is eliminated.
+    /// Name of `capital_index_after`; null when defender is eliminated OR capital did not change.
     #[serde(rename = "defenderCapitalTerritoryAfter")]
     defender_capital_territory_after: Option<String>,
     /// Defender's original (never-relocated) capital ID. Must always equal defender country ID.
@@ -227,9 +237,7 @@ struct Gamestate {
     initial_month: u32,
     initial_year: i32,
     country_data: BTreeMap<u16, u16>,
-    /// Capital overrides for round 229+: only countries whose capital != their original country_id.
-    /// Old gamestates without this field deserialize with an empty map (backward compatible).
-    #[serde(default)]
+    /// Capital overrides mapping country_id to current capital territory_id.
     capital_overrides: BTreeMap<u16, u16>,
 }
 
@@ -312,14 +320,16 @@ impl From<std::io::Error> for FetchError {
     }
 }
 
-fn try_fetch_round(round: usize, force_fetch: bool) -> Result<(SaveFile, PostFile), FetchError> {
+fn try_fetch_round(round: usize, force_fetch: bool) -> Result<(SaveFile, PostFile, CapitalsFile), FetchError> {
     let round_dir = format!("data/{:06}", round);
     let save_path = format!("{}/save.json", round_dir);
     let post_path = format!("{}/post.json", round_dir);
+    let capitals_path = format!("{}/capitals.json", round_dir);
 
-    if !force_fetch && fs::metadata(&save_path).is_ok() && fs::metadata(&post_path).is_ok() {
+    if !force_fetch && fs::metadata(&save_path).is_ok() && fs::metadata(&post_path).is_ok() && fs::metadata(&capitals_path).is_ok() {
         let save_body = fs::read_to_string(&save_path)?;
         let post_body = fs::read_to_string(&post_path)?;
+        let capitals_body = fs::read_to_string(&capitals_path)?;
 
         let save: SaveFile =
             serde_json::from_str(&save_body).map_err(|e| FetchError::Deserialization {
@@ -333,7 +343,13 @@ fn try_fetch_round(round: usize, force_fetch: bool) -> Result<(SaveFile, PostFil
                 source: e,
             })?;
 
-        return Ok((save, post));
+        let capitals: CapitalsFile =
+            serde_json::from_str(&capitals_body).map_err(|e| FetchError::Deserialization {
+                endpoint: "capitals",
+                source: e,
+            })?;
+
+        return Ok((save, post, capitals));
     }
 
     let save_url = format!("https://run5.worldwarbot.com/data/saves/{:06}.json", round);
@@ -343,6 +359,10 @@ fn try_fetch_round(round: usize, force_fetch: bool) -> Result<(SaveFile, PostFil
     let post_url = format!("https://run5.worldwarbot.com/data/posts/{:06}.json", round);
     let mut post_res = ureq::get(&post_url).call()?;
     let post_body = post_res.body_mut().read_to_string()?;
+
+    let capitals_url = format!("https://run5.worldwarbot.com/data/capitals/{:06}.json", round);
+    let mut capitals_res = ureq::get(&capitals_url).call()?;
+    let capitals_body = capitals_res.body_mut().read_to_string()?;
 
     // Pretty-print both for helpful error coordinates and context dumping
     let save_val_res: Result<serde_json::Value, _> = serde_json::from_str(&save_body);
@@ -363,9 +383,19 @@ fn try_fetch_round(round: usize, force_fetch: bool) -> Result<(SaveFile, PostFil
         Err(e) => (post_body.clone(), Some(e)),
     };
 
+    let capitals_val_res: Result<serde_json::Value, _> = serde_json::from_str(&capitals_body);
+    let (capitals_pretty, capitals_err) = match capitals_val_res {
+        Ok(v) => (
+            serde_json::to_string_pretty(&v).unwrap_or(capitals_body.clone()),
+            None,
+        ),
+        Err(e) => (capitals_body.clone(), Some(e)),
+    };
+
     fs::create_dir_all(&round_dir)?;
     fs::write(&save_path, &save_pretty)?;
     fs::write(&post_path, &post_pretty)?;
+    fs::write(&capitals_path, &capitals_pretty)?;
 
     // Handle raw JSON syntax errors if any
     if let Some(e) = save_err {
@@ -377,6 +407,12 @@ fn try_fetch_round(round: usize, force_fetch: bool) -> Result<(SaveFile, PostFil
     if let Some(e) = post_err {
         return Err(FetchError::Deserialization {
             endpoint: "post",
+            source: e,
+        });
+    }
+    if let Some(e) = capitals_err {
+        return Err(FetchError::Deserialization {
+            endpoint: "capitals",
             source: e,
         });
     }
@@ -394,7 +430,13 @@ fn try_fetch_round(round: usize, force_fetch: bool) -> Result<(SaveFile, PostFil
             source: e,
         })?;
 
-    Ok((save, post))
+    let capitals: CapitalsFile =
+        serde_json::from_str(&capitals_pretty).map_err(|e| FetchError::Deserialization {
+            endpoint: "capitals",
+            source: e,
+        })?;
+
+    Ok((save, post, capitals))
 }
 
 pub fn reset_gamestate() -> Result<(), Box<dyn std::error::Error>> {
@@ -425,7 +467,7 @@ pub fn reset_gamestate() -> Result<(), Box<dyn std::error::Error>> {
     let mut initial_month = chrono::Utc::now().month();
     let mut initial_year = chrono::Utc::now().year();
 
-    if let Ok((save, post)) = fetch_result {
+    if let Ok((_save, post, capitals)) = fetch_result {
         println!("Successfully fetched Round 1. Updating IDs.");
         generated_from_saves = true;
 
@@ -446,15 +488,8 @@ pub fn reset_gamestate() -> Result<(), Box<dyn std::error::Error>> {
             }
         }
 
-        for (name, terrs) in &save.countries {
-            if terrs.len() == 1 {
-                id_map.insert(name.clone(), terrs[0].to_string());
-            }
-        }
-        
-        if let Ok(conquest_info) = parse_conquest_schema(1, post.conquest) {
-            id_map.insert(post.attacker.clone(), conquest_info.attacker.to_string());
-            id_map.insert(post.defender.clone(), conquest_info.defender.to_string());
+        for (name, id) in capitals.original_capital_by_admin {
+            id_map.insert(name, id.to_string());
         }
 
         let mut matched_names = std::collections::HashSet::new();
@@ -538,7 +573,7 @@ pub fn reset_gamestate() -> Result<(), Box<dyn std::error::Error>> {
         Ok(mut res) => {
             let targets_json: String = res.body_mut().read_to_string()?;
             fs::write("data/targets.json", targets_json)?;
-            println!("Successfully fetched and updated data/targets.json.");
+            println!("Fetched and updated data/targets.json.");
         }
         Err(e) => {
             eprintln!(
@@ -553,7 +588,7 @@ pub fn reset_gamestate() -> Result<(), Box<dyn std::error::Error>> {
         Ok(mut res) => {
             let countries_json: String = res.body_mut().read_to_string()?;
             fs::write("data/countries.json", countries_json)?;
-            println!("Successfully fetched and updated data/countries.json.");
+            println!("Fetched and updated data/countries.json.");
         }
         Err(e) => {
             eprintln!(
@@ -565,7 +600,7 @@ pub fn reset_gamestate() -> Result<(), Box<dyn std::error::Error>> {
 
     if generated_from_saves {
         println!(
-            "Successfully generated purely synced starting gamestate and cleared logs at epoch 0."
+            "Synced starting gamestate and cleared logs at epoch 0."
         );
     }
 
@@ -633,7 +668,7 @@ pub fn update_gamestate(force_fetch: bool) -> Result<usize, Box<dyn std::error::
     }
 
     for round in (local_round + 1)..=max_iter {
-        let (save, post) = match try_fetch_round(round, force_fetch) {
+        let (save, post, capitals_file) = match try_fetch_round(round, force_fetch) {
             Ok(data) => data,
             Err(e) => {
                 match e {
@@ -655,6 +690,18 @@ pub fn update_gamestate(force_fetch: bool) -> Result<usize, Box<dyn std::error::
         };
 
         let mut any_unexpected = false;
+
+        if capitals_file.iteration != round {
+            eprintln!("Round {}: capitals.json iteration {} does not match", round, capitals_file.iteration);
+            any_unexpected = true;
+        }
+
+        for (admin, cap_id) in &capitals_file.original_capital_by_admin {
+            if name_to_id.get(admin) != Some(cap_id) {
+                eprintln!("Round {}: capitals.json originalCapital {} {} != name_to_id", round, admin, cap_id);
+                any_unexpected = true;
+            }
+        }
 
         // Parse the conquest sub-object with strict per-round schema validation.
         let conquest_info = match parse_conquest_schema(round, post.conquest) {
@@ -799,19 +846,23 @@ pub fn update_gamestate(force_fetch: bool) -> Result<usize, Box<dyn std::error::
             .values()
             .filter(|&owner| *owner == defender_country_id)
             .count();
-        let completely_defeated = defender_territories_before == 1;
+        
+        let lost_count = 1 + conquest_info.subjects.len();
+        let completely_defeated = lost_count >= defender_territories_before;
 
         // Validate fallen_capital_remnant: must be true iff the conquered territory is the
-        // defender's current capital AND the defender survives (has remaining territories).
-        // If the defender is eliminated, fallen_capital_remnant must be false even if it was
-        // the capital (consistent across both old "fallenCapitalRemnant" and new "fallenCapital").
+        // defender's current capital AND the defender survives (has remaining territories)
+        // AND it is NOT a capitulation (capitulations handle their own captions).
         let expected_fallen_capital_remnant =
-            conquered_territory_id == defender_current_capital_before && !completely_defeated;
+            conquered_territory_id == defender_current_capital_before && 
+            !completely_defeated && 
+            !conquest_info.capitulation;
         if conquest_info.fallen_capital_remnant != expected_fallen_capital_remnant {
             eprintln!(
-                "Round {}: fallen_capital_remnant mismatch. Expected {} (conquered={}, defender capital={}, eliminated={}), got {}",
+                "Round {}: fallen_capital_remnant mismatch. Expected {} (conquered={}, defender capital={}, eliminated={}, capitulation={}), got {}",
                 round, expected_fallen_capital_remnant, conquered_territory_id,
-                defender_current_capital_before, completely_defeated, conquest_info.fallen_capital_remnant
+                defender_current_capital_before, completely_defeated, conquest_info.capitulation,
+                conquest_info.fallen_capital_remnant
             );
             any_unexpected = true;
         }
@@ -897,37 +948,93 @@ pub fn update_gamestate(force_fetch: bool) -> Result<usize, Box<dyn std::error::
             }
         }
 
-        // Update capital tracking for round 229+
-        if round >= 229 && post.action_type == "conquest" {
-            if completely_defeated {
-                // Defender eliminated: capital resets to original (remove override)
-                capitals.remove(&defender_country_id);
-            } else if conquest_info.fallen_capital_remnant {
-                // Defender lost their capital but survives — record the new capital
-                if let Some(new_cap_id) = conquest_info.capital_index_after {
-                    let new_cap_id = new_cap_id as u16;
-                    if new_cap_id == defender_country_id {
-                        // New capital is the original — remove any override
-                        capitals.remove(&defender_country_id);
+        // --- End of State Change for Country Owners ---
+
+        let id_owners_after: HashMap<u16, u16> = current_state
+            .country_data
+            .iter()
+            .map(|(&k, &v)| (k, v))
+            .collect();
+
+        // Update capital tracking and validate capitals_file.current_capital_by_admin
+        for (admin, &current_cap_id) in &capitals_file.current_capital_by_admin {
+            let country_id = match name_to_id.get(admin) {
+                Some(&id) => id,
+                None => {
+                    eprintln!("Round {}: Unknown admin in capitals.json: {}", round, admin);
+                    any_unexpected = true;
+                    continue;
+                }
+            };
+
+            let is_country_eliminated = !id_owners_after.values().any(|&o| o == country_id);
+            let prev_cap_id = *capitals.get(&country_id).unwrap_or(&country_id);
+
+            let expected_cap_id = if is_country_eliminated {
+                current_cap_id // Accept any capital ID for eliminated countries (as per user request)
+            } else if country_id == defender_country_id {
+                if post.action_type == "riot" {
+                    if conquered_territory_id == defender_current_capital_before {
+                        current_cap_id // Can be anything, ownership handled below
                     } else {
-                        capitals.insert(defender_country_id, new_cap_id);
+                        defender_current_capital_before
+                    }
+                } else {
+                    // Conquest case
+                    if completely_defeated {
+                        current_cap_id // API simply leaves the capital as is when defeated
+                    } else if round >= 229 {
+                        conquest_info.capital_index_after.unwrap_or(current_cap_id as usize) as u16
+                    } else if conquered_territory_id == defender_current_capital_before {
+                        current_cap_id // Can be anything, ownership handled below
+                    } else {
+                        defender_current_capital_before
                     }
                 }
-            }
-            // If attacker reconquered their own original capital, restore default
-            if conquered_territory_id == attacker_country_id {
-                capitals.remove(&attacker_country_id);
+            } else if country_id == attacker_country_id && conquered_territory_id == attacker_country_id {
+                // Attacker regained their original capital (via conquest or riot)
+                attacker_country_id
+            } else if id_owners.get(&prev_cap_id) != Some(&country_id) {
+                // Relocation allowed if previous capital was lost in a previous round but only updated now
+                current_cap_id
+            } else {
+                prev_cap_id // Unchanged
+            };
+
+            if current_cap_id != expected_cap_id {
+                eprintln!(
+                    "Round {}: capitals.json current capital for {} is {}, expected {}",
+                    round, admin, current_cap_id, expected_cap_id
+                );
+                any_unexpected = true;
             }
 
-            // --- Validate capitalIndexAfter / defenderCapitalTerritoryAfter ---
-            // These fields are expected on every conquest in round 229+.
-            // Build owners map AFTER state change for validation.
-            let id_owners_after: HashMap<u16, u16> = current_state
-                .country_data
-                .iter()
-                .map(|(&k, &v)| (k, v))
-                .collect();
+            // Global ownership check for non-eliminated countries.
+            // Exception: during a capitulation, the defender sometimes picks a territory that was
+            // lost in the SAME round as its new capital. The API is inconsistent here, so we relax
+            // the check for the defender in those rounds.
+            if !is_country_eliminated && !(country_id == defender_country_id && conquest_info.capitulation) {
+                if id_owners_after.get(&current_cap_id) != Some(&country_id) {
+                    eprintln!("Round {}: capitals.json assigned unowned territory {} to country {}", round, current_cap_id, admin);
+                    any_unexpected = true;
+                }
+            }
+        }
 
+        // Validate that defenders that lost their capital got assigned a valid owned territory ID
+        // (Moved and broadened to previous global check)
+
+        // Apply state change for capitals directly from capitals.json
+        capitals.clear();
+        for (admin, &cap_id) in &capitals_file.current_capital_by_admin {
+            let country_id = name_to_id[admin];
+            if cap_id != country_id {
+                capitals.insert(country_id, cap_id);
+            }
+        }
+
+        // --- Validate capitalIndexAfter / defenderCapitalTerritoryAfter (Round 229+) ---
+        if round >= 229 && post.action_type == "conquest" {
             match conquest_info.capital_index_after {
                 None => {
                     eprintln!("Round {}: Missing capitalIndexAfter in round 229+ conquest", round);
@@ -936,7 +1043,6 @@ pub fn update_gamestate(force_fetch: bool) -> Result<usize, Box<dyn std::error::
                 Some(cai) => {
                     let cai = cai as u16;
                     if completely_defeated {
-                        // Eliminated: capitalIndexAfter must be the original capital (defender_country_id)
                         if cai != defender_country_id {
                             eprintln!(
                                 "Round {}: capitalIndexAfter for eliminated defender should be {} (original), got {}",
@@ -944,7 +1050,6 @@ pub fn update_gamestate(force_fetch: bool) -> Result<usize, Box<dyn std::error::
                             );
                             any_unexpected = true;
                         }
-                        // defenderCapitalTerritoryAfter must be null
                         if conquest_info.defender_capital_territory_after.is_some() {
                             eprintln!(
                                 "Round {}: defenderCapitalTerritoryAfter must be null for eliminated defender",
@@ -953,7 +1058,6 @@ pub fn update_gamestate(force_fetch: bool) -> Result<usize, Box<dyn std::error::
                             any_unexpected = true;
                         }
                     } else {
-                        // Defender survives: capitalIndexAfter is their new capital
                         let expected_cap = *capitals
                             .get(&defender_country_id)
                             .unwrap_or(&defender_country_id);
@@ -970,7 +1074,7 @@ pub fn update_gamestate(force_fetch: bool) -> Result<usize, Box<dyn std::error::
                             None => {
                                 if conquest_info.fallen_capital_remnant {
                                     eprintln!(
-                                        "Round {}: defenderCapitalTerritoryAfter is null but fallen_capital_remnant is true",
+                                        "Round {}: defenderCapitalTerritoryAfter is null but capital changed (fallen_capital_remnant is true)",
                                         round
                                     );
                                     any_unexpected = true;
@@ -979,7 +1083,7 @@ pub fn update_gamestate(force_fetch: bool) -> Result<usize, Box<dyn std::error::
                             Some(name) => {
                                 if !conquest_info.fallen_capital_remnant {
                                     eprintln!(
-                                        "Round {}: defenderCapitalTerritoryAfter is not null '{}' but fallen_capital_remnant is false",
+                                        "Round {}: defenderCapitalTerritoryAfter is not null '{}' but capital did not change (fallen_capital_remnant is false)",
                                         round, name
                                     );
                                     any_unexpected = true;
@@ -1002,15 +1106,12 @@ pub fn update_gamestate(force_fetch: bool) -> Result<usize, Box<dyn std::error::
                             }
                         }
 
-                        // Validate that the new capital is valid per BFS-shell logic
-                        // (only if the capital actually changed due to fallen_capital_remnant)
+                        // Validate that the new capital is actually owned by the country.
                         if conquest_info.fallen_capital_remnant {
                             if let Err(e) = crate::game_utils::validate_new_capital(
-                                defender_country_id, // original capital == country ID
                                 cai,
                                 defender_country_id,
                                 &id_owners_after,
-                                &targets_data,
                             ) {
                                 eprintln!("Round {}: New capital validation failed: {}", round, e);
                                 any_unexpected = true;

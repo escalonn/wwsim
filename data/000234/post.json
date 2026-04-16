@@ -1,0 +1,31 @@
+{
+  "caption": "September 2045, Germany conquered Italy territory previously occupied by Spain.",
+  "pic": "000234.png",
+  "zoom": "000234.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 10\nGermany: 9\nUnited Arab Emirates: 7\nKosovo: 6\nSpain: 6\nUganda: 6\nEcuador: 6\nNew Zealand: 6\nPalestine: 5\nLithuania: 4",
+  "tags": [
+    "Germany",
+    "Spain"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 10,
+    "defender": 87,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Spain",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 54,
+    "capitalIndexAfter": 54,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 54,
+    "capitalMoved": false
+  },
+  "territory": "Italy",
+  "attacker": "Germany",
+  "defender": "Spain"
+}

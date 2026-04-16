@@ -1,0 +1,31 @@
+{
+  "caption": "October 2045, Liechtenstein conquered Slovenia territory previously occupied by Croatia.\nThe government of Croatia relocated its capital to Serbia and continues in exile.",
+  "pic": "000235.png",
+  "zoom": "000235.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 10\nGermany: 9\nUnited Arab Emirates: 7\nKosovo: 6\nSpain: 6\nUganda: 6\nEcuador: 6\nNew Zealand: 6\nPalestine: 5\nLithuania: 4",
+  "tags": [
+    "Liechtenstein",
+    "Croatia"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 158,
+    "defender": 164,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": true,
+    "defenderAdminBefore": "Croatia",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 164,
+    "capitalIndexAfter": 160,
+    "defenderCapitalTerritoryAfter": "Serbia",
+    "originalCapitalIndex": 76,
+    "capitalMoved": true
+  },
+  "territory": "Slovenia",
+  "attacker": "Liechtenstein",
+  "defender": "Croatia"
+}

@@ -14,7 +14,7 @@ mod utils;
 use utils::{read_country_data, read_targets_data};
 
 mod game_utils;
-use game_utils::{find_attack_targets, perform_conquest, perform_riot, find_new_capital};
+use game_utils::{find_attack_targets, perform_conquest, perform_riot};
 
 mod gamestate_reader;
 use gamestate_reader::{read_gamestate, GamestateResult};
@@ -384,22 +384,7 @@ fn main() {
         let mut owns_data   = owns_data_after_log.clone();
         let mut capitals    = capitals_after_log.clone();
 
-        if epoch >= 229 {
-            for &country_id in &remaining_after_log {
-                let current_capital = *capitals.get(&country_id).unwrap_or(&country_id);
-                let capital_is_owned = owners_data.get(&current_capital) == Some(&country_id);
-                
-                if !capital_is_owned {
-                    let new_cap = find_new_capital(
-                        country_id,
-                        country_id,
-                        &owners_data,
-                        &targets_data,
-                    );
-                    capitals.insert(country_id, new_cap);
-                }
-            }
-        }
+
 
         let owners_ref    = &mut owners_data;
         let owns_ref      = &mut owns_data;

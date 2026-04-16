@@ -229,3 +229,7 @@ Round 228: March 2045, Germany conquered Belgium territory. Belgium has been com
 Round 229: April 2045, Czech Republic conquered Croatia territory. The government of Croatia relocated its capital to Slovenia and continues in exile.
 Round 230: May 2045, Mauritius conquered French Southern and Antarctic Territories territory. French Southern and Antarctic Territories has been completely defeated. 86 countries remaining.
 Round 231: June 2045, Indonesia conquered Malaysia territory previously occupied by Singapore.
+Round 232: July 2045, Portugal conquered Bermuda territory previously occupied by Canada.
+Round 233: August 2045, Malawi conquered Rwanda territory previously occupied by Central African Republic.
+Round 234: September 2045, Germany conquered Italy territory previously occupied by Spain.
+Round 235: October 2045, Liechtenstein conquered Slovenia territory previously occupied by Croatia. The government of Croatia relocated its capital to Serbia and continues in exile.

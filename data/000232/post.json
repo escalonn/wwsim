@@ -1,0 +1,31 @@
+{
+  "caption": "July 2045, Portugal conquered Bermuda territory previously occupied by Canada.",
+  "pic": "000232.png",
+  "zoom": "000232.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 10\nGermany: 8\nSpain: 7\nUnited Arab Emirates: 7\nKosovo: 6\nUganda: 6\nEcuador: 6\nNew Zealand: 6\nPalestine: 5\nLithuania: 4",
+  "tags": [
+    "Portugal",
+    "Canada"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 144,
+    "defender": 23,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Canada",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 31,
+    "capitalIndexAfter": 31,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 31,
+    "capitalMoved": false
+  },
+  "territory": "Bermuda",
+  "attacker": "Portugal",
+  "defender": "Canada"
+}

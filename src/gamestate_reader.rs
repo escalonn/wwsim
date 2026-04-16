@@ -10,9 +10,7 @@ struct Gamestate {
     initial_month: u32,
     initial_year: i32,
     country_data: BTreeMap<u16, u16>,
-    /// Capital overrides: only populated for countries whose capital is NOT their original
-    /// (territory ID == country ID). Absent in old gamestate files; defaults to empty.
-    #[serde(default)]
+    /// Capital overrides mapping country_id to current capital territory_id.
     capital_overrides: BTreeMap<u16, u16>,
 }
 
@@ -24,7 +22,7 @@ pub struct GamestateResult {
     pub epoch: usize,
     pub initial_month: u32,
     pub initial_year: i32,
-    /// country_id -> current capital territory_id (includes random assignments for unknowns)
+    /// country_id -> current capital territory_id
     pub capitals: HashMap<u16, u16>,
 }
 
@@ -61,8 +59,6 @@ pub fn read_gamestate(requested_round: Option<usize>) -> GamestateResult {
 
     // Build the capitals map from stored overrides.
     // An absence in this map means the country's capital is its original territory (country_id).
-    // For countries with an unknown capital (alive but not owning their recorded capital),
-    // each simulation run must perform its own random BFS assignment — not done here.
     let capitals: HashMap<u16, u16> = data.capital_overrides
         .iter()
         .map(|(&k, &v)| (k, v))
