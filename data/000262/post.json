@@ -1,0 +1,31 @@
+{
+  "caption": "January 2048, Lithuania conquered Slovakia territory previously occupied by Germany.",
+  "pic": "000262.png",
+  "zoom": "000262.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 11\nSpain: 10\nNew Zealand: 8\nGermany: 7\nKosovo: 6\nUnited Arab Emirates: 6\nUganda: 6\nEcuador: 6\nSenegal: 5\nPalestine: 5",
+  "tags": [
+    "Lithuania",
+    "Germany"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 141,
+    "defender": 163,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Germany",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 45,
+    "capitalIndexAfter": 45,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 45,
+    "capitalMoved": false
+  },
+  "territory": "Slovakia",
+  "attacker": "Lithuania",
+  "defender": "Germany"
+}

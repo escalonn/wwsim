@@ -1,0 +1,31 @@
+{
+  "caption": "October 2047, Senegal conquered Burkina Faso territory previously occupied by Mali.",
+  "pic": "000259.png",
+  "zoom": "000259.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 11\nSpain: 10\nGermany: 8\nNew Zealand: 8\nKosovo: 6\nUnited Arab Emirates: 6\nUganda: 6\nEcuador: 6\nSenegal: 5\nPalestine: 5",
+  "tags": [
+    "Senegal",
+    "Mali"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 115,
+    "defender": 15,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Mali",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 121,
+    "capitalIndexAfter": 121,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 115,
+    "capitalMoved": false
+  },
+  "territory": "Burkina Faso",
+  "attacker": "Senegal",
+  "defender": "Mali"
+}

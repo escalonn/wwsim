@@ -161,7 +161,8 @@ struct ConquestInfo {
     original_capital_index: Option<usize>,
     /// Round 230+: true iff the capital moved this round.
     capital_moved: Option<bool>,
-    // `defenderTerritoryRankBefore` (round 230+) is validated to be always None and not carried through.
+    /// Round 230+: defender's territory rank before this conquest.
+    defender_territory_rank_before: Option<usize>,
 }
 
 /// Parse and strictly validate the `conquest` JSON object for the given round,
@@ -184,6 +185,7 @@ fn parse_conquest_schema(round: usize, value: serde_json::Value) -> Result<Conqu
             capital_index_before: None,
             original_capital_index: None,
             capital_moved: None,
+            defender_territory_rank_before: None,
         })
     } else if round == 229 {
         let s: ConquestSchema229 = serde_json::from_value(value)
@@ -202,17 +204,21 @@ fn parse_conquest_schema(round: usize, value: serde_json::Value) -> Result<Conqu
             capital_index_before: None,
             original_capital_index: None,
             capital_moved: None,
+            defender_territory_rank_before: None,
         })
     } else {
         // Round 230+
         let s: ConquestSchema230 = serde_json::from_value(value)
             .map_err(|e| format!("conquest schema (230+): {}", e))?;
-        if s.defender_territory_rank_before.is_some() {
+
+        if s.capitulation != s.capitulation_event.is_some() {
             return Err(format!(
-                "defenderTerritoryRankBefore must always be null, got {:?}",
-                s.defender_territory_rank_before
+                "capitulation ({}) mismatch with capitulation_event presence ({})",
+                s.capitulation,
+                s.capitulation_event.is_some()
             ));
         }
+
         Ok(ConquestInfo {
             attacker: s.attacker,
             defender: s.defender,
@@ -227,6 +233,7 @@ fn parse_conquest_schema(round: usize, value: serde_json::Value) -> Result<Conqu
             capital_index_before: Some(s.capital_index_before),
             original_capital_index: Some(s.original_capital_index),
             capital_moved: Some(s.capital_moved),
+            defender_territory_rank_before: s.defender_territory_rank_before,
         })
     }
 }
@@ -439,7 +446,26 @@ fn try_fetch_round(round: usize, force_fetch: bool) -> Result<(SaveFile, PostFil
     Ok((save, post, capitals))
 }
 
-pub fn reset_gamestate() -> Result<(), Box<dyn std::error::Error>> {
+pub fn reset_gamestate(force_fetch: bool) -> Result<(), Box<dyn std::error::Error>> {
+    let _ = fs::remove_file("logs/log.txt");
+
+    if let Ok(entries) = fs::read_dir("data") {
+        for entry in entries.flatten() {
+            let path = entry.path();
+            if path.is_dir() {
+                if let Some(name) = path.file_name().and_then(|n| n.to_str()) {
+                    if name.parse::<usize>().is_ok() {
+                        if force_fetch {
+                            let _ = fs::remove_dir_all(&path);
+                        } else {
+                            let _ = fs::remove_file(path.join("gamestate.json"));
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     let content = fs::read_to_string("data/country_data.csv")?;
     let mut current_rows = Vec::new();
     let mut original_content = String::new();
@@ -632,6 +658,37 @@ struct DataInfo {
     iteration: usize,
 }
 
+fn get_short_caption(caption: &str) -> String {
+    let mut lines: Vec<&str> = caption.lines().collect();
+    if let Some(last_line) = lines.last() {
+        if last_line.contains("worldwarbot.com") {
+            lines.pop();
+        }
+    }
+    lines.join(" ")
+}
+
+fn get_ranking(
+    country_data: &BTreeMap<u16, u16>,
+    _country_rows: &HashMap<u16, crate::Country>,
+) -> Vec<(u16, usize)> {
+    let mut counts: HashMap<u16, usize> = HashMap::new();
+    let mut first_appearance: HashMap<u16, u16> = HashMap::new();
+
+    for (&t_id, &owner) in country_data {
+        *counts.entry(owner).or_insert(0) += 1;
+        first_appearance.entry(owner).or_insert(t_id);
+    }
+
+    let mut ranking: Vec<(u16, usize)> = counts.into_iter().collect();
+    ranking.sort_by(|a, b| {
+        b.1.cmp(&a.1).then_with(|| {
+            first_appearance[&a.0].cmp(&first_appearance[&b.0])
+        })
+    });
+    ranking
+}
+
 pub fn update_gamestate(force_fetch: bool) -> Result<usize, Box<dyn std::error::Error>> {
     let mut data_req = ureq::get("https://run5.worldwarbot.com/data/data.json").call()?;
     let data_info: DataInfo = data_req.body_mut().read_json()?;
@@ -664,6 +721,16 @@ pub fn update_gamestate(force_fetch: bool) -> Result<usize, Box<dyn std::error::
 
     if local_round >= max_iter {
         println!("Gamestate already up to date at round {}.", max_iter);
+        if local_round > 0 {
+            let post_path = format!("data/{:06}/post.json", local_round);
+            if let Ok(post_str) = fs::read_to_string(post_path) {
+                if let Ok(post_json) = serde_json::from_str::<serde_json::Value>(&post_str) {
+                    if let Some(caption) = post_json["caption"].as_str() {
+                        println!("Round {}: {}", local_round, get_short_caption(caption));
+                    }
+                }
+            }
+        }
         return Ok(0);
     }
 
@@ -703,6 +770,37 @@ pub fn update_gamestate(force_fetch: bool) -> Result<usize, Box<dyn std::error::
             }
         }
 
+        // Compute Rankings and attacker/defender counts for validation
+        let attacker_country_id = if post.action_type == "conquest" {
+            name_to_id[&post.attacker]
+        } else {
+            // Riot case: post.territory is the name of the new independent country.
+            // post.attacker is the country it rose against.
+            if post.attacker != post.defender {
+                eprintln!(
+                    "Round {}: Expected attacker == defender for riot post, got {} and {}",
+                    round, post.attacker, post.defender
+                );
+                any_unexpected = true;
+            }
+            name_to_id[&post.territory]
+        };
+        let defender_country_id = name_to_id[&post.defender];
+
+        let attacker_territories_before = current_state
+            .country_data
+            .values()
+            .filter(|&owner| *owner == attacker_country_id)
+            .count();
+        let defender_territories_before = current_state
+            .country_data
+            .values()
+            .filter(|&owner| *owner == defender_country_id)
+            .count();
+
+        let ranking = get_ranking(&current_state.country_data, &country_rows);
+        let defender_rank = ranking.iter().position(|&(id, _)| id == defender_country_id).map(|p| p + 1);
+
         // Parse the conquest sub-object with strict per-round schema validation.
         let conquest_info = match parse_conquest_schema(round, post.conquest) {
             Ok(info) => info,
@@ -711,6 +809,23 @@ pub fn update_gamestate(force_fetch: bool) -> Result<usize, Box<dyn std::error::
                 std::process::exit(1);
             }
         };
+
+        // Validate defenderTerritoryRankBefore
+        let expected_rank_value = if round >= 267 {
+            match defender_rank {
+                Some(r) if r <= 10 => Some(r + 1),
+                _ => None,
+            }
+        } else {
+            None
+        };
+        if conquest_info.defender_territory_rank_before != expected_rank_value {
+            eprintln!(
+                "Round {}: defenderTerritoryRankBefore mismatch. Expected {:?}, got {:?}",
+                round, expected_rank_value, conquest_info.defender_territory_rank_before
+            );
+            any_unexpected = true;
+        }
 
         match &save.conquests.1 {
             ConquestData::Conquer(att_t_id, def_t_id, subjects) => {
@@ -803,21 +918,6 @@ pub fn update_gamestate(force_fetch: bool) -> Result<usize, Box<dyn std::error::
         // From round 229 it may be overridden.
         let defender_current_capital_before: u16;
 
-        let (attacker_country_id, defender_country_id) = if post.action_type == "conquest" {
-            (name_to_id[&post.attacker], name_to_id[&post.defender])
-        } else {
-            // Riot case: post.territory is the name of the new independent country.
-            // post.attacker is the country it rose against.
-            if post.attacker != post.defender {
-                eprintln!(
-                    "Round {}: Expected attacker == defender for riot post, got {} and {}",
-                    round, post.attacker, post.defender
-                );
-                any_unexpected = true;
-            }
-            (name_to_id[&post.territory], name_to_id[&post.attacker])
-        };
-
         // Now we know the defender_country_id, resolve its current capital.
         defender_current_capital_before = *capitals
             .get(&defender_country_id)
@@ -840,32 +940,35 @@ pub fn update_gamestate(force_fetch: bool) -> Result<usize, Box<dyn std::error::
             any_unexpected = true;
         }
 
-        // Compute defender territory count before state change (needed for several validations)
-        let defender_territories_before = current_state
-            .country_data
-            .values()
-            .filter(|&owner| *owner == defender_country_id)
-            .count();
-        
         let lost_count = 1 + conquest_info.subjects.len();
         let completely_defeated = lost_count >= defender_territories_before;
 
         // Validate fallen_capital_remnant: must be true iff the conquered territory is the
-        // defender's current capital AND the defender survives (has remaining territories)
+        // defender's capital AND the defender survives (has remaining territories)
         // AND it is NOT a capitulation (capitulations handle their own captions).
+        // Before round 229, this ONLY triggers for the original homeland capital.
+        let is_capital_loss = if round < 229 {
+            conquered_territory_id == defender_country_id
+        } else {
+            conquered_territory_id == defender_current_capital_before
+        };
+
         let expected_fallen_capital_remnant =
-            conquered_territory_id == defender_current_capital_before && 
+            is_capital_loss && 
             !completely_defeated && 
             !conquest_info.capitulation;
         if conquest_info.fallen_capital_remnant != expected_fallen_capital_remnant {
             eprintln!(
                 "Round {}: fallen_capital_remnant mismatch. Expected {} (conquered={}, defender capital={}, eliminated={}, capitulation={}), got {}",
                 round, expected_fallen_capital_remnant, conquered_territory_id,
-                defender_current_capital_before, completely_defeated, conquest_info.capitulation,
+                if round < 229 { defender_country_id } else { defender_current_capital_before },
+                completely_defeated, conquest_info.capitulation,
                 conquest_info.fallen_capital_remnant
             );
             any_unexpected = true;
         }
+        
+        let effective_capital_moved = conquest_info.capital_moved.unwrap_or(is_capital_loss && !completely_defeated);
 
         if post.action_type == "conquest" {
             if conquest_info.capitulation {
@@ -880,12 +983,40 @@ pub fn update_gamestate(force_fetch: bool) -> Result<usize, Box<dyn std::error::
                     })
                     .collect();
 
-                if ceded_ids.len() != event.territories_ceded {
+                if event.round != round {
                     eprintln!(
-                        "Round {}: Capitulation subjects count {} != ceded count {}",
+                        "Round {}: Capitulation event round {} != actual round {}",
+                        round, event.round, round
+                    );
+                    any_unexpected = true;
+                }
+
+                if event.attacker_territories_before != attacker_territories_before {
+                    eprintln!(
+                        "Round {}: Capitulation attackerTerritoriesBefore {} != actual {}",
                         round,
-                        ceded_ids.len(),
-                        event.territories_ceded
+                        event.attacker_territories_before,
+                        attacker_territories_before
+                    );
+                    any_unexpected = true;
+                }
+
+                if event.defender_territories_before != defender_territories_before {
+                    eprintln!(
+                        "Round {}: Capitulation defenderTerritoriesBefore {} != actual {}",
+                        round,
+                        event.defender_territories_before,
+                        defender_territories_before
+                    );
+                    any_unexpected = true;
+                }
+
+                if event.territories_ceded != ceded_ids.len() {
+                    eprintln!(
+                        "Round {}: Capitulation territoriesCeded {} != subjects count {}",
+                        round,
+                        event.territories_ceded,
+                        ceded_ids.len()
                     );
                     any_unexpected = true;
                 }
@@ -946,6 +1077,20 @@ pub fn update_gamestate(force_fetch: bool) -> Result<usize, Box<dyn std::error::
                     .country_data
                     .insert(sub_id, attacker_country_id);
             }
+        }
+
+        // Validate post.comment (Top 10 ranking)
+        let post_ranking = get_ranking(&current_state.country_data, &country_rows);
+        let mut expected_comment = String::from("\nTop 10 countries by number of controlled territories:");
+        for (id, count) in post_ranking.iter().take(10) {
+            expected_comment.push_str(&format!("\n{}: {}", country_rows[id].name, count));
+        }
+        if post.comment != expected_comment {
+            eprintln!(
+                "Round {}: Comment validation failed!\nExpected: {:?}\nGot     : {:?}",
+                round, expected_comment, post.comment
+            );
+            any_unexpected = true;
         }
 
         // --- End of State Change for Country Owners ---
@@ -1073,18 +1218,18 @@ pub fn update_gamestate(force_fetch: bool) -> Result<usize, Box<dyn std::error::
                         // Validate defenderCapitalTerritoryAfter for survivors
                         match &conquest_info.defender_capital_territory_after {
                             None => {
-                                if conquest_info.fallen_capital_remnant {
+                                if effective_capital_moved {
                                     eprintln!(
-                                        "Round {}: defenderCapitalTerritoryAfter is null but capital changed (fallen_capital_remnant is true)",
+                                        "Round {}: defenderCapitalTerritoryAfter is null but capital moved",
                                         round
                                     );
                                     any_unexpected = true;
                                 }
                             }
                             Some(name) => {
-                                if !conquest_info.fallen_capital_remnant {
+                                if !effective_capital_moved {
                                     eprintln!(
-                                        "Round {}: defenderCapitalTerritoryAfter is not null '{}' but capital did not change (fallen_capital_remnant is false)",
+                                        "Round {}: defenderCapitalTerritoryAfter is not null '{}' but capital did not move",
                                         round, name
                                     );
                                     any_unexpected = true;
@@ -1108,7 +1253,7 @@ pub fn update_gamestate(force_fetch: bool) -> Result<usize, Box<dyn std::error::
                         }
 
                         // Validate that the new capital is actually owned by the country.
-                        if conquest_info.fallen_capital_remnant {
+                        if effective_capital_moved {
                             if let Err(e) = crate::game_utils::validate_new_capital(
                                 cai,
                                 defender_country_id,
@@ -1146,13 +1291,12 @@ pub fn update_gamestate(force_fetch: bool) -> Result<usize, Box<dyn std::error::
                     }
                 }
 
-                // capitalMoved must equal fallen_capital_remnant
-                // (capital moves iff it was taken AND defender survived)
+                // capitalMoved must be true iff capital loss occurred and defender survived
                 if let Some(cm) = conquest_info.capital_moved {
-                    if cm != conquest_info.fallen_capital_remnant {
+                    if cm != (is_capital_loss && !completely_defeated) {
                         eprintln!(
-                            "Round {}: capitalMoved ({}) must equal fallen_capital_remnant ({})",
-                            round, cm, conquest_info.fallen_capital_remnant
+                            "Round {}: capitalMoved ({}) mismatch with capital loss ({}) and survival ({})",
+                            round, cm, is_capital_loss, !completely_defeated
                         );
                         any_unexpected = true;
                     }
@@ -1201,6 +1345,15 @@ pub fn update_gamestate(force_fetch: bool) -> Result<usize, Box<dyn std::error::
                 if ceded == 1 { "y" } else { "ies" },
                 post.attacker
             ));
+            if round >= 229 && effective_capital_moved {
+                let new_capital_name = conquest_info.defender_capital_territory_after
+                    .as_deref()
+                    .unwrap_or("");
+                d_string.push_str(&format!(
+                    "\n{} moved its capital to {}.",
+                    post.defender, new_capital_name
+                ));
+            }
         } else if conquest_info.fallen_capital_remnant {
             if round >= 229 {
                 // New caption: capital relocates to a named territory
@@ -1311,13 +1464,8 @@ pub fn update_gamestate(force_fetch: bool) -> Result<usize, Box<dyn std::error::
             .map(|(&k, &v)| (k, v))
             .collect();
 
-        let mut lines: Vec<&str> = post.caption.lines().collect();
-        if let Some(last_line) = lines.last() {
-            if last_line.contains("worldwarbot.com") {
-                lines.pop();
-            }
-        }
-        let summary = format!("Round {}: {}", round, lines.join(" "));
+        let short_caption = get_short_caption(&post.caption);
+        let summary = format!("Round {}: {}", round, short_caption);
         println!("{}", summary);
 
         fs::create_dir_all(format!("data/{:06}", round))?;

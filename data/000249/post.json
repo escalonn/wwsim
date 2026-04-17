@@ -1,0 +1,31 @@
+{
+  "caption": "December 2046, United Arab Emirates conquered Iran territory.\nIran has been completely defeated.\n82 countries remaining.",
+  "pic": "000249.png",
+  "zoom": "000249.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 11\nGermany: 9\nSpain: 8\nUnited Arab Emirates: 7\nNew Zealand: 7\nKosovo: 6\nUganda: 6\nEcuador: 6\nPalestine: 5\nEl Salvador: 4",
+  "tags": [
+    "United Arab Emirates",
+    "Iran"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 18,
+    "defender": 83,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Iran",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 83,
+    "capitalIndexAfter": 83,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 83,
+    "capitalMoved": false
+  },
+  "territory": "Iran",
+  "attacker": "United Arab Emirates",
+  "defender": "Iran"
+}

@@ -245,3 +245,27 @@ Round 244: July 2046, New Zealand conquered Solomon Islands territory. The gover
 Round 245: August 2046, Benin conquered Ghana territory previously occupied by Mali.
 Round 246: September 2046, Vietnam conquered Philippines territory. Philippines has been completely defeated. 83 countries remaining.
 Round 247: October 2046, Mozambique conquered Madagascar territory previously occupied by Lesotho.
+Round 248: November 2046, Senegal conquered Morocco territory previously occupied by Portugal.
+Round 249: December 2046, United Arab Emirates conquered Iran territory. Iran has been completely defeated. 82 countries remaining.
+Round 250: January 2047, Panama conquered Venezuela territory previously occupied by Brazil.
+Round 251: February 2047, Mauritius conquered Mozambique territory. The government of Mozambique relocated its capital to Madagascar and continues in exile.
+Round 252: March 2047, Spain conquered Liechtenstein territory previously occupied by Germany.
+Round 253: April 2047, Chad conquered Ethiopia territory. The government of Ethiopia relocated its capital to Eritrea and continues in exile.
+Round 254: May 2047, Nepal conquered China territory previously occupied by Mongolia. Mongolia has been completely defeated. 81 countries remaining.
+Round 255: June 2047, Brazil conquered Liberia territory. The government of Liberia relocated its capital to Uruguay and continues in exile.
+Round 256: July 2047, Singapore conquered Maldives territory previously occupied by United Arab Emirates.
+Round 257: August 2047, Spain conquered Wales territory. Wales has been completely defeated. 80 countries remaining.
+Round 258: September 2047, New Zealand conquered Samoa territory. The government of Samoa relocated its capital to El Salvador and continues in exile.
+Round 259: October 2047, Senegal conquered Burkina Faso territory previously occupied by Mali.
+Round 260: November 2047, South Korea conquered Micronesia territory previously occupied by Solomon Islands. Solomon Islands has been completely defeated. 79 countries remaining.
+Round 261: December 2047, Norway conquered Sweden territory. The government of Sweden relocated its capital to Finland and continues in exile.
+Round 262: January 2048, Lithuania conquered Slovakia territory previously occupied by Germany.
+Round 263: February 2048, Mali conquered Western Sahara territory previously occupied by Senegal.
+Round 264: March 2048, Mauritius conquered Maldives territory previously occupied by Singapore.
+Round 265: April 2048, Mauritius conquered Oman territory previously occupied by Singapore.
+Round 266: May 2048, Brazil conquered Gambia territory previously occupied by Cape Verde. The government of Cape Verde relocated its capital to Guinea and continues in exile.
+Round 267: June 2048, Israel conquered Palestine territory. Palestine capitulated, ceding 2 additional territories to Israel. Palestine moved its capital to Jordan.
+Round 268: July 2048, Brazil conquered Venezuela territory previously occupied by Panama.
+Round 269: August 2048, Denmark conquered Poland territory previously occupied by Lithuania.
+Round 270: September 2048, Lithuania conquered Poland territory previously occupied by Denmark.
+Round 271: October 2048, Armenia conquered Kazakhstan territory previously occupied by Norway.

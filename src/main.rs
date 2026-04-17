@@ -301,7 +301,7 @@ fn main() {
         .and_then(|val| val.parse::<usize>().ok());
 
     if is_reset {
-        scraper::reset_gamestate().expect("Failed to reset gamestate");
+        scraper::reset_gamestate(is_force_fetch).expect("Failed to reset gamestate");
         // Don't run simulations on a reset unless runs are also requested
         if !args.iter().any(|a| a.parse::<usize>().is_ok()) {
             return;

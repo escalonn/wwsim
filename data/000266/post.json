@@ -1,0 +1,31 @@
+{
+  "caption": "May 2048, Brazil conquered Gambia territory previously occupied by Cape Verde.\nThe government of Cape Verde relocated its capital to Guinea and continues in exile.",
+  "pic": "000266.png",
+  "zoom": "000266.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 12\nSpain: 10\nNew Zealand: 8\nGermany: 7\nKosovo: 6\nUnited Arab Emirates: 6\nUganda: 6\nEcuador: 6\nMauritius: 5\nPalestine: 5",
+  "tags": [
+    "Brazil",
+    "Cape Verde"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 156,
+    "defender": 67,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": true,
+    "defenderAdminBefore": "Cape Verde",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 67,
+    "capitalIndexAfter": 66,
+    "defenderCapitalTerritoryAfter": "Guinea",
+    "originalCapitalIndex": 40,
+    "capitalMoved": true
+  },
+  "territory": "Gambia",
+  "attacker": "Brazil",
+  "defender": "Cape Verde"
+}

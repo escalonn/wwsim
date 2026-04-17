@@ -1,0 +1,31 @@
+{
+  "caption": "July 2047, Singapore conquered Maldives territory previously occupied by United Arab Emirates.",
+  "pic": "000256.png",
+  "zoom": "000256.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 11\nSpain: 9\nGermany: 8\nNew Zealand: 7\nKosovo: 6\nUnited Arab Emirates: 6\nUganda: 6\nEcuador: 6\nPalestine: 5\nChad: 5",
+  "tags": [
+    "Singapore",
+    "United Arab Emirates"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 134,
+    "defender": 112,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "United Arab Emirates",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 4,
+    "capitalIndexAfter": 4,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 4,
+    "capitalMoved": false
+  },
+  "territory": "Maldives",
+  "attacker": "Singapore",
+  "defender": "United Arab Emirates"
+}

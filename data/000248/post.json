@@ -1,0 +1,31 @@
+{
+  "caption": "November 2046, Senegal conquered Morocco territory previously occupied by Portugal.",
+  "pic": "000248.png",
+  "zoom": "000248.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 11\nGermany: 9\nSpain: 8\nNew Zealand: 7\nKosovo: 6\nUnited Arab Emirates: 6\nUganda: 6\nEcuador: 6\nPalestine: 5\nEl Salvador: 4",
+  "tags": [
+    "Senegal",
+    "Portugal"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 53,
+    "defender": 108,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Portugal",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 144,
+    "capitalIndexAfter": 144,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 144,
+    "capitalMoved": false
+  },
+  "territory": "Morocco",
+  "attacker": "Senegal",
+  "defender": "Portugal"
+}

@@ -1,0 +1,31 @@
+{
+  "caption": "September 2047, New Zealand conquered Samoa territory.\nThe government of Samoa relocated its capital to El Salvador and continues in exile.",
+  "pic": "000258.png",
+  "zoom": "000258.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 11\nSpain: 10\nGermany: 8\nNew Zealand: 8\nKosovo: 6\nUnited Arab Emirates: 6\nUganda: 6\nEcuador: 6\nPalestine: 5\nChad: 5",
+  "tags": [
+    "New Zealand",
+    "Samoa"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 58,
+    "defender": 190,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": true,
+    "defenderAdminBefore": "Samoa",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 190,
+    "capitalIndexAfter": 157,
+    "defenderCapitalTerritoryAfter": "El Salvador",
+    "originalCapitalIndex": 190,
+    "capitalMoved": true
+  },
+  "territory": "Samoa",
+  "attacker": "New Zealand",
+  "defender": "Samoa"
+}

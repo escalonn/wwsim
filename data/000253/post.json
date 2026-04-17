@@ -1,0 +1,31 @@
+{
+  "caption": "April 2047, Chad conquered Ethiopia territory.\nThe government of Ethiopia relocated its capital to Eritrea and continues in exile.",
+  "pic": "000253.png",
+  "zoom": "000253.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 10\nSpain: 9\nGermany: 8\nUnited Arab Emirates: 7\nNew Zealand: 7\nKosovo: 6\nUganda: 6\nEcuador: 6\nPalestine: 5\nChad: 5",
+  "tags": [
+    "Chad",
+    "Ethiopia"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 152,
+    "defender": 56,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": true,
+    "defenderAdminBefore": "Ethiopia",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 56,
+    "capitalIndexAfter": 52,
+    "defenderCapitalTerritoryAfter": "Eritrea",
+    "originalCapitalIndex": 56,
+    "capitalMoved": true
+  },
+  "territory": "Ethiopia",
+  "attacker": "Chad",
+  "defender": "Ethiopia"
+}

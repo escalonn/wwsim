@@ -1,0 +1,31 @@
+{
+  "caption": "February 2048, Mali conquered Western Sahara territory previously occupied by Senegal.",
+  "pic": "000263.png",
+  "zoom": "000263.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 11\nSpain: 10\nNew Zealand: 8\nGermany: 7\nKosovo: 6\nUnited Arab Emirates: 6\nUganda: 6\nEcuador: 6\nPalestine: 5\nChad: 5",
+  "tags": [
+    "Mali",
+    "Senegal"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 121,
+    "defender": 53,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Senegal",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 153,
+    "capitalIndexAfter": 153,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 153,
+    "capitalMoved": false
+  },
+  "territory": "Western Sahara",
+  "attacker": "Mali",
+  "defender": "Senegal"
+}

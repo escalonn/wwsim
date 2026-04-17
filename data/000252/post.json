@@ -1,0 +1,31 @@
+{
+  "caption": "March 2047, Spain conquered Liechtenstein territory previously occupied by Germany.",
+  "pic": "000252.png",
+  "zoom": "000252.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 10\nSpain: 9\nGermany: 8\nUnited Arab Emirates: 7\nNew Zealand: 7\nKosovo: 6\nUganda: 6\nEcuador: 6\nPalestine: 5\nEl Salvador: 4",
+  "tags": [
+    "Spain",
+    "Germany"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 32,
+    "defender": 102,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Germany",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 45,
+    "capitalIndexAfter": 45,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 45,
+    "capitalMoved": false
+  },
+  "territory": "Liechtenstein",
+  "attacker": "Spain",
+  "defender": "Germany"
+}

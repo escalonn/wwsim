@@ -1,0 +1,31 @@
+{
+  "caption": "April 2048, Mauritius conquered Oman territory previously occupied by Singapore.",
+  "pic": "000265.png",
+  "zoom": "000265.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 11\nSpain: 10\nNew Zealand: 8\nGermany: 7\nKosovo: 6\nUnited Arab Emirates: 6\nUganda: 6\nEcuador: 6\nMauritius: 5\nPalestine: 5",
+  "tags": [
+    "Mauritius",
+    "Singapore"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 112,
+    "defender": 134,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Singapore",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 154,
+    "capitalIndexAfter": 154,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 154,
+    "capitalMoved": false
+  },
+  "territory": "Oman",
+  "attacker": "Mauritius",
+  "defender": "Singapore"
+}

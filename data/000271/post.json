@@ -1,0 +1,31 @@
+{
+  "caption": "October 2048, Armenia conquered Kazakhstan territory previously occupied by Norway.",
+  "pic": "000271.png",
+  "zoom": "000271.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 13\nSpain: 10\nNew Zealand: 8\nGermany: 7\nKosovo: 6\nUnited Arab Emirates: 6\nUganda: 6\nEcuador: 6\nMauritius: 5\nIsrael: 5",
+  "tags": [
+    "Armenia",
+    "Norway"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 64,
+    "defender": 91,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Norway",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 131,
+    "capitalIndexAfter": 131,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 131,
+    "capitalMoved": false
+  },
+  "territory": "Kazakhstan",
+  "attacker": "Armenia",
+  "defender": "Norway"
+}

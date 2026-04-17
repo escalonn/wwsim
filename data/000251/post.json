@@ -1,0 +1,31 @@
+{
+  "caption": "February 2047, Mauritius conquered Mozambique territory.\nThe government of Mozambique relocated its capital to Madagascar and continues in exile.",
+  "pic": "000251.png",
+  "zoom": "000251.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 10\nGermany: 9\nSpain: 8\nUnited Arab Emirates: 7\nNew Zealand: 7\nKosovo: 6\nUganda: 6\nEcuador: 6\nPalestine: 5\nEl Salvador: 4",
+  "tags": [
+    "Mauritius",
+    "Mozambique"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 122,
+    "defender": 120,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": true,
+    "defenderAdminBefore": "Mozambique",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 120,
+    "capitalIndexAfter": 111,
+    "defenderCapitalTerritoryAfter": "Madagascar",
+    "originalCapitalIndex": 120,
+    "capitalMoved": true
+  },
+  "territory": "Mozambique",
+  "attacker": "Mauritius",
+  "defender": "Mozambique"
+}

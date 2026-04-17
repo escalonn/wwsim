@@ -1,0 +1,31 @@
+{
+  "caption": "December 2047, Norway conquered Sweden territory.\nThe government of Sweden relocated its capital to Finland and continues in exile.",
+  "pic": "000261.png",
+  "zoom": "000261.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 11\nSpain: 10\nGermany: 8\nNew Zealand: 8\nKosovo: 6\nUnited Arab Emirates: 6\nUganda: 6\nEcuador: 6\nSenegal: 5\nPalestine: 5",
+  "tags": [
+    "Norway",
+    "Sweden"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 131,
+    "defender": 165,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": true,
+    "defenderAdminBefore": "Sweden",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 165,
+    "capitalIndexAfter": 57,
+    "defenderCapitalTerritoryAfter": "Finland",
+    "originalCapitalIndex": 165,
+    "capitalMoved": true
+  },
+  "territory": "Sweden",
+  "attacker": "Norway",
+  "defender": "Sweden"
+}

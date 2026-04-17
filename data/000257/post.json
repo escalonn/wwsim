@@ -1,0 +1,31 @@
+{
+  "caption": "August 2047, Spain conquered Wales territory.\nWales has been completely defeated.\n80 countries remaining.",
+  "pic": "000257.png",
+  "zoom": "000257.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 11\nSpain: 10\nGermany: 8\nNew Zealand: 7\nKosovo: 6\nUnited Arab Emirates: 6\nUganda: 6\nEcuador: 6\nPalestine: 5\nChad: 5",
+  "tags": [
+    "Spain",
+    "Wales"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 54,
+    "defender": 198,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Wales",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 198,
+    "capitalIndexAfter": 198,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 198,
+    "capitalMoved": false
+  },
+  "territory": "Wales",
+  "attacker": "Spain",
+  "defender": "Wales"
+}

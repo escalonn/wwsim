@@ -1,0 +1,31 @@
+{
+  "caption": "July 2048, Brazil conquered Venezuela territory previously occupied by Panama.",
+  "pic": "000268.png",
+  "zoom": "000268.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 13\nSpain: 10\nNew Zealand: 8\nGermany: 7\nKosovo: 6\nUnited Arab Emirates: 6\nUganda: 6\nEcuador: 6\nMauritius: 5\nIsrael: 5",
+  "tags": [
+    "Brazil",
+    "Panama"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 77,
+    "defender": 187,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Panama",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 136,
+    "capitalIndexAfter": 136,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 136,
+    "capitalMoved": false
+  },
+  "territory": "Venezuela",
+  "attacker": "Brazil",
+  "defender": "Panama"
+}

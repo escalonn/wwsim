@@ -1,0 +1,31 @@
+{
+  "caption": "August 2048, Denmark conquered Poland territory previously occupied by Lithuania.",
+  "pic": "000269.png",
+  "zoom": "000269.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 13\nSpain: 10\nNew Zealand: 8\nGermany: 7\nKosovo: 6\nUnited Arab Emirates: 6\nUganda: 6\nEcuador: 6\nMauritius: 5\nIsrael: 5",
+  "tags": [
+    "Denmark",
+    "Lithuania"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 47,
+    "defender": 141,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Lithuania",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 105,
+    "capitalIndexAfter": 105,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 105,
+    "capitalMoved": false
+  },
+  "territory": "Poland",
+  "attacker": "Denmark",
+  "defender": "Lithuania"
+}

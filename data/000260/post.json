@@ -1,0 +1,31 @@
+{
+  "caption": "November 2047, South Korea conquered Micronesia territory previously occupied by Solomon Islands.\nSolomon Islands has been completely defeated.\n79 countries remaining.",
+  "pic": "000260.png",
+  "zoom": "000260.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 11\nSpain: 10\nGermany: 8\nNew Zealand: 8\nKosovo: 6\nUnited Arab Emirates: 6\nUganda: 6\nEcuador: 6\nSenegal: 5\nPalestine: 5",
+  "tags": [
+    "South Korea",
+    "Solomon Islands"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 139,
+    "defender": 62,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Solomon Islands",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 62,
+    "capitalIndexAfter": 62,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 155,
+    "capitalMoved": false
+  },
+  "territory": "Micronesia",
+  "attacker": "South Korea",
+  "defender": "Solomon Islands"
+}

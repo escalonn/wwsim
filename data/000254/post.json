@@ -1,0 +1,31 @@
+{
+  "caption": "May 2047, Nepal conquered China territory previously occupied by Mongolia.\nMongolia has been completely defeated.\n81 countries remaining.",
+  "pic": "000254.png",
+  "zoom": "000254.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 10\nSpain: 9\nGermany: 8\nUnited Arab Emirates: 7\nNew Zealand: 7\nKosovo: 6\nUganda: 6\nEcuador: 6\nPalestine: 5\nChad: 5",
+  "tags": [
+    "Nepal",
+    "Mongolia"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 93,
+    "defender": 34,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Mongolia",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 34,
+    "capitalIndexAfter": 34,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 119,
+    "capitalMoved": false
+  },
+  "territory": "China",
+  "attacker": "Nepal",
+  "defender": "Mongolia"
+}
