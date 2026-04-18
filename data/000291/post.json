@@ -1,0 +1,31 @@
+{
+  "caption": "June 2050, Vietnam conquered Bhutan territory previously occupied by Laos.",
+  "pic": "000291.png",
+  "zoom": "000291.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 15\nSpain: 9\nNew Zealand: 9\nGermany: 8\nChad: 7\nKosovo: 6\nUnited Arab Emirates: 6\nMauritius: 6\nIsrael: 6\nUganda: 5",
+  "tags": [
+    "Vietnam",
+    "Laos"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 34,
+    "defender": 28,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Laos",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 98,
+    "capitalIndexAfter": 98,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 98,
+    "capitalMoved": false
+  },
+  "territory": "Bhutan",
+  "attacker": "Vietnam",
+  "defender": "Laos"
+}

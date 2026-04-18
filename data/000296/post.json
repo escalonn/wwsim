@@ -1,0 +1,31 @@
+{
+  "caption": "November 2050, Australia conquered Papua New Guinea territory.\nPapua New Guinea has been completely defeated.\n73 countries remaining.",
+  "pic": "000296.png",
+  "zoom": "000296.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 14\nSpain: 9\nNew Zealand: 9\nGermany: 8\nChad: 7\nUnited Arab Emirates: 6\nMauritius: 6\nIsrael: 6\nUganda: 5\nEcuador: 5",
+  "tags": [
+    "Australia",
+    "Papua New Guinea"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 9,
+    "defender": 140,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Papua New Guinea",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 140,
+    "capitalIndexAfter": 140,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 140,
+    "capitalMoved": false
+  },
+  "territory": "Papua New Guinea",
+  "attacker": "Australia",
+  "defender": "Papua New Guinea"
+}

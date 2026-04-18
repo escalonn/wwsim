@@ -1,0 +1,31 @@
+{
+  "caption": "May 2050, New Zealand conquered Micronesia territory previously occupied by South Korea.",
+  "pic": "000290.png",
+  "zoom": "000290.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 15\nSpain: 9\nNew Zealand: 9\nGermany: 8\nChad: 7\nKosovo: 6\nUnited Arab Emirates: 6\nMauritius: 6\nIsrael: 6\nUganda: 5",
+  "tags": [
+    "New Zealand",
+    "South Korea"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 189,
+    "defender": 62,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "South Korea",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 139,
+    "capitalIndexAfter": 139,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 96,
+    "capitalMoved": false
+  },
+  "territory": "Micronesia",
+  "attacker": "New Zealand",
+  "defender": "South Korea"
+}

@@ -1,0 +1,31 @@
+{
+  "caption": "October 2049, Vietnam conquered China territory previously occupied by Nepal.",
+  "pic": "000283.png",
+  "zoom": "000283.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 15\nSpain: 10\nNew Zealand: 8\nGermany: 7\nChad: 7\nKosovo: 6\nUnited Arab Emirates: 6\nMauritius: 6\nEcuador: 6\nUganda: 5",
+  "tags": [
+    "Vietnam",
+    "Nepal"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 188,
+    "defender": 34,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Nepal",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 132,
+    "capitalIndexAfter": 132,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 132,
+    "capitalMoved": false
+  },
+  "territory": "China",
+  "attacker": "Vietnam",
+  "defender": "Nepal"
+}

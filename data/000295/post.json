@@ -1,0 +1,31 @@
+{
+  "caption": "October 2050, Burkina Faso conquered Sierra Leone territory previously occupied by Brazil.",
+  "pic": "000295.png",
+  "zoom": "000295.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 14\nSpain: 9\nNew Zealand: 9\nGermany: 8\nChad: 7\nUnited Arab Emirates: 6\nMauritius: 6\nIsrael: 6\nUganda: 5\nEcuador: 5",
+  "tags": [
+    "Burkina Faso",
+    "Brazil"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 35,
+    "defender": 156,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Brazil",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 25,
+    "capitalIndexAfter": 25,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 25,
+    "capitalMoved": false
+  },
+  "territory": "Sierra Leone",
+  "attacker": "Burkina Faso",
+  "defender": "Brazil"
+}

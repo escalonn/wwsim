@@ -1,0 +1,31 @@
+{
+  "caption": "August 2050, Myanmar conquered Thailand territory previously occupied by Singapore.",
+  "pic": "000293.png",
+  "zoom": "000293.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 15\nSpain: 9\nNew Zealand: 9\nGermany: 8\nChad: 7\nUnited Arab Emirates: 6\nMauritius: 6\nIsrael: 6\nUganda: 5\nEcuador: 5",
+  "tags": [
+    "Myanmar",
+    "Singapore"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 103,
+    "defender": 171,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Singapore",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 154,
+    "capitalIndexAfter": 154,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 154,
+    "capitalMoved": false
+  },
+  "territory": "Thailand",
+  "attacker": "Myanmar",
+  "defender": "Singapore"
+}

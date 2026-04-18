@@ -1,0 +1,38 @@
+{
+  "caption": "July 2050, Croatia conquered Kosovo territory.\nKosovo capitulated, ceding 1 additional territory to Croatia.\nKosovo moved its capital to Macedonia.",
+  "pic": "000292.png",
+  "zoom": "000292.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 15\nSpain: 9\nNew Zealand: 9\nGermany: 8\nChad: 7\nUnited Arab Emirates: 6\nMauritius: 6\nIsrael: 6\nUganda: 5\nEcuador: 5",
+  "tags": [
+    "Croatia",
+    "Kosovo"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 160,
+    "defender": 191,
+    "type": "conquer",
+    "subjects": [
+      118
+    ],
+    "capitulation": true,
+    "capitulationEvent": {
+      "round": 292,
+      "attackerTerritoriesBefore": 1,
+      "defenderTerritoriesBefore": 6,
+      "territoriesCeded": 1
+    },
+    "fallenCapital": false,
+    "defenderAdminBefore": "Kosovo",
+    "defenderTerritoryRankBefore": 7,
+    "capitalIndexBefore": 191,
+    "capitalIndexAfter": 114,
+    "defenderCapitalTerritoryAfter": "Macedonia",
+    "originalCapitalIndex": 191,
+    "capitalMoved": true
+  },
+  "territory": "Kosovo",
+  "attacker": "Croatia",
+  "defender": "Kosovo"
+}

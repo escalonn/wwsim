@@ -1,0 +1,31 @@
+{
+  "caption": "September 2049, Sweden conquered Latvia territory.\nLatvia has been completely defeated.\n75 countries remaining.",
+  "pic": "000282.png",
+  "zoom": "000282.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 15\nSpain: 10\nNew Zealand: 8\nGermany: 7\nChad: 7\nKosovo: 6\nUnited Arab Emirates: 6\nMauritius: 6\nEcuador: 6\nUganda: 5",
+  "tags": [
+    "Sweden",
+    "Latvia"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 55,
+    "defender": 107,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Latvia",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 107,
+    "capitalIndexAfter": 107,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 107,
+    "capitalMoved": false
+  },
+  "territory": "Latvia",
+  "attacker": "Sweden",
+  "defender": "Latvia"
+}

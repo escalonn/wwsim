@@ -269,3 +269,29 @@ Round 268: July 2048, Brazil conquered Venezuela territory previously occupied b
 Round 269: August 2048, Denmark conquered Poland territory previously occupied by Lithuania.
 Round 270: September 2048, Lithuania conquered Poland territory previously occupied by Denmark.
 Round 271: October 2048, Armenia conquered Kazakhstan territory previously occupied by Norway.
+Round 272: November 2048, New Zealand conquered Antarctica territory. Antarctica has been completely defeated. 78 countries remaining.
+Round 273: December 2048, Mauritius conquered Somalia territory previously occupied by Uganda.
+Round 274: January 2049, Brazil conquered Paraguay territory. The government of Paraguay relocated its capital to Argentina and continues in exile.
+Round 275: February 2049, Chad conquered Djibouti territory previously occupied by Yemen. Yemen has been completely defeated. 77 countries remaining.
+Round 276: March 2049, Palestine conquered Eritrea territory previously occupied by Ethiopia. Ethiopia has been completely defeated. 76 countries remaining.
+Round 277: April 2049, Chad conquered Eritrea territory previously occupied by Palestine.
+Round 278: May 2049, Chad conquered Egypt territory previously occupied by Israel.
+Round 279: June 2049, Benin conquered Togo territory previously occupied by Cameroon.
+Round 280: July 2049, Brazil conquered Falkland Islands territory previously occupied by New Zealand.
+Round 281: August 2049, Israel conquered Egypt territory previously occupied by Chad.
+Round 282: September 2049, Sweden conquered Latvia territory. Latvia has been completely defeated. 75 countries remaining.
+Round 283: October 2049, Vietnam conquered China territory previously occupied by Nepal.
+Round 284: November 2049, Germany conquered Malta territory previously occupied by Spain.
+Round 285: December 2049, Liechtenstein conquered Croatia territory previously occupied by Czech Republic.
+Round 286: January 2050, Israel conquered Jordan territory previously occupied by Palestine. The government of Palestine relocated its capital to Lebanon and continues in exile.
+Round 287: February 2050, Venezuela conquered Colombia territory previously occupied by Ecuador.
+Round 288: March 2050, Brazil conquered Panama territory. Panama has been completely defeated. 74 countries remaining.
+Round 289: April 2050, Nicaragua conquered Panama territory previously occupied by Brazil.
+Round 290: May 2050, New Zealand conquered Micronesia territory previously occupied by South Korea.
+Round 291: June 2050, Vietnam conquered Bhutan territory previously occupied by Laos.
+Round 292: July 2050, Croatia conquered Kosovo territory. Kosovo capitulated, ceding 1 additional territory to Croatia. Kosovo moved its capital to Macedonia.
+Round 293: August 2050, Myanmar conquered Thailand territory previously occupied by Singapore.
+Round 294: September 2050, India conquered Nepal territory. Nepal capitulated, ceding 1 additional territory to India. Nepal moved its capital to Tajikistan.
+Round 295: October 2050, Burkina Faso conquered Sierra Leone territory previously occupied by Brazil.
+Round 296: November 2050, Australia conquered Papua New Guinea territory. Papua New Guinea has been completely defeated. 73 countries remaining.
+Round 297: December 2050, Tajikistan conquered Kazakhstan territory previously occupied by Armenia.

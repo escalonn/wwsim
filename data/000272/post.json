@@ -1,0 +1,31 @@
+{
+  "caption": "November 2048, New Zealand conquered Antarctica territory.\nAntarctica has been completely defeated.\n78 countries remaining.",
+  "pic": "000272.png",
+  "zoom": "000272.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 13\nSpain: 10\nNew Zealand: 9\nGermany: 7\nKosovo: 6\nUnited Arab Emirates: 6\nUganda: 6\nEcuador: 6\nMauritius: 5\nIsrael: 5",
+  "tags": [
+    "New Zealand",
+    "Antarctica"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 175,
+    "defender": 7,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Antarctica",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 7,
+    "capitalIndexAfter": 7,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 7,
+    "capitalMoved": false
+  },
+  "territory": "Antarctica",
+  "attacker": "New Zealand",
+  "defender": "Antarctica"
+}

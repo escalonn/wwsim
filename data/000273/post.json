@@ -1,0 +1,31 @@
+{
+  "caption": "December 2048, Mauritius conquered Somalia territory previously occupied by Uganda.",
+  "pic": "000273.png",
+  "zoom": "000273.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 13\nSpain: 10\nNew Zealand: 9\nGermany: 7\nKosovo: 6\nUnited Arab Emirates: 6\nMauritius: 6\nEcuador: 6\nUganda: 5\nIsrael: 5",
+  "tags": [
+    "Mauritius",
+    "Uganda"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 134,
+    "defender": 159,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Uganda",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 181,
+    "capitalIndexAfter": 181,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 181,
+    "capitalMoved": false
+  },
+  "territory": "Somalia",
+  "attacker": "Mauritius",
+  "defender": "Uganda"
+}

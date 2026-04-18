@@ -1,0 +1,31 @@
+{
+  "caption": "March 2050, Brazil conquered Panama territory.\nPanama has been completely defeated.\n74 countries remaining.",
+  "pic": "000288.png",
+  "zoom": "000288.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 16\nSpain: 9\nNew Zealand: 8\nGermany: 8\nChad: 7\nKosovo: 6\nUnited Arab Emirates: 6\nMauritius: 6\nIsrael: 6\nUganda: 5",
+  "tags": [
+    "Brazil",
+    "Panama"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 187,
+    "defender": 136,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Panama",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 136,
+    "capitalIndexAfter": 136,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 136,
+    "capitalMoved": false
+  },
+  "territory": "Panama",
+  "attacker": "Brazil",
+  "defender": "Panama"
+}

@@ -1,0 +1,31 @@
+{
+  "caption": "November 2049, Germany conquered Malta territory previously occupied by Spain.",
+  "pic": "000284.png",
+  "zoom": "000284.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 15\nSpain: 9\nNew Zealand: 8\nGermany: 8\nChad: 7\nKosovo: 6\nUnited Arab Emirates: 6\nMauritius: 6\nEcuador: 6\nUganda: 5",
+  "tags": [
+    "Germany",
+    "Spain"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 87,
+    "defender": 116,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Spain",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 54,
+    "capitalIndexAfter": 54,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 54,
+    "capitalMoved": false
+  },
+  "territory": "Malta",
+  "attacker": "Germany",
+  "defender": "Spain"
+}

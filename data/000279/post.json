@@ -1,0 +1,31 @@
+{
+  "caption": "June 2049, Benin conquered Togo territory previously occupied by Cameroon.",
+  "pic": "000279.png",
+  "zoom": "000279.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 14\nSpain: 10\nNew Zealand: 9\nChad: 8\nGermany: 7\nKosovo: 6\nUnited Arab Emirates: 6\nMauritius: 6\nEcuador: 6\nUganda: 5",
+  "tags": [
+    "Benin",
+    "Cameroon"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 65,
+    "defender": 170,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Cameroon",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 36,
+    "capitalIndexAfter": 36,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 36,
+    "capitalMoved": false
+  },
+  "territory": "Togo",
+  "attacker": "Benin",
+  "defender": "Cameroon"
+}

@@ -1,0 +1,31 @@
+{
+  "caption": "December 2050, Tajikistan conquered Kazakhstan territory previously occupied by Armenia.",
+  "pic": "000297.png",
+  "zoom": "000297.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 14\nSpain: 9\nNew Zealand: 9\nGermany: 8\nChad: 7\nUnited Arab Emirates: 6\nMauritius: 6\nIsrael: 6\nUganda: 5\nEcuador: 5",
+  "tags": [
+    "Tajikistan",
+    "Armenia"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 173,
+    "defender": 91,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Armenia",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 11,
+    "capitalIndexAfter": 11,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 6,
+    "capitalMoved": false
+  },
+  "territory": "Kazakhstan",
+  "attacker": "Tajikistan",
+  "defender": "Armenia"
+}

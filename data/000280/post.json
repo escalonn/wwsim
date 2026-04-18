@@ -1,0 +1,31 @@
+{
+  "caption": "July 2049, Brazil conquered Falkland Islands territory previously occupied by New Zealand.",
+  "pic": "000280.png",
+  "zoom": "000280.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 15\nSpain: 10\nNew Zealand: 8\nChad: 8\nGermany: 7\nKosovo: 6\nUnited Arab Emirates: 6\nMauritius: 6\nEcuador: 6\nUganda: 5",
+  "tags": [
+    "Brazil",
+    "New Zealand"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 145,
+    "defender": 59,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "New Zealand",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 133,
+    "capitalIndexAfter": 133,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 133,
+    "capitalMoved": false
+  },
+  "territory": "Falkland Islands",
+  "attacker": "Brazil",
+  "defender": "New Zealand"
+}

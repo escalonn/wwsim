@@ -1,0 +1,31 @@
+{
+  "caption": "January 2049, Brazil conquered Paraguay territory.\nThe government of Paraguay relocated its capital to Argentina and continues in exile.",
+  "pic": "000274.png",
+  "zoom": "000274.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 14\nSpain: 10\nNew Zealand: 9\nGermany: 7\nKosovo: 6\nUnited Arab Emirates: 6\nMauritius: 6\nEcuador: 6\nUganda: 5\nIsrael: 5",
+  "tags": [
+    "Brazil",
+    "Paraguay"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 73,
+    "defender": 145,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": true,
+    "defenderAdminBefore": "Paraguay",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 145,
+    "capitalIndexAfter": 5,
+    "defenderCapitalTerritoryAfter": "Argentina",
+    "originalCapitalIndex": 145,
+    "capitalMoved": true
+  },
+  "territory": "Paraguay",
+  "attacker": "Brazil",
+  "defender": "Paraguay"
+}

@@ -1,0 +1,31 @@
+{
+  "caption": "March 2049, Palestine conquered Eritrea territory previously occupied by Ethiopia.\nEthiopia has been completely defeated.\n76 countries remaining.",
+  "pic": "000276.png",
+  "zoom": "000276.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 14\nSpain: 10\nNew Zealand: 9\nGermany: 7\nKosovo: 6\nUnited Arab Emirates: 6\nMauritius: 6\nEcuador: 6\nChad: 6\nUganda: 5",
+  "tags": [
+    "Palestine",
+    "Ethiopia"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 89,
+    "defender": 52,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Ethiopia",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 52,
+    "capitalIndexAfter": 52,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 56,
+    "capitalMoved": false
+  },
+  "territory": "Eritrea",
+  "attacker": "Palestine",
+  "defender": "Ethiopia"
+}

@@ -1,0 +1,38 @@
+{
+  "caption": "September 2050, India conquered Nepal territory.\nNepal capitulated, ceding 1 additional territory to India.\nNepal moved its capital to Tajikistan.",
+  "pic": "000294.png",
+  "zoom": "000294.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 15\nSpain: 9\nNew Zealand: 9\nGermany: 8\nChad: 7\nUnited Arab Emirates: 6\nMauritius: 6\nIsrael: 6\nUganda: 5\nEcuador: 5",
+  "tags": [
+    "India",
+    "Nepal"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 81,
+    "defender": 132,
+    "type": "conquer",
+    "subjects": [
+      93
+    ],
+    "capitulation": true,
+    "capitulationEvent": {
+      "round": 294,
+      "attackerTerritoriesBefore": 2,
+      "defenderTerritoriesBefore": 3,
+      "territoriesCeded": 1
+    },
+    "fallenCapital": false,
+    "defenderAdminBefore": "Nepal",
+    "defenderTerritoryRankBefore": 24,
+    "capitalIndexBefore": 132,
+    "capitalIndexAfter": 172,
+    "defenderCapitalTerritoryAfter": "Tajikistan",
+    "originalCapitalIndex": 132,
+    "capitalMoved": true
+  },
+  "territory": "Nepal",
+  "attacker": "India",
+  "defender": "Nepal"
+}

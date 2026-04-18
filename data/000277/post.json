@@ -1,0 +1,31 @@
+{
+  "caption": "April 2049, Chad conquered Eritrea territory previously occupied by Palestine.",
+  "pic": "000277.png",
+  "zoom": "000277.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 14\nSpain: 10\nNew Zealand: 9\nGermany: 7\nChad: 7\nKosovo: 6\nUnited Arab Emirates: 6\nMauritius: 6\nEcuador: 6\nUganda: 5",
+  "tags": [
+    "Chad",
+    "Palestine"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 56,
+    "defender": 52,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Palestine",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 89,
+    "capitalIndexAfter": 89,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 146,
+    "capitalMoved": false
+  },
+  "territory": "Eritrea",
+  "attacker": "Chad",
+  "defender": "Palestine"
+}
