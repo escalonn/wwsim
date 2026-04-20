@@ -1,0 +1,31 @@
+{
+  "caption": "March 2051, Germany conquered Luxembourg territory.\nLuxembourg has been completely defeated.\n72 countries remaining.",
+  "pic": "000300.png",
+  "zoom": "000300.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 14\nSpain: 9\nNew Zealand: 9\nGermany: 9\nChad: 7\nUnited Arab Emirates: 6\nMauritius: 6\nEcuador: 6\nIsrael: 6\nUganda: 5",
+  "tags": [
+    "Germany",
+    "Luxembourg"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 45,
+    "defender": 106,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Luxembourg",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 106,
+    "capitalIndexAfter": 106,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 106,
+    "capitalMoved": false
+  },
+  "territory": "Luxembourg",
+  "attacker": "Germany",
+  "defender": "Luxembourg"
+}

@@ -1,0 +1,31 @@
+{
+  "caption": "August 2052, Norway conquered Scotland territory previously occupied by Isle of Man.\nThe government of Isle of Man relocated its capital to Faroe Islands and continues in exile.",
+  "pic": "000317.png",
+  "zoom": "000317.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 14\nGermany: 9\nChad: 9\nSpain: 8\nNew Zealand: 8\nMauritius: 7\nEcuador: 6\nTajikistan: 5\nUganda: 5\nBenin: 5",
+  "tags": [
+    "Norway",
+    "Isle of Man"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 71,
+    "defender": 197,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": true,
+    "defenderAdminBefore": "Isle of Man",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 197,
+    "capitalIndexAfter": 61,
+    "defenderCapitalTerritoryAfter": "Faroe Islands",
+    "originalCapitalIndex": 80,
+    "capitalMoved": true
+  },
+  "territory": "Scotland",
+  "attacker": "Norway",
+  "defender": "Isle of Man"
+}

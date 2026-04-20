@@ -1,0 +1,31 @@
+{
+  "caption": "February 2052, Chad conquered Cameroon territory.\nThe government of Cameroon relocated its capital to Republic of Congo and continues in exile.",
+  "pic": "000311.png",
+  "zoom": "000311.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 14\nGermany: 9\nSpain: 8\nChad: 8\nNew Zealand: 8\nMauritius: 7\nUnited Arab Emirates: 6\nEcuador: 6\nTajikistan: 5\nUganda: 5",
+  "tags": [
+    "Chad",
+    "Cameroon"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 128,
+    "defender": 36,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": true,
+    "defenderAdminBefore": "Cameroon",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 36,
+    "capitalIndexAfter": 38,
+    "defenderCapitalTerritoryAfter": "Republic of Congo",
+    "originalCapitalIndex": 36,
+    "capitalMoved": true
+  },
+  "territory": "Cameroon",
+  "attacker": "Chad",
+  "defender": "Cameroon"
+}

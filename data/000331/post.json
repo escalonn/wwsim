@@ -1,0 +1,38 @@
+{
+  "caption": "October 2053, Chad conquered Central African Republic territory.\nCentral African Republic capitulated, ceding 1 additional territory to Chad.\nCentral African Republic moved its capital to Democratic Republic of the Congo.",
+  "pic": "000331.png",
+  "zoom": "000331.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 14\nChad: 12\nGermany: 10\nNew Zealand: 8\nTajikistan: 6\nSpain: 6\nMauritius: 6\nEcuador: 6\nUganda: 5\nIsrael: 5",
+  "tags": [
+    "Chad",
+    "Central African Republic"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 152,
+    "defender": 30,
+    "type": "conquer",
+    "subjects": [
+      161
+    ],
+    "capitulation": true,
+    "capitulationEvent": {
+      "round": 331,
+      "attackerTerritoriesBefore": 10,
+      "defenderTerritoriesBefore": 3,
+      "territoriesCeded": 1
+    },
+    "fallenCapital": false,
+    "defenderAdminBefore": "Central African Republic",
+    "defenderTerritoryRankBefore": 23,
+    "capitalIndexBefore": 30,
+    "capitalIndexAfter": 37,
+    "defenderCapitalTerritoryAfter": "Democratic Republic of the Congo",
+    "originalCapitalIndex": 30,
+    "capitalMoved": true
+  },
+  "territory": "Central African Republic",
+  "attacker": "Chad",
+  "defender": "Central African Republic"
+}

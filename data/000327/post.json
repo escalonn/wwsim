@@ -1,0 +1,31 @@
+{
+  "caption": "June 2053, Lithuania conquered Denmark territory.\nDenmark has been completely defeated.\n65 countries remaining.",
+  "pic": "000327.png",
+  "zoom": "000327.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 13\nChad: 10\nGermany: 9\nNew Zealand: 8\nSpain: 7\nMauritius: 7\nTajikistan: 6\nEcuador: 6\nUganda: 5\nIsrael: 5",
+  "tags": [
+    "Lithuania",
+    "Denmark"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 141,
+    "defender": 47,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Denmark",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 47,
+    "capitalIndexAfter": 47,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 47,
+    "capitalMoved": false
+  },
+  "territory": "Denmark",
+  "attacker": "Lithuania",
+  "defender": "Denmark"
+}

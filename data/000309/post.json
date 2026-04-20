@@ -1,0 +1,31 @@
+{
+  "caption": "December 2051, Dominican Republic conquered Bermuda territory previously occupied by Portugal.",
+  "pic": "000309.png",
+  "zoom": "000309.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 14\nGermany: 9\nSpain: 8\nNew Zealand: 8\nMauritius: 7\nChad: 7\nUnited Arab Emirates: 6\nEcuador: 6\nUganda: 5\nIsrael: 5",
+  "tags": [
+    "Dominican Republic",
+    "Portugal"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 48,
+    "defender": 23,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Portugal",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 144,
+    "capitalIndexAfter": 144,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 144,
+    "capitalMoved": false
+  },
+  "territory": "Bermuda",
+  "attacker": "Dominican Republic",
+  "defender": "Portugal"
+}

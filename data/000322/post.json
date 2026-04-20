@@ -1,0 +1,31 @@
+{
+  "caption": "January 2053, Dominican Republic conquered Ireland territory.\nThe government of Ireland relocated its capital to Northern Ireland and continues in exile.",
+  "pic": "000322.png",
+  "zoom": "000322.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 13\nGermany: 9\nChad: 9\nSpain: 8\nNew Zealand: 8\nMauritius: 7\nTajikistan: 6\nEcuador: 6\nUganda: 5\nIsrael: 5",
+  "tags": [
+    "Dominican Republic",
+    "Ireland"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 23,
+    "defender": 82,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": true,
+    "defenderAdminBefore": "Ireland",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 82,
+    "capitalIndexAfter": 200,
+    "defenderCapitalTerritoryAfter": "Northern Ireland",
+    "originalCapitalIndex": 82,
+    "capitalMoved": true
+  },
+  "territory": "Ireland",
+  "attacker": "Dominican Republic",
+  "defender": "Ireland"
+}

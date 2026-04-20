@@ -295,3 +295,40 @@ Round 294: September 2050, India conquered Nepal territory. Nepal capitulated, c
 Round 295: October 2050, Burkina Faso conquered Sierra Leone territory previously occupied by Brazil.
 Round 296: November 2050, Australia conquered Papua New Guinea territory. Papua New Guinea has been completely defeated. 73 countries remaining.
 Round 297: December 2050, Tajikistan conquered Kazakhstan territory previously occupied by Armenia.
+Round 298: January 2051, Tajikistan conquered Belarus territory previously occupied by Lithuania.
+Round 299: February 2051, Ecuador conquered Guatemala territory previously occupied by El Salvador.
+Round 300: March 2051, Germany conquered Luxembourg territory. Luxembourg has been completely defeated. 72 countries remaining.
+Round 301: April 2051, Lesotho conquered Madagascar territory previously occupied by Mozambique. Mozambique has been completely defeated. 71 countries remaining.
+Round 302: May 2051, Mauritius conquered Antarctica territory previously occupied by New Zealand.
+Round 303: June 2051, Liberia conquered Argentina territory previously occupied by Paraguay. Paraguay has been completely defeated. 70 countries remaining.
+Round 304: July 2051, Indonesia conquered Thailand territory previously occupied by Myanmar.
+Round 305: August 2051, Liechtenstein conquered Switzerland territory previously occupied by Spain.
+Round 306: September 2051, Benin conquered Equatorial Guinea territory previously occupied by Nigeria. Nigeria has been completely defeated. 69 countries remaining.
+Round 307: October 2051, United Arab Emirates conquered Kuwait territory previously occupied by Israel.
+Round 308: November 2051, India conquered Pakistan territory previously occupied by United Arab Emirates.
+Round 309: December 2051, Dominican Republic conquered Bermuda territory previously occupied by Portugal.
+Round 310: January 2052, Tajikistan conquered Afghanistan territory. Afghanistan has been completely defeated. 68 countries remaining.
+Round 311: February 2052, Chad conquered Cameroon territory. The government of Cameroon relocated its capital to Republic of Congo and continues in exile.
+Round 312: March 2052, Norway conquered Greenland territory. Greenland has been completely defeated. 67 countries remaining.
+Round 313: April 2052, Benin conquered Cameroon territory previously occupied by Chad.
+Round 314: May 2052, Chad conquered Saudi Arabia territory previously occupied by United Arab Emirates.
+Round 315: June 2052, Chad conquered Qatar territory previously occupied by United Arab Emirates.
+Round 316: July 2052, Uruguay conquered eSwatini territory previously occupied by Lesotho. The government of Lesotho relocated its capital to Madagascar and continues in exile.
+Round 317: August 2052, Norway conquered Scotland territory previously occupied by Isle of Man. The government of Isle of Man relocated its capital to Faroe Islands and continues in exile.
+Round 318: September 2052, Liberia conquered Falkland Islands territory previously occupied by Brazil.
+Round 319: October 2052, Tajikistan reconquered its homeland from Nepal. Nepal has been completely defeated. 66 countries remaining.
+Round 320: November 2052, Angola conquered Equatorial Guinea territory previously occupied by Benin.
+Round 321: December 2052, Japan conquered Laos territory. The government of Laos relocated its capital to Bangladesh and continues in exile.
+Round 322: January 2053, Dominican Republic conquered Ireland territory. The government of Ireland relocated its capital to Northern Ireland and continues in exile.
+Round 323: February 2053, Czech Republic conquered Romania territory previously occupied by Germany.
+Round 324: March 2053, Germany conquered France territory previously occupied by Spain.
+Round 325: April 2053, Chad conquered United Arab Emirates territory. The government of United Arab Emirates relocated its capital to Bahrain and continues in exile.
+Round 326: May 2053, Samoa conquered Honduras territory previously occupied by El Salvador. El Salvador capitulated, ceding 1 additional territory to Samoa. El Salvador moved its capital to Belize.
+Round 327: June 2053, Lithuania conquered Denmark territory. Denmark has been completely defeated. 65 countries remaining.
+Round 328: July 2053, Brazil conquered Ivory Coast territory previously occupied by Burkina Faso. The government of Burkina Faso relocated its capital to Sierra Leone and continues in exile.
+Round 329: August 2053, Germany conquered Liechtenstein territory previously occupied by Spain.
+Round 330: September 2053, Lesotho conquered Mauritius territory. The government of Mauritius relocated its capital to Mozambique and continues in exile.
+Round 331: October 2053, Chad conquered Central African Republic territory. Central African Republic capitulated, ceding 1 additional territory to Chad. Central African Republic moved its capital to Democratic Republic of the Congo.
+Round 332: November 2053, Cameroon conquered Democratic Republic of the Congo territory previously occupied by Central African Republic. Central African Republic has been completely defeated. 64 countries remaining.
+Round 333: December 2053, Algeria conquered Morocco territory previously occupied by Senegal.
+Round 334: January 2054, Spain conquered Malta territory previously occupied by Germany.

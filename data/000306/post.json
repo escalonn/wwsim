@@ -1,0 +1,31 @@
+{
+  "caption": "September 2051, Benin conquered Equatorial Guinea territory previously occupied by Nigeria.\nNigeria has been completely defeated.\n69 countries remaining.",
+  "pic": "000306.png",
+  "zoom": "000306.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 14\nGermany: 9\nSpain: 8\nNew Zealand: 8\nMauritius: 7\nChad: 7\nUnited Arab Emirates: 6\nEcuador: 6\nIsrael: 6\nUganda: 5",
+  "tags": [
+    "Benin",
+    "Nigeria"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 170,
+    "defender": 69,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Nigeria",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 69,
+    "capitalIndexAfter": 69,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 128,
+    "capitalMoved": false
+  },
+  "territory": "Equatorial Guinea",
+  "attacker": "Benin",
+  "defender": "Nigeria"
+}

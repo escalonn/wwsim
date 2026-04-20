@@ -103,7 +103,7 @@ fn get_capitulated_territories(
         return current_ceded;
     }
 
-    let capitulation_chance = 1.0 / 3.0; // 1/3
+    let capitulation_chance = 0.5;
     if random::<f64>() >= capitulation_chance {
         return current_ceded;
     }

@@ -1,0 +1,31 @@
+{
+  "caption": "April 2051, Lesotho conquered Madagascar territory previously occupied by Mozambique.\nMozambique has been completely defeated.\n71 countries remaining.",
+  "pic": "000301.png",
+  "zoom": "000301.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 14\nSpain: 9\nNew Zealand: 9\nGermany: 9\nChad: 7\nUnited Arab Emirates: 6\nMauritius: 6\nEcuador: 6\nIsrael: 6\nUganda: 5",
+  "tags": [
+    "Lesotho",
+    "Mozambique"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 166,
+    "defender": 111,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Mozambique",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 111,
+    "capitalIndexAfter": 111,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 120,
+    "capitalMoved": false
+  },
+  "territory": "Madagascar",
+  "attacker": "Lesotho",
+  "defender": "Mozambique"
+}

@@ -1,0 +1,31 @@
+{
+  "caption": "October 2051, United Arab Emirates conquered Kuwait territory previously occupied by Israel.",
+  "pic": "000307.png",
+  "zoom": "000307.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 14\nGermany: 9\nSpain: 8\nNew Zealand: 8\nUnited Arab Emirates: 7\nMauritius: 7\nChad: 7\nEcuador: 6\nUganda: 5\nIsrael: 5",
+  "tags": [
+    "United Arab Emirates",
+    "Israel"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 151,
+    "defender": 97,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Israel",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 86,
+    "capitalIndexAfter": 86,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 86,
+    "capitalMoved": false
+  },
+  "territory": "Kuwait",
+  "attacker": "United Arab Emirates",
+  "defender": "Israel"
+}

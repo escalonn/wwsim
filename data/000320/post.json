@@ -1,0 +1,31 @@
+{
+  "caption": "November 2052, Angola conquered Equatorial Guinea territory previously occupied by Benin.",
+  "pic": "000320.png",
+  "zoom": "000320.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 13\nGermany: 9\nChad: 9\nSpain: 8\nNew Zealand: 8\nMauritius: 7\nTajikistan: 6\nEcuador: 6\nUganda: 5\nIsrael: 5",
+  "tags": [
+    "Angola",
+    "Benin"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 1,
+    "defender": 69,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Benin",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 14,
+    "capitalIndexAfter": 14,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 14,
+    "capitalMoved": false
+  },
+  "territory": "Equatorial Guinea",
+  "attacker": "Angola",
+  "defender": "Benin"
+}

@@ -1,0 +1,31 @@
+{
+  "caption": "February 2051, Ecuador conquered Guatemala territory previously occupied by El Salvador.",
+  "pic": "000299.png",
+  "zoom": "000299.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 14\nSpain: 9\nNew Zealand: 9\nGermany: 8\nChad: 7\nUnited Arab Emirates: 6\nMauritius: 6\nEcuador: 6\nIsrael: 6\nUganda: 5",
+  "tags": [
+    "Ecuador",
+    "El Salvador"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 50,
+    "defender": 72,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "El Salvador",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 75,
+    "capitalIndexAfter": 75,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 157,
+    "capitalMoved": false
+  },
+  "territory": "Guatemala",
+  "attacker": "Ecuador",
+  "defender": "El Salvador"
+}

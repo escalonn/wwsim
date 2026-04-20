@@ -1,0 +1,31 @@
+{
+  "caption": "March 2052, Norway conquered Greenland territory.\nGreenland has been completely defeated.\n67 countries remaining.",
+  "pic": "000312.png",
+  "zoom": "000312.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 14\nGermany: 9\nSpain: 8\nChad: 8\nNew Zealand: 8\nMauritius: 7\nUnited Arab Emirates: 6\nEcuador: 6\nTajikistan: 5\nUganda: 5",
+  "tags": [
+    "Norway",
+    "Greenland"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 131,
+    "defender": 71,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Greenland",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 71,
+    "capitalIndexAfter": 71,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 71,
+    "capitalMoved": false
+  },
+  "territory": "Greenland",
+  "attacker": "Norway",
+  "defender": "Greenland"
+}

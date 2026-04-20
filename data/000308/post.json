@@ -1,0 +1,31 @@
+{
+  "caption": "November 2051, India conquered Pakistan territory previously occupied by United Arab Emirates.",
+  "pic": "000308.png",
+  "zoom": "000308.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 14\nGermany: 9\nSpain: 8\nNew Zealand: 8\nMauritius: 7\nChad: 7\nUnited Arab Emirates: 6\nEcuador: 6\nUganda: 5\nIsrael: 5",
+  "tags": [
+    "India",
+    "United Arab Emirates"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 132,
+    "defender": 135,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "United Arab Emirates",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 4,
+    "capitalIndexAfter": 4,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 4,
+    "capitalMoved": false
+  },
+  "territory": "Pakistan",
+  "attacker": "India",
+  "defender": "United Arab Emirates"
+}

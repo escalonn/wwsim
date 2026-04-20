@@ -399,8 +399,10 @@ fn main() {
             use rand::seq::SliceRandom;
             let chosen_id: u16 = *active_territories_ids.choose(&mut rng).unwrap();
 
-            let is_eliminated = *owns_ref.get(&chosen_id).unwrap_or(&0) == 0;
-            if is_eliminated {
+            let owner = owners_ref[&chosen_id];
+            let is_conquered_original_capital = chosen_id != owner;
+
+            if is_conquered_original_capital {
                 let independence_chance = 1.0 / (12.0 + (epoch as f64 / 10.0));
                 if random::<f64>() < independence_chance {
                     perform_riot(chosen_id, owners_ref, owns_ref, &targets_data, remaining_ref, capitals_ref);

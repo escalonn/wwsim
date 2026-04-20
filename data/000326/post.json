@@ -1,0 +1,38 @@
+{
+  "caption": "May 2053, Samoa conquered Honduras territory previously occupied by El Salvador.\nEl Salvador capitulated, ceding 1 additional territory to Samoa.\nEl Salvador moved its capital to Belize.",
+  "pic": "000326.png",
+  "zoom": "000326.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 13\nChad: 10\nGermany: 9\nNew Zealand: 8\nSpain: 7\nMauritius: 7\nTajikistan: 6\nEcuador: 6\nUganda: 5\nIsrael: 5",
+  "tags": [
+    "Samoa",
+    "El Salvador"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 157,
+    "defender": 75,
+    "type": "conquer",
+    "subjects": [
+      42
+    ],
+    "capitulation": true,
+    "capitulationEvent": {
+      "round": 326,
+      "attackerTerritoriesBefore": 2,
+      "defenderTerritoriesBefore": 3,
+      "territoriesCeded": 1
+    },
+    "fallenCapital": false,
+    "defenderAdminBefore": "El Salvador",
+    "defenderTerritoryRankBefore": 25,
+    "capitalIndexBefore": 75,
+    "capitalIndexAfter": 22,
+    "defenderCapitalTerritoryAfter": "Belize",
+    "originalCapitalIndex": 157,
+    "capitalMoved": true
+  },
+  "territory": "Honduras",
+  "attacker": "Samoa",
+  "defender": "El Salvador"
+}

@@ -1,0 +1,31 @@
+{
+  "caption": "May 2051, Mauritius conquered Antarctica territory previously occupied by New Zealand.",
+  "pic": "000302.png",
+  "zoom": "000302.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 14\nSpain: 9\nGermany: 9\nNew Zealand: 8\nMauritius: 7\nChad: 7\nUnited Arab Emirates: 6\nEcuador: 6\nIsrael: 6\nUganda: 5",
+  "tags": [
+    "Mauritius",
+    "New Zealand"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 8,
+    "defender": 7,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "New Zealand",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 133,
+    "capitalIndexAfter": 133,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 133,
+    "capitalMoved": false
+  },
+  "territory": "Antarctica",
+  "attacker": "Mauritius",
+  "defender": "New Zealand"
+}

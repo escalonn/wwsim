@@ -1,0 +1,31 @@
+{
+  "caption": "November 2053, Cameroon conquered Democratic Republic of the Congo territory previously occupied by Central African Republic.\nCentral African Republic has been completely defeated.\n64 countries remaining.",
+  "pic": "000332.png",
+  "zoom": "000332.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 14\nChad: 12\nGermany: 10\nNew Zealand: 8\nTajikistan: 6\nSpain: 6\nMauritius: 6\nEcuador: 6\nUganda: 5\nIsrael: 5",
+  "tags": [
+    "Cameroon",
+    "Central African Republic"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 38,
+    "defender": 37,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Central African Republic",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 37,
+    "capitalIndexAfter": 37,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 30,
+    "capitalMoved": false
+  },
+  "territory": "Democratic Republic of the Congo",
+  "attacker": "Cameroon",
+  "defender": "Central African Republic"
+}

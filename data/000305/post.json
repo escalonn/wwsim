@@ -1,0 +1,31 @@
+{
+  "caption": "August 2051, Liechtenstein conquered Switzerland territory previously occupied by Spain.",
+  "pic": "000305.png",
+  "zoom": "000305.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 14\nGermany: 9\nSpain: 8\nNew Zealand: 8\nMauritius: 7\nChad: 7\nUnited Arab Emirates: 6\nEcuador: 6\nIsrael: 6\nUganda: 5",
+  "tags": [
+    "Liechtenstein",
+    "Spain"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 158,
+    "defender": 32,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Spain",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 54,
+    "capitalIndexAfter": 54,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 54,
+    "capitalMoved": false
+  },
+  "territory": "Switzerland",
+  "attacker": "Liechtenstein",
+  "defender": "Spain"
+}

@@ -1,0 +1,31 @@
+{
+  "caption": "December 2053, Algeria conquered Morocco territory previously occupied by Senegal.",
+  "pic": "000333.png",
+  "zoom": "000333.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 14\nChad: 12\nGermany: 10\nNew Zealand: 8\nTajikistan: 6\nSpain: 6\nMauritius: 6\nEcuador: 6\nUganda: 5\nIsrael: 5",
+  "tags": [
+    "Algeria",
+    "Senegal"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 49,
+    "defender": 108,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Senegal",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 153,
+    "capitalIndexAfter": 153,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 153,
+    "capitalMoved": false
+  },
+  "territory": "Morocco",
+  "attacker": "Algeria",
+  "defender": "Senegal"
+}

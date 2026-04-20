@@ -1,0 +1,31 @@
+{
+  "caption": "October 2052, Tajikistan reconquered its homeland from Nepal.\nNepal has been completely defeated.\n66 countries remaining.",
+  "pic": "000319.png",
+  "zoom": "000319.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 13\nGermany: 9\nChad: 9\nSpain: 8\nNew Zealand: 8\nMauritius: 7\nTajikistan: 6\nEcuador: 6\nUganda: 5\nBenin: 5",
+  "tags": [
+    "Tajikistan",
+    "Nepal"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 0,
+    "defender": 172,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Nepal",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 172,
+    "capitalIndexAfter": 172,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 132,
+    "capitalMoved": false
+  },
+  "territory": "Tajikistan",
+  "attacker": "Tajikistan",
+  "defender": "Nepal"
+}

@@ -1,0 +1,31 @@
+{
+  "caption": "March 2053, Germany conquered France territory previously occupied by Spain.",
+  "pic": "000324.png",
+  "zoom": "000324.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 13\nGermany: 9\nChad: 9\nNew Zealand: 8\nSpain: 7\nMauritius: 7\nTajikistan: 6\nEcuador: 6\nUganda: 5\nIsrael: 5",
+  "tags": [
+    "Germany",
+    "Spain"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 106,
+    "defender": 60,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Spain",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 54,
+    "capitalIndexAfter": 54,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 54,
+    "capitalMoved": false
+  },
+  "territory": "France",
+  "attacker": "Germany",
+  "defender": "Spain"
+}

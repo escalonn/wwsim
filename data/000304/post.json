@@ -1,0 +1,31 @@
+{
+  "caption": "July 2051, Indonesia conquered Thailand territory previously occupied by Myanmar.",
+  "pic": "000304.png",
+  "zoom": "000304.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 14\nSpain: 9\nGermany: 9\nNew Zealand: 8\nMauritius: 7\nChad: 7\nUnited Arab Emirates: 6\nEcuador: 6\nIsrael: 6\nUganda: 5",
+  "tags": [
+    "Indonesia",
+    "Myanmar"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 124,
+    "defender": 171,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Myanmar",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 94,
+    "capitalIndexAfter": 94,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 117,
+    "capitalMoved": false
+  },
+  "territory": "Thailand",
+  "attacker": "Indonesia",
+  "defender": "Myanmar"
+}

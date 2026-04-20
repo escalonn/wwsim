@@ -1,0 +1,31 @@
+{
+  "caption": "January 2051, Tajikistan conquered Belarus territory previously occupied by Lithuania.",
+  "pic": "000298.png",
+  "zoom": "000298.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 14\nSpain: 9\nNew Zealand: 9\nGermany: 8\nChad: 7\nUnited Arab Emirates: 6\nMauritius: 6\nIsrael: 6\nUganda: 5\nEcuador: 5",
+  "tags": [
+    "Tajikistan",
+    "Lithuania"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 91,
+    "defender": 21,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Lithuania",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 105,
+    "capitalIndexAfter": 105,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 105,
+    "capitalMoved": false
+  },
+  "territory": "Belarus",
+  "attacker": "Tajikistan",
+  "defender": "Lithuania"
+}

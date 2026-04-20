@@ -1,0 +1,31 @@
+{
+  "caption": "February 2053, Czech Republic conquered Romania territory previously occupied by Germany.",
+  "pic": "000323.png",
+  "zoom": "000323.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 13\nChad: 9\nSpain: 8\nGermany: 8\nNew Zealand: 8\nMauritius: 7\nTajikistan: 6\nEcuador: 6\nUganda: 5\nIsrael: 5",
+  "tags": [
+    "Czech Republic",
+    "Germany"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 78,
+    "defender": 148,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Germany",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 45,
+    "capitalIndexAfter": 45,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 45,
+    "capitalMoved": false
+  },
+  "territory": "Romania",
+  "attacker": "Czech Republic",
+  "defender": "Germany"
+}

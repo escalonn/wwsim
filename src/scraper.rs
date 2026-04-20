@@ -1434,7 +1434,9 @@ pub fn update_gamestate(force_fetch: bool) -> Result<usize, Box<dyn std::error::
                 )
             }
         } else {
-            let riot_suffix = if round < 85 {
+            let rioting_country_id = conquered_territory_id;
+            let was_eliminated = !id_owners.values().any(|&o| o == rioting_country_id);
+            let riot_suffix = if was_eliminated {
                 "gained independence."
             } else {
                 "reunited its homeland."

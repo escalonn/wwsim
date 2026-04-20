@@ -1,0 +1,31 @@
+{
+  "caption": "January 2052, Tajikistan conquered Afghanistan territory.\nAfghanistan has been completely defeated.\n68 countries remaining.",
+  "pic": "000310.png",
+  "zoom": "000310.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 14\nGermany: 9\nSpain: 8\nNew Zealand: 8\nMauritius: 7\nChad: 7\nUnited Arab Emirates: 6\nEcuador: 6\nTajikistan: 5\nUganda: 5",
+  "tags": [
+    "Tajikistan",
+    "Afghanistan"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 185,
+    "defender": 0,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Afghanistan",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 0,
+    "capitalIndexAfter": 0,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 0,
+    "capitalMoved": false
+  },
+  "territory": "Afghanistan",
+  "attacker": "Tajikistan",
+  "defender": "Afghanistan"
+}

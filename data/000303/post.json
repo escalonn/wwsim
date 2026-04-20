@@ -1,0 +1,31 @@
+{
+  "caption": "June 2051, Liberia conquered Argentina territory previously occupied by Paraguay.\nParaguay has been completely defeated.\n70 countries remaining.",
+  "pic": "000303.png",
+  "zoom": "000303.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 14\nSpain: 9\nGermany: 9\nNew Zealand: 8\nMauritius: 7\nChad: 7\nUnited Arab Emirates: 6\nEcuador: 6\nIsrael: 6\nUganda: 5",
+  "tags": [
+    "Liberia",
+    "Paraguay"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 183,
+    "defender": 5,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Paraguay",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 5,
+    "capitalIndexAfter": 5,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 145,
+    "capitalMoved": false
+  },
+  "territory": "Argentina",
+  "attacker": "Liberia",
+  "defender": "Paraguay"
+}

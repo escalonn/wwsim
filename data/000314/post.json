@@ -1,0 +1,31 @@
+{
+  "caption": "May 2052, Chad conquered Saudi Arabia territory previously occupied by United Arab Emirates.",
+  "pic": "000314.png",
+  "zoom": "000314.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 14\nGermany: 9\nSpain: 8\nChad: 8\nNew Zealand: 8\nMauritius: 7\nEcuador: 6\nTajikistan: 5\nUnited Arab Emirates: 5\nUganda: 5",
+  "tags": [
+    "Chad",
+    "United Arab Emirates"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 52,
+    "defender": 151,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "United Arab Emirates",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 4,
+    "capitalIndexAfter": 4,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 4,
+    "capitalMoved": false
+  },
+  "territory": "Saudi Arabia",
+  "attacker": "Chad",
+  "defender": "United Arab Emirates"
+}

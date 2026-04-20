@@ -1,0 +1,31 @@
+{
+  "caption": "April 2053, Chad conquered United Arab Emirates territory.\nThe government of United Arab Emirates relocated its capital to Bahrain and continues in exile.",
+  "pic": "000325.png",
+  "zoom": "000325.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 13\nChad: 10\nGermany: 9\nNew Zealand: 8\nSpain: 7\nMauritius: 7\nTajikistan: 6\nEcuador: 6\nUganda: 5\nIsrael: 5",
+  "tags": [
+    "Chad",
+    "United Arab Emirates"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 147,
+    "defender": 4,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": true,
+    "defenderAdminBefore": "United Arab Emirates",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 4,
+    "capitalIndexAfter": 18,
+    "defenderCapitalTerritoryAfter": "Bahrain",
+    "originalCapitalIndex": 4,
+    "capitalMoved": true
+  },
+  "territory": "United Arab Emirates",
+  "attacker": "Chad",
+  "defender": "United Arab Emirates"
+}
