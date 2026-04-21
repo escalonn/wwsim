@@ -1,0 +1,31 @@
+{
+  "caption": "July 2054, Dominican Republic conquered Jamaica territory previously occupied by Nicaragua.",
+  "pic": "000340.png",
+  "zoom": "000340.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 14\nChad: 12\nGermany: 10\nNew Zealand: 8\nSpain: 7\nTajikistan: 6\nEcuador: 6\nNorway: 6\nMauritius: 5\nUganda: 5",
+  "tags": [
+    "Dominican Republic",
+    "Nicaragua"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 48,
+    "defender": 88,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Nicaragua",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 129,
+    "capitalIndexAfter": 129,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 129,
+    "capitalMoved": false
+  },
+  "territory": "Jamaica",
+  "attacker": "Dominican Republic",
+  "defender": "Nicaragua"
+}

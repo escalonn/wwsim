@@ -1,0 +1,31 @@
+{
+  "caption": "June 2055, Ecuador conquered Belize territory previously occupied by El Salvador.\nEl Salvador has been completely defeated.\n61 countries remaining.",
+  "pic": "000351.png",
+  "zoom": "000351.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 13\nChad: 12\nNew Zealand: 9\nGermany: 8\nNorway: 7\nTajikistan: 6\nSpain: 6\nEcuador: 6\nMauritius: 5\nUnited Arab Emirates: 5",
+  "tags": [
+    "Ecuador",
+    "El Salvador"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 72,
+    "defender": 22,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "El Salvador",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 22,
+    "capitalIndexAfter": 22,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 157,
+    "capitalMoved": false
+  },
+  "territory": "Belize",
+  "attacker": "Ecuador",
+  "defender": "El Salvador"
+}

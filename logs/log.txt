@@ -332,3 +332,23 @@ Round 331: October 2053, Chad conquered Central African Republic territory. Cent
 Round 332: November 2053, Cameroon conquered Democratic Republic of the Congo territory previously occupied by Central African Republic. Central African Republic has been completely defeated. 64 countries remaining.
 Round 333: December 2053, Algeria conquered Morocco territory previously occupied by Senegal.
 Round 334: January 2054, Spain conquered Malta territory previously occupied by Germany.
+Round 335: February 2054, Germany conquered England territory. The government of England relocated its capital to Isle of Man and continues in exile.
+Round 336: March 2054, Norway conquered Denmark territory previously occupied by Lithuania.
+Round 337: April 2054, Lesotho conquered Mozambique territory previously occupied by Mauritius. The government of Mauritius relocated its capital to Maldives and continues in exile.
+Round 338: May 2054, Senegal conquered Ghana territory previously occupied by Benin.
+Round 339: June 2054, Algeria conquered Western Sahara territory previously occupied by Mali.
+Round 340: July 2054, Dominican Republic conquered Jamaica territory previously occupied by Nicaragua.
+Round 341: August 2054, Liechtenstein conquered Luxembourg territory previously occupied by Germany.
+Round 342: September 2054, Myanmar conquered Bangladesh territory previously occupied by Laos. Laos has been completely defeated. 63 countries remaining.
+Round 343: October 2054, Lithuania conquered Moldova territory previously occupied by Germany.
+Round 344: November 2054, United Arab Emirates conquered Azerbaijan territory previously occupied by Armenia. The government of Armenia relocated its capital to Georgia and continues in exile.
+Round 345: December 2054, New Zealand conquered Papua New Guinea territory previously occupied by Australia.
+Round 346: January 2055, Liberia conquered Peru territory previously occupied by Ecuador.
+Round 347: February 2055, Norway conquered Poland territory previously occupied by Lithuania.
+Round 348: March 2055, Uruguay conquered Liberia territory previously occupied by Brazil.
+Round 349: April 2055, Croatia conquered Vatican City territory previously occupied by Spain.
+Round 350: May 2055, United Arab Emirates conquered Georgia territory previously occupied by Armenia. Armenia has been completely defeated. 62 countries remaining.
+Round 351: June 2055, Ecuador conquered Belize territory previously occupied by El Salvador. El Salvador has been completely defeated. 61 countries remaining.
+Round 352: July 2055, Norway conquered Estonia territory previously occupied by Sweden.
+Round 353: August 2055, Chad conquered Uganda territory. The government of Uganda relocated its capital to Burundi and continues in exile.
+Round 354: September 2055, Japan conquered Russia territory. Russia has been completely defeated. 60 countries remaining.

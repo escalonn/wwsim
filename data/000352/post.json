@@ -1,0 +1,31 @@
+{
+  "caption": "July 2055, Norway conquered Estonia territory previously occupied by Sweden.",
+  "pic": "000352.png",
+  "zoom": "000352.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 13\nChad: 12\nNew Zealand: 9\nGermany: 8\nNorway: 8\nTajikistan: 6\nSpain: 6\nEcuador: 6\nMauritius: 5\nUnited Arab Emirates: 5",
+  "tags": [
+    "Norway",
+    "Sweden"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 165,
+    "defender": 55,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Sweden",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 57,
+    "capitalIndexAfter": 57,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 165,
+    "capitalMoved": false
+  },
+  "territory": "Estonia",
+  "attacker": "Norway",
+  "defender": "Sweden"
+}

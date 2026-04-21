@@ -1,0 +1,31 @@
+{
+  "caption": "April 2054, Lesotho conquered Mozambique territory previously occupied by Mauritius.\nThe government of Mauritius relocated its capital to Maldives and continues in exile.",
+  "pic": "000337.png",
+  "zoom": "000337.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 14\nChad: 12\nGermany: 10\nNew Zealand: 8\nSpain: 7\nTajikistan: 6\nEcuador: 6\nNorway: 6\nMauritius: 5\nUganda: 5",
+  "tags": [
+    "Lesotho",
+    "Mauritius"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 111,
+    "defender": 120,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": true,
+    "defenderAdminBefore": "Mauritius",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 120,
+    "capitalIndexAfter": 112,
+    "defenderCapitalTerritoryAfter": "Maldives",
+    "originalCapitalIndex": 122,
+    "capitalMoved": true
+  },
+  "territory": "Mozambique",
+  "attacker": "Lesotho",
+  "defender": "Mauritius"
+}

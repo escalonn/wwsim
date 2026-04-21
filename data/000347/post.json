@@ -1,0 +1,31 @@
+{
+  "caption": "February 2055, Norway conquered Poland territory previously occupied by Lithuania.",
+  "pic": "000347.png",
+  "zoom": "000347.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 14\nChad: 12\nNew Zealand: 9\nGermany: 8\nSpain: 7\nNorway: 7\nTajikistan: 6\nMauritius: 5\nUganda: 5\nEcuador: 5",
+  "tags": [
+    "Norway",
+    "Lithuania"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 47,
+    "defender": 141,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Lithuania",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 105,
+    "capitalIndexAfter": 105,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 105,
+    "capitalMoved": false
+  },
+  "territory": "Poland",
+  "attacker": "Norway",
+  "defender": "Lithuania"
+}

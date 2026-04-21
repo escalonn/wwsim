@@ -1,0 +1,31 @@
+{
+  "caption": "June 2054, Algeria conquered Western Sahara territory previously occupied by Mali.",
+  "pic": "000339.png",
+  "zoom": "000339.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 14\nChad: 12\nGermany: 10\nNew Zealand: 8\nSpain: 7\nTajikistan: 6\nEcuador: 6\nNorway: 6\nMauritius: 5\nUganda: 5",
+  "tags": [
+    "Algeria",
+    "Mali"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 108,
+    "defender": 53,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Mali",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 121,
+    "capitalIndexAfter": 121,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 115,
+    "capitalMoved": false
+  },
+  "territory": "Western Sahara",
+  "attacker": "Algeria",
+  "defender": "Mali"
+}

@@ -1,0 +1,31 @@
+{
+  "caption": "May 2055, United Arab Emirates conquered Georgia territory previously occupied by Armenia.\nArmenia has been completely defeated.\n62 countries remaining.",
+  "pic": "000350.png",
+  "zoom": "000350.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 13\nChad: 12\nNew Zealand: 9\nGermany: 8\nNorway: 7\nTajikistan: 6\nSpain: 6\nMauritius: 5\nUnited Arab Emirates: 5\nUganda: 5",
+  "tags": [
+    "United Arab Emirates",
+    "Armenia"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 11,
+    "defender": 64,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Armenia",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 64,
+    "capitalIndexAfter": 64,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 6,
+    "capitalMoved": false
+  },
+  "territory": "Georgia",
+  "attacker": "United Arab Emirates",
+  "defender": "Armenia"
+}

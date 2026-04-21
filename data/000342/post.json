@@ -1,0 +1,31 @@
+{
+  "caption": "September 2054, Myanmar conquered Bangladesh territory previously occupied by Laos.\nLaos has been completely defeated.\n63 countries remaining.",
+  "pic": "000342.png",
+  "zoom": "000342.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 14\nChad: 12\nGermany: 9\nNew Zealand: 8\nSpain: 7\nTajikistan: 6\nEcuador: 6\nNorway: 6\nMauritius: 5\nUganda: 5",
+  "tags": [
+    "Myanmar",
+    "Laos"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 103,
+    "defender": 16,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Laos",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 16,
+    "capitalIndexAfter": 16,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 98,
+    "capitalMoved": false
+  },
+  "territory": "Bangladesh",
+  "attacker": "Myanmar",
+  "defender": "Laos"
+}

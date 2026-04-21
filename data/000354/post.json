@@ -1,0 +1,31 @@
+{
+  "caption": "September 2055, Japan conquered Russia territory.\nRussia has been completely defeated.\n60 countries remaining.",
+  "pic": "000354.png",
+  "zoom": "000354.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 13\nBrazil: 13\nNew Zealand: 9\nGermany: 8\nNorway: 8\nTajikistan: 6\nSpain: 6\nEcuador: 6\nJapan: 6\nMauritius: 5",
+  "tags": [
+    "Japan",
+    "Russia"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 143,
+    "defender": 149,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Russia",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 149,
+    "capitalIndexAfter": 149,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 149,
+    "capitalMoved": false
+  },
+  "territory": "Russia",
+  "attacker": "Japan",
+  "defender": "Russia"
+}

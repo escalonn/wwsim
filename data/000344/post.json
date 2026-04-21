@@ -1,0 +1,31 @@
+{
+  "caption": "November 2054, United Arab Emirates conquered Azerbaijan territory previously occupied by Armenia.\nThe government of Armenia relocated its capital to Georgia and continues in exile.",
+  "pic": "000344.png",
+  "zoom": "000344.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 14\nChad: 12\nGermany: 8\nNew Zealand: 8\nSpain: 7\nTajikistan: 6\nEcuador: 6\nNorway: 6\nMauritius: 5\nUganda: 5",
+  "tags": [
+    "United Arab Emirates",
+    "Armenia"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 83,
+    "defender": 11,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": true,
+    "defenderAdminBefore": "Armenia",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 11,
+    "capitalIndexAfter": 64,
+    "defenderCapitalTerritoryAfter": "Georgia",
+    "originalCapitalIndex": 6,
+    "capitalMoved": true
+  },
+  "territory": "Azerbaijan",
+  "attacker": "United Arab Emirates",
+  "defender": "Armenia"
+}

@@ -1,0 +1,31 @@
+{
+  "caption": "January 2055, Liberia conquered Peru territory previously occupied by Ecuador.",
+  "pic": "000346.png",
+  "zoom": "000346.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 14\nChad: 12\nNew Zealand: 9\nGermany: 8\nSpain: 7\nTajikistan: 6\nNorway: 6\nMauritius: 5\nUganda: 5\nEcuador: 5",
+  "tags": [
+    "Liberia",
+    "Ecuador"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 5,
+    "defender": 137,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Ecuador",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 50,
+    "capitalIndexAfter": 50,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 50,
+    "capitalMoved": false
+  },
+  "territory": "Peru",
+  "attacker": "Liberia",
+  "defender": "Ecuador"
+}

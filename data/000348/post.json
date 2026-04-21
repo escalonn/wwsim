@@ -1,0 +1,31 @@
+{
+  "caption": "March 2055, Uruguay conquered Liberia territory previously occupied by Brazil.",
+  "pic": "000348.png",
+  "zoom": "000348.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 13\nChad: 12\nNew Zealand: 9\nGermany: 8\nSpain: 7\nNorway: 7\nTajikistan: 6\nMauritius: 5\nUganda: 5\nEcuador: 5",
+  "tags": [
+    "Uruguay",
+    "Brazil"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 125,
+    "defender": 100,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Brazil",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 25,
+    "capitalIndexAfter": 25,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 25,
+    "capitalMoved": false
+  },
+  "territory": "Liberia",
+  "attacker": "Uruguay",
+  "defender": "Brazil"
+}

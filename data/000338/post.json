@@ -1,0 +1,31 @@
+{
+  "caption": "May 2054, Senegal conquered Ghana territory previously occupied by Benin.",
+  "pic": "000338.png",
+  "zoom": "000338.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 14\nChad: 12\nGermany: 10\nNew Zealand: 8\nSpain: 7\nTajikistan: 6\nEcuador: 6\nNorway: 6\nMauritius: 5\nUganda: 5",
+  "tags": [
+    "Senegal",
+    "Benin"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 15,
+    "defender": 65,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Benin",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 14,
+    "capitalIndexAfter": 14,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 14,
+    "capitalMoved": false
+  },
+  "territory": "Ghana",
+  "attacker": "Senegal",
+  "defender": "Benin"
+}

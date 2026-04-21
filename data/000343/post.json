@@ -1,0 +1,31 @@
+{
+  "caption": "October 2054, Lithuania conquered Moldova territory previously occupied by Germany.",
+  "pic": "000343.png",
+  "zoom": "000343.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 14\nChad: 12\nGermany: 8\nNew Zealand: 8\nSpain: 7\nTajikistan: 6\nEcuador: 6\nNorway: 6\nMauritius: 5\nUganda: 5",
+  "tags": [
+    "Lithuania",
+    "Germany"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 105,
+    "defender": 110,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Germany",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 45,
+    "capitalIndexAfter": 45,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 45,
+    "capitalMoved": false
+  },
+  "territory": "Moldova",
+  "attacker": "Lithuania",
+  "defender": "Germany"
+}

@@ -1,0 +1,31 @@
+{
+  "caption": "August 2055, Chad conquered Uganda territory.\nThe government of Uganda relocated its capital to Burundi and continues in exile.",
+  "pic": "000353.png",
+  "zoom": "000353.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 13\nBrazil: 13\nNew Zealand: 9\nGermany: 8\nNorway: 8\nTajikistan: 6\nSpain: 6\nEcuador: 6\nMauritius: 5\nUnited Arab Emirates: 5",
+  "tags": [
+    "Chad",
+    "Uganda"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 161,
+    "defender": 181,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": true,
+    "defenderAdminBefore": "Uganda",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 181,
+    "capitalIndexAfter": 12,
+    "defenderCapitalTerritoryAfter": "Burundi",
+    "originalCapitalIndex": 181,
+    "capitalMoved": true
+  },
+  "territory": "Uganda",
+  "attacker": "Chad",
+  "defender": "Uganda"
+}

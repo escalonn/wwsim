@@ -1,0 +1,31 @@
+{
+  "caption": "February 2054, Germany conquered England territory.\nThe government of England relocated its capital to Isle of Man and continues in exile.",
+  "pic": "000335.png",
+  "zoom": "000335.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 14\nChad: 12\nGermany: 10\nNew Zealand: 8\nSpain: 7\nTajikistan: 6\nMauritius: 6\nEcuador: 6\nUganda: 5\nIsrael: 5",
+  "tags": [
+    "Germany",
+    "England"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 13,
+    "defender": 199,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": true,
+    "defenderAdminBefore": "England",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 199,
+    "capitalIndexAfter": 80,
+    "defenderCapitalTerritoryAfter": "Isle of Man",
+    "originalCapitalIndex": 199,
+    "capitalMoved": true
+  },
+  "territory": "England",
+  "attacker": "Germany",
+  "defender": "England"
+}

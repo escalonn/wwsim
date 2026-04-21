@@ -355,8 +355,7 @@ fn main() {
 
     // Shared accumulators (not used in --verbose mode but always created cheaply)
     let wins:      Arc<Mutex<HashMap<u16, u32>>> = Arc::new(Mutex::new(HashMap::new()));
-    let turns_sum: Arc<Mutex<f64>>               = Arc::new(Mutex::new(0.0));
-    let turns_sq:  Arc<Mutex<f64>>               = Arc::new(Mutex::new(0.0));
+    let turns_all: Arc<Mutex<Vec<f64>>>           = Arc::new(Mutex::new(Vec::with_capacity(n_runs)));
 
     // Progress bar (only shown in default/summary mode)
     let pb = if !is_verbose {
@@ -433,8 +432,7 @@ fn main() {
             println!("{}", country_data[&winner_id].name);
         } else {
             { let mut w = wins.lock().unwrap(); *w.entry(winner_id).or_insert(0) += 1; }
-            { let mut s = turns_sum.lock().unwrap(); *s += turns_taken; }
-            { let mut q = turns_sq.lock().unwrap();  *q += turns_taken * turns_taken; }
+            { let mut t = turns_all.lock().unwrap(); t.push(turns_taken); }
             pb.inc(1);
         }
     });
@@ -479,16 +477,20 @@ fn main() {
         }
 
         // ── Long format + chart → logs/ ───────────────────────────────────────
-        let ts = turns_sum.lock().unwrap();
-        let tq = turns_sq.lock().unwrap();
-        let avg_turns = *ts / n_runs_f;
-        // 95% CI: ±1.96 * stderr
-        let variance  = (*tq / n_runs_f) - (avg_turns * avg_turns);
-        let ci_half   = 1.96 * (variance / n_runs_f).sqrt();
-        let ci_lo     = (avg_turns - ci_half).round() as i64;
-        let ci_hi     = (avg_turns + ci_half).round() as i64;
+        let mut turns = turns_all.lock().unwrap();
+        turns.sort_by(|a, b| a.partial_cmp(b).unwrap());
+        let n = turns.len();
+        let n_f = n as f64;
+        let avg_turns = if n > 0 { turns.iter().sum::<f64>() / n_f } else { 0.0 };
+
+        // 95% prediction interval: 2.5th and 97.5th percentiles.
+        // This handles asymmetric distributions better than a standard deviation approach.
+        let ci_lo = if n > 0 { turns[(n_f * 0.025) as usize].round() as i64 } else { 0 };
+        let ci_hi = if n > 0 { turns[(n_f * 0.975).min(n_f - 1.0) as usize].round() as i64 } else { 0 };
 
         let current_date       = epoch_to_date(log_epoch, initial_month, initial_year);
+        let est_end_epoch      = log_epoch + avg_turns.round() as usize;
+        let est_end_date       = epoch_to_date(est_end_epoch, initial_month, initial_year);
         let gameplay_remaining = turns_to_duration_str(avg_turns);
 
         if is_save {
@@ -525,8 +527,12 @@ fn main() {
                 n_runs, format_duration(wall_elapsed)
             ));
             md.push_str(&format!(
-                "* **Estimated turns remaining (avg & 95% confidence interval):** {} ({}-{})\n\n",
-                avg_turns.round() as i64, ci_lo, ci_hi
+                "* **Estimated turns remaining (avg):** {} ({})\n\n",
+                avg_turns.round() as i64, est_end_date
+            ));
+            md.push_str(&format!(
+                "* **95% prediction interval:** {}-{} turns\n\n",
+                ci_lo, ci_hi
             ));
             md.push_str(&format!(
                 "* **Estimated gameplay time remaining (avg turns, 1h per turn):** {}\n\n",

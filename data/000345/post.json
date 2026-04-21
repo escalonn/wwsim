@@ -1,0 +1,31 @@
+{
+  "caption": "December 2054, New Zealand conquered Papua New Guinea territory previously occupied by Australia.",
+  "pic": "000345.png",
+  "zoom": "000345.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 14\nChad: 12\nNew Zealand: 9\nGermany: 8\nSpain: 7\nTajikistan: 6\nEcuador: 6\nNorway: 6\nMauritius: 5\nUganda: 5",
+  "tags": [
+    "New Zealand",
+    "Australia"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 155,
+    "defender": 140,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Australia",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 9,
+    "capitalIndexAfter": 9,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 9,
+    "capitalMoved": false
+  },
+  "territory": "Papua New Guinea",
+  "attacker": "New Zealand",
+  "defender": "Australia"
+}
