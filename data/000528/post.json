@@ -1,0 +1,31 @@
+{
+  "caption": "March 2070, Sweden conquered Estonia territory previously occupied by Tajikistan.",
+  "pic": "000528.png",
+  "zoom": "000528.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 28\nChad: 24\nNew Zealand: 18\nMyanmar: 11\nNorway: 11\nKosovo: 10\nMauritius: 9\nLiechtenstein: 8\nEcuador: 7\nJapan: 7",
+  "tags": [
+    "Sweden",
+    "Tajikistan"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 57,
+    "defender": 55,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Tajikistan",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 185,
+    "capitalIndexAfter": 185,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 172,
+    "capitalMoved": false
+  },
+  "territory": "Estonia",
+  "attacker": "Sweden",
+  "defender": "Tajikistan"
+}

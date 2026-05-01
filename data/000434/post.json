@@ -1,0 +1,31 @@
+{
+  "caption": "May 2062, Northern Ireland conquered Faroe Islands territory previously occupied by Norway.",
+  "pic": "000434.png",
+  "zoom": "000434.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 21\nBrazil: 19\nNew Zealand: 13\nGermany: 11\nPalestine: 10\nEcuador: 9\nNorway: 9\nJapan: 7\nKosovo: 6\nSpain: 6",
+  "tags": [
+    "Northern Ireland",
+    "Norway"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 85,
+    "defender": 61,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Norway",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 131,
+    "capitalIndexAfter": 131,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 131,
+    "capitalMoved": false
+  },
+  "territory": "Faroe Islands",
+  "attacker": "Northern Ireland",
+  "defender": "Norway"
+}

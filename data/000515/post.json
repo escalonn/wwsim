@@ -1,0 +1,31 @@
+{
+  "caption": "February 2069, Tajikistan conquered Turkey territory previously occupied by Palestine.",
+  "pic": "000515.png",
+  "zoom": "000515.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 26\nChad: 25\nNew Zealand: 15\nMyanmar: 11\nNorway: 11\nKosovo: 9\nMauritius: 9\nPalestine: 8\nSpain: 7\nTajikistan: 7",
+  "tags": [
+    "Tajikistan",
+    "Palestine"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 6,
+    "defender": 178,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Palestine",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 146,
+    "capitalIndexAfter": 146,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 146,
+    "capitalMoved": false
+  },
+  "territory": "Turkey",
+  "attacker": "Tajikistan",
+  "defender": "Palestine"
+}

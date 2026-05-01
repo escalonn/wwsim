@@ -1,0 +1,31 @@
+{
+  "caption": "October 2066, Mauritius conquered Malaysia territory previously occupied by Indonesia.\nIndonesia has been completely defeated.\n40 countries remaining.",
+  "pic": "000487.png",
+  "zoom": "000487.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 25\nBrazil: 25\nNew Zealand: 13\nGermany: 10\nNorway: 9\nIndia: 8\nMauritius: 8\nPalestine: 8\nKosovo: 7\nSpain: 7",
+  "tags": [
+    "Mauritius",
+    "Indonesia"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 154,
+    "defender": 124,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Indonesia",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 124,
+    "capitalIndexAfter": 124,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 79,
+    "capitalMoved": false
+  },
+  "territory": "Malaysia",
+  "attacker": "Mauritius",
+  "defender": "Indonesia"
+}

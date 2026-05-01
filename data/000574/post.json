@@ -1,0 +1,31 @@
+{
+  "caption": "January 2074, Brazil conquered Canada territory.\nCanada has been completely defeated.\n30 countries remaining.",
+  "pic": "000574.png",
+  "zoom": "000574.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 35\nBrazil: 35\nNew Zealand: 18\nNorway: 15\nMyanmar: 14\nAlgeria: 12\nKosovo: 9\nMauritius: 7\nJapan: 7\nGermany: 6",
+  "tags": [
+    "Brazil",
+    "Canada"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 26,
+    "defender": 31,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Canada",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 31,
+    "capitalIndexAfter": 31,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 31,
+    "capitalMoved": false
+  },
+  "territory": "Canada",
+  "attacker": "Brazil",
+  "defender": "Canada"
+}

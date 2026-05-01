@@ -1,0 +1,31 @@
+{
+  "caption": "September 2066, Tajikistan conquered Armenia territory previously occupied by Palestine.",
+  "pic": "000486.png",
+  "zoom": "000486.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 25\nBrazil: 25\nNew Zealand: 13\nGermany: 10\nNorway: 9\nIndia: 8\nPalestine: 8\nKosovo: 7\nSpain: 7\nMauritius: 7",
+  "tags": [
+    "Tajikistan",
+    "Palestine"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 64,
+    "defender": 6,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Palestine",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 146,
+    "capitalIndexAfter": 146,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 146,
+    "capitalMoved": false
+  },
+  "territory": "Armenia",
+  "attacker": "Tajikistan",
+  "defender": "Palestine"
+}

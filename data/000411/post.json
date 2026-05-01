@@ -1,0 +1,31 @@
+{
+  "caption": "June 2060, Brazil conquered Barbados territory previously occupied by Dominican Republic.",
+  "pic": "000411.png",
+  "zoom": "000411.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 21\nBrazil: 19\nNew Zealand: 10\nPalestine: 9\nGermany: 9\nNorway: 9\nSpain: 8\nLiechtenstein: 8\nJapan: 8\nEcuador: 7",
+  "tags": [
+    "Brazil",
+    "Dominican Republic"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 162,
+    "defender": 26,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Dominican Republic",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 88,
+    "capitalIndexAfter": 88,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 48,
+    "capitalMoved": false
+  },
+  "territory": "Barbados",
+  "attacker": "Brazil",
+  "defender": "Dominican Republic"
+}

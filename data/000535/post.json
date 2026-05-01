@@ -1,0 +1,31 @@
+{
+  "caption": "October 2070, Myanmar conquered Bhutan territory.\nBhutan has been completely defeated.\n36 countries remaining.",
+  "pic": "000535.png",
+  "zoom": "000535.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 28\nChad: 25\nNew Zealand: 19\nMyanmar: 12\nMauritius: 11\nNorway: 11\nKosovo: 10\nLiechtenstein: 8\nJapan: 7\nPalestine: 7",
+  "tags": [
+    "Myanmar",
+    "Bhutan"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 16,
+    "defender": 28,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Bhutan",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 28,
+    "capitalIndexAfter": 28,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 28,
+    "capitalMoved": false
+  },
+  "territory": "Bhutan",
+  "attacker": "Myanmar",
+  "defender": "Bhutan"
+}

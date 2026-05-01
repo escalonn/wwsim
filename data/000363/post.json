@@ -1,0 +1,31 @@
+{
+  "caption": "June 2056, Australia conquered Indonesia territory.\nThe government of Indonesia relocated its capital to Malaysia and continues in exile.",
+  "pic": "000363.png",
+  "zoom": "000363.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 15\nBrazil: 12\nNew Zealand: 10\nGermany: 8\nNorway: 8\nEcuador: 7\nTajikistan: 6\nSpain: 6\nJapan: 6\nMauritius: 5",
+  "tags": [
+    "Australia",
+    "Indonesia"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 174,
+    "defender": 79,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": true,
+    "defenderAdminBefore": "Indonesia",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 79,
+    "capitalIndexAfter": 124,
+    "defenderCapitalTerritoryAfter": "Malaysia",
+    "originalCapitalIndex": 79,
+    "capitalMoved": true
+  },
+  "territory": "Indonesia",
+  "attacker": "Australia",
+  "defender": "Indonesia"
+}

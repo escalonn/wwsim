@@ -1,0 +1,31 @@
+{
+  "caption": "January 2056, Mali conquered Senegal territory.\nThe government of Senegal relocated its capital to Mali and continues in exile.",
+  "pic": "000358.png",
+  "zoom": "000358.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 13\nBrazil: 13\nNew Zealand: 10\nGermany: 8\nNorway: 8\nTajikistan: 6\nSpain: 6\nEcuador: 6\nJapan: 6\nMauritius: 5",
+  "tags": [
+    "Mali",
+    "Senegal"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 121,
+    "defender": 153,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": true,
+    "defenderAdminBefore": "Senegal",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 153,
+    "capitalIndexAfter": 115,
+    "defenderCapitalTerritoryAfter": "Mali",
+    "originalCapitalIndex": 153,
+    "capitalMoved": true
+  },
+  "territory": "Senegal",
+  "attacker": "Mali",
+  "defender": "Senegal"
+}

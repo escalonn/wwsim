@@ -1,0 +1,31 @@
+{
+  "caption": "December 2064, Senegal conquered Benin territory.\nThe government of Benin relocated its capital to Togo and continues in exile.",
+  "pic": "000465.png",
+  "zoom": "000465.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 23\nChad: 22\nNew Zealand: 14\nIndia: 9\nPalestine: 9\nGermany: 9\nNorway: 8\nMauritius: 7\nLiechtenstein: 7\nKosovo: 6",
+  "tags": [
+    "Senegal",
+    "Benin"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 65,
+    "defender": 14,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": true,
+    "defenderAdminBefore": "Benin",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 14,
+    "capitalIndexAfter": 170,
+    "defenderCapitalTerritoryAfter": "Togo",
+    "originalCapitalIndex": 14,
+    "capitalMoved": true
+  },
+  "territory": "Benin",
+  "attacker": "Senegal",
+  "defender": "Benin"
+}

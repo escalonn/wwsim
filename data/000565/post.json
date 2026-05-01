@@ -1,0 +1,31 @@
+{
+  "caption": "April 2073, Mali conquered Gambia territory previously occupied by Brazil.",
+  "pic": "000565.png",
+  "zoom": "000565.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 33\nChad: 32\nNew Zealand: 18\nNorway: 15\nMyanmar: 13\nAlgeria: 12\nKosovo: 9\nMauritius: 8\nLiechtenstein: 7\nJapan: 7",
+  "tags": [
+    "Mali",
+    "Brazil"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 153,
+    "defender": 67,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Brazil",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 25,
+    "capitalIndexAfter": 25,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 25,
+    "capitalMoved": false
+  },
+  "territory": "Gambia",
+  "attacker": "Mali",
+  "defender": "Brazil"
+}

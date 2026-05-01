@@ -1,0 +1,38 @@
+{
+  "caption": "May 2071, Chad conquered Palestine territory.\nPalestine capitulated, ceding 1 additional territory to Chad.\nPalestine moved its capital to Northern Cyprus.",
+  "pic": "000542.png",
+  "zoom": "000542.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 30\nChad: 28\nNew Zealand: 19\nMyanmar: 12\nMauritius: 11\nNorway: 11\nKosovo: 10\nAlgeria: 9\nLiechtenstein: 8\nJapan: 7",
+  "tags": [
+    "Chad",
+    "Palestine"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 89,
+    "defender": 146,
+    "type": "conquer",
+    "subjects": [
+      86
+    ],
+    "capitulation": true,
+    "capitulationEvent": {
+      "round": 542,
+      "attackerTerritoriesBefore": 26,
+      "defenderTerritoriesBefore": 6,
+      "territoriesCeded": 1
+    },
+    "fallenCapital": false,
+    "defenderAdminBefore": "Palestine",
+    "defenderTerritoryRankBefore": 13,
+    "capitalIndexBefore": 146,
+    "capitalIndexAfter": 192,
+    "defenderCapitalTerritoryAfter": "Northern Cyprus",
+    "originalCapitalIndex": 146,
+    "capitalMoved": true
+  },
+  "territory": "Palestine",
+  "attacker": "Chad",
+  "defender": "Palestine"
+}

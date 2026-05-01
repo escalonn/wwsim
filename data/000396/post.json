@@ -1,0 +1,31 @@
+{
+  "caption": "March 2059, Chad conquered Kenya territory previously occupied by Uganda.\nUganda has been completely defeated.\n49 countries remaining.",
+  "pic": "000396.png",
+  "zoom": "000396.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 21\nBrazil: 17\nNew Zealand: 11\nNorway: 9\nGermany: 8\nEcuador: 8\nSpain: 7\nJapan: 7\nTajikistan: 6\nMauritius: 6",
+  "tags": [
+    "Chad",
+    "Uganda"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 161,
+    "defender": 92,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Uganda",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 92,
+    "capitalIndexAfter": 92,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 181,
+    "capitalMoved": false
+  },
+  "territory": "Kenya",
+  "attacker": "Chad",
+  "defender": "Uganda"
+}

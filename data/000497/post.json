@@ -1,0 +1,31 @@
+{
+  "caption": "August 2067, Liechtenstein conquered Hungary territory previously occupied by Germany.",
+  "pic": "000497.png",
+  "zoom": "000497.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 26\nBrazil: 24\nNew Zealand: 13\nMauritius: 9\nPalestine: 9\nNorway: 9\nIndia: 8\nGermany: 8\nLiechtenstein: 8\nKosovo: 7",
+  "tags": [
+    "Liechtenstein",
+    "Germany"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 76,
+    "defender": 78,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Germany",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 45,
+    "capitalIndexAfter": 45,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 45,
+    "capitalMoved": false
+  },
+  "territory": "Hungary",
+  "attacker": "Liechtenstein",
+  "defender": "Germany"
+}

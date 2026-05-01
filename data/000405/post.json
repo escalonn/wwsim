@@ -1,0 +1,31 @@
+{
+  "caption": "December 2059, Brazil conquered Chile territory previously occupied by Ecuador.",
+  "pic": "000405.png",
+  "zoom": "000405.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 21\nBrazil: 18\nNew Zealand: 10\nGermany: 9\nSpain: 8\nJapan: 8\nNorway: 8\nEcuador: 7\nTajikistan: 6\nPalestine: 6",
+  "tags": [
+    "Brazil",
+    "Ecuador"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 59,
+    "defender": 33,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Ecuador",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 50,
+    "capitalIndexAfter": 50,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 50,
+    "capitalMoved": false
+  },
+  "territory": "Chile",
+  "attacker": "Brazil",
+  "defender": "Ecuador"
+}

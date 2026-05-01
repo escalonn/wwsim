@@ -1,0 +1,31 @@
+{
+  "caption": "December 2072, Norway conquered Isle of Man territory previously occupied by England.\nEngland has been completely defeated.\n33 countries remaining.",
+  "pic": "000561.png",
+  "zoom": "000561.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 33\nChad: 31\nNew Zealand: 18\nNorway: 15\nMyanmar: 13\nAlgeria: 12\nMauritius: 10\nKosovo: 9\nLiechtenstein: 7\nJapan: 7",
+  "tags": [
+    "Norway",
+    "England"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 199,
+    "defender": 80,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "England",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 80,
+    "capitalIndexAfter": 80,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 199,
+    "capitalMoved": false
+  },
+  "territory": "Isle of Man",
+  "attacker": "Norway",
+  "defender": "England"
+}

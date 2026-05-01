@@ -1,0 +1,31 @@
+{
+  "caption": "April 2059, Germany conquered Slovakia territory previously occupied by Lithuania.",
+  "pic": "000397.png",
+  "zoom": "000397.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 21\nBrazil: 17\nNew Zealand: 11\nGermany: 9\nNorway: 9\nEcuador: 8\nSpain: 7\nJapan: 7\nTajikistan: 6\nMauritius: 6",
+  "tags": [
+    "Germany",
+    "Lithuania"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 44,
+    "defender": 163,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Lithuania",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 105,
+    "capitalIndexAfter": 105,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 105,
+    "capitalMoved": false
+  },
+  "territory": "Slovakia",
+  "attacker": "Germany",
+  "defender": "Lithuania"
+}

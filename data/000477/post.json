@@ -1,0 +1,31 @@
+{
+  "caption": "December 2065, Vietnam conquered Laos territory previously occupied by India.",
+  "pic": "000477.png",
+  "zoom": "000477.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 25\nChad: 24\nNew Zealand: 13\nGermany: 10\nPalestine: 9\nIndia: 8\nMauritius: 8\nNorway: 8\nKosovo: 7\nJapan: 7",
+  "tags": [
+    "Vietnam",
+    "India"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 188,
+    "defender": 98,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "India",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 81,
+    "capitalIndexAfter": 81,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 81,
+    "capitalMoved": false
+  },
+  "territory": "Laos",
+  "attacker": "Vietnam",
+  "defender": "India"
+}

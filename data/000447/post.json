@@ -1,0 +1,31 @@
+{
+  "caption": "June 2063, Lithuania conquered Slovakia territory previously occupied by Germany.",
+  "pic": "000447.png",
+  "zoom": "000447.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 21\nBrazil: 18\nNew Zealand: 13\nPalestine: 9\nGermany: 9\nNorway: 9\nEcuador: 8\nMauritius: 7\nLiechtenstein: 7\nJapan: 7",
+  "tags": [
+    "Lithuania",
+    "Germany"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 105,
+    "defender": 163,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Germany",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 45,
+    "capitalIndexAfter": 45,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 45,
+    "capitalMoved": false
+  },
+  "territory": "Slovakia",
+  "attacker": "Lithuania",
+  "defender": "Germany"
+}

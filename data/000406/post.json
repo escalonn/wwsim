@@ -1,0 +1,31 @@
+{
+  "caption": "January 2060, Liechtenstein conquered Montenegro territory previously occupied by Croatia.",
+  "pic": "000406.png",
+  "zoom": "000406.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 21\nBrazil: 18\nNew Zealand: 10\nGermany: 9\nSpain: 8\nJapan: 8\nNorway: 8\nEcuador: 7\nLiechtenstein: 7\nTajikistan: 6",
+  "tags": [
+    "Liechtenstein",
+    "Croatia"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 76,
+    "defender": 118,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Croatia",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 160,
+    "capitalIndexAfter": 160,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 76,
+    "capitalMoved": false
+  },
+  "territory": "Montenegro",
+  "attacker": "Liechtenstein",
+  "defender": "Croatia"
+}

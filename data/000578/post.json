@@ -1,0 +1,31 @@
+{
+  "caption": "May 2074, Palestine conquered Romania territory previously occupied by Kosovo.",
+  "pic": "000578.png",
+  "zoom": "000578.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 36\nBrazil: 36\nNew Zealand: 18\nNorway: 15\nMyanmar: 14\nAlgeria: 12\nMauritius: 7\nKosovo: 7\nJapan: 7\nGermany: 6",
+  "tags": [
+    "Palestine",
+    "Kosovo"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 110,
+    "defender": 148,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Kosovo",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 191,
+    "capitalIndexAfter": 191,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 191,
+    "capitalMoved": false
+  },
+  "territory": "Romania",
+  "attacker": "Palestine",
+  "defender": "Kosovo"
+}

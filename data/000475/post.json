@@ -1,0 +1,31 @@
+{
+  "caption": "October 2065, Japan conquered South Korea territory previously occupied by New Zealand.",
+  "pic": "000475.png",
+  "zoom": "000475.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 24\nBrazil: 24\nNew Zealand: 13\nGermany: 10\nIndia: 9\nPalestine: 9\nMauritius: 8\nNorway: 8\nKosovo: 7\nJapan: 7",
+  "tags": [
+    "Japan",
+    "New Zealand"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 143,
+    "defender": 96,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "New Zealand",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 133,
+    "capitalIndexAfter": 133,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 133,
+    "capitalMoved": false
+  },
+  "territory": "South Korea",
+  "attacker": "Japan",
+  "defender": "New Zealand"
+}

@@ -1,0 +1,31 @@
+{
+  "caption": "November 2055, Botswana conquered eSwatini territory previously occupied by Uruguay.",
+  "pic": "000356.png",
+  "zoom": "000356.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 13\nBrazil: 13\nNew Zealand: 10\nGermany: 8\nNorway: 8\nTajikistan: 6\nSpain: 6\nEcuador: 6\nJapan: 6\nMauritius: 5",
+  "tags": [
+    "Botswana",
+    "Uruguay"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 29,
+    "defender": 166,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Uruguay",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 194,
+    "capitalIndexAfter": 194,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 183,
+    "capitalMoved": false
+  },
+  "territory": "eSwatini",
+  "attacker": "Botswana",
+  "defender": "Uruguay"
+}

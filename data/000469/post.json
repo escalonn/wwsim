@@ -1,0 +1,31 @@
+{
+  "caption": "April 2065, Liberia conquered Namibia territory previously occupied by Uruguay.",
+  "pic": "000469.png",
+  "zoom": "000469.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 23\nBrazil: 23\nNew Zealand: 14\nIndia: 9\nPalestine: 9\nGermany: 9\nMauritius: 8\nNorway: 8\nLiechtenstein: 7\nKosovo: 6",
+  "tags": [
+    "Liberia",
+    "Uruguay"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 183,
+    "defender": 125,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Uruguay",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 194,
+    "capitalIndexAfter": 194,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 183,
+    "capitalMoved": false
+  },
+  "territory": "Namibia",
+  "attacker": "Liberia",
+  "defender": "Uruguay"
+}

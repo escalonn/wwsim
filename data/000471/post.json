@@ -1,0 +1,31 @@
+{
+  "caption": "June 2065, Kosovo reconquered its homeland from Croatia.\nCroatia has been completely defeated.\n44 countries remaining.",
+  "pic": "000471.png",
+  "zoom": "000471.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 24\nBrazil: 23\nNew Zealand: 14\nIndia: 9\nGermany: 9\nPalestine: 8\nMauritius: 8\nNorway: 8\nKosovo: 7\nLiechtenstein: 7",
+  "tags": [
+    "Kosovo",
+    "Croatia"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 2,
+    "defender": 191,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Croatia",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 191,
+    "capitalIndexAfter": 191,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 76,
+    "capitalMoved": false
+  },
+  "territory": "Kosovo",
+  "attacker": "Kosovo",
+  "defender": "Croatia"
+}

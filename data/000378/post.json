@@ -1,0 +1,31 @@
+{
+  "caption": "September 2057, United Arab Emirates conquered Ukraine territory.\nUkraine has been completely defeated.\n54 countries remaining.",
+  "pic": "000378.png",
+  "zoom": "000378.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 19\nBrazil: 12\nNew Zealand: 10\nNorway: 9\nGermany: 8\nSpain: 7\nEcuador: 7\nJapan: 7\nTajikistan: 6\nKosovo: 5",
+  "tags": [
+    "United Arab Emirates",
+    "Ukraine"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 64,
+    "defender": 182,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Ukraine",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 182,
+    "capitalIndexAfter": 182,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 182,
+    "capitalMoved": false
+  },
+  "territory": "Ukraine",
+  "attacker": "United Arab Emirates",
+  "defender": "Ukraine"
+}

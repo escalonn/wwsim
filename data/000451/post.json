@@ -1,0 +1,31 @@
+{
+  "caption": "October 2063, Palestine reconquered its homeland from Chad.",
+  "pic": "000451.png",
+  "zoom": "000451.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 21\nBrazil: 20\nNew Zealand: 13\nPalestine: 10\nGermany: 9\nNorway: 9\nLiechtenstein: 7\nEcuador: 7\nJapan: 7\nIndia: 6",
+  "tags": [
+    "Palestine",
+    "Chad"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 86,
+    "defender": 146,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Chad",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 169,
+    "capitalIndexAfter": 169,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 169,
+    "capitalMoved": false
+  },
+  "territory": "Palestine",
+  "attacker": "Palestine",
+  "defender": "Chad"
+}

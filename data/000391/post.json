@@ -1,0 +1,31 @@
+{
+  "caption": "October 2058, Liechtenstein conquered Netherlands territory.\nNetherlands has been completely defeated.\n51 countries remaining.",
+  "pic": "000391.png",
+  "zoom": "000391.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 20\nBrazil: 16\nNew Zealand: 10\nNorway: 9\nGermany: 8\nEcuador: 8\nSpain: 7\nJapan: 7\nTajikistan: 6\nLiechtenstein: 6",
+  "tags": [
+    "Liechtenstein",
+    "Netherlands"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 106,
+    "defender": 130,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Netherlands",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 130,
+    "capitalIndexAfter": 130,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 130,
+    "capitalMoved": false
+  },
+  "territory": "Netherlands",
+  "attacker": "Liechtenstein",
+  "defender": "Netherlands"
+}

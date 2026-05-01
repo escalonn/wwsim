@@ -1,0 +1,31 @@
+{
+  "caption": "April 2066, Lesotho conquered Zambia territory previously occupied by Republic of Congo.\nRepublic of Congo has been completely defeated.\n42 countries remaining.",
+  "pic": "000481.png",
+  "zoom": "000481.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 25\nBrazil: 25\nNew Zealand: 13\nPalestine: 9\nGermany: 9\nIndia: 8\nMauritius: 8\nNorway: 8\nKosovo: 7\nSpain: 7",
+  "tags": [
+    "Lesotho",
+    "Republic of Congo"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 196,
+    "defender": 195,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Republic of Congo",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 195,
+    "capitalIndexAfter": 195,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 38,
+    "capitalMoved": false
+  },
+  "territory": "Zambia",
+  "attacker": "Lesotho",
+  "defender": "Republic of Congo"
+}

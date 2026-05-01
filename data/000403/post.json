@@ -1,0 +1,31 @@
+{
+  "caption": "October 2059, Samoa conquered El Salvador territory previously occupied by New Zealand.",
+  "pic": "000403.png",
+  "zoom": "000403.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 20\nBrazil: 17\nNew Zealand: 10\nGermany: 9\nSpain: 8\nEcuador: 8\nJapan: 8\nNorway: 8\nTajikistan: 6\nPalestine: 6",
+  "tags": [
+    "Samoa",
+    "New Zealand"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 113,
+    "defender": 157,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "New Zealand",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 133,
+    "capitalIndexAfter": 133,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 133,
+    "capitalMoved": false
+  },
+  "territory": "El Salvador",
+  "attacker": "Samoa",
+  "defender": "New Zealand"
+}

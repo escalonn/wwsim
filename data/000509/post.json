@@ -1,0 +1,31 @@
+{
+  "caption": "August 2068, Norway conquered Czech Republic territory previously occupied by Lithuania.",
+  "pic": "000509.png",
+  "zoom": "000509.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 25\nChad: 25\nNew Zealand: 15\nNorway: 11\nMauritius: 9\nMyanmar: 9\nPalestine: 9\nKosovo: 8\nSpain: 7\nGermany: 7",
+  "tags": [
+    "Norway",
+    "Lithuania"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 141,
+    "defender": 44,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Lithuania",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 163,
+    "capitalIndexAfter": 163,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 105,
+    "capitalMoved": false
+  },
+  "territory": "Czech Republic",
+  "attacker": "Norway",
+  "defender": "Lithuania"
+}

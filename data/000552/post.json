@@ -1,0 +1,31 @@
+{
+  "caption": "March 2072, Spain conquered Vatican City territory previously occupied by Kosovo.",
+  "pic": "000552.png",
+  "zoom": "000552.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 32\nChad: 28\nNew Zealand: 18\nMyanmar: 13\nNorway: 12\nMauritius: 11\nAlgeria: 10\nKosovo: 8\nLiechtenstein: 8\nJapan: 7",
+  "tags": [
+    "Spain",
+    "Kosovo"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 116,
+    "defender": 186,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Kosovo",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 191,
+    "capitalIndexAfter": 191,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 191,
+    "capitalMoved": false
+  },
+  "territory": "Vatican City",
+  "attacker": "Spain",
+  "defender": "Kosovo"
+}

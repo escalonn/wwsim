@@ -1,0 +1,31 @@
+{
+  "caption": "February 2067, India conquered Sri Lanka territory previously occupied by Myanmar.",
+  "pic": "000491.png",
+  "zoom": "000491.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 25\nBrazil: 24\nNew Zealand: 13\nGermany: 10\nIndia: 9\nNorway: 9\nMauritius: 8\nPalestine: 8\nKosovo: 7\nSpain: 7",
+  "tags": [
+    "India",
+    "Myanmar"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 81,
+    "defender": 103,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Myanmar",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 117,
+    "capitalIndexAfter": 117,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 117,
+    "capitalMoved": false
+  },
+  "territory": "Sri Lanka",
+  "attacker": "India",
+  "defender": "Myanmar"
+}

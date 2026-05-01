@@ -1,0 +1,31 @@
+{
+  "caption": "February 2059, Mauritius reconquered its homeland from Lesotho.",
+  "pic": "000395.png",
+  "zoom": "000395.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 20\nBrazil: 17\nNew Zealand: 11\nNorway: 9\nGermany: 8\nEcuador: 8\nSpain: 7\nJapan: 7\nTajikistan: 6\nMauritius: 6",
+  "tags": [
+    "Mauritius",
+    "Lesotho"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 112,
+    "defender": 122,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Lesotho",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 111,
+    "capitalIndexAfter": 111,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 104,
+    "capitalMoved": false
+  },
+  "territory": "Mauritius",
+  "attacker": "Mauritius",
+  "defender": "Lesotho"
+}

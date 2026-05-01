@@ -1,0 +1,31 @@
+{
+  "caption": "May 2069, Brazil conquered Uruguay territory previously occupied by Liberia.\nThe government of Liberia relocated its capital to Namibia and continues in exile.",
+  "pic": "000518.png",
+  "zoom": "000518.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 28\nChad: 25\nNew Zealand: 15\nMyanmar: 11\nNorway: 11\nKosovo: 10\nMauritius: 9\nSpain: 7\nTajikistan: 7\nGermany: 7",
+  "tags": [
+    "Brazil",
+    "Liberia"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 74,
+    "defender": 183,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": true,
+    "defenderAdminBefore": "Liberia",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 183,
+    "capitalIndexAfter": 125,
+    "defenderCapitalTerritoryAfter": "Namibia",
+    "originalCapitalIndex": 100,
+    "capitalMoved": true
+  },
+  "territory": "Uruguay",
+  "attacker": "Brazil",
+  "defender": "Liberia"
+}

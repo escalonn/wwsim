@@ -1,0 +1,31 @@
+{
+  "caption": "February 2066, Samoa conquered Jamaica territory previously occupied by Dominican Republic.\nDominican Republic has been completely defeated.\n43 countries remaining.",
+  "pic": "000479.png",
+  "zoom": "000479.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 25\nBrazil: 25\nNew Zealand: 13\nGermany: 10\nPalestine: 9\nIndia: 8\nMauritius: 8\nNorway: 8\nKosovo: 7\nJapan: 7",
+  "tags": [
+    "Samoa",
+    "Dominican Republic"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 48,
+    "defender": 88,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Dominican Republic",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 88,
+    "capitalIndexAfter": 88,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 48,
+    "capitalMoved": false
+  },
+  "territory": "Jamaica",
+  "attacker": "Samoa",
+  "defender": "Dominican Republic"
+}

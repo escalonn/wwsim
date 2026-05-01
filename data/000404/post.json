@@ -1,0 +1,31 @@
+{
+  "caption": "November 2059, Chad conquered Equatorial Guinea territory previously occupied by Angola.",
+  "pic": "000404.png",
+  "zoom": "000404.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 21\nBrazil: 17\nNew Zealand: 10\nGermany: 9\nSpain: 8\nEcuador: 8\nJapan: 8\nNorway: 8\nTajikistan: 6\nPalestine: 6",
+  "tags": [
+    "Chad",
+    "Angola"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 128,
+    "defender": 69,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Angola",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 1,
+    "capitalIndexAfter": 1,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 1,
+    "capitalMoved": false
+  },
+  "territory": "Equatorial Guinea",
+  "attacker": "Chad",
+  "defender": "Angola"
+}

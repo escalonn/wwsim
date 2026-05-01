@@ -1,0 +1,31 @@
+{
+  "caption": "April 2064, Mauritius conquered Australia territory.\nThe government of Australia relocated its capital to Indonesia and continues in exile.",
+  "pic": "000457.png",
+  "zoom": "000457.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 22\nBrazil: 20\nNew Zealand: 13\nPalestine: 9\nGermany: 9\nIndia: 8\nNorway: 8\nMauritius: 7\nLiechtenstein: 7\nEcuador: 7",
+  "tags": [
+    "Mauritius",
+    "Australia"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 8,
+    "defender": 9,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": true,
+    "defenderAdminBefore": "Australia",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 9,
+    "capitalIndexAfter": 79,
+    "defenderCapitalTerritoryAfter": "Indonesia",
+    "originalCapitalIndex": 9,
+    "capitalMoved": true
+  },
+  "territory": "Australia",
+  "attacker": "Mauritius",
+  "defender": "Australia"
+}

@@ -1,0 +1,31 @@
+{
+  "caption": "July 2074, Algeria conquered Greece territory previously occupied by Kosovo.",
+  "pic": "000580.png",
+  "zoom": "000580.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 36\nBrazil: 35\nNew Zealand: 18\nNorway: 15\nAlgeria: 14\nMyanmar: 14\nMauritius: 7\nJapan: 7\nGermany: 6\nKosovo: 6",
+  "tags": [
+    "Algeria",
+    "Kosovo"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 101,
+    "defender": 70,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Kosovo",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 191,
+    "capitalIndexAfter": 191,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 191,
+    "capitalMoved": false
+  },
+  "territory": "Greece",
+  "attacker": "Algeria",
+  "defender": "Kosovo"
+}

@@ -1,0 +1,31 @@
+{
+  "caption": "July 2072, Norway conquered Estonia territory previously occupied by Sweden.",
+  "pic": "000556.png",
+  "zoom": "000556.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 32\nChad: 28\nNew Zealand: 18\nNorway: 14\nMyanmar: 13\nAlgeria: 12\nMauritius: 11\nKosovo: 9\nLiechtenstein: 7\nJapan: 7",
+  "tags": [
+    "Norway",
+    "Sweden"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 107,
+    "defender": 55,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Sweden",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 57,
+    "capitalIndexAfter": 57,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 165,
+    "capitalMoved": false
+  },
+  "territory": "Estonia",
+  "attacker": "Norway",
+  "defender": "Sweden"
+}

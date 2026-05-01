@@ -1,0 +1,31 @@
+{
+  "caption": "May 2060, Norway conquered Faroe Islands territory previously occupied by Isle of Man.\nIsle of Man has been completely defeated.\n47 countries remaining.",
+  "pic": "000410.png",
+  "zoom": "000410.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 21\nBrazil: 18\nNew Zealand: 10\nPalestine: 9\nGermany: 9\nNorway: 9\nSpain: 8\nLiechtenstein: 8\nJapan: 8\nEcuador: 7",
+  "tags": [
+    "Norway",
+    "Isle of Man"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 131,
+    "defender": 61,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Isle of Man",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 61,
+    "capitalIndexAfter": 61,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 80,
+    "capitalMoved": false
+  },
+  "territory": "Faroe Islands",
+  "attacker": "Norway",
+  "defender": "Isle of Man"
+}

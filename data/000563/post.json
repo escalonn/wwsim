@@ -1,0 +1,31 @@
+{
+  "caption": "February 2073, Senegal conquered Gabon territory.\nGabon has been completely defeated.\n32 countries remaining.",
+  "pic": "000563.png",
+  "zoom": "000563.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 33\nChad: 32\nNew Zealand: 18\nNorway: 15\nMyanmar: 13\nAlgeria: 12\nKosovo: 9\nMauritius: 9\nLiechtenstein: 7\nJapan: 7",
+  "tags": [
+    "Senegal",
+    "Gabon"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 69,
+    "defender": 63,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Gabon",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 63,
+    "capitalIndexAfter": 63,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 63,
+    "capitalMoved": false
+  },
+  "territory": "Gabon",
+  "attacker": "Senegal",
+  "defender": "Gabon"
+}

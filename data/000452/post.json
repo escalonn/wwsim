@@ -1,0 +1,31 @@
+{
+  "caption": "November 2063, Tajikistan conquered Estonia territory previously occupied by Norway.",
+  "pic": "000452.png",
+  "zoom": "000452.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 21\nBrazil: 20\nNew Zealand: 13\nPalestine: 10\nGermany: 9\nNorway: 8\nLiechtenstein: 7\nEcuador: 7\nJapan: 7\nIndia: 6",
+  "tags": [
+    "Tajikistan",
+    "Norway"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 21,
+    "defender": 55,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Norway",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 131,
+    "capitalIndexAfter": 131,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 131,
+    "capitalMoved": false
+  },
+  "territory": "Estonia",
+  "attacker": "Tajikistan",
+  "defender": "Norway"
+}

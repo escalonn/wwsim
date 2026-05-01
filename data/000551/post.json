@@ -1,0 +1,31 @@
+{
+  "caption": "February 2072, Norway conquered England territory.\nThe government of England relocated its capital to Isle of Man and continues in exile.",
+  "pic": "000551.png",
+  "zoom": "000551.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 32\nChad: 28\nNew Zealand: 18\nMyanmar: 13\nNorway: 12\nMauritius: 11\nAlgeria: 10\nKosovo: 9\nLiechtenstein: 8\nJapan: 7",
+  "tags": [
+    "Norway",
+    "England"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 197,
+    "defender": 199,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": true,
+    "defenderAdminBefore": "England",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 199,
+    "capitalIndexAfter": 80,
+    "defenderCapitalTerritoryAfter": "Isle of Man",
+    "originalCapitalIndex": 199,
+    "capitalMoved": true
+  },
+  "territory": "England",
+  "attacker": "Norway",
+  "defender": "England"
+}

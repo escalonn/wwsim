@@ -1,0 +1,31 @@
+{
+  "caption": "June 2073, Myanmar conquered Azerbaijan territory previously occupied by United Arab Emirates.\nThe government of United Arab Emirates relocated its capital to Iran and continues in exile.",
+  "pic": "000567.png",
+  "zoom": "000567.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 33\nBrazil: 33\nNew Zealand: 18\nNorway: 15\nMyanmar: 14\nAlgeria: 12\nKosovo: 9\nMauritius: 8\nLiechtenstein: 7\nJapan: 7",
+  "tags": [
+    "Myanmar",
+    "United Arab Emirates"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 173,
+    "defender": 11,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": true,
+    "defenderAdminBefore": "United Arab Emirates",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 11,
+    "capitalIndexAfter": 83,
+    "defenderCapitalTerritoryAfter": "Iran",
+    "originalCapitalIndex": 4,
+    "capitalMoved": true
+  },
+  "territory": "Azerbaijan",
+  "attacker": "Myanmar",
+  "defender": "United Arab Emirates"
+}

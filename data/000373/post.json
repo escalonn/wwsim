@@ -1,0 +1,31 @@
+{
+  "caption": "April 2057, Burkina Faso conquered Ivory Coast territory previously occupied by Senegal.",
+  "pic": "000373.png",
+  "zoom": "000373.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 19\nBrazil: 11\nNew Zealand: 10\nNorway: 9\nGermany: 8\nEcuador: 7\nJapan: 7\nTajikistan: 6\nSpain: 6\nKosovo: 5",
+  "tags": [
+    "Burkina Faso",
+    "Senegal"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 156,
+    "defender": 35,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Senegal",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 115,
+    "capitalIndexAfter": 115,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 153,
+    "capitalMoved": false
+  },
+  "territory": "Ivory Coast",
+  "attacker": "Burkina Faso",
+  "defender": "Senegal"
+}

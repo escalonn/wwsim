@@ -1,0 +1,31 @@
+{
+  "caption": "March 2057, Lesotho conquered Seychelles territory previously occupied by Uganda.",
+  "pic": "000372.png",
+  "zoom": "000372.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 19\nBrazil: 11\nNew Zealand: 10\nNorway: 9\nGermany: 8\nEcuador: 7\nJapan: 7\nTajikistan: 6\nSpain: 6\nKosovo: 5",
+  "tags": [
+    "Lesotho",
+    "Uganda"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 122,
+    "defender": 167,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Uganda",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 92,
+    "capitalIndexAfter": 92,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 181,
+    "capitalMoved": false
+  },
+  "territory": "Seychelles",
+  "attacker": "Lesotho",
+  "defender": "Uganda"
+}

@@ -1,0 +1,31 @@
+{
+  "caption": "January 2068, Lithuania conquered Czech Republic territory previously occupied by Germany.",
+  "pic": "000502.png",
+  "zoom": "000502.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 25\nBrazil: 24\nNew Zealand: 14\nMauritius: 9\nPalestine: 9\nNorway: 9\nLiechtenstein: 8\nKosovo: 7\nSpain: 7\nGermany: 7",
+  "tags": [
+    "Lithuania",
+    "Germany"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 163,
+    "defender": 44,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Germany",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 45,
+    "capitalIndexAfter": 45,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 45,
+    "capitalMoved": false
+  },
+  "territory": "Czech Republic",
+  "attacker": "Lithuania",
+  "defender": "Germany"
+}

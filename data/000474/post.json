@@ -1,0 +1,31 @@
+{
+  "caption": "September 2065, Brazil conquered Sierra Leone territory previously occupied by Burkina Faso.\nThe government of Burkina Faso relocated its capital to Ivory Coast and continues in exile.",
+  "pic": "000474.png",
+  "zoom": "000474.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 24\nBrazil: 24\nNew Zealand: 14\nGermany: 10\nIndia: 9\nPalestine: 9\nMauritius: 8\nNorway: 8\nKosovo: 7\nSpain: 6",
+  "tags": [
+    "Brazil",
+    "Burkina Faso"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 68,
+    "defender": 156,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": true,
+    "defenderAdminBefore": "Burkina Faso",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 156,
+    "capitalIndexAfter": 35,
+    "defenderCapitalTerritoryAfter": "Ivory Coast",
+    "originalCapitalIndex": 15,
+    "capitalMoved": true
+  },
+  "territory": "Sierra Leone",
+  "attacker": "Brazil",
+  "defender": "Burkina Faso"
+}

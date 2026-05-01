@@ -1,0 +1,31 @@
+{
+  "caption": "January 2065, Mauritius conquered eSwatini territory previously occupied by Botswana.",
+  "pic": "000466.png",
+  "zoom": "000466.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 23\nChad: 22\nNew Zealand: 14\nIndia: 9\nPalestine: 9\nGermany: 9\nMauritius: 8\nNorway: 8\nLiechtenstein: 7\nKosovo: 6",
+  "tags": [
+    "Mauritius",
+    "Botswana"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 120,
+    "defender": 166,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Botswana",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 29,
+    "capitalIndexAfter": 29,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 29,
+    "capitalMoved": false
+  },
+  "territory": "eSwatini",
+  "attacker": "Mauritius",
+  "defender": "Botswana"
+}

@@ -1,0 +1,31 @@
+{
+  "caption": "March 2067, Mauritius conquered Sri Lanka territory previously occupied by India.",
+  "pic": "000492.png",
+  "zoom": "000492.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 25\nBrazil: 24\nNew Zealand: 13\nGermany: 10\nMauritius: 9\nNorway: 9\nIndia: 8\nPalestine: 8\nKosovo: 7\nSpain: 7",
+  "tags": [
+    "Mauritius",
+    "India"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 124,
+    "defender": 103,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "India",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 81,
+    "capitalIndexAfter": 81,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 81,
+    "capitalMoved": false
+  },
+  "territory": "Sri Lanka",
+  "attacker": "Mauritius",
+  "defender": "India"
+}

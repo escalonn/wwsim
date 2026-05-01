@@ -1,0 +1,31 @@
+{
+  "caption": "June 2067, Liechtenstein conquered Monaco territory previously occupied by Germany.",
+  "pic": "000495.png",
+  "zoom": "000495.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 26\nBrazil: 24\nNew Zealand: 13\nMauritius: 9\nGermany: 9\nNorway: 9\nIndia: 8\nPalestine: 8\nKosovo: 7\nSpain: 7",
+  "tags": [
+    "Liechtenstein",
+    "Germany"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 32,
+    "defender": 109,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Germany",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 45,
+    "capitalIndexAfter": 45,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 45,
+    "capitalMoved": false
+  },
+  "territory": "Monaco",
+  "attacker": "Liechtenstein",
+  "defender": "Germany"
+}

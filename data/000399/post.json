@@ -1,0 +1,31 @@
+{
+  "caption": "June 2059, Palestine conquered Moldova territory previously occupied by Lithuania.",
+  "pic": "000399.png",
+  "zoom": "000399.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 21\nBrazil: 17\nNew Zealand: 11\nGermany: 9\nEcuador: 8\nJapan: 8\nNorway: 8\nSpain: 7\nTajikistan: 6\nPalestine: 6",
+  "tags": [
+    "Palestine",
+    "Lithuania"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 178,
+    "defender": 110,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Lithuania",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 105,
+    "capitalIndexAfter": 105,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 105,
+    "capitalMoved": false
+  },
+  "territory": "Moldova",
+  "attacker": "Palestine",
+  "defender": "Lithuania"
+}

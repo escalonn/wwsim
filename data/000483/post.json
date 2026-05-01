@@ -1,0 +1,31 @@
+{
+  "caption": "June 2066, Norway conquered Lithuania territory previously occupied by Palestine.",
+  "pic": "000483.png",
+  "zoom": "000483.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 25\nBrazil: 25\nNew Zealand: 13\nPalestine: 9\nGermany: 9\nNorway: 9\nIndia: 8\nMauritius: 8\nKosovo: 7\nSpain: 7",
+  "tags": [
+    "Norway",
+    "Palestine"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 141,
+    "defender": 105,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Palestine",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 146,
+    "capitalIndexAfter": 146,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 146,
+    "capitalMoved": false
+  },
+  "territory": "Lithuania",
+  "attacker": "Norway",
+  "defender": "Palestine"
+}

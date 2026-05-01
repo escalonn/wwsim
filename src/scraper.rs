@@ -126,19 +126,19 @@ struct ConquestSchema230 {
     defender_territory_rank_before: Option<usize>,
     /// Defender's capital territory ID before this conquest.
     #[serde(rename = "capitalIndexBefore")]
-    capital_index_before: usize,
+    capital_index_before: Option<usize>,
     /// Defender's capital territory ID after this conquest (original when eliminated).
     #[serde(rename = "capitalIndexAfter")]
-    capital_index_after: usize,
+    capital_index_after: Option<usize>,
     /// Name of `capital_index_after`; null when defender is eliminated OR capital did not change.
     #[serde(rename = "defenderCapitalTerritoryAfter")]
     defender_capital_territory_after: Option<String>,
     /// Defender's original (never-relocated) capital ID. Must always equal defender country ID.
     #[serde(rename = "originalCapitalIndex")]
-    original_capital_index: usize,
+    original_capital_index: Option<usize>,
     /// True iff `capitalIndexBefore != capitalIndexAfter` (i.e., capital moved this round).
     #[serde(rename = "capitalMoved")]
-    capital_moved: bool,
+    capital_moved: Option<bool>,
 }
 
 /// Normalized conquest information, common across all schema versions.
@@ -219,6 +219,21 @@ fn parse_conquest_schema(round: usize, value: serde_json::Value) -> Result<Conqu
             ));
         }
 
+        if s.action_type == "conquer" {
+            if s.capital_index_before.is_none() {
+                return Err("capitalIndexBefore must not be null for conquests".into());
+            }
+            if s.capital_index_after.is_none() {
+                return Err("capitalIndexAfter must not be null for conquests".into());
+            }
+            if s.original_capital_index.is_none() {
+                return Err("originalCapitalIndex must not be null for conquests".into());
+            }
+            if s.capital_moved.is_none() {
+                return Err("capitalMoved must not be null for conquests".into());
+            }
+        }
+
         Ok(ConquestInfo {
             attacker: s.attacker,
             defender: s.defender,
@@ -228,11 +243,11 @@ fn parse_conquest_schema(round: usize, value: serde_json::Value) -> Result<Conqu
             capitulation_event: s.capitulation_event,
             fallen_capital_remnant: s.fallen_capital,
             defender_admin_before: s.defender_admin_before,
-            capital_index_after: Some(s.capital_index_after),
+            capital_index_after: s.capital_index_after,
             defender_capital_territory_after: s.defender_capital_territory_after,
-            capital_index_before: Some(s.capital_index_before),
-            original_capital_index: Some(s.original_capital_index),
-            capital_moved: Some(s.capital_moved),
+            capital_index_before: s.capital_index_before,
+            original_capital_index: s.original_capital_index,
+            capital_moved: s.capital_moved,
             defender_territory_rank_before: s.defender_territory_rank_before,
         })
     }
@@ -916,14 +931,7 @@ pub fn update_gamestate(force_fetch: bool) -> Result<usize, Box<dyn std::error::
                     );
                     any_unexpected = true;
                 }
-                if !conquest_info.subjects.is_empty() {
-                    eprintln!(
-                        "Round {}: Expected zero subjects in post for riot, got {}",
-                        round,
-                        conquest_info.subjects.len()
-                    );
-                    any_unexpected = true;
-                }
+
             }
         }
 
@@ -1043,10 +1051,11 @@ pub fn update_gamestate(force_fetch: bool) -> Result<usize, Box<dyn std::error::
                 }
 
                 if let Err(e) = crate::game_utils::validate_capitulation(
-                    conquest_info.defender as u16,
+                    conquered_territory_id,
                     &ceded_ids,
                     &id_owners,
                     &targets_data,
+                    conquest_info.capital_index_after.map(|c| c as u16),
                 ) {
                     eprintln!("Round {}: Capitulation validation failed: {}", round, e);
                     any_unexpected = true;
@@ -1088,16 +1097,14 @@ pub fn update_gamestate(force_fetch: bool) -> Result<usize, Box<dyn std::error::
         current_state
             .country_data
             .insert(conquered_territory_id, attacker_country_id);
-        if post.action_type == "conquest" {
-            for sub_val in &conquest_info.subjects {
-                let sub_id = sub_val
-                    .as_u64()
-                    .map(|v| v as u16)
-                    .unwrap_or_else(|| sub_val.as_str().and_then(|s| s.parse().ok()).unwrap_or(0));
-                current_state
-                    .country_data
-                    .insert(sub_id, attacker_country_id);
-            }
+        for sub_val in &conquest_info.subjects {
+            let sub_id = sub_val
+                .as_u64()
+                .map(|v| v as u16)
+                .unwrap_or_else(|| sub_val.as_str().and_then(|s| s.parse().ok()).unwrap_or(0));
+            current_state
+                .country_data
+                .insert(sub_id, attacker_country_id);
         }
 
         // Validate post.comment (Top 10 ranking)
@@ -1436,11 +1443,15 @@ pub fn update_gamestate(force_fetch: bool) -> Result<usize, Box<dyn std::error::
         } else {
             let rioting_country_id = conquered_territory_id;
             let was_eliminated = !id_owners.values().any(|&o| o == rioting_country_id);
-            let riot_suffix = if was_eliminated {
-                "gained independence."
+            let mut riot_suffix = if was_eliminated {
+                "gained independence".to_string()
             } else {
-                "reunited its homeland."
+                "reunited its homeland".to_string()
             };
+            if !conquest_info.subjects.is_empty() {
+                riot_suffix.push_str(&format!(" supported by {} other territories", conquest_info.subjects.len()));
+            }
+            riot_suffix.push('.');
             format!(
                 "{} rose against {} and {}",
                 post.territory, post.attacker, riot_suffix

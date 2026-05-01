@@ -1,0 +1,31 @@
+{
+  "caption": "August 2056, Norway conquered Latvia territory previously occupied by Sweden.",
+  "pic": "000365.png",
+  "zoom": "000365.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 15\nBrazil: 12\nNew Zealand: 10\nNorway: 9\nGermany: 8\nEcuador: 7\nTajikistan: 6\nSpain: 6\nJapan: 6\nKosovo: 5",
+  "tags": [
+    "Norway",
+    "Sweden"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 141,
+    "defender": 107,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Sweden",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 57,
+    "capitalIndexAfter": 57,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 165,
+    "capitalMoved": false
+  },
+  "territory": "Latvia",
+  "attacker": "Norway",
+  "defender": "Sweden"
+}

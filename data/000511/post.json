@@ -1,0 +1,31 @@
+{
+  "caption": "October 2068, Myanmar conquered Nepal territory previously occupied by Bhutan.",
+  "pic": "000511.png",
+  "zoom": "000511.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 26\nChad: 25\nNew Zealand: 15\nNorway: 11\nMyanmar: 10\nMauritius: 9\nPalestine: 9\nKosovo: 8\nSpain: 7\nGermany: 7",
+  "tags": [
+    "Myanmar",
+    "Bhutan"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 16,
+    "defender": 132,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Bhutan",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 28,
+    "capitalIndexAfter": 28,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 28,
+    "capitalMoved": false
+  },
+  "territory": "Nepal",
+  "attacker": "Myanmar",
+  "defender": "Bhutan"
+}

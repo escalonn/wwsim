@@ -1,0 +1,31 @@
+{
+  "caption": "September 2071, Myanmar conquered Taiwan territory previously occupied by Japan.",
+  "pic": "000546.png",
+  "zoom": "000546.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 30\nChad: 28\nNew Zealand: 18\nMyanmar: 13\nMauritius: 11\nNorway: 11\nAlgeria: 10\nKosovo: 9\nLiechtenstein: 8\nEcuador: 7",
+  "tags": [
+    "Myanmar",
+    "Japan"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 98,
+    "defender": 179,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Japan",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 90,
+    "capitalIndexAfter": 90,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 90,
+    "capitalMoved": false
+  },
+  "territory": "Taiwan",
+  "attacker": "Myanmar",
+  "defender": "Japan"
+}

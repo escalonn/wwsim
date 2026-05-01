@@ -1,0 +1,31 @@
+{
+  "caption": "October 2057, Brazil conquered Uruguay territory previously occupied by Liberia.\nThe government of Liberia relocated its capital to Argentina and continues in exile.",
+  "pic": "000379.png",
+  "zoom": "000379.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 19\nBrazil: 13\nNew Zealand: 10\nNorway: 9\nGermany: 8\nSpain: 7\nEcuador: 7\nJapan: 7\nTajikistan: 6\nKosovo: 5",
+  "tags": [
+    "Brazil",
+    "Liberia"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 145,
+    "defender": 183,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": true,
+    "defenderAdminBefore": "Liberia",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 183,
+    "capitalIndexAfter": 5,
+    "defenderCapitalTerritoryAfter": "Argentina",
+    "originalCapitalIndex": 100,
+    "capitalMoved": true
+  },
+  "territory": "Uruguay",
+  "attacker": "Brazil",
+  "defender": "Liberia"
+}

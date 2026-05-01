@@ -1,0 +1,31 @@
+{
+  "caption": "June 2070, Brazil conquered Cuba territory previously occupied by Ecuador.",
+  "pic": "000531.png",
+  "zoom": "000531.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 28\nChad: 25\nNew Zealand: 19\nMyanmar: 11\nNorway: 11\nKosovo: 10\nMauritius: 9\nLiechtenstein: 8\nJapan: 7\nPalestine: 7",
+  "tags": [
+    "Brazil",
+    "Ecuador"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 77,
+    "defender": 42,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Ecuador",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 50,
+    "capitalIndexAfter": 50,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 50,
+    "capitalMoved": false
+  },
+  "territory": "Cuba",
+  "attacker": "Brazil",
+  "defender": "Ecuador"
+}

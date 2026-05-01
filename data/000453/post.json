@@ -1,0 +1,31 @@
+{
+  "caption": "December 2063, Chad conquered Jordan territory previously occupied by Palestine.",
+  "pic": "000453.png",
+  "zoom": "000453.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 22\nBrazil: 20\nNew Zealand: 13\nPalestine: 9\nGermany: 9\nNorway: 8\nLiechtenstein: 7\nEcuador: 7\nJapan: 7\nIndia: 6",
+  "tags": [
+    "Chad",
+    "Palestine"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 56,
+    "defender": 89,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Palestine",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 146,
+    "capitalIndexAfter": 146,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 146,
+    "capitalMoved": false
+  },
+  "territory": "Jordan",
+  "attacker": "Chad",
+  "defender": "Palestine"
+}

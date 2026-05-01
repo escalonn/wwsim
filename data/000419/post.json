@@ -1,0 +1,31 @@
+{
+  "caption": "February 2061, Vietnam conquered Brunei territory previously occupied by Australia.",
+  "pic": "000419.png",
+  "zoom": "000419.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 21\nBrazil: 19\nNew Zealand: 11\nPalestine: 9\nGermany: 9\nNorway: 9\nSpain: 8\nLiechtenstein: 8\nEcuador: 8\nJapan: 8",
+  "tags": [
+    "Vietnam",
+    "Australia"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 138,
+    "defender": 27,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Australia",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 9,
+    "capitalIndexAfter": 9,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 9,
+    "capitalMoved": false
+  },
+  "territory": "Brunei",
+  "attacker": "Vietnam",
+  "defender": "Australia"
+}

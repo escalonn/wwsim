@@ -1,0 +1,31 @@
+{
+  "caption": "December 2061, Palestine conquered Bulgaria territory.\nBulgaria has been completely defeated.\n45 countries remaining.",
+  "pic": "000429.png",
+  "zoom": "000429.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 21\nBrazil: 18\nNew Zealand: 13\nPalestine: 10\nGermany: 10\nEcuador: 9\nNorway: 9\nSpain: 8\nLiechtenstein: 7\nJapan: 7",
+  "tags": [
+    "Palestine",
+    "Bulgaria"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 178,
+    "defender": 17,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Bulgaria",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 17,
+    "capitalIndexAfter": 17,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 17,
+    "capitalMoved": false
+  },
+  "territory": "Bulgaria",
+  "attacker": "Palestine",
+  "defender": "Bulgaria"
+}

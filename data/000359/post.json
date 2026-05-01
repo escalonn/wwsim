@@ -1,0 +1,31 @@
+{
+  "caption": "February 2056, Samoa conquered Bahamas territory previously occupied by Northern Ireland.\nThe government of Northern Ireland relocated its capital to Iceland and continues in exile.",
+  "pic": "000359.png",
+  "zoom": "000359.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 13\nBrazil: 13\nNew Zealand: 10\nGermany: 8\nNorway: 8\nTajikistan: 6\nSpain: 6\nEcuador: 6\nJapan: 6\nMauritius: 5",
+  "tags": [
+    "Samoa",
+    "Northern Ireland"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 42,
+    "defender": 19,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": true,
+    "defenderAdminBefore": "Northern Ireland",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 19,
+    "capitalIndexAfter": 85,
+    "defenderCapitalTerritoryAfter": "Iceland",
+    "originalCapitalIndex": 200,
+    "capitalMoved": true
+  },
+  "territory": "Bahamas",
+  "attacker": "Samoa",
+  "defender": "Northern Ireland"
+}

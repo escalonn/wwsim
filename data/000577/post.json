@@ -1,0 +1,31 @@
+{
+  "caption": "April 2074, Chad conquered [REDACTED] territory previously occupied by Algeria.",
+  "pic": "000577.png",
+  "zoom": "000577.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 36\nBrazil: 36\nNew Zealand: 18\nNorway: 15\nMyanmar: 14\nAlgeria: 12\nKosovo: 8\nMauritius: 7\nJapan: 7\nGermany: 6",
+  "tags": [
+    "Chad",
+    "Algeria"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 169,
+    "defender": 127,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Algeria",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 49,
+    "capitalIndexAfter": 49,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 49,
+    "capitalMoved": false
+  },
+  "territory": "[REDACTED]",
+  "attacker": "Chad",
+  "defender": "Algeria"
+}

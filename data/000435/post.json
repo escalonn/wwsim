@@ -1,0 +1,31 @@
+{
+  "caption": "June 2062, Chad conquered Palestine territory previously occupied by Israel.\nThe government of Israel relocated its capital to Northern Cyprus and continues in exile.",
+  "pic": "000435.png",
+  "zoom": "000435.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 22\nBrazil: 19\nNew Zealand: 13\nGermany: 11\nPalestine: 10\nEcuador: 9\nNorway: 9\nJapan: 7\nKosovo: 6\nSpain: 6",
+  "tags": [
+    "Chad",
+    "Israel"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 51,
+    "defender": 146,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": true,
+    "defenderAdminBefore": "Israel",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 146,
+    "capitalIndexAfter": 192,
+    "defenderCapitalTerritoryAfter": "Northern Cyprus",
+    "originalCapitalIndex": 86,
+    "capitalMoved": true
+  },
+  "territory": "Palestine",
+  "attacker": "Chad",
+  "defender": "Israel"
+}

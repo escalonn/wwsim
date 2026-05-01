@@ -1,0 +1,31 @@
+{
+  "caption": "September 2073, Chad conquered Oman territory previously occupied by Mauritius.",
+  "pic": "000570.png",
+  "zoom": "000570.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 34\nBrazil: 34\nNew Zealand: 18\nMyanmar: 14\nNorway: 14\nAlgeria: 12\nKosovo: 9\nMauritius: 7\nLiechtenstein: 7\nJapan: 7",
+  "tags": [
+    "Chad",
+    "Mauritius"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 159,
+    "defender": 134,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Mauritius",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 120,
+    "capitalIndexAfter": 120,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 122,
+    "capitalMoved": false
+  },
+  "territory": "Oman",
+  "attacker": "Chad",
+  "defender": "Mauritius"
+}

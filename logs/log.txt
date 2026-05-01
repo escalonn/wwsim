@@ -352,3 +352,231 @@ Round 351: June 2055, Ecuador conquered Belize territory previously occupied by 
 Round 352: July 2055, Norway conquered Estonia territory previously occupied by Sweden.
 Round 353: August 2055, Chad conquered Uganda territory. The government of Uganda relocated its capital to Burundi and continues in exile.
 Round 354: September 2055, Japan conquered Russia territory. Russia has been completely defeated. 60 countries remaining.
+Round 355: October 2055, New Zealand conquered Falkland Islands territory previously occupied by Liberia.
+Round 356: November 2055, Botswana conquered eSwatini territory previously occupied by Uruguay.
+Round 357: December 2055, Indonesia conquered Myanmar territory previously occupied by India.
+Round 358: January 2056, Mali conquered Senegal territory. The government of Senegal relocated its capital to Mali and continues in exile.
+Round 359: February 2056, Samoa conquered Bahamas territory previously occupied by Northern Ireland. The government of Northern Ireland relocated its capital to Iceland and continues in exile.
+Round 360: March 2056, Senegal conquered Ivory Coast territory previously occupied by Brazil.
+Round 361: April 2056, Ecuador conquered Peru territory previously occupied by Liberia.
+Round 362: May 2056, Chad conquered Burundi territory previously occupied by Uganda. Uganda capitulated, ceding 1 additional territory to Chad. Uganda moved its capital to Kenya.
+Round 363: June 2056, Australia conquered Indonesia territory. The government of Indonesia relocated its capital to Malaysia and continues in exile.
+Round 364: July 2056, Kosovo conquered Libya territory previously occupied by Malta. Malta has been completely defeated. 59 countries remaining.
+Round 365: August 2056, Norway conquered Latvia territory previously occupied by Sweden.
+Round 366: September 2056, Dominican Republic conquered Barbados territory previously occupied by Brazil.
+Round 367: October 2056, Chad conquered Bahrain territory previously occupied by United Arab Emirates. United Arab Emirates capitulated, ceding 2 additional territories to Chad. United Arab Emirates moved its capital to Georgia.
+Round 368: November 2056, Indonesia conquered Singapore territory. The government of Singapore relocated its capital to Yemen and continues in exile.
+Round 369: December 2056, Chad conquered Yemen territory previously occupied by Singapore. Singapore has been completely defeated. 58 countries remaining.
+Round 370: January 2057, Palestine conquered Iraq territory. Iraq has been completely defeated. 57 countries remaining.
+Round 371: February 2057, Japan conquered China territory previously occupied by Vietnam.
+Round 372: March 2057, Lesotho conquered Seychelles territory previously occupied by Uganda.
+Round 373: April 2057, Burkina Faso conquered Ivory Coast territory previously occupied by Senegal.
+Round 374: May 2057, Palestine conquered Syria territory. The government of Syria relocated its capital to Armenia and continues in exile.
+Round 375: June 2057, Dominican Republic conquered Portugal territory. Portugal has been completely defeated. 56 countries remaining.
+Round 376: July 2057, Brazil conquered Guinea territory previously occupied by Cape Verde. Cape Verde has been completely defeated. 55 countries remaining.
+Round 377: August 2057, Spain conquered Portugal territory previously occupied by Dominican Republic.
+Round 378: September 2057, United Arab Emirates conquered Ukraine territory. Ukraine has been completely defeated. 54 countries remaining.
+Round 379: October 2057, Brazil conquered Uruguay territory previously occupied by Liberia. The government of Liberia relocated its capital to Argentina and continues in exile.
+Round 380: November 2057, Israel conquered Cyprus territory previously occupied by Kosovo.
+Round 381: December 2057, United Arab Emirates conquered Iran territory previously occupied by Chad.
+Round 382: January 2058, Brazil conquered Guyana territory previously occupied by Venezuela. The government of Venezuela relocated its capital to Colombia and continues in exile.
+Round 383: February 2058, Palestine conquered Armenia territory previously occupied by Syria. Syria has been completely defeated. 53 countries remaining.
+Round 384: March 2058, New Zealand conquered El Salvador territory previously occupied by Samoa. The government of Samoa relocated its capital to Mexico and continues in exile.
+Round 385: April 2058, Myanmar conquered Thailand territory previously occupied by Indonesia.
+Round 386: May 2058, Brazil conquered Falkland Islands territory previously occupied by New Zealand.
+Round 387: June 2058, Chad conquered Rwanda territory previously occupied by Malawi.
+Round 388: July 2058, Chad conquered Egypt territory previously occupied by Israel.
+Round 389: August 2058, Ecuador conquered Colombia territory previously occupied by Venezuela. Venezuela has been completely defeated. 52 countries remaining.
+Round 390: September 2058, Brazil conquered Cuba territory previously occupied by Samoa.
+Round 391: October 2058, Liechtenstein conquered Netherlands territory. Netherlands has been completely defeated. 51 countries remaining.
+Round 392: November 2058, Brazil conquered Western Sahara territory previously occupied by Algeria.
+Round 393: December 2058, New Zealand conquered Kiribati territory previously occupied by United States of America.
+Round 394: January 2059, Palestine conquered Turkey territory previously occupied by Slovakia. Slovakia has been completely defeated. 50 countries remaining.
+Round 395: February 2059, Mauritius reconquered its homeland from Lesotho.
+Round 396: March 2059, Chad conquered Kenya territory previously occupied by Uganda. Uganda has been completely defeated. 49 countries remaining.
+Round 397: April 2059, Germany conquered Slovakia territory previously occupied by Lithuania.
+Round 398: May 2059, Japan conquered Mongolia territory previously occupied by Norway.
+Round 399: June 2059, Palestine conquered Moldova territory previously occupied by Lithuania.
+Round 400: July 2059, Spain conquered Bermuda territory previously occupied by Dominican Republic.
+Round 401: August 2059, Samoa conquered Dominican Republic territory. The government of Dominican Republic relocated its capital to Jamaica and continues in exile.
+Round 402: September 2059, Algeria conquered [REDACTED] territory previously occupied by Chad.
+Round 403: October 2059, Samoa conquered El Salvador territory previously occupied by New Zealand.
+Round 404: November 2059, Chad conquered Equatorial Guinea territory previously occupied by Angola.
+Round 405: December 2059, Brazil conquered Chile territory previously occupied by Ecuador.
+Round 406: January 2060, Liechtenstein conquered Montenegro territory previously occupied by Croatia.
+Round 407: February 2060, Liechtenstein conquered Bosnia and Herzegovina territory previously occupied by Czech Republic.
+Round 408: March 2060, Samoa conquered United States of America territory. United States of America has been completely defeated. 48 countries remaining.
+Round 409: April 2060, Palestine conquered Israel territory. Israel capitulated, ceding 2 additional territories to Palestine. Israel moved its capital to Palestine.
+Round 410: May 2060, Norway conquered Faroe Islands territory previously occupied by Isle of Man. Isle of Man has been completely defeated. 47 countries remaining.
+Round 411: June 2060, Brazil conquered Barbados territory previously occupied by Dominican Republic.
+Round 412: July 2060, Benin conquered Burkina Faso territory previously occupied by Senegal.
+Round 413: August 2060, New Zealand conquered Palau territory previously occupied by South Korea. South Korea has been completely defeated. 46 countries remaining.
+Round 414: September 2060, India conquered Tajikistan territory. The government of Tajikistan relocated its capital to Uzbekistan and continues in exile.
+Round 415: October 2060, India conquered Afghanistan territory previously occupied by Tajikistan.
+Round 416: November 2060, Dominican Republic conquered Nicaragua territory. The government of Nicaragua relocated its capital to Panama and continues in exile.
+Round 417: December 2060, Ecuador conquered Honduras territory previously occupied by Samoa.
+Round 418: January 2061, Myanmar conquered Maldives territory previously occupied by Mauritius.
+Round 419: February 2061, Vietnam conquered Brunei territory previously occupied by Australia.
+Round 420: March 2061, New Zealand conquered Timor-Leste territory previously occupied by Australia.
+Round 421: April 2061, Kosovo conquered Montenegro territory previously occupied by Liechtenstein.
+Round 422: May 2061, Germany conquered Vatican City territory previously occupied by Croatia.
+Round 423: June 2061, Mauritius conquered Singapore territory previously occupied by Indonesia.
+Round 424: July 2061, New Zealand conquered South Korea territory previously occupied by Japan.
+Round 425: August 2061, Kosovo conquered Serbia territory previously occupied by Croatia. The government of Croatia relocated its capital to Kosovo and continues in exile.
+Round 426: September 2061, Mali conquered Western Sahara territory previously occupied by Brazil.
+Round 427: October 2061, Ecuador conquered Nicaragua territory previously occupied by Dominican Republic.
+Round 428: November 2061, England conquered Ireland territory previously occupied by Dominican Republic.
+Round 429: December 2061, Palestine conquered Bulgaria territory. Bulgaria has been completely defeated. 45 countries remaining.
+Round 430: January 2062, Vietnam conquered Kyrgyzstan territory previously occupied by India.
+Round 431: February 2062, Germany conquered Monaco territory previously occupied by Spain.
+Round 432: March 2062, Brazil conquered Bermuda territory previously occupied by Spain.
+Round 433: April 2062, Norway conquered Netherlands territory previously occupied by Liechtenstein.
+Round 434: May 2062, Northern Ireland conquered Faroe Islands territory previously occupied by Norway.
+Round 435: June 2062, Chad conquered Palestine territory previously occupied by Israel. The government of Israel relocated its capital to Northern Cyprus and continues in exile.
+Round 436: July 2062, Mauritius conquered Mozambique territory previously occupied by Lesotho.
+Round 437: August 2062, Brazil conquered Western Sahara territory previously occupied by Mali.
+Round 438: September 2062, India conquered Kyrgyzstan territory previously occupied by Vietnam.
+Round 439: October 2062, Dominican Republic conquered Haiti territory previously occupied by Brazil.
+Round 440: November 2062, Kosovo conquered Vatican City territory previously occupied by Germany.
+Round 441: December 2062, Liechtenstein conquered Montenegro territory previously occupied by Kosovo.
+Round 442: January 2063, United Arab Emirates conquered Turkey territory previously occupied by Palestine.
+Round 443: February 2063, Liberia conquered Uruguay territory previously occupied by Brazil.
+Round 444: March 2063, Benin conquered Nigeria territory previously occupied by Chad.
+Round 445: April 2063, Brazil conquered Colombia territory previously occupied by Ecuador.
+Round 446: May 2063, Uruguay conquered Guinea territory previously occupied by Brazil.
+Round 447: June 2063, Lithuania conquered Slovakia territory previously occupied by Germany.
+Round 448: July 2063, Brazil conquered Haiti territory previously occupied by Dominican Republic.
+Round 449: August 2063, Chad conquered Somalia territory previously occupied by Mauritius.
+Round 450: September 2063, Brazil conquered Bolivia territory previously occupied by Ecuador.
+Round 451: October 2063, Palestine reconquered its homeland from Chad.
+Round 452: November 2063, Tajikistan conquered Estonia territory previously occupied by Norway.
+Round 453: December 2063, Chad conquered Jordan territory previously occupied by Palestine.
+Round 454: January 2064, Northern Ireland conquered Ireland territory previously occupied by England.
+Round 455: February 2064, India conquered Bhutan territory previously occupied by Vietnam.
+Round 456: March 2064, India conquered Turkmenistan territory previously occupied by Tajikistan.
+Round 457: April 2064, Mauritius conquered Australia territory. The government of Australia relocated its capital to Indonesia and continues in exile.
+Round 458: May 2064, Brazil conquered Peru territory previously occupied by Ecuador.
+Round 459: June 2064, Myanmar reconquered its homeland from Indonesia.
+Round 460: July 2064, Brazil conquered Argentina territory previously occupied by Liberia. The government of Liberia relocated its capital to Uruguay and continues in exile.
+Round 461: August 2064, Brazil conquered Bahamas territory previously occupied by Samoa.
+Round 462: September 2064, New Zealand conquered El Salvador territory previously occupied by Samoa.
+Round 463: October 2064, Tajikistan conquered Georgia territory previously occupied by United Arab Emirates. The government of United Arab Emirates relocated its capital to Azerbaijan and continues in exile.
+Round 464: November 2064, India conquered Laos territory previously occupied by Japan.
+Round 465: December 2064, Senegal conquered Benin territory. The government of Benin relocated its capital to Togo and continues in exile.
+Round 466: January 2065, Mauritius conquered eSwatini territory previously occupied by Botswana.
+Round 467: February 2065, Algeria conquered Mali territory previously occupied by Senegal. The government of Senegal relocated its capital to Benin and continues in exile.
+Round 468: March 2065, Chad conquered Seychelles territory previously occupied by Lesotho.
+Round 469: April 2065, Liberia conquered Namibia territory previously occupied by Uruguay.
+Round 470: May 2065, Chad conquered Iraq territory previously occupied by Palestine.
+Round 471: June 2065, Kosovo reconquered its homeland from Croatia. Croatia has been completely defeated. 44 countries remaining.
+Round 472: July 2065, Palestine conquered Lithuania territory. The government of Lithuania relocated its capital to Slovakia and continues in exile.
+Round 473: August 2065, Germany conquered Luxembourg territory previously occupied by Liechtenstein.
+Round 474: September 2065, Brazil conquered Sierra Leone territory previously occupied by Burkina Faso. The government of Burkina Faso relocated its capital to Ivory Coast and continues in exile.
+Round 475: October 2065, Japan conquered South Korea territory previously occupied by New Zealand.
+Round 476: November 2065, Brazil conquered Costa Rica territory previously occupied by Ecuador.
+Round 477: December 2065, Vietnam conquered Laos territory previously occupied by India.
+Round 478: January 2066, Chad conquered Cameroon territory previously occupied by Benin.
+Round 479: February 2066, Samoa conquered Jamaica territory previously occupied by Dominican Republic. Dominican Republic has been completely defeated. 43 countries remaining.
+Round 480: March 2066, Spain conquered France territory previously occupied by Germany.
+Round 481: April 2066, Lesotho conquered Zambia territory previously occupied by Republic of Congo. Republic of Congo has been completely defeated. 42 countries remaining.
+Round 482: May 2066, Palestine conquered Northern Cyprus territory previously occupied by Israel. Israel has been completely defeated. 41 countries remaining.
+Round 483: June 2066, Norway conquered Lithuania territory previously occupied by Palestine.
+Round 484: July 2066, Lesotho conquered Mozambique territory previously occupied by Mauritius.
+Round 485: August 2066, Germany conquered Hungary territory previously occupied by Czech Republic. The government of Czech Republic relocated its capital to Romania and continues in exile.
+Round 486: September 2066, Tajikistan conquered Armenia territory previously occupied by Palestine.
+Round 487: October 2066, Mauritius conquered Malaysia territory previously occupied by Indonesia. Indonesia has been completely defeated. 40 countries remaining.
+Round 488: November 2066, Ecuador conquered Cuba territory previously occupied by Brazil.
+Round 489: December 2066, Burkina Faso conquered Liberia territory previously occupied by Uruguay.
+Round 490: January 2067, Botswana conquered Zimbabwe territory previously occupied by Lesotho.
+Round 491: February 2067, India conquered Sri Lanka territory previously occupied by Myanmar.
+Round 492: March 2067, Mauritius conquered Sri Lanka territory previously occupied by India.
+Round 493: April 2067, Chad conquered Republic of Congo territory previously occupied by Cameroon. The government of Cameroon relocated its capital to Democratic Republic of the Congo and continues in exile.
+Round 494: May 2067, Myanmar conquered Laos territory previously occupied by Vietnam.
+Round 495: June 2067, Liechtenstein conquered Monaco territory previously occupied by Germany.
+Round 496: July 2067, Palestine conquered Turkey territory previously occupied by United Arab Emirates.
+Round 497: August 2067, Liechtenstein conquered Hungary territory previously occupied by Germany.
+Round 498: September 2067, New Zealand conquered United States of America territory previously occupied by Samoa.
+Round 499: October 2067, Algeria conquered Mauritania territory previously occupied by Mali. The government of Mali relocated its capital to Senegal and continues in exile.
+Round 500: November 2067, India conquered United Arab Emirates territory previously occupied by Chad.
+Round 501: December 2067, Bhutan rose against India and gained independence supported by 2 other territories.
+Round 502: January 2068, Lithuania conquered Czech Republic territory previously occupied by Germany.
+Round 503: February 2068, Norway conquered Faroe Islands territory previously occupied by Northern Ireland.
+Round 504: March 2068, New Zealand conquered South Korea territory previously occupied by Japan.
+Round 505: April 2068, Myanmar conquered India territory. India capitulated, ceding 2 additional territories to Myanmar. India moved its capital to Turkmenistan.
+Round 506: May 2068, Kosovo conquered Montenegro territory previously occupied by Liechtenstein.
+Round 507: June 2068, Japan conquered Ukraine territory previously occupied by United Arab Emirates.
+Round 508: July 2068, Brazil conquered Mauritania territory previously occupied by Algeria.
+Round 509: August 2068, Norway conquered Czech Republic territory previously occupied by Lithuania.
+Round 510: September 2068, Brazil conquered Jamaica territory previously occupied by Samoa.
+Round 511: October 2068, Myanmar conquered Nepal territory previously occupied by Bhutan.
+Round 512: November 2068, Mauritius conquered Pakistan territory previously occupied by Bhutan.
+Round 513: December 2068, Myanmar conquered Sri Lanka territory previously occupied by Mauritius.
+Round 514: January 2069, Kosovo conquered Romania territory previously occupied by Czech Republic. Czech Republic has been completely defeated. 40 countries remaining.
+Round 515: February 2069, Tajikistan conquered Turkey territory previously occupied by Palestine.
+Round 516: March 2069, Kosovo conquered Bulgaria territory previously occupied by Palestine.
+Round 517: April 2069, Brazil conquered Dominican Republic territory previously occupied by Samoa.
+Round 518: May 2069, Brazil conquered Uruguay territory previously occupied by Liberia. The government of Liberia relocated its capital to Namibia and continues in exile.
+Round 519: June 2069, Brazil conquered Namibia territory previously occupied by Liberia. Liberia has been completely defeated. 39 countries remaining.
+Round 520: July 2069, New Zealand conquered Philippines territory previously occupied by Vietnam.
+Round 521: August 2069, Ecuador conquered Mexico territory previously occupied by Samoa. Samoa has been completely defeated. 38 countries remaining.
+Round 522: September 2069, New Zealand conquered Indonesia territory previously occupied by Australia. Australia has been completely defeated. 37 countries remaining.
+Round 523: October 2069, England reconquered its homeland from Germany.
+Round 524: November 2069, New Zealand conquered Falkland Islands territory previously occupied by Brazil.
+Round 525: December 2069, Senegal conquered Equatorial Guinea territory previously occupied by Chad.
+Round 526: January 2070, Liechtenstein conquered Spain territory. The government of Spain relocated its capital to Portugal and continues in exile.
+Round 527: February 2070, India conquered Kazakhstan territory previously occupied by Tajikistan.
+Round 528: March 2070, Sweden conquered Estonia territory previously occupied by Tajikistan.
+Round 529: April 2070, Chad conquered United Arab Emirates territory previously occupied by India.
+Round 530: May 2070, New Zealand conquered Chile territory previously occupied by Brazil.
+Round 531: June 2070, Brazil conquered Cuba territory previously occupied by Ecuador.
+Round 532: July 2070, Mauritius conquered Madagascar territory previously occupied by Lesotho. Lesotho capitulated, ceding 1 additional territory to Mauritius. Lesotho moved its capital to Zambia.
+Round 533: August 2070, Algeria conquered Burkina Faso territory previously occupied by Benin.
+Round 534: September 2070, Benin reconquered its homeland from Senegal. The government of Senegal relocated its capital to Ghana and continues in exile.
+Round 535: October 2070, Myanmar conquered Bhutan territory. Bhutan has been completely defeated. 36 countries remaining.
+Round 536: November 2070, Brazil conquered Chile territory previously occupied by New Zealand.
+Round 537: December 2070, Brazil conquered Panama territory previously occupied by Nicaragua. Nicaragua has been completely defeated. 35 countries remaining.
+Round 538: January 2071, Chad conquered Lebanon territory previously occupied by Palestine.
+Round 539: February 2071, New Zealand conquered Australia territory previously occupied by Mauritius.
+Round 540: March 2071, Algeria conquered Portugal territory previously occupied by Spain. Spain capitulated, ceding 3 additional territories to Algeria. Spain moved its capital to Andorra.
+Round 541: April 2071, Mauritius conquered Lesotho territory previously occupied by Uruguay.
+Round 542: May 2071, Chad conquered Palestine territory. Palestine capitulated, ceding 1 additional territory to Chad. Palestine moved its capital to Northern Cyprus.
+Round 543: June 2071, Algeria conquered Libya territory previously occupied by Kosovo.
+Round 544: July 2071, Brazil conquered Falkland Islands territory previously occupied by New Zealand.
+Round 545: August 2071, Ecuador conquered Peru territory previously occupied by Brazil.
+Round 546: September 2071, Myanmar conquered Taiwan territory previously occupied by Japan.
+Round 547: October 2071, Japan conquered Kyrgyzstan territory previously occupied by Myanmar.
+Round 548: November 2071, Brazil conquered Honduras territory previously occupied by Ecuador.
+Round 549: December 2071, Myanmar conquered Turkmenistan territory previously occupied by India. The government of India relocated its capital to Kazakhstan and continues in exile.
+Round 550: January 2072, Brazil conquered Ivory Coast territory previously occupied by Burkina Faso. The government of Burkina Faso relocated its capital to Liberia and continues in exile.
+Round 551: February 2072, Norway conquered England territory. The government of England relocated its capital to Isle of Man and continues in exile.
+Round 552: March 2072, Spain conquered Vatican City territory previously occupied by Kosovo.
+Round 553: April 2072, Algeria conquered Andorra territory previously occupied by Spain. Spain capitulated, ceding 1 additional territory to Algeria. Spain moved its capital to Malta.
+Round 554: May 2072, Norway conquered Belarus territory previously occupied by Tajikistan.
+Round 555: June 2072, Kosovo conquered Bosnia and Herzegovina territory previously occupied by Liechtenstein.
+Round 556: July 2072, Norway conquered Estonia territory previously occupied by Sweden.
+Round 557: August 2072, Chad conquered Malawi territory. Malawi has been completely defeated. 34 countries remaining.
+Round 558: September 2072, Chad conquered Nigeria territory previously occupied by Benin.
+Round 559: October 2072, Brazil conquered Guinea territory previously occupied by Uruguay.
+Round 560: November 2072, Chad conquered Madagascar territory previously occupied by Mauritius.
+Round 561: December 2072, Norway conquered Isle of Man territory previously occupied by England. England has been completely defeated. 33 countries remaining.
+Round 562: January 2073, Chad conquered Mauritius territory. The government of Mauritius relocated its capital to Mozambique and continues in exile.
+Round 563: February 2073, Senegal conquered Gabon territory. Gabon has been completely defeated. 32 countries remaining.
+Round 564: March 2073, Brazil conquered Antarctica territory previously occupied by Mauritius.
+Round 565: April 2073, Mali conquered Gambia territory previously occupied by Brazil.
+Round 566: May 2073, Chad conquered Togo territory previously occupied by Benin.
+Round 567: June 2073, Myanmar conquered Azerbaijan territory previously occupied by United Arab Emirates. The government of United Arab Emirates relocated its capital to Iran and continues in exile.
+Round 568: July 2073, Algeria conquered England territory previously occupied by Norway.
+Round 569: August 2073, Brazil conquered Portugal territory previously occupied by Algeria.
+Round 570: September 2073, Chad conquered Oman territory previously occupied by Mauritius.
+Round 571: October 2073, Norway conquered Slovenia territory previously occupied by Liechtenstein.
+Round 572: November 2073, Chad conquered Cyprus territory previously occupied by Palestine.
+Round 573: December 2073, India conquered Finland territory previously occupied by Sweden. Sweden has been completely defeated. 31 countries remaining.
+Round 574: January 2074, Brazil conquered Canada territory. Canada has been completely defeated. 30 countries remaining.
+Round 575: February 2074, Brazil conquered Guatemala territory previously occupied by Ecuador.
+Round 576: March 2074, Algeria conquered Albania territory previously occupied by Kosovo.
+Round 577: April 2074, Chad conquered [REDACTED] territory previously occupied by Algeria.
+Round 578: May 2074, Palestine conquered Romania territory previously occupied by Kosovo.
+Round 579: June 2074, Algeria conquered Ivory Coast territory previously occupied by Brazil.
+Round 580: July 2074, Algeria conquered Greece territory previously occupied by Kosovo.
+Round 581: August 2074, New Zealand conquered Brunei territory previously occupied by Vietnam.
+Round 582: September 2074, Brazil conquered Peru territory previously occupied by Ecuador.

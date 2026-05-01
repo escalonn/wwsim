@@ -1,0 +1,39 @@
+{
+  "caption": "April 2068, Myanmar conquered India territory.\nIndia capitulated, ceding 2 additional territories to Myanmar.\nIndia moved its capital to Turkmenistan.",
+  "pic": "000505.png",
+  "zoom": "000505.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 25\nBrazil: 24\nNew Zealand: 15\nNorway: 10\nMauritius: 9\nMyanmar: 9\nPalestine: 9\nLiechtenstein: 8\nKosovo: 7\nSpain: 7",
+  "tags": [
+    "Myanmar",
+    "India"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 112,
+    "defender": 81,
+    "type": "conquer",
+    "subjects": [
+      172,
+      93
+    ],
+    "capitulation": true,
+    "capitulationEvent": {
+      "round": 505,
+      "attackerTerritoriesBefore": 6,
+      "defenderTerritoriesBefore": 6,
+      "territoriesCeded": 2
+    },
+    "fallenCapital": false,
+    "defenderAdminBefore": "India",
+    "defenderTerritoryRankBefore": 12,
+    "capitalIndexBefore": 81,
+    "capitalIndexAfter": 173,
+    "defenderCapitalTerritoryAfter": "Turkmenistan",
+    "originalCapitalIndex": 81,
+    "capitalMoved": true
+  },
+  "territory": "India",
+  "attacker": "Myanmar",
+  "defender": "India"
+}

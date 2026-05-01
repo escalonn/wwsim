@@ -1,0 +1,31 @@
+{
+  "caption": "June 2068, Japan conquered Ukraine territory previously occupied by United Arab Emirates.",
+  "pic": "000507.png",
+  "zoom": "000507.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 25\nBrazil: 24\nNew Zealand: 15\nNorway: 10\nMauritius: 9\nMyanmar: 9\nPalestine: 9\nKosovo: 8\nSpain: 7\nGermany: 7",
+  "tags": [
+    "Japan",
+    "United Arab Emirates"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 149,
+    "defender": 182,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "United Arab Emirates",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 11,
+    "capitalIndexAfter": 11,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 4,
+    "capitalMoved": false
+  },
+  "territory": "Ukraine",
+  "attacker": "Japan",
+  "defender": "United Arab Emirates"
+}

@@ -1,0 +1,31 @@
+{
+  "caption": "May 2072, Norway conquered Belarus territory previously occupied by Tajikistan.",
+  "pic": "000554.png",
+  "zoom": "000554.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 32\nChad: 28\nNew Zealand: 18\nMyanmar: 13\nNorway: 13\nAlgeria: 12\nMauritius: 11\nKosovo: 8\nLiechtenstein: 8\nJapan: 7",
+  "tags": [
+    "Norway",
+    "Tajikistan"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 47,
+    "defender": 21,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Tajikistan",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 185,
+    "capitalIndexAfter": 185,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 172,
+    "capitalMoved": false
+  },
+  "territory": "Belarus",
+  "attacker": "Norway",
+  "defender": "Tajikistan"
+}

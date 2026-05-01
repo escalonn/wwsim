@@ -1,0 +1,31 @@
+{
+  "caption": "August 2060, New Zealand conquered Palau territory previously occupied by South Korea.\nSouth Korea has been completely defeated.\n46 countries remaining.",
+  "pic": "000413.png",
+  "zoom": "000413.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 21\nBrazil: 19\nNew Zealand: 11\nPalestine: 9\nGermany: 9\nNorway: 9\nSpain: 8\nLiechtenstein: 8\nJapan: 8\nEcuador: 7",
+  "tags": [
+    "New Zealand",
+    "South Korea"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 189,
+    "defender": 139,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "South Korea",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 139,
+    "capitalIndexAfter": 139,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 96,
+    "capitalMoved": false
+  },
+  "territory": "Palau",
+  "attacker": "New Zealand",
+  "defender": "South Korea"
+}

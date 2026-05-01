@@ -1,0 +1,31 @@
+{
+  "caption": "October 2069, England reconquered its homeland from Germany.",
+  "pic": "000523.png",
+  "zoom": "000523.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 29\nChad: 25\nNew Zealand: 17\nMyanmar: 11\nNorway: 11\nKosovo: 10\nMauritius: 9\nSpain: 7\nTajikistan: 7\nLiechtenstein: 7",
+  "tags": [
+    "England",
+    "Germany"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 80,
+    "defender": 199,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Germany",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 45,
+    "capitalIndexAfter": 45,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 45,
+    "capitalMoved": false
+  },
+  "territory": "England",
+  "attacker": "England",
+  "defender": "Germany"
+}

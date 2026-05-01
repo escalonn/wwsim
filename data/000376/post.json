@@ -1,0 +1,31 @@
+{
+  "caption": "July 2057, Brazil conquered Guinea territory previously occupied by Cape Verde.\nCape Verde has been completely defeated.\n55 countries remaining.",
+  "pic": "000376.png",
+  "zoom": "000376.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 19\nBrazil: 12\nNew Zealand: 10\nNorway: 9\nGermany: 8\nEcuador: 7\nJapan: 7\nTajikistan: 6\nSpain: 6\nDominican Republic: 6",
+  "tags": [
+    "Brazil",
+    "Cape Verde"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 67,
+    "defender": 66,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Cape Verde",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 66,
+    "capitalIndexAfter": 66,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 40,
+    "capitalMoved": false
+  },
+  "territory": "Guinea",
+  "attacker": "Brazil",
+  "defender": "Cape Verde"
+}

@@ -1,0 +1,31 @@
+{
+  "caption": "December 2071, Myanmar conquered Turkmenistan territory previously occupied by India.\nThe government of India relocated its capital to Kazakhstan and continues in exile.",
+  "pic": "000549.png",
+  "zoom": "000549.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 31\nChad: 28\nNew Zealand: 18\nMyanmar: 13\nMauritius: 11\nNorway: 11\nAlgeria: 10\nKosovo: 9\nLiechtenstein: 8\nJapan: 7",
+  "tags": [
+    "Myanmar",
+    "India"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 172,
+    "defender": 173,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": true,
+    "defenderAdminBefore": "India",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 173,
+    "capitalIndexAfter": 91,
+    "defenderCapitalTerritoryAfter": "Kazakhstan",
+    "originalCapitalIndex": 81,
+    "capitalMoved": true
+  },
+  "territory": "Turkmenistan",
+  "attacker": "Myanmar",
+  "defender": "India"
+}

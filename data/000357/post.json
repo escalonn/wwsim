@@ -1,0 +1,31 @@
+{
+  "caption": "December 2055, Indonesia conquered Myanmar territory previously occupied by India.",
+  "pic": "000357.png",
+  "zoom": "000357.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 13\nBrazil: 13\nNew Zealand: 10\nGermany: 8\nNorway: 8\nTajikistan: 6\nSpain: 6\nEcuador: 6\nJapan: 6\nMauritius: 5",
+  "tags": [
+    "Indonesia",
+    "India"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 171,
+    "defender": 117,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "India",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 81,
+    "capitalIndexAfter": 81,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 81,
+    "capitalMoved": false
+  },
+  "territory": "Myanmar",
+  "attacker": "Indonesia",
+  "defender": "India"
+}

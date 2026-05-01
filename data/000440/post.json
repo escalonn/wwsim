@@ -1,0 +1,31 @@
+{
+  "caption": "November 2062, Kosovo conquered Vatican City territory previously occupied by Germany.",
+  "pic": "000440.png",
+  "zoom": "000440.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 22\nBrazil: 19\nNew Zealand: 13\nPalestine: 10\nGermany: 10\nEcuador: 9\nNorway: 9\nKosovo: 7\nMauritius: 7\nJapan: 7",
+  "tags": [
+    "Kosovo",
+    "Germany"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 118,
+    "defender": 186,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Germany",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 45,
+    "capitalIndexAfter": 45,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 45,
+    "capitalMoved": false
+  },
+  "territory": "Vatican City",
+  "attacker": "Kosovo",
+  "defender": "Germany"
+}

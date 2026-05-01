@@ -1,0 +1,31 @@
+{
+  "caption": "August 2069, Ecuador conquered Mexico territory previously occupied by Samoa.\nSamoa has been completely defeated.\n38 countries remaining.",
+  "pic": "000521.png",
+  "zoom": "000521.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 29\nChad: 25\nNew Zealand: 16\nMyanmar: 11\nNorway: 11\nKosovo: 10\nMauritius: 9\nSpain: 7\nTajikistan: 7\nGermany: 7",
+  "tags": [
+    "Ecuador",
+    "Samoa"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 22,
+    "defender": 113,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Samoa",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 113,
+    "capitalIndexAfter": 113,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 190,
+    "capitalMoved": false
+  },
+  "territory": "Mexico",
+  "attacker": "Ecuador",
+  "defender": "Samoa"
+}

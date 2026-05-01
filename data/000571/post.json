@@ -1,0 +1,31 @@
+{
+  "caption": "October 2073, Norway conquered Slovenia territory previously occupied by Liechtenstein.",
+  "pic": "000571.png",
+  "zoom": "000571.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 34\nBrazil: 34\nNew Zealand: 18\nNorway: 15\nMyanmar: 14\nAlgeria: 12\nKosovo: 9\nMauritius: 7\nJapan: 7\nGermany: 6",
+  "tags": [
+    "Norway",
+    "Liechtenstein"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 44,
+    "defender": 164,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Liechtenstein",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 158,
+    "capitalIndexAfter": 158,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 102,
+    "capitalMoved": false
+  },
+  "territory": "Slovenia",
+  "attacker": "Norway",
+  "defender": "Liechtenstein"
+}

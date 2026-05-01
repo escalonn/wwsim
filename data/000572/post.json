@@ -1,0 +1,31 @@
+{
+  "caption": "November 2073, Chad conquered Cyprus territory previously occupied by Palestine.",
+  "pic": "000572.png",
+  "zoom": "000572.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 35\nBrazil: 34\nNew Zealand: 18\nNorway: 15\nMyanmar: 14\nAlgeria: 12\nKosovo: 9\nMauritius: 7\nJapan: 7\nGermany: 6",
+  "tags": [
+    "Chad",
+    "Palestine"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 152,
+    "defender": 43,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Palestine",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 192,
+    "capitalIndexAfter": 192,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 146,
+    "capitalMoved": false
+  },
+  "territory": "Cyprus",
+  "attacker": "Chad",
+  "defender": "Palestine"
+}

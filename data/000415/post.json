@@ -1,0 +1,31 @@
+{
+  "caption": "October 2060, India conquered Afghanistan territory previously occupied by Tajikistan.",
+  "pic": "000415.png",
+  "zoom": "000415.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 21\nBrazil: 19\nNew Zealand: 11\nPalestine: 9\nGermany: 9\nNorway: 9\nSpain: 8\nLiechtenstein: 8\nJapan: 8\nEcuador: 7",
+  "tags": [
+    "India",
+    "Tajikistan"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 135,
+    "defender": 0,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Tajikistan",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 185,
+    "capitalIndexAfter": 185,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 172,
+    "capitalMoved": false
+  },
+  "territory": "Afghanistan",
+  "attacker": "India",
+  "defender": "Tajikistan"
+}

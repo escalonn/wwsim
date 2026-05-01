@@ -1,0 +1,31 @@
+{
+  "caption": "May 2059, Japan conquered Mongolia territory previously occupied by Norway.",
+  "pic": "000398.png",
+  "zoom": "000398.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 21\nBrazil: 17\nNew Zealand: 11\nGermany: 9\nEcuador: 8\nJapan: 8\nNorway: 8\nSpain: 7\nTajikistan: 6\nMauritius: 6",
+  "tags": [
+    "Japan",
+    "Norway"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 143,
+    "defender": 119,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Norway",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 131,
+    "capitalIndexAfter": 131,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 131,
+    "capitalMoved": false
+  },
+  "territory": "Mongolia",
+  "attacker": "Japan",
+  "defender": "Norway"
+}

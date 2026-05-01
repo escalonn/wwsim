@@ -1,0 +1,31 @@
+{
+  "caption": "August 2073, Brazil conquered Portugal territory previously occupied by Algeria.",
+  "pic": "000569.png",
+  "zoom": "000569.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 34\nChad: 33\nNew Zealand: 18\nMyanmar: 14\nNorway: 14\nAlgeria: 12\nKosovo: 9\nMauritius: 8\nLiechtenstein: 7\nJapan: 7",
+  "tags": [
+    "Brazil",
+    "Algeria"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 23,
+    "defender": 144,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Algeria",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 49,
+    "capitalIndexAfter": 49,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 49,
+    "capitalMoved": false
+  },
+  "territory": "Portugal",
+  "attacker": "Brazil",
+  "defender": "Algeria"
+}

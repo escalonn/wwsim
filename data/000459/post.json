@@ -1,0 +1,31 @@
+{
+  "caption": "June 2064, Myanmar reconquered its homeland from Indonesia.",
+  "pic": "000459.png",
+  "zoom": "000459.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 22\nBrazil: 21\nNew Zealand: 13\nPalestine: 9\nGermany: 9\nIndia: 8\nNorway: 8\nMauritius: 7\nLiechtenstein: 7\nJapan: 7",
+  "tags": [
+    "Myanmar",
+    "Indonesia"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 171,
+    "defender": 117,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Indonesia",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 124,
+    "capitalIndexAfter": 124,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 79,
+    "capitalMoved": false
+  },
+  "territory": "Myanmar",
+  "attacker": "Myanmar",
+  "defender": "Indonesia"
+}

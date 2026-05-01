@@ -1,0 +1,31 @@
+{
+  "caption": "April 2071, Mauritius conquered Lesotho territory previously occupied by Uruguay.",
+  "pic": "000541.png",
+  "zoom": "000541.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 30\nChad: 26\nNew Zealand: 19\nMyanmar: 12\nMauritius: 11\nNorway: 11\nKosovo: 10\nAlgeria: 9\nLiechtenstein: 8\nJapan: 7",
+  "tags": [
+    "Mauritius",
+    "Uruguay"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 8,
+    "defender": 104,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Uruguay",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 194,
+    "capitalIndexAfter": 194,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 183,
+    "capitalMoved": false
+  },
+  "territory": "Lesotho",
+  "attacker": "Mauritius",
+  "defender": "Uruguay"
+}

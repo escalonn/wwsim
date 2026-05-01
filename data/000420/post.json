@@ -1,0 +1,31 @@
+{
+  "caption": "March 2061, New Zealand conquered Timor-Leste territory previously occupied by Australia.",
+  "pic": "000420.png",
+  "zoom": "000420.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 21\nBrazil: 19\nNew Zealand: 12\nPalestine: 9\nGermany: 9\nNorway: 9\nSpain: 8\nLiechtenstein: 8\nEcuador: 8\nJapan: 8",
+  "tags": [
+    "New Zealand",
+    "Australia"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 175,
+    "defender": 174,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Australia",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 9,
+    "capitalIndexAfter": 9,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 9,
+    "capitalMoved": false
+  },
+  "territory": "Timor-Leste",
+  "attacker": "New Zealand",
+  "defender": "Australia"
+}

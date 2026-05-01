@@ -1,0 +1,31 @@
+{
+  "caption": "August 2070, Algeria conquered Burkina Faso territory previously occupied by Benin.",
+  "pic": "000533.png",
+  "zoom": "000533.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 28\nChad: 25\nNew Zealand: 19\nMauritius: 11\nMyanmar: 11\nNorway: 11\nKosovo: 10\nLiechtenstein: 8\nJapan: 7\nPalestine: 7",
+  "tags": [
+    "Algeria",
+    "Benin"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 115,
+    "defender": 15,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Benin",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 170,
+    "capitalIndexAfter": 170,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 14,
+    "capitalMoved": false
+  },
+  "territory": "Burkina Faso",
+  "attacker": "Algeria",
+  "defender": "Benin"
+}

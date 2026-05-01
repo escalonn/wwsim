@@ -1,0 +1,31 @@
+{
+  "caption": "October 2061, Ecuador conquered Nicaragua territory previously occupied by Dominican Republic.",
+  "pic": "000427.png",
+  "zoom": "000427.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 21\nBrazil: 18\nNew Zealand: 13\nGermany: 10\nPalestine: 9\nEcuador: 9\nNorway: 9\nSpain: 8\nLiechtenstein: 7\nJapan: 7",
+  "tags": [
+    "Ecuador",
+    "Dominican Republic"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 72,
+    "defender": 129,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Dominican Republic",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 88,
+    "capitalIndexAfter": 88,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 48,
+    "capitalMoved": false
+  },
+  "territory": "Nicaragua",
+  "attacker": "Ecuador",
+  "defender": "Dominican Republic"
+}

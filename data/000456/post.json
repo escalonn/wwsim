@@ -1,0 +1,31 @@
+{
+  "caption": "March 2064, India conquered Turkmenistan territory previously occupied by Tajikistan.",
+  "pic": "000456.png",
+  "zoom": "000456.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 22\nBrazil: 20\nNew Zealand: 13\nPalestine: 9\nGermany: 9\nIndia: 8\nNorway: 8\nLiechtenstein: 7\nEcuador: 7\nJapan: 7",
+  "tags": [
+    "India",
+    "Tajikistan"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 0,
+    "defender": 173,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Tajikistan",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 185,
+    "capitalIndexAfter": 185,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 172,
+    "capitalMoved": false
+  },
+  "territory": "Turkmenistan",
+  "attacker": "India",
+  "defender": "Tajikistan"
+}

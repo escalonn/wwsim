@@ -1,0 +1,31 @@
+{
+  "caption": "June 2058, Chad conquered Rwanda territory previously occupied by Malawi.",
+  "pic": "000387.png",
+  "zoom": "000387.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 19\nBrazil: 15\nNew Zealand: 10\nNorway: 9\nGermany: 8\nSpain: 7\nEcuador: 7\nJapan: 7\nTajikistan: 6\nIsrael: 6",
+  "tags": [
+    "Chad",
+    "Malawi"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 161,
+    "defender": 150,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Malawi",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 123,
+    "capitalIndexAfter": 123,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 123,
+    "capitalMoved": false
+  },
+  "territory": "Rwanda",
+  "attacker": "Chad",
+  "defender": "Malawi"
+}

@@ -1,0 +1,31 @@
+{
+  "caption": "August 2062, Brazil conquered Western Sahara territory previously occupied by Mali.",
+  "pic": "000437.png",
+  "zoom": "000437.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 22\nBrazil: 20\nNew Zealand: 13\nGermany: 11\nPalestine: 10\nEcuador: 9\nNorway: 9\nMauritius: 7\nJapan: 7\nKosovo: 6",
+  "tags": [
+    "Brazil",
+    "Mali"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 67,
+    "defender": 53,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Mali",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 121,
+    "capitalIndexAfter": 121,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 115,
+    "capitalMoved": false
+  },
+  "territory": "Western Sahara",
+  "attacker": "Brazil",
+  "defender": "Mali"
+}

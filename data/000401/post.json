@@ -1,0 +1,31 @@
+{
+  "caption": "August 2059, Samoa conquered Dominican Republic territory.\nThe government of Dominican Republic relocated its capital to Jamaica and continues in exile.",
+  "pic": "000401.png",
+  "zoom": "000401.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 21\nBrazil: 17\nNew Zealand: 11\nGermany: 9\nSpain: 8\nEcuador: 8\nJapan: 8\nNorway: 8\nTajikistan: 6\nPalestine: 6",
+  "tags": [
+    "Samoa",
+    "Dominican Republic"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 19,
+    "defender": 48,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": true,
+    "defenderAdminBefore": "Dominican Republic",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 48,
+    "capitalIndexAfter": 88,
+    "defenderCapitalTerritoryAfter": "Jamaica",
+    "originalCapitalIndex": 48,
+    "capitalMoved": true
+  },
+  "territory": "Dominican Republic",
+  "attacker": "Samoa",
+  "defender": "Dominican Republic"
+}

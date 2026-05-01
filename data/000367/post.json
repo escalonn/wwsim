@@ -1,0 +1,39 @@
+{
+  "caption": "October 2056, Chad conquered Bahrain territory previously occupied by United Arab Emirates.\nUnited Arab Emirates capitulated, ceding 2 additional territories to Chad.\nUnited Arab Emirates moved its capital to Georgia.",
+  "pic": "000367.png",
+  "zoom": "000367.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 18\nBrazil: 11\nNew Zealand: 10\nNorway: 9\nGermany: 8\nEcuador: 7\nTajikistan: 6\nSpain: 6\nJapan: 6\nKosovo: 5",
+  "tags": [
+    "Chad",
+    "United Arab Emirates"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 4,
+    "defender": 18,
+    "type": "conquer",
+    "subjects": [
+      97,
+      83
+    ],
+    "capitulation": true,
+    "capitulationEvent": {
+      "round": 367,
+      "attackerTerritoriesBefore": 15,
+      "defenderTerritoriesBefore": 5,
+      "territoriesCeded": 2
+    },
+    "fallenCapital": false,
+    "defenderAdminBefore": "United Arab Emirates",
+    "defenderTerritoryRankBefore": 16,
+    "capitalIndexBefore": 18,
+    "capitalIndexAfter": 64,
+    "defenderCapitalTerritoryAfter": "Georgia",
+    "originalCapitalIndex": 4,
+    "capitalMoved": true
+  },
+  "territory": "Bahrain",
+  "attacker": "Chad",
+  "defender": "United Arab Emirates"
+}

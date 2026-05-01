@@ -1,0 +1,31 @@
+{
+  "caption": "August 2071, Ecuador conquered Peru territory previously occupied by Brazil.",
+  "pic": "000545.png",
+  "zoom": "000545.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 30\nChad: 28\nNew Zealand: 18\nMyanmar: 12\nMauritius: 11\nNorway: 11\nAlgeria: 10\nKosovo: 9\nLiechtenstein: 8\nEcuador: 7",
+  "tags": [
+    "Ecuador",
+    "Brazil"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 50,
+    "defender": 137,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Brazil",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 25,
+    "capitalIndexAfter": 25,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 25,
+    "capitalMoved": false
+  },
+  "territory": "Peru",
+  "attacker": "Ecuador",
+  "defender": "Brazil"
+}

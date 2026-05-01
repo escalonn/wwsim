@@ -1,0 +1,31 @@
+{
+  "caption": "February 2071, New Zealand conquered Australia territory previously occupied by Mauritius.",
+  "pic": "000539.png",
+  "zoom": "000539.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 30\nChad: 26\nNew Zealand: 19\nMyanmar: 12\nNorway: 11\nKosovo: 10\nMauritius: 10\nLiechtenstein: 8\nJapan: 7\nSpain: 6",
+  "tags": [
+    "New Zealand",
+    "Mauritius"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 140,
+    "defender": 9,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Mauritius",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 122,
+    "capitalIndexAfter": 122,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 122,
+    "capitalMoved": false
+  },
+  "territory": "Australia",
+  "attacker": "New Zealand",
+  "defender": "Mauritius"
+}

@@ -1,0 +1,31 @@
+{
+  "caption": "July 2065, Palestine conquered Lithuania territory.\nThe government of Lithuania relocated its capital to Slovakia and continues in exile.",
+  "pic": "000472.png",
+  "zoom": "000472.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 24\nBrazil: 23\nNew Zealand: 14\nIndia: 9\nPalestine: 9\nGermany: 9\nMauritius: 8\nNorway: 8\nKosovo: 7\nLiechtenstein: 7",
+  "tags": [
+    "Palestine",
+    "Lithuania"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 110,
+    "defender": 105,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": true,
+    "defenderAdminBefore": "Lithuania",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 105,
+    "capitalIndexAfter": 163,
+    "defenderCapitalTerritoryAfter": "Slovakia",
+    "originalCapitalIndex": 105,
+    "capitalMoved": true
+  },
+  "territory": "Lithuania",
+  "attacker": "Palestine",
+  "defender": "Lithuania"
+}

@@ -1,0 +1,31 @@
+{
+  "caption": "March 2056, Senegal conquered Ivory Coast territory previously occupied by Brazil.",
+  "pic": "000360.png",
+  "zoom": "000360.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 13\nBrazil: 12\nNew Zealand: 10\nGermany: 8\nNorway: 8\nTajikistan: 6\nSpain: 6\nEcuador: 6\nJapan: 6\nMauritius: 5",
+  "tags": [
+    "Senegal",
+    "Brazil"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 15,
+    "defender": 35,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Brazil",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 25,
+    "capitalIndexAfter": 25,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 25,
+    "capitalMoved": false
+  },
+  "territory": "Ivory Coast",
+  "attacker": "Senegal",
+  "defender": "Brazil"
+}

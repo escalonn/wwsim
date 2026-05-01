@@ -1,0 +1,31 @@
+{
+  "caption": "August 2066, Germany conquered Hungary territory previously occupied by Czech Republic.\nThe government of Czech Republic relocated its capital to Romania and continues in exile.",
+  "pic": "000485.png",
+  "zoom": "000485.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 25\nBrazil: 25\nNew Zealand: 13\nGermany: 10\nPalestine: 9\nNorway: 9\nIndia: 8\nKosovo: 7\nSpain: 7\nMauritius: 7",
+  "tags": [
+    "Germany",
+    "Czech Republic"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 10,
+    "defender": 78,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": true,
+    "defenderAdminBefore": "Czech Republic",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 78,
+    "capitalIndexAfter": 148,
+    "defenderCapitalTerritoryAfter": "Romania",
+    "originalCapitalIndex": 44,
+    "capitalMoved": true
+  },
+  "territory": "Hungary",
+  "attacker": "Germany",
+  "defender": "Czech Republic"
+}

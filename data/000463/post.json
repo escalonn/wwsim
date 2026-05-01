@@ -1,0 +1,31 @@
+{
+  "caption": "October 2064, Tajikistan conquered Georgia territory previously occupied by United Arab Emirates.\nThe government of United Arab Emirates relocated its capital to Azerbaijan and continues in exile.",
+  "pic": "000463.png",
+  "zoom": "000463.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 23\nChad: 22\nNew Zealand: 14\nPalestine: 9\nGermany: 9\nIndia: 8\nNorway: 8\nMauritius: 7\nLiechtenstein: 7\nJapan: 7",
+  "tags": [
+    "Tajikistan",
+    "United Arab Emirates"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 91,
+    "defender": 64,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": true,
+    "defenderAdminBefore": "United Arab Emirates",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 64,
+    "capitalIndexAfter": 11,
+    "defenderCapitalTerritoryAfter": "Azerbaijan",
+    "originalCapitalIndex": 4,
+    "capitalMoved": true
+  },
+  "territory": "Georgia",
+  "attacker": "Tajikistan",
+  "defender": "United Arab Emirates"
+}

@@ -1,0 +1,31 @@
+{
+  "caption": "January 2057, Palestine conquered Iraq territory.\nIraq has been completely defeated.\n57 countries remaining.",
+  "pic": "000370.png",
+  "zoom": "000370.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 19\nBrazil: 11\nNew Zealand: 10\nNorway: 9\nGermany: 8\nEcuador: 7\nTajikistan: 6\nSpain: 6\nJapan: 6\nKosovo: 5",
+  "tags": [
+    "Palestine",
+    "Iraq"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 99,
+    "defender": 84,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Iraq",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 84,
+    "capitalIndexAfter": 84,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 84,
+    "capitalMoved": false
+  },
+  "territory": "Iraq",
+  "attacker": "Palestine",
+  "defender": "Iraq"
+}

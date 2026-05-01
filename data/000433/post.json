@@ -1,0 +1,31 @@
+{
+  "caption": "April 2062, Norway conquered Netherlands territory previously occupied by Liechtenstein.",
+  "pic": "000433.png",
+  "zoom": "000433.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 21\nBrazil: 19\nNew Zealand: 13\nGermany: 11\nPalestine: 10\nNorway: 10\nEcuador: 9\nJapan: 7\nKosovo: 6\nSpain: 6",
+  "tags": [
+    "Norway",
+    "Liechtenstein"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 47,
+    "defender": 130,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Liechtenstein",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 158,
+    "capitalIndexAfter": 158,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 102,
+    "capitalMoved": false
+  },
+  "territory": "Netherlands",
+  "attacker": "Norway",
+  "defender": "Liechtenstein"
+}

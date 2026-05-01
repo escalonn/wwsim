@@ -1,0 +1,31 @@
+{
+  "caption": "November 2064, India conquered Laos territory previously occupied by Japan.",
+  "pic": "000464.png",
+  "zoom": "000464.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 23\nChad: 22\nNew Zealand: 14\nIndia: 9\nPalestine: 9\nGermany: 9\nNorway: 8\nMauritius: 7\nLiechtenstein: 7\nKosovo: 6",
+  "tags": [
+    "India",
+    "Japan"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 28,
+    "defender": 98,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Japan",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 90,
+    "capitalIndexAfter": 90,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 90,
+    "capitalMoved": false
+  },
+  "territory": "Laos",
+  "attacker": "India",
+  "defender": "Japan"
+}

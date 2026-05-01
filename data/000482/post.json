@@ -1,0 +1,31 @@
+{
+  "caption": "May 2066, Palestine conquered Northern Cyprus territory previously occupied by Israel.\nIsrael has been completely defeated.\n41 countries remaining.",
+  "pic": "000482.png",
+  "zoom": "000482.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 25\nBrazil: 25\nNew Zealand: 13\nPalestine: 10\nGermany: 9\nIndia: 8\nMauritius: 8\nNorway: 8\nKosovo: 7\nSpain: 7",
+  "tags": [
+    "Palestine",
+    "Israel"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 146,
+    "defender": 192,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Israel",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 192,
+    "capitalIndexAfter": 192,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 86,
+    "capitalMoved": false
+  },
+  "territory": "Northern Cyprus",
+  "attacker": "Palestine",
+  "defender": "Israel"
+}

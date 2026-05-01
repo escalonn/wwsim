@@ -1,0 +1,31 @@
+{
+  "caption": "July 2062, Mauritius conquered Mozambique territory previously occupied by Lesotho.",
+  "pic": "000436.png",
+  "zoom": "000436.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 22\nBrazil: 19\nNew Zealand: 13\nGermany: 11\nPalestine: 10\nEcuador: 9\nNorway: 9\nMauritius: 7\nJapan: 7\nKosovo: 6",
+  "tags": [
+    "Mauritius",
+    "Lesotho"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 122,
+    "defender": 120,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Lesotho",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 111,
+    "capitalIndexAfter": 111,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 104,
+    "capitalMoved": false
+  },
+  "territory": "Mozambique",
+  "attacker": "Mauritius",
+  "defender": "Lesotho"
+}

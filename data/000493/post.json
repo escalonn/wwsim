@@ -1,0 +1,31 @@
+{
+  "caption": "April 2067, Chad conquered Republic of Congo territory previously occupied by Cameroon.\nThe government of Cameroon relocated its capital to Democratic Republic of the Congo and continues in exile.",
+  "pic": "000493.png",
+  "zoom": "000493.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 26\nBrazil: 24\nNew Zealand: 13\nGermany: 10\nMauritius: 9\nNorway: 9\nIndia: 8\nPalestine: 8\nKosovo: 7\nSpain: 7",
+  "tags": [
+    "Chad",
+    "Cameroon"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 69,
+    "defender": 38,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": true,
+    "defenderAdminBefore": "Cameroon",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 38,
+    "capitalIndexAfter": 37,
+    "defenderCapitalTerritoryAfter": "Democratic Republic of the Congo",
+    "originalCapitalIndex": 36,
+    "capitalMoved": true
+  },
+  "territory": "Republic of Congo",
+  "attacker": "Chad",
+  "defender": "Cameroon"
+}

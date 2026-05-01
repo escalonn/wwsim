@@ -1,0 +1,31 @@
+{
+  "caption": "June 2061, Mauritius conquered Singapore territory previously occupied by Indonesia.",
+  "pic": "000423.png",
+  "zoom": "000423.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 21\nBrazil: 19\nNew Zealand: 12\nGermany: 10\nPalestine: 9\nNorway: 9\nSpain: 8\nEcuador: 8\nJapan: 8\nLiechtenstein: 7",
+  "tags": [
+    "Mauritius",
+    "Indonesia"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 122,
+    "defender": 154,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Indonesia",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 124,
+    "capitalIndexAfter": 124,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 79,
+    "capitalMoved": false
+  },
+  "territory": "Singapore",
+  "attacker": "Mauritius",
+  "defender": "Indonesia"
+}

@@ -1,0 +1,31 @@
+{
+  "caption": "January 2069, Kosovo conquered Romania territory previously occupied by Czech Republic.\nCzech Republic has been completely defeated.\n40 countries remaining.",
+  "pic": "000514.png",
+  "zoom": "000514.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 26\nChad: 25\nNew Zealand: 15\nMyanmar: 11\nNorway: 11\nKosovo: 9\nMauritius: 9\nPalestine: 9\nSpain: 7\nGermany: 7",
+  "tags": [
+    "Kosovo",
+    "Czech Republic"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 160,
+    "defender": 148,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Czech Republic",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 148,
+    "capitalIndexAfter": 148,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 44,
+    "capitalMoved": false
+  },
+  "territory": "Romania",
+  "attacker": "Kosovo",
+  "defender": "Czech Republic"
+}

@@ -1,0 +1,31 @@
+{
+  "caption": "November 2067, India conquered United Arab Emirates territory previously occupied by Chad.",
+  "pic": "000500.png",
+  "zoom": "000500.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 25\nBrazil: 24\nNew Zealand: 14\nIndia: 9\nMauritius: 9\nPalestine: 9\nNorway: 9\nGermany: 8\nLiechtenstein: 8\nKosovo: 7",
+  "tags": [
+    "India",
+    "Chad"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 135,
+    "defender": 4,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Chad",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 169,
+    "capitalIndexAfter": 169,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 169,
+    "capitalMoved": false
+  },
+  "territory": "United Arab Emirates",
+  "attacker": "India",
+  "defender": "Chad"
+}

@@ -1,0 +1,31 @@
+{
+  "caption": "November 2060, Dominican Republic conquered Nicaragua territory.\nThe government of Nicaragua relocated its capital to Panama and continues in exile.",
+  "pic": "000416.png",
+  "zoom": "000416.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 21\nBrazil: 19\nNew Zealand: 11\nPalestine: 9\nGermany: 9\nNorway: 9\nSpain: 8\nLiechtenstein: 8\nJapan: 8\nEcuador: 7",
+  "tags": [
+    "Dominican Republic",
+    "Nicaragua"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 88,
+    "defender": 129,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": true,
+    "defenderAdminBefore": "Nicaragua",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 129,
+    "capitalIndexAfter": 136,
+    "defenderCapitalTerritoryAfter": "Panama",
+    "originalCapitalIndex": 129,
+    "capitalMoved": true
+  },
+  "territory": "Nicaragua",
+  "attacker": "Dominican Republic",
+  "defender": "Nicaragua"
+}

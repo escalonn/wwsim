@@ -1,0 +1,31 @@
+{
+  "caption": "February 2063, Liberia conquered Uruguay territory previously occupied by Brazil.",
+  "pic": "000443.png",
+  "zoom": "000443.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 22\nBrazil: 18\nNew Zealand: 13\nGermany: 10\nPalestine: 9\nEcuador: 9\nNorway: 9\nMauritius: 7\nLiechtenstein: 7\nJapan: 7",
+  "tags": [
+    "Liberia",
+    "Brazil"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 5,
+    "defender": 183,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Brazil",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 25,
+    "capitalIndexAfter": 25,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 25,
+    "capitalMoved": false
+  },
+  "territory": "Uruguay",
+  "attacker": "Liberia",
+  "defender": "Brazil"
+}

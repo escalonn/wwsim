@@ -1,0 +1,31 @@
+{
+  "caption": "January 2059, Palestine conquered Turkey territory previously occupied by Slovakia.\nSlovakia has been completely defeated.\n50 countries remaining.",
+  "pic": "000394.png",
+  "zoom": "000394.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 20\nBrazil: 17\nNew Zealand: 11\nNorway: 9\nGermany: 8\nEcuador: 8\nSpain: 7\nJapan: 7\nTajikistan: 6\nLiechtenstein: 6",
+  "tags": [
+    "Palestine",
+    "Slovakia"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 6,
+    "defender": 178,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Slovakia",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 178,
+    "capitalIndexAfter": 178,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 163,
+    "capitalMoved": false
+  },
+  "territory": "Turkey",
+  "attacker": "Palestine",
+  "defender": "Slovakia"
+}

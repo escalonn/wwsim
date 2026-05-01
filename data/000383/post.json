@@ -1,0 +1,31 @@
+{
+  "caption": "February 2058, Palestine conquered Armenia territory previously occupied by Syria.\nSyria has been completely defeated.\n53 countries remaining.",
+  "pic": "000383.png",
+  "zoom": "000383.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 18\nBrazil: 14\nNew Zealand: 10\nNorway: 9\nGermany: 8\nSpain: 7\nEcuador: 7\nJapan: 7\nTajikistan: 6\nIsrael: 6",
+  "tags": [
+    "Palestine",
+    "Syria"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 84,
+    "defender": 6,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Syria",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 6,
+    "capitalIndexAfter": 6,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 168,
+    "capitalMoved": false
+  },
+  "territory": "Armenia",
+  "attacker": "Palestine",
+  "defender": "Syria"
+}

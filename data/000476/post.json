@@ -1,0 +1,31 @@
+{
+  "caption": "November 2065, Brazil conquered Costa Rica territory previously occupied by Ecuador.",
+  "pic": "000476.png",
+  "zoom": "000476.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 25\nChad: 24\nNew Zealand: 13\nGermany: 10\nIndia: 9\nPalestine: 9\nMauritius: 8\nNorway: 8\nKosovo: 7\nJapan: 7",
+  "tags": [
+    "Brazil",
+    "Ecuador"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 24,
+    "defender": 41,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Ecuador",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 50,
+    "capitalIndexAfter": 50,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 50,
+    "capitalMoved": false
+  },
+  "territory": "Costa Rica",
+  "attacker": "Brazil",
+  "defender": "Ecuador"
+}

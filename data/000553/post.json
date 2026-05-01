@@ -1,0 +1,38 @@
+{
+  "caption": "April 2072, Algeria conquered Andorra territory previously occupied by Spain.\nSpain capitulated, ceding 1 additional territory to Algeria.\nSpain moved its capital to Malta.",
+  "pic": "000553.png",
+  "zoom": "000553.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 32\nChad: 28\nNew Zealand: 18\nMyanmar: 13\nAlgeria: 12\nNorway: 12\nMauritius: 11\nKosovo: 8\nLiechtenstein: 8\nJapan: 7",
+  "tags": [
+    "Algeria",
+    "Spain"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 108,
+    "defender": 3,
+    "type": "conquer",
+    "subjects": [
+      186
+    ],
+    "capitulation": true,
+    "capitulationEvent": {
+      "round": 553,
+      "attackerTerritoriesBefore": 10,
+      "defenderTerritoriesBefore": 3,
+      "territoriesCeded": 1
+    },
+    "fallenCapital": false,
+    "defenderAdminBefore": "Spain",
+    "defenderTerritoryRankBefore": 16,
+    "capitalIndexBefore": 3,
+    "capitalIndexAfter": 116,
+    "defenderCapitalTerritoryAfter": "Malta",
+    "originalCapitalIndex": 54,
+    "capitalMoved": true
+  },
+  "territory": "Andorra",
+  "attacker": "Algeria",
+  "defender": "Spain"
+}

@@ -1,0 +1,31 @@
+{
+  "caption": "December 2057, United Arab Emirates conquered Iran territory previously occupied by Chad.",
+  "pic": "000381.png",
+  "zoom": "000381.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 18\nBrazil: 13\nNew Zealand: 10\nNorway: 9\nGermany: 8\nSpain: 7\nEcuador: 7\nJapan: 7\nTajikistan: 6\nIsrael: 6",
+  "tags": [
+    "United Arab Emirates",
+    "Chad"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 11,
+    "defender": 83,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Chad",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 169,
+    "capitalIndexAfter": 169,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 169,
+    "capitalMoved": false
+  },
+  "territory": "Iran",
+  "attacker": "United Arab Emirates",
+  "defender": "Chad"
+}

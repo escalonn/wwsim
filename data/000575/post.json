@@ -1,0 +1,31 @@
+{
+  "caption": "February 2074, Brazil conquered Guatemala territory previously occupied by Ecuador.",
+  "pic": "000575.png",
+  "zoom": "000575.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 36\nChad: 35\nNew Zealand: 18\nNorway: 15\nMyanmar: 14\nAlgeria: 12\nKosovo: 9\nMauritius: 7\nJapan: 7\nGermany: 6",
+  "tags": [
+    "Brazil",
+    "Ecuador"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 41,
+    "defender": 72,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Ecuador",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 50,
+    "capitalIndexAfter": 50,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 50,
+    "capitalMoved": false
+  },
+  "territory": "Guatemala",
+  "attacker": "Brazil",
+  "defender": "Ecuador"
+}

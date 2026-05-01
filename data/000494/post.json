@@ -1,0 +1,31 @@
+{
+  "caption": "May 2067, Myanmar conquered Laos territory previously occupied by Vietnam.",
+  "pic": "000494.png",
+  "zoom": "000494.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 26\nBrazil: 24\nNew Zealand: 13\nGermany: 10\nMauritius: 9\nNorway: 9\nIndia: 8\nPalestine: 8\nKosovo: 7\nSpain: 7",
+  "tags": [
+    "Myanmar",
+    "Vietnam"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 171,
+    "defender": 98,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Vietnam",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 188,
+    "capitalIndexAfter": 188,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 188,
+    "capitalMoved": false
+  },
+  "territory": "Laos",
+  "attacker": "Myanmar",
+  "defender": "Vietnam"
+}

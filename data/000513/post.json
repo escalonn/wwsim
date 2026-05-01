@@ -1,0 +1,31 @@
+{
+  "caption": "December 2068, Myanmar conquered Sri Lanka territory previously occupied by Mauritius.",
+  "pic": "000513.png",
+  "zoom": "000513.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 26\nChad: 25\nNew Zealand: 15\nMyanmar: 11\nNorway: 11\nMauritius: 9\nPalestine: 9\nKosovo: 8\nSpain: 7\nGermany: 7",
+  "tags": [
+    "Myanmar",
+    "Mauritius"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 81,
+    "defender": 103,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Mauritius",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 122,
+    "capitalIndexAfter": 122,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 122,
+    "capitalMoved": false
+  },
+  "territory": "Sri Lanka",
+  "attacker": "Myanmar",
+  "defender": "Mauritius"
+}

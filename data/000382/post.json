@@ -1,0 +1,31 @@
+{
+  "caption": "January 2058, Brazil conquered Guyana territory previously occupied by Venezuela.\nThe government of Venezuela relocated its capital to Colombia and continues in exile.",
+  "pic": "000382.png",
+  "zoom": "000382.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 18\nBrazil: 14\nNew Zealand: 10\nNorway: 9\nGermany: 8\nSpain: 7\nEcuador: 7\nJapan: 7\nTajikistan: 6\nIsrael: 6",
+  "tags": [
+    "Brazil",
+    "Venezuela"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 25,
+    "defender": 74,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": true,
+    "defenderAdminBefore": "Venezuela",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 74,
+    "capitalIndexAfter": 39,
+    "defenderCapitalTerritoryAfter": "Colombia",
+    "originalCapitalIndex": 187,
+    "capitalMoved": true
+  },
+  "territory": "Guyana",
+  "attacker": "Brazil",
+  "defender": "Venezuela"
+}

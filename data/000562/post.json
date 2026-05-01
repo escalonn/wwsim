@@ -1,0 +1,31 @@
+{
+  "caption": "January 2073, Chad conquered Mauritius territory.\nThe government of Mauritius relocated its capital to Mozambique and continues in exile.",
+  "pic": "000562.png",
+  "zoom": "000562.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 33\nChad: 32\nNew Zealand: 18\nNorway: 15\nMyanmar: 13\nAlgeria: 12\nKosovo: 9\nMauritius: 9\nLiechtenstein: 7\nJapan: 7",
+  "tags": [
+    "Chad",
+    "Mauritius"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 167,
+    "defender": 122,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": true,
+    "defenderAdminBefore": "Mauritius",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 122,
+    "capitalIndexAfter": 120,
+    "defenderCapitalTerritoryAfter": "Mozambique",
+    "originalCapitalIndex": 122,
+    "capitalMoved": true
+  },
+  "territory": "Mauritius",
+  "attacker": "Chad",
+  "defender": "Mauritius"
+}

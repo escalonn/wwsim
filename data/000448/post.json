@@ -1,0 +1,31 @@
+{
+  "caption": "July 2063, Brazil conquered Haiti territory previously occupied by Dominican Republic.",
+  "pic": "000448.png",
+  "zoom": "000448.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 21\nBrazil: 19\nNew Zealand: 13\nPalestine: 9\nGermany: 9\nNorway: 9\nEcuador: 8\nMauritius: 7\nLiechtenstein: 7\nJapan: 7",
+  "tags": [
+    "Brazil",
+    "Dominican Republic"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 176,
+    "defender": 77,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Dominican Republic",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 88,
+    "capitalIndexAfter": 88,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 48,
+    "capitalMoved": false
+  },
+  "territory": "Haiti",
+  "attacker": "Brazil",
+  "defender": "Dominican Republic"
+}

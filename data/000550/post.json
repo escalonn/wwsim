@@ -1,0 +1,31 @@
+{
+  "caption": "January 2072, Brazil conquered Ivory Coast territory previously occupied by Burkina Faso.\nThe government of Burkina Faso relocated its capital to Liberia and continues in exile.",
+  "pic": "000550.png",
+  "zoom": "000550.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 32\nChad: 28\nNew Zealand: 18\nMyanmar: 13\nMauritius: 11\nNorway: 11\nAlgeria: 10\nKosovo: 9\nLiechtenstein: 8\nJapan: 7",
+  "tags": [
+    "Brazil",
+    "Burkina Faso"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 73,
+    "defender": 35,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": true,
+    "defenderAdminBefore": "Burkina Faso",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 35,
+    "capitalIndexAfter": 100,
+    "defenderCapitalTerritoryAfter": "Liberia",
+    "originalCapitalIndex": 15,
+    "capitalMoved": true
+  },
+  "territory": "Ivory Coast",
+  "attacker": "Brazil",
+  "defender": "Burkina Faso"
+}

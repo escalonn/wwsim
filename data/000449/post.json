@@ -1,0 +1,31 @@
+{
+  "caption": "August 2063, Chad conquered Somalia territory previously occupied by Mauritius.",
+  "pic": "000449.png",
+  "zoom": "000449.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 22\nBrazil: 19\nNew Zealand: 13\nPalestine: 9\nGermany: 9\nNorway: 9\nEcuador: 8\nLiechtenstein: 7\nJapan: 7\nIndia: 6",
+  "tags": [
+    "Chad",
+    "Mauritius"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 46,
+    "defender": 159,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Mauritius",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 122,
+    "capitalIndexAfter": 122,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 122,
+    "capitalMoved": false
+  },
+  "territory": "Somalia",
+  "attacker": "Chad",
+  "defender": "Mauritius"
+}

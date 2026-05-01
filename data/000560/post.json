@@ -1,0 +1,31 @@
+{
+  "caption": "November 2072, Chad conquered Madagascar territory previously occupied by Mauritius.",
+  "pic": "000560.png",
+  "zoom": "000560.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 33\nChad: 31\nNew Zealand: 18\nNorway: 14\nMyanmar: 13\nAlgeria: 12\nMauritius: 10\nKosovo: 9\nLiechtenstein: 7\nJapan: 7",
+  "tags": [
+    "Chad",
+    "Mauritius"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 46,
+    "defender": 111,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Mauritius",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 122,
+    "capitalIndexAfter": 122,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 122,
+    "capitalMoved": false
+  },
+  "territory": "Madagascar",
+  "attacker": "Chad",
+  "defender": "Mauritius"
+}

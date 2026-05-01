@@ -1,0 +1,31 @@
+{
+  "caption": "June 2072, Kosovo conquered Bosnia and Herzegovina territory previously occupied by Liechtenstein.",
+  "pic": "000555.png",
+  "zoom": "000555.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 32\nChad: 28\nNew Zealand: 18\nMyanmar: 13\nNorway: 13\nAlgeria: 12\nMauritius: 11\nKosovo: 9\nLiechtenstein: 7\nJapan: 7",
+  "tags": [
+    "Kosovo",
+    "Liechtenstein"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 191,
+    "defender": 20,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Liechtenstein",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 158,
+    "capitalIndexAfter": 158,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 102,
+    "capitalMoved": false
+  },
+  "territory": "Bosnia and Herzegovina",
+  "attacker": "Kosovo",
+  "defender": "Liechtenstein"
+}

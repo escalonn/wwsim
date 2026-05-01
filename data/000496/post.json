@@ -1,0 +1,31 @@
+{
+  "caption": "July 2067, Palestine conquered Turkey territory previously occupied by United Arab Emirates.",
+  "pic": "000496.png",
+  "zoom": "000496.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 26\nBrazil: 24\nNew Zealand: 13\nMauritius: 9\nGermany: 9\nPalestine: 9\nNorway: 9\nIndia: 8\nKosovo: 7\nSpain: 7",
+  "tags": [
+    "Palestine",
+    "United Arab Emirates"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 168,
+    "defender": 178,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "United Arab Emirates",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 11,
+    "capitalIndexAfter": 11,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 4,
+    "capitalMoved": false
+  },
+  "territory": "Turkey",
+  "attacker": "Palestine",
+  "defender": "United Arab Emirates"
+}

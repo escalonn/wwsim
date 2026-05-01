@@ -1,0 +1,31 @@
+{
+  "caption": "May 2061, Germany conquered Vatican City territory previously occupied by Croatia.",
+  "pic": "000422.png",
+  "zoom": "000422.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 21\nBrazil: 19\nNew Zealand: 12\nGermany: 10\nPalestine: 9\nNorway: 9\nSpain: 8\nEcuador: 8\nJapan: 8\nLiechtenstein: 7",
+  "tags": [
+    "Germany",
+    "Croatia"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 87,
+    "defender": 186,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Croatia",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 160,
+    "capitalIndexAfter": 160,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 76,
+    "capitalMoved": false
+  },
+  "territory": "Vatican City",
+  "attacker": "Germany",
+  "defender": "Croatia"
+}

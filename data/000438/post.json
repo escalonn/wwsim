@@ -1,0 +1,31 @@
+{
+  "caption": "September 2062, India conquered Kyrgyzstan territory previously occupied by Vietnam.",
+  "pic": "000438.png",
+  "zoom": "000438.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 22\nBrazil: 20\nNew Zealand: 13\nGermany: 11\nPalestine: 10\nEcuador: 9\nNorway: 9\nMauritius: 7\nJapan: 7\nIndia: 6",
+  "tags": [
+    "India",
+    "Vietnam"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 172,
+    "defender": 93,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Vietnam",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 188,
+    "capitalIndexAfter": 188,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 188,
+    "capitalMoved": false
+  },
+  "territory": "Kyrgyzstan",
+  "attacker": "India",
+  "defender": "Vietnam"
+}

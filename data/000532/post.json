@@ -1,0 +1,38 @@
+{
+  "caption": "July 2070, Mauritius conquered Madagascar territory previously occupied by Lesotho.\nLesotho capitulated, ceding 1 additional territory to Mauritius.\nLesotho moved its capital to Zambia.",
+  "pic": "000532.png",
+  "zoom": "000532.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 28\nChad: 25\nNew Zealand: 19\nMauritius: 11\nMyanmar: 11\nNorway: 11\nKosovo: 10\nLiechtenstein: 8\nJapan: 7\nPalestine: 7",
+  "tags": [
+    "Mauritius",
+    "Lesotho"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 8,
+    "defender": 111,
+    "type": "conquer",
+    "subjects": [
+      120
+    ],
+    "capitulation": true,
+    "capitulationEvent": {
+      "round": 532,
+      "attackerTerritoriesBefore": 9,
+      "defenderTerritoriesBefore": 3,
+      "territoriesCeded": 1
+    },
+    "fallenCapital": false,
+    "defenderAdminBefore": "Lesotho",
+    "defenderTerritoryRankBefore": 18,
+    "capitalIndexBefore": 111,
+    "capitalIndexAfter": 195,
+    "defenderCapitalTerritoryAfter": "Zambia",
+    "originalCapitalIndex": 104,
+    "capitalMoved": true
+  },
+  "territory": "Madagascar",
+  "attacker": "Mauritius",
+  "defender": "Lesotho"
+}

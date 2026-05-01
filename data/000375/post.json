@@ -1,0 +1,31 @@
+{
+  "caption": "June 2057, Dominican Republic conquered Portugal territory.\nPortugal has been completely defeated.\n56 countries remaining.",
+  "pic": "000375.png",
+  "zoom": "000375.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 19\nBrazil: 11\nNew Zealand: 10\nNorway: 9\nGermany: 8\nEcuador: 7\nJapan: 7\nTajikistan: 6\nSpain: 6\nDominican Republic: 6",
+  "tags": [
+    "Dominican Republic",
+    "Portugal"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 82,
+    "defender": 144,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Portugal",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 144,
+    "capitalIndexAfter": 144,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 144,
+    "capitalMoved": false
+  },
+  "territory": "Portugal",
+  "attacker": "Dominican Republic",
+  "defender": "Portugal"
+}

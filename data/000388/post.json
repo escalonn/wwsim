@@ -1,0 +1,31 @@
+{
+  "caption": "July 2058, Chad conquered Egypt territory previously occupied by Israel.",
+  "pic": "000388.png",
+  "zoom": "000388.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 20\nBrazil: 15\nNew Zealand: 10\nNorway: 9\nGermany: 8\nSpain: 7\nEcuador: 7\nJapan: 7\nTajikistan: 6\nMauritius: 5",
+  "tags": [
+    "Chad",
+    "Israel"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 152,
+    "defender": 51,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Israel",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 86,
+    "capitalIndexAfter": 86,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 86,
+    "capitalMoved": false
+  },
+  "territory": "Egypt",
+  "attacker": "Chad",
+  "defender": "Israel"
+}

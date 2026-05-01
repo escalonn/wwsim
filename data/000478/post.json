@@ -1,0 +1,31 @@
+{
+  "caption": "January 2066, Chad conquered Cameroon territory previously occupied by Benin.",
+  "pic": "000478.png",
+  "zoom": "000478.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 25\nBrazil: 25\nNew Zealand: 13\nGermany: 10\nPalestine: 9\nIndia: 8\nMauritius: 8\nNorway: 8\nKosovo: 7\nJapan: 7",
+  "tags": [
+    "Chad",
+    "Benin"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 30,
+    "defender": 36,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Benin",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 170,
+    "capitalIndexAfter": 170,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 14,
+    "capitalMoved": false
+  },
+  "territory": "Cameroon",
+  "attacker": "Chad",
+  "defender": "Benin"
+}

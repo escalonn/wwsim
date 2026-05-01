@@ -1,0 +1,31 @@
+{
+  "caption": "August 2065, Germany conquered Luxembourg territory previously occupied by Liechtenstein.",
+  "pic": "000473.png",
+  "zoom": "000473.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 24\nBrazil: 23\nNew Zealand: 14\nGermany: 10\nIndia: 9\nPalestine: 9\nMauritius: 8\nNorway: 8\nKosovo: 7\nSpain: 6",
+  "tags": [
+    "Germany",
+    "Liechtenstein"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 13,
+    "defender": 106,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Liechtenstein",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 158,
+    "capitalIndexAfter": 158,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 102,
+    "capitalMoved": false
+  },
+  "territory": "Luxembourg",
+  "attacker": "Germany",
+  "defender": "Liechtenstein"
+}

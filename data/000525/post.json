@@ -1,0 +1,31 @@
+{
+  "caption": "December 2069, Senegal conquered Equatorial Guinea territory previously occupied by Chad.",
+  "pic": "000525.png",
+  "zoom": "000525.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 28\nChad: 24\nNew Zealand: 18\nMyanmar: 11\nNorway: 11\nKosovo: 10\nMauritius: 9\nSpain: 7\nTajikistan: 7\nLiechtenstein: 7",
+  "tags": [
+    "Senegal",
+    "Chad"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 65,
+    "defender": 69,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Chad",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 169,
+    "capitalIndexAfter": 169,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 169,
+    "capitalMoved": false
+  },
+  "territory": "Equatorial Guinea",
+  "attacker": "Senegal",
+  "defender": "Chad"
+}

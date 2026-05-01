@@ -1,0 +1,31 @@
+{
+  "caption": "January 2070, Liechtenstein conquered Spain territory.\nThe government of Spain relocated its capital to Portugal and continues in exile.",
+  "pic": "000526.png",
+  "zoom": "000526.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 28\nChad: 24\nNew Zealand: 18\nMyanmar: 11\nNorway: 11\nKosovo: 10\nMauritius: 9\nLiechtenstein: 8\nTajikistan: 7\nEcuador: 7",
+  "tags": [
+    "Liechtenstein",
+    "Spain"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 109,
+    "defender": 54,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": true,
+    "defenderAdminBefore": "Spain",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 54,
+    "capitalIndexAfter": 144,
+    "defenderCapitalTerritoryAfter": "Portugal",
+    "originalCapitalIndex": 54,
+    "capitalMoved": true
+  },
+  "territory": "Spain",
+  "attacker": "Liechtenstein",
+  "defender": "Spain"
+}

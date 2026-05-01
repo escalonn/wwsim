@@ -1,0 +1,31 @@
+{
+  "caption": "December 2070, Brazil conquered Panama territory previously occupied by Nicaragua.\nNicaragua has been completely defeated.\n35 countries remaining.",
+  "pic": "000537.png",
+  "zoom": "000537.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 30\nChad: 25\nNew Zealand: 18\nMyanmar: 12\nMauritius: 11\nNorway: 11\nKosovo: 10\nLiechtenstein: 8\nJapan: 7\nPalestine: 7",
+  "tags": [
+    "Brazil",
+    "Nicaragua"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 142,
+    "defender": 136,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Nicaragua",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 136,
+    "capitalIndexAfter": 136,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 129,
+    "capitalMoved": false
+  },
+  "territory": "Panama",
+  "attacker": "Brazil",
+  "defender": "Nicaragua"
+}

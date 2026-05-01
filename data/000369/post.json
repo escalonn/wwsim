@@ -1,0 +1,31 @@
+{
+  "caption": "December 2056, Chad conquered Yemen territory previously occupied by Singapore.\nSingapore has been completely defeated.\n58 countries remaining.",
+  "pic": "000369.png",
+  "zoom": "000369.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 19\nBrazil: 11\nNew Zealand: 10\nNorway: 9\nGermany: 8\nEcuador: 7\nTajikistan: 6\nSpain: 6\nJapan: 6\nKosovo: 5",
+  "tags": [
+    "Chad",
+    "Singapore"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 147,
+    "defender": 193,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Singapore",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 193,
+    "capitalIndexAfter": 193,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 154,
+    "capitalMoved": false
+  },
+  "territory": "Yemen",
+  "attacker": "Chad",
+  "defender": "Singapore"
+}

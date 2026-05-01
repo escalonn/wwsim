@@ -1,0 +1,31 @@
+{
+  "caption": "April 2061, Kosovo conquered Montenegro territory previously occupied by Liechtenstein.",
+  "pic": "000421.png",
+  "zoom": "000421.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 21\nBrazil: 19\nNew Zealand: 12\nPalestine: 9\nGermany: 9\nNorway: 9\nSpain: 8\nEcuador: 8\nJapan: 8\nLiechtenstein: 7",
+  "tags": [
+    "Kosovo",
+    "Liechtenstein"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 2,
+    "defender": 118,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Liechtenstein",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 158,
+    "capitalIndexAfter": 158,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 102,
+    "capitalMoved": false
+  },
+  "territory": "Montenegro",
+  "attacker": "Kosovo",
+  "defender": "Liechtenstein"
+}

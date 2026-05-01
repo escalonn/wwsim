@@ -1,0 +1,31 @@
+{
+  "caption": "February 2065, Algeria conquered Mali territory previously occupied by Senegal.\nThe government of Senegal relocated its capital to Benin and continues in exile.",
+  "pic": "000467.png",
+  "zoom": "000467.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 23\nChad: 22\nNew Zealand: 14\nIndia: 9\nPalestine: 9\nGermany: 9\nMauritius: 8\nNorway: 8\nLiechtenstein: 7\nKosovo: 6",
+  "tags": [
+    "Algeria",
+    "Senegal"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 127,
+    "defender": 115,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": true,
+    "defenderAdminBefore": "Senegal",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 115,
+    "capitalIndexAfter": 14,
+    "defenderCapitalTerritoryAfter": "Benin",
+    "originalCapitalIndex": 153,
+    "capitalMoved": true
+  },
+  "territory": "Mali",
+  "attacker": "Algeria",
+  "defender": "Senegal"
+}

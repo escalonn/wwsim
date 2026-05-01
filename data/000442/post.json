@@ -1,0 +1,31 @@
+{
+  "caption": "January 2063, United Arab Emirates conquered Turkey territory previously occupied by Palestine.",
+  "pic": "000442.png",
+  "zoom": "000442.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 22\nBrazil: 19\nNew Zealand: 13\nGermany: 10\nPalestine: 9\nEcuador: 9\nNorway: 9\nMauritius: 7\nLiechtenstein: 7\nJapan: 7",
+  "tags": [
+    "United Arab Emirates",
+    "Palestine"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 182,
+    "defender": 178,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Palestine",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 99,
+    "capitalIndexAfter": 99,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 146,
+    "capitalMoved": false
+  },
+  "territory": "Turkey",
+  "attacker": "United Arab Emirates",
+  "defender": "Palestine"
+}

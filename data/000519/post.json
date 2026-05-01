@@ -1,0 +1,31 @@
+{
+  "caption": "June 2069, Brazil conquered Namibia territory previously occupied by Liberia.\nLiberia has been completely defeated.\n39 countries remaining.",
+  "pic": "000519.png",
+  "zoom": "000519.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 29\nChad: 25\nNew Zealand: 15\nMyanmar: 11\nNorway: 11\nKosovo: 10\nMauritius: 9\nSpain: 7\nTajikistan: 7\nGermany: 7",
+  "tags": [
+    "Brazil",
+    "Liberia"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 145,
+    "defender": 125,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Liberia",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 125,
+    "capitalIndexAfter": 125,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 100,
+    "capitalMoved": false
+  },
+  "territory": "Namibia",
+  "attacker": "Brazil",
+  "defender": "Liberia"
+}

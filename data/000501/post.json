@@ -1,0 +1,34 @@
+{
+  "caption": "December 2067, Bhutan rose against India and gained independence supported by 2 other territories.",
+  "pic": "000501.png",
+  "zoom": "000501.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 25\nBrazil: 24\nNew Zealand: 14\nMauritius: 9\nPalestine: 9\nNorway: 9\nGermany: 8\nLiechtenstein: 8\nKosovo: 7\nSpain: 7",
+  "tags": [
+    "India",
+    "India"
+  ],
+  "alliances": {},
+  "type": "riot",
+  "conquest": {
+    "attacker": 28,
+    "defender": 28,
+    "type": "riot",
+    "subjects": [
+      132,
+      135
+    ],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "India",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": null,
+    "capitalIndexAfter": 81,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": null,
+    "capitalMoved": false
+  },
+  "territory": "Bhutan",
+  "attacker": "India",
+  "defender": "India"
+}

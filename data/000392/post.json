@@ -1,0 +1,31 @@
+{
+  "caption": "November 2058, Brazil conquered Western Sahara territory previously occupied by Algeria.",
+  "pic": "000392.png",
+  "zoom": "000392.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 20\nBrazil: 17\nNew Zealand: 10\nNorway: 9\nGermany: 8\nEcuador: 8\nSpain: 7\nJapan: 7\nTajikistan: 6\nLiechtenstein: 6",
+  "tags": [
+    "Brazil",
+    "Algeria"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 40,
+    "defender": 53,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Algeria",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 49,
+    "capitalIndexAfter": 49,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 49,
+    "capitalMoved": false
+  },
+  "territory": "Western Sahara",
+  "attacker": "Brazil",
+  "defender": "Algeria"
+}

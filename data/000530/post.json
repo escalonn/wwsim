@@ -1,0 +1,31 @@
+{
+  "caption": "May 2070, New Zealand conquered Chile territory previously occupied by Brazil.",
+  "pic": "000530.png",
+  "zoom": "000530.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 27\nChad: 25\nNew Zealand: 19\nMyanmar: 11\nNorway: 11\nKosovo: 10\nMauritius: 9\nLiechtenstein: 8\nEcuador: 7\nJapan: 7",
+  "tags": [
+    "New Zealand",
+    "Brazil"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 59,
+    "defender": 33,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Brazil",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 25,
+    "capitalIndexAfter": 25,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 25,
+    "capitalMoved": false
+  },
+  "territory": "Chile",
+  "attacker": "New Zealand",
+  "defender": "Brazil"
+}

@@ -1,0 +1,31 @@
+{
+  "caption": "July 2059, Spain conquered Bermuda territory previously occupied by Dominican Republic.",
+  "pic": "000400.png",
+  "zoom": "000400.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 21\nBrazil: 17\nNew Zealand: 11\nGermany: 9\nSpain: 8\nEcuador: 8\nJapan: 8\nNorway: 8\nTajikistan: 6\nPalestine: 6",
+  "tags": [
+    "Spain",
+    "Dominican Republic"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 144,
+    "defender": 23,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Dominican Republic",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 48,
+    "capitalIndexAfter": 48,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 48,
+    "capitalMoved": false
+  },
+  "territory": "Bermuda",
+  "attacker": "Spain",
+  "defender": "Dominican Republic"
+}

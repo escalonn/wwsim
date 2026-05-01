@@ -1,0 +1,31 @@
+{
+  "caption": "May 2063, Uruguay conquered Guinea territory previously occupied by Brazil.",
+  "pic": "000446.png",
+  "zoom": "000446.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 21\nBrazil: 18\nNew Zealand: 13\nGermany: 10\nPalestine: 9\nNorway: 9\nEcuador: 8\nMauritius: 7\nLiechtenstein: 7\nJapan: 7",
+  "tags": [
+    "Uruguay",
+    "Brazil"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 100,
+    "defender": 66,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Brazil",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 25,
+    "capitalIndexAfter": 25,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 25,
+    "capitalMoved": false
+  },
+  "territory": "Guinea",
+  "attacker": "Uruguay",
+  "defender": "Brazil"
+}

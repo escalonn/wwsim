@@ -1,0 +1,31 @@
+{
+  "caption": "August 2057, Spain conquered Portugal territory previously occupied by Dominican Republic.",
+  "pic": "000377.png",
+  "zoom": "000377.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 19\nBrazil: 12\nNew Zealand: 10\nNorway: 9\nGermany: 8\nSpain: 7\nEcuador: 7\nJapan: 7\nTajikistan: 6\nKosovo: 5",
+  "tags": [
+    "Spain",
+    "Dominican Republic"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 54,
+    "defender": 144,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Dominican Republic",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 48,
+    "capitalIndexAfter": 48,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 48,
+    "capitalMoved": false
+  },
+  "territory": "Portugal",
+  "attacker": "Spain",
+  "defender": "Dominican Republic"
+}

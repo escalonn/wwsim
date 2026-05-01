@@ -1,0 +1,31 @@
+{
+  "caption": "October 2072, Brazil conquered Guinea territory previously occupied by Uruguay.",
+  "pic": "000559.png",
+  "zoom": "000559.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 33\nChad: 30\nNew Zealand: 18\nNorway: 14\nMyanmar: 13\nAlgeria: 12\nMauritius: 11\nKosovo: 9\nLiechtenstein: 7\nJapan: 7",
+  "tags": [
+    "Brazil",
+    "Uruguay"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 68,
+    "defender": 66,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Uruguay",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 194,
+    "capitalIndexAfter": 194,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 183,
+    "capitalMoved": false
+  },
+  "territory": "Guinea",
+  "attacker": "Brazil",
+  "defender": "Uruguay"
+}

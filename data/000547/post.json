@@ -1,0 +1,31 @@
+{
+  "caption": "October 2071, Japan conquered Kyrgyzstan territory previously occupied by Myanmar.",
+  "pic": "000547.png",
+  "zoom": "000547.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 30\nChad: 28\nNew Zealand: 18\nMyanmar: 12\nMauritius: 11\nNorway: 11\nAlgeria: 10\nKosovo: 9\nLiechtenstein: 8\nEcuador: 7",
+  "tags": [
+    "Japan",
+    "Myanmar"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 119,
+    "defender": 93,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Myanmar",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 117,
+    "capitalIndexAfter": 117,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 117,
+    "capitalMoved": false
+  },
+  "territory": "Kyrgyzstan",
+  "attacker": "Japan",
+  "defender": "Myanmar"
+}

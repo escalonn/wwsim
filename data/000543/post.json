@@ -1,0 +1,31 @@
+{
+  "caption": "June 2071, Algeria conquered Libya territory previously occupied by Kosovo.",
+  "pic": "000543.png",
+  "zoom": "000543.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 30\nChad: 28\nNew Zealand: 19\nMyanmar: 12\nMauritius: 11\nNorway: 11\nAlgeria: 10\nKosovo: 9\nLiechtenstein: 8\nJapan: 7",
+  "tags": [
+    "Algeria",
+    "Kosovo"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 49,
+    "defender": 101,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Kosovo",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 191,
+    "capitalIndexAfter": 191,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 191,
+    "capitalMoved": false
+  },
+  "territory": "Libya",
+  "attacker": "Algeria",
+  "defender": "Kosovo"
+}

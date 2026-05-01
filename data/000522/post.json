@@ -1,0 +1,31 @@
+{
+  "caption": "September 2069, New Zealand conquered Indonesia territory previously occupied by Australia.\nAustralia has been completely defeated.\n37 countries remaining.",
+  "pic": "000522.png",
+  "zoom": "000522.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 29\nChad: 25\nNew Zealand: 17\nMyanmar: 11\nNorway: 11\nKosovo: 10\nMauritius: 9\nSpain: 7\nTajikistan: 7\nGermany: 7",
+  "tags": [
+    "New Zealand",
+    "Australia"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 126,
+    "defender": 79,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Australia",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 79,
+    "capitalIndexAfter": 79,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 9,
+    "capitalMoved": false
+  },
+  "territory": "Indonesia",
+  "attacker": "New Zealand",
+  "defender": "Australia"
+}

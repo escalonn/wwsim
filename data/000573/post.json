@@ -1,0 +1,31 @@
+{
+  "caption": "December 2073, India conquered Finland territory previously occupied by Sweden.\nSweden has been completely defeated.\n31 countries remaining.",
+  "pic": "000573.png",
+  "zoom": "000573.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 35\nBrazil: 34\nNew Zealand: 18\nNorway: 15\nMyanmar: 14\nAlgeria: 12\nKosovo: 9\nMauritius: 7\nJapan: 7\nGermany: 6",
+  "tags": [
+    "India",
+    "Sweden"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 91,
+    "defender": 57,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Sweden",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 57,
+    "capitalIndexAfter": 57,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 165,
+    "capitalMoved": false
+  },
+  "territory": "Finland",
+  "attacker": "India",
+  "defender": "Sweden"
+}

@@ -1,0 +1,31 @@
+{
+  "caption": "September 2070, Benin reconquered its homeland from Senegal.\nThe government of Senegal relocated its capital to Ghana and continues in exile.",
+  "pic": "000534.png",
+  "zoom": "000534.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 28\nChad: 25\nNew Zealand: 19\nMauritius: 11\nMyanmar: 11\nNorway: 11\nKosovo: 10\nLiechtenstein: 8\nJapan: 7\nPalestine: 7",
+  "tags": [
+    "Benin",
+    "Senegal"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 128,
+    "defender": 14,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": true,
+    "defenderAdminBefore": "Senegal",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 14,
+    "capitalIndexAfter": 65,
+    "defenderCapitalTerritoryAfter": "Ghana",
+    "originalCapitalIndex": 153,
+    "capitalMoved": true
+  },
+  "territory": "Benin",
+  "attacker": "Benin",
+  "defender": "Senegal"
+}

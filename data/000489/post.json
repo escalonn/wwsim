@@ -1,0 +1,31 @@
+{
+  "caption": "December 2066, Burkina Faso conquered Liberia territory previously occupied by Uruguay.",
+  "pic": "000489.png",
+  "zoom": "000489.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 25\nBrazil: 24\nNew Zealand: 13\nGermany: 10\nNorway: 9\nIndia: 8\nMauritius: 8\nPalestine: 8\nKosovo: 7\nSpain: 7",
+  "tags": [
+    "Burkina Faso",
+    "Uruguay"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 35,
+    "defender": 100,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Uruguay",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 194,
+    "capitalIndexAfter": 194,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 183,
+    "capitalMoved": false
+  },
+  "territory": "Liberia",
+  "attacker": "Burkina Faso",
+  "defender": "Uruguay"
+}

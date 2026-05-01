@@ -1,0 +1,31 @@
+{
+  "caption": "November 2057, Israel conquered Cyprus territory previously occupied by Kosovo.",
+  "pic": "000380.png",
+  "zoom": "000380.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 19\nBrazil: 13\nNew Zealand: 10\nNorway: 9\nGermany: 8\nSpain: 7\nEcuador: 7\nJapan: 7\nTajikistan: 6\nIsrael: 6",
+  "tags": [
+    "Israel",
+    "Kosovo"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 51,
+    "defender": 43,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Kosovo",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 114,
+    "capitalIndexAfter": 114,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 191,
+    "capitalMoved": false
+  },
+  "territory": "Cyprus",
+  "attacker": "Israel",
+  "defender": "Kosovo"
+}

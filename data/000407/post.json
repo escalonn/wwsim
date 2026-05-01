@@ -1,0 +1,31 @@
+{
+  "caption": "February 2060, Liechtenstein conquered Bosnia and Herzegovina territory previously occupied by Czech Republic.",
+  "pic": "000407.png",
+  "zoom": "000407.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 21\nBrazil: 18\nNew Zealand: 10\nGermany: 9\nSpain: 8\nLiechtenstein: 8\nJapan: 8\nNorway: 8\nEcuador: 7\nTajikistan: 6",
+  "tags": [
+    "Liechtenstein",
+    "Czech Republic"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 76,
+    "defender": 20,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Czech Republic",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 78,
+    "capitalIndexAfter": 78,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 44,
+    "capitalMoved": false
+  },
+  "territory": "Bosnia and Herzegovina",
+  "attacker": "Liechtenstein",
+  "defender": "Czech Republic"
+}

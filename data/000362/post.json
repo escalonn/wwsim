@@ -1,0 +1,38 @@
+{
+  "caption": "May 2056, Chad conquered Burundi territory previously occupied by Uganda.\nUganda capitulated, ceding 1 additional territory to Chad.\nUganda moved its capital to Kenya.",
+  "pic": "000362.png",
+  "zoom": "000362.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 15\nBrazil: 12\nNew Zealand: 10\nGermany: 8\nNorway: 8\nEcuador: 7\nTajikistan: 6\nSpain: 6\nJapan: 6\nMauritius: 5",
+  "tags": [
+    "Chad",
+    "Uganda"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 181,
+    "defender": 12,
+    "type": "conquer",
+    "subjects": [
+      180
+    ],
+    "capitulation": true,
+    "capitulationEvent": {
+      "round": 362,
+      "attackerTerritoriesBefore": 13,
+      "defenderTerritoriesBefore": 4,
+      "territoriesCeded": 1
+    },
+    "fallenCapital": false,
+    "defenderAdminBefore": "Uganda",
+    "defenderTerritoryRankBefore": 22,
+    "capitalIndexBefore": 12,
+    "capitalIndexAfter": 92,
+    "defenderCapitalTerritoryAfter": "Kenya",
+    "originalCapitalIndex": 181,
+    "capitalMoved": true
+  },
+  "territory": "Burundi",
+  "attacker": "Chad",
+  "defender": "Uganda"
+}

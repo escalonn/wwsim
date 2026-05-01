@@ -1,0 +1,31 @@
+{
+  "caption": "March 2063, Benin conquered Nigeria territory previously occupied by Chad.",
+  "pic": "000444.png",
+  "zoom": "000444.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 21\nBrazil: 18\nNew Zealand: 13\nGermany: 10\nPalestine: 9\nEcuador: 9\nNorway: 9\nMauritius: 7\nLiechtenstein: 7\nJapan: 7",
+  "tags": [
+    "Benin",
+    "Chad"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 170,
+    "defender": 128,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Chad",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 169,
+    "capitalIndexAfter": 169,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 169,
+    "capitalMoved": false
+  },
+  "territory": "Nigeria",
+  "attacker": "Benin",
+  "defender": "Chad"
+}

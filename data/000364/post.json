@@ -1,0 +1,31 @@
+{
+  "caption": "July 2056, Kosovo conquered Libya territory previously occupied by Malta.\nMalta has been completely defeated.\n59 countries remaining.",
+  "pic": "000364.png",
+  "zoom": "000364.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 15\nBrazil: 12\nNew Zealand: 10\nGermany: 8\nNorway: 8\nEcuador: 7\nTajikistan: 6\nSpain: 6\nJapan: 6\nKosovo: 5",
+  "tags": [
+    "Kosovo",
+    "Malta"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 70,
+    "defender": 101,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Malta",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 101,
+    "capitalIndexAfter": 101,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 116,
+    "capitalMoved": false
+  },
+  "territory": "Libya",
+  "attacker": "Kosovo",
+  "defender": "Malta"
+}

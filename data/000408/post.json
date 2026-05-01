@@ -1,0 +1,31 @@
+{
+  "caption": "March 2060, Samoa conquered United States of America territory.\nUnited States of America has been completely defeated.\n48 countries remaining.",
+  "pic": "000408.png",
+  "zoom": "000408.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 21\nBrazil: 18\nNew Zealand: 10\nGermany: 9\nSpain: 8\nLiechtenstein: 8\nJapan: 8\nNorway: 8\nEcuador: 7\nTajikistan: 6",
+  "tags": [
+    "Samoa",
+    "United States of America"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 19,
+    "defender": 184,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "United States of America",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 184,
+    "capitalIndexAfter": 184,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 184,
+    "capitalMoved": false
+  },
+  "territory": "United States of America",
+  "attacker": "Samoa",
+  "defender": "United States of America"
+}

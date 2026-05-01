@@ -1,0 +1,31 @@
+{
+  "caption": "August 2061, Kosovo conquered Serbia territory previously occupied by Croatia.\nThe government of Croatia relocated its capital to Kosovo and continues in exile.",
+  "pic": "000425.png",
+  "zoom": "000425.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 21\nBrazil: 19\nNew Zealand: 13\nGermany: 10\nPalestine: 9\nNorway: 9\nSpain: 8\nEcuador: 8\nLiechtenstein: 7\nJapan: 7",
+  "tags": [
+    "Kosovo",
+    "Croatia"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 114,
+    "defender": 160,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": true,
+    "defenderAdminBefore": "Croatia",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 160,
+    "capitalIndexAfter": 191,
+    "defenderCapitalTerritoryAfter": "Kosovo",
+    "originalCapitalIndex": 76,
+    "capitalMoved": true
+  },
+  "territory": "Serbia",
+  "attacker": "Kosovo",
+  "defender": "Croatia"
+}

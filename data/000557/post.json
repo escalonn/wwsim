@@ -1,0 +1,31 @@
+{
+  "caption": "August 2072, Chad conquered Malawi territory.\nMalawi has been completely defeated.\n34 countries remaining.",
+  "pic": "000557.png",
+  "zoom": "000557.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 32\nChad: 29\nNew Zealand: 18\nNorway: 14\nMyanmar: 13\nAlgeria: 12\nMauritius: 11\nKosovo: 9\nLiechtenstein: 7\nJapan: 7",
+  "tags": [
+    "Chad",
+    "Malawi"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 150,
+    "defender": 123,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Malawi",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 123,
+    "capitalIndexAfter": 123,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 123,
+    "capitalMoved": false
+  },
+  "territory": "Malawi",
+  "attacker": "Chad",
+  "defender": "Malawi"
+}

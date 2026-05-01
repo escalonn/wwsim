@@ -1,0 +1,39 @@
+{
+  "caption": "April 2060, Palestine conquered Israel territory.\nIsrael capitulated, ceding 2 additional territories to Palestine.\nIsrael moved its capital to Palestine.",
+  "pic": "000409.png",
+  "zoom": "000409.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 21\nBrazil: 18\nNew Zealand: 10\nPalestine: 9\nGermany: 9\nSpain: 8\nLiechtenstein: 8\nJapan: 8\nNorway: 8\nEcuador: 7",
+  "tags": [
+    "Palestine",
+    "Israel"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 168,
+    "defender": 86,
+    "type": "conquer",
+    "subjects": [
+      89,
+      43
+    ],
+    "capitulation": true,
+    "capitulationEvent": {
+      "round": 409,
+      "attackerTerritoriesBefore": 6,
+      "defenderTerritoriesBefore": 5,
+      "territoriesCeded": 2
+    },
+    "fallenCapital": false,
+    "defenderAdminBefore": "Israel",
+    "defenderTerritoryRankBefore": 14,
+    "capitalIndexBefore": 86,
+    "capitalIndexAfter": 146,
+    "defenderCapitalTerritoryAfter": "Palestine",
+    "originalCapitalIndex": 86,
+    "capitalMoved": true
+  },
+  "territory": "Israel",
+  "attacker": "Palestine",
+  "defender": "Israel"
+}

@@ -1,0 +1,31 @@
+{
+  "caption": "November 2068, Mauritius conquered Pakistan territory previously occupied by Bhutan.",
+  "pic": "000512.png",
+  "zoom": "000512.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nBrazil: 26\nChad: 25\nNew Zealand: 15\nNorway: 11\nMauritius: 10\nMyanmar: 10\nPalestine: 9\nKosovo: 8\nSpain: 7\nGermany: 7",
+  "tags": [
+    "Mauritius",
+    "Bhutan"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 134,
+    "defender": 135,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Bhutan",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 28,
+    "capitalIndexAfter": 28,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 28,
+    "capitalMoved": false
+  },
+  "territory": "Pakistan",
+  "attacker": "Mauritius",
+  "defender": "Bhutan"
+}

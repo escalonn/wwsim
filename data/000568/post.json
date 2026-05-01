@@ -1,0 +1,31 @@
+{
+  "caption": "July 2073, Algeria conquered England territory previously occupied by Norway.",
+  "pic": "000568.png",
+  "zoom": "000568.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 33\nBrazil: 33\nNew Zealand: 18\nMyanmar: 14\nNorway: 14\nAlgeria: 13\nKosovo: 9\nMauritius: 8\nLiechtenstein: 7\nJapan: 7",
+  "tags": [
+    "Algeria",
+    "Norway"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 198,
+    "defender": 199,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Norway",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 131,
+    "capitalIndexAfter": 131,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 131,
+    "capitalMoved": false
+  },
+  "territory": "England",
+  "attacker": "Algeria",
+  "defender": "Norway"
+}

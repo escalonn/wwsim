@@ -1,0 +1,31 @@
+{
+  "caption": "July 2060, Benin conquered Burkina Faso territory previously occupied by Senegal.",
+  "pic": "000412.png",
+  "zoom": "000412.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 21\nBrazil: 19\nNew Zealand: 10\nPalestine: 9\nGermany: 9\nNorway: 9\nSpain: 8\nLiechtenstein: 8\nJapan: 8\nEcuador: 7",
+  "tags": [
+    "Benin",
+    "Senegal"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 170,
+    "defender": 15,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Senegal",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 115,
+    "capitalIndexAfter": 115,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 153,
+    "capitalMoved": false
+  },
+  "territory": "Burkina Faso",
+  "attacker": "Benin",
+  "defender": "Senegal"
+}

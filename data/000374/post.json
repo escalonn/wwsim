@@ -1,0 +1,31 @@
+{
+  "caption": "May 2057, Palestine conquered Syria territory.\nThe government of Syria relocated its capital to Armenia and continues in exile.",
+  "pic": "000374.png",
+  "zoom": "000374.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 19\nBrazil: 11\nNew Zealand: 10\nNorway: 9\nGermany: 8\nEcuador: 7\nJapan: 7\nTajikistan: 6\nSpain: 6\nKosovo: 5",
+  "tags": [
+    "Palestine",
+    "Syria"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 84,
+    "defender": 168,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": true,
+    "defenderAdminBefore": "Syria",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 168,
+    "capitalIndexAfter": 6,
+    "defenderCapitalTerritoryAfter": "Armenia",
+    "originalCapitalIndex": 168,
+    "capitalMoved": true
+  },
+  "territory": "Syria",
+  "attacker": "Palestine",
+  "defender": "Syria"
+}

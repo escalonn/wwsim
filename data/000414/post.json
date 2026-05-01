@@ -1,0 +1,31 @@
+{
+  "caption": "September 2060, India conquered Tajikistan territory.\nThe government of Tajikistan relocated its capital to Uzbekistan and continues in exile.",
+  "pic": "000414.png",
+  "zoom": "000414.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 21\nBrazil: 19\nNew Zealand: 11\nPalestine: 9\nGermany: 9\nNorway: 9\nSpain: 8\nLiechtenstein: 8\nJapan: 8\nEcuador: 7",
+  "tags": [
+    "India",
+    "Tajikistan"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 135,
+    "defender": 172,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": true,
+    "defenderAdminBefore": "Tajikistan",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 172,
+    "capitalIndexAfter": 185,
+    "defenderCapitalTerritoryAfter": "Uzbekistan",
+    "originalCapitalIndex": 172,
+    "capitalMoved": true
+  },
+  "territory": "Tajikistan",
+  "attacker": "India",
+  "defender": "Tajikistan"
+}

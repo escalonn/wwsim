@@ -98,6 +98,7 @@ fn get_capitulated_territories(
     owners_data: &HashMap<u16, u16>,
     targets_data: &HashMap<u16, Vec<u16>>,
     mut current_ceded: HashSet<u16>,
+    new_capital_id: Option<u16>,
 ) -> HashSet<u16> {
     if defender_num_territories < 3 {
         return current_ceded;
@@ -127,7 +128,7 @@ fn get_capitulated_territories(
 
         let eligible_in_shell: Vec<u16> = current_shell.iter()
             .copied()
-            .filter(|&id| owners_data[&id] == defender_country_id && !current_ceded.contains(&id))
+            .filter(|&id| owners_data[&id] == defender_country_id && !current_ceded.contains(&id) && Some(id) != new_capital_id)
             .collect();
 
         if eligible_in_shell.is_empty() {
@@ -239,6 +240,13 @@ pub fn perform_riot(
     // Check for capitulation event if the riot started in the capital
     let defender_current_capital = *capitals.get(&old_owner_id).unwrap_or(&old_owner_id);
     let is_capital_loss = riot_territory_id == defender_current_capital;
+    let mut new_cap = None;
+    if is_capital_loss && owns_data[&old_owner_id] > 1 {
+        owners_data.insert(riot_territory_id, u16::MAX);
+        new_cap = Some(find_new_capital(old_owner_id, old_owner_id, owners_data));
+        owners_data.insert(riot_territory_id, old_owner_id);
+    }
+
     if is_capital_loss {
         let defender_num_territories = owns_data[&old_owner_id];
         rioting_territories_set = get_capitulated_territories(
@@ -248,6 +256,7 @@ pub fn perform_riot(
             owners_data,
             targets_data,
             rioting_territories_set,
+            new_cap,
         );
     }
 
@@ -294,6 +303,13 @@ pub fn perform_conquest(
     let defender_num_territories = owns_data[&original_conquered_country_id];
     let is_capital_loss = target_territory_id == defender_current_capital;
 
+    let mut new_cap = None;
+    if is_capital_loss && defender_num_territories > 1 {
+        owners_data.insert(target_territory_id, u16::MAX);
+        new_cap = Some(find_new_capital(original_conquered_country_id, original_conquered_country_id, owners_data));
+        owners_data.insert(target_territory_id, original_conquered_country_id);
+    }
+
     if is_capital_loss {
         ceded_territories = get_capitulated_territories(
             target_territory_id,
@@ -302,6 +318,7 @@ pub fn perform_conquest(
             owners_data,
             targets_data,
             ceded_territories,
+            new_cap,
         );
     }
 
@@ -321,12 +338,7 @@ pub fn perform_conquest(
         // API leaves the dormant capital override as-is.
     } else if is_capital_loss {
         // Defender lost their capital but survives — pick a new one
-        let new_cap = find_new_capital(
-            original_conquered_country_id, // original capital = country's own ID
-            original_conquered_country_id,
-            owners_data,
-        );
-        capitals.insert(original_conquered_country_id, new_cap);
+        capitals.insert(original_conquered_country_id, new_cap.unwrap());
     }
 
     // If attacker just re-took their original capital territory, restore their capital
@@ -341,6 +353,7 @@ pub fn validate_capitulation(
     ceded_additional_ids: &[u16],
     owners_before: &HashMap<u16, u16>,
     targets_data: &HashMap<u16, Vec<u16>>,
+    new_capital_id: Option<u16>,
 ) -> Result<(), String> {
     let defender_id = owners_before[&capital_id];
     let n_before = owners_before
@@ -391,7 +404,7 @@ pub fn validate_capitulation(
 
     // Check remaining territories
     for (&id, &owner) in owners_before {
-        if owner == defender_id && id != capital_id && !ceded_set.contains(&id) {
+        if owner == defender_id && id != capital_id && !ceded_set.contains(&id) && Some(id) != new_capital_id {
             let d = *distances
                 .get(&id)
                 .ok_or_else(|| format!("Remaining territory {} unreachable from capital?", id))?;

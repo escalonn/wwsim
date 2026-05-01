@@ -1,0 +1,31 @@
+{
+  "caption": "May 2065, Chad conquered Iraq territory previously occupied by Palestine.",
+  "pic": "000470.png",
+  "zoom": "000470.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 24\nBrazil: 23\nNew Zealand: 14\nIndia: 9\nGermany: 9\nPalestine: 8\nMauritius: 8\nNorway: 8\nLiechtenstein: 7\nKosovo: 6",
+  "tags": [
+    "Chad",
+    "Palestine"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 151,
+    "defender": 84,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Palestine",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 146,
+    "capitalIndexAfter": 146,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 146,
+    "capitalMoved": false
+  },
+  "territory": "Iraq",
+  "attacker": "Chad",
+  "defender": "Palestine"
+}

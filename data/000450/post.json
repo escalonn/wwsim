@@ -1,0 +1,31 @@
+{
+  "caption": "September 2063, Brazil conquered Bolivia territory previously occupied by Ecuador.",
+  "pic": "000450.png",
+  "zoom": "000450.png",
+  "comment": "\nTop 10 countries by number of controlled territories:\nChad: 22\nBrazil: 20\nNew Zealand: 13\nPalestine: 9\nGermany: 9\nNorway: 9\nLiechtenstein: 7\nEcuador: 7\nJapan: 7\nIndia: 6",
+  "tags": [
+    "Brazil",
+    "Ecuador"
+  ],
+  "alliances": {},
+  "type": "conquest",
+  "conquest": {
+    "attacker": 74,
+    "defender": 24,
+    "type": "conquer",
+    "subjects": [],
+    "capitulation": false,
+    "capitulationEvent": null,
+    "fallenCapital": false,
+    "defenderAdminBefore": "Ecuador",
+    "defenderTerritoryRankBefore": null,
+    "capitalIndexBefore": 50,
+    "capitalIndexAfter": 50,
+    "defenderCapitalTerritoryAfter": null,
+    "originalCapitalIndex": 50,
+    "capitalMoved": false
+  },
+  "territory": "Bolivia",
+  "attacker": "Brazil",
+  "defender": "Ecuador"
+}
